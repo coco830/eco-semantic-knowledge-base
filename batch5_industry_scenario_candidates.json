@@ -1,0 +1,3607 @@
+[
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2411",
+    "industry_code": "2411",
+    "industry_name": "文具制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "241",
+    "group_name": "文教办公用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2412",
+    "industry_code": "2412",
+    "industry_name": "笔的制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "241",
+    "group_name": "文教办公用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2413",
+    "industry_code": "2413",
+    "industry_name": "教学用模型及教具制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "241",
+    "group_name": "文教办公用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2414",
+    "industry_code": "2414",
+    "industry_name": "墨水、墨汁制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "241",
+    "group_name": "文教办公用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2419",
+    "industry_code": "2419",
+    "industry_name": "其他文教办公用品制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "241",
+    "group_name": "文教办公用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2421",
+    "industry_code": "2421",
+    "industry_name": "中乐器制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "242",
+    "group_name": "乐器制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2422",
+    "industry_code": "2422",
+    "industry_name": "西乐器制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "242",
+    "group_name": "乐器制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2423",
+    "industry_code": "2423",
+    "industry_name": "电子乐器制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "242",
+    "group_name": "乐器制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2429",
+    "industry_code": "2429",
+    "industry_name": "其他乐器及零件制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "242",
+    "group_name": "乐器制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2431",
+    "industry_code": "2431",
+    "industry_name": "雕塑工艺品制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "243",
+    "group_name": "工艺美术及礼仪用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2432",
+    "industry_code": "2432",
+    "industry_name": "金属工艺品制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "243",
+    "group_name": "工艺美术及礼仪用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2433",
+    "industry_code": "2433",
+    "industry_name": "漆器工艺品制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "243",
+    "group_name": "工艺美术及礼仪用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2434",
+    "industry_code": "2434",
+    "industry_name": "花画工艺品制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "243",
+    "group_name": "工艺美术及礼仪用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2435",
+    "industry_code": "2435",
+    "industry_name": "天然植物纤维编织工艺品制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "243",
+    "group_name": "工艺美术及礼仪用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2436",
+    "industry_code": "2436",
+    "industry_name": "抽纱刺绣工艺品制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "243",
+    "group_name": "工艺美术及礼仪用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2437",
+    "industry_code": "2437",
+    "industry_name": "地毯、挂毯制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "243",
+    "group_name": "工艺美术及礼仪用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2438",
+    "industry_code": "2438",
+    "industry_name": "珠宝首饰及有关物品制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "243",
+    "group_name": "工艺美术及礼仪用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2439",
+    "industry_code": "2439",
+    "industry_name": "其他工艺美术及礼仪用品制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "243",
+    "group_name": "工艺美术及礼仪用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2441",
+    "industry_code": "2441",
+    "industry_name": "球类制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "244",
+    "group_name": "体育用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2442",
+    "industry_code": "2442",
+    "industry_name": "专项运动器材及配件制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "244",
+    "group_name": "体育用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2443",
+    "industry_code": "2443",
+    "industry_name": "健身器材制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "244",
+    "group_name": "体育用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2444",
+    "industry_code": "2444",
+    "industry_name": "运动防护用具制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "244",
+    "group_name": "体育用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2449",
+    "industry_code": "2449",
+    "industry_name": "其他体育用品制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "244",
+    "group_name": "体育用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2451",
+    "industry_code": "2451",
+    "industry_name": "电玩具制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "245",
+    "group_name": "玩具制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2452",
+    "industry_code": "2452",
+    "industry_name": "塑胶玩具制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "245",
+    "group_name": "玩具制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2453",
+    "industry_code": "2453",
+    "industry_name": "金属玩具制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "245",
+    "group_name": "玩具制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2454",
+    "industry_code": "2454",
+    "industry_name": "弹射玩具制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "245",
+    "group_name": "玩具制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2455",
+    "industry_code": "2455",
+    "industry_name": "娃娃玩具制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "245",
+    "group_name": "玩具制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2456",
+    "industry_code": "2456",
+    "industry_name": "儿童乘骑玩耍的童车类产品制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "245",
+    "group_name": "玩具制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2459",
+    "industry_code": "2459",
+    "industry_name": "其他玩具制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "245",
+    "group_name": "玩具制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2461",
+    "industry_code": "2461",
+    "industry_name": "露天游乐场所游乐设备制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "246",
+    "group_name": "游艺器材及娱乐用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2462",
+    "industry_code": "2462",
+    "industry_name": "游艺用品及室内游艺器材制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "246",
+    "group_name": "游艺器材及娱乐用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2469",
+    "industry_code": "2469",
+    "industry_name": "其他娱乐用品制造",
+    "division_code": "24",
+    "division_name": "文教、工美、体育和娱乐用品制造业",
+    "group_code": "246",
+    "group_name": "游艺器材及娱乐用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及印刷、喷涂、胶粘剂、树脂、打磨、粉尘、清洗或表面处理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：文教工美体育娱乐用品制造形态差异大，VOCs/粉尘/危废只作为触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2511",
+    "industry_code": "2511",
+    "industry_name": "原油加工及石油制品制造",
+    "division_code": "25",
+    "division_name": "石油、煤炭及其他燃料加工业",
+    "group_code": "251",
+    "group_name": "精炼石油产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2519",
+    "industry_code": "2519",
+    "industry_name": "其他原油制造",
+    "division_code": "25",
+    "division_name": "石油、煤炭及其他燃料加工业",
+    "group_code": "251",
+    "group_name": "精炼石油产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2521",
+    "industry_code": "2521",
+    "industry_name": "炼焦",
+    "division_code": "25",
+    "division_name": "石油、煤炭及其他燃料加工业",
+    "group_code": "252",
+    "group_name": "煤炭加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2522",
+    "industry_code": "2522",
+    "industry_name": "煤制合成气生产",
+    "division_code": "25",
+    "division_name": "石油、煤炭及其他燃料加工业",
+    "group_code": "252",
+    "group_name": "煤炭加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2523",
+    "industry_code": "2523",
+    "industry_name": "煤制液体燃料生产",
+    "division_code": "25",
+    "division_name": "石油、煤炭及其他燃料加工业",
+    "group_code": "252",
+    "group_name": "煤炭加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2524",
+    "industry_code": "2524",
+    "industry_name": "煤制品制造",
+    "division_code": "25",
+    "division_name": "石油、煤炭及其他燃料加工业",
+    "group_code": "252",
+    "group_name": "煤炭加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2529",
+    "industry_code": "2529",
+    "industry_name": "其他煤炭加工",
+    "division_code": "25",
+    "division_name": "石油、煤炭及其他燃料加工业",
+    "group_code": "252",
+    "group_name": "煤炭加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2530",
+    "industry_code": "2530",
+    "industry_name": "核燃料加工",
+    "division_code": "25",
+    "division_name": "石油、煤炭及其他燃料加工业",
+    "group_code": "253",
+    "group_name": "核燃料加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2541",
+    "industry_code": "2541",
+    "industry_name": "生物质液体燃料生产",
+    "division_code": "25",
+    "division_name": "石油、煤炭及其他燃料加工业",
+    "group_code": "254",
+    "group_name": "生物质燃料加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2542",
+    "industry_code": "2542",
+    "industry_name": "生物质致密成型燃料加工",
+    "division_code": "25",
+    "division_name": "石油、煤炭及其他燃料加工业",
+    "group_code": "254",
+    "group_name": "生物质燃料加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2611",
+    "industry_code": "2611",
+    "industry_name": "无机酸制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "261",
+    "group_name": "基础化学原料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2612",
+    "industry_code": "2612",
+    "industry_name": "无机碱制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "261",
+    "group_name": "基础化学原料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2613",
+    "industry_code": "2613",
+    "industry_name": "无机盐制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "261",
+    "group_name": "基础化学原料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2614",
+    "industry_code": "2614",
+    "industry_name": "有机化学原料制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "261",
+    "group_name": "基础化学原料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2619",
+    "industry_code": "2619",
+    "industry_name": "其他基础化学原料制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "261",
+    "group_name": "基础化学原料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2621",
+    "industry_code": "2621",
+    "industry_name": "氮肥制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "262",
+    "group_name": "肥料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2622",
+    "industry_code": "2622",
+    "industry_name": "磷肥制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "262",
+    "group_name": "肥料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2623",
+    "industry_code": "2623",
+    "industry_name": "钾肥制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "262",
+    "group_name": "肥料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2624",
+    "industry_code": "2624",
+    "industry_name": "复混肥料制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "262",
+    "group_name": "肥料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2625",
+    "industry_code": "2625",
+    "industry_name": "有机肥料及微生物肥料制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "262",
+    "group_name": "肥料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2629",
+    "industry_code": "2629",
+    "industry_name": "其他肥料制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "262",
+    "group_name": "肥料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2631",
+    "industry_code": "2631",
+    "industry_name": "化学农药制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "263",
+    "group_name": "农药制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2632",
+    "industry_code": "2632",
+    "industry_name": "生物化学农药及微生物农药制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "263",
+    "group_name": "农药制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2641",
+    "industry_code": "2641",
+    "industry_name": "涂料制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "264",
+    "group_name": "涂料、油墨、颜料及类似产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2642",
+    "industry_code": "2642",
+    "industry_name": "油墨及类似产品制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "264",
+    "group_name": "涂料、油墨、颜料及类似产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2643",
+    "industry_code": "2643",
+    "industry_name": "工业颜料制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "264",
+    "group_name": "涂料、油墨、颜料及类似产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2644",
+    "industry_code": "2644",
+    "industry_name": "工艺美术颜料制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "264",
+    "group_name": "涂料、油墨、颜料及类似产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2645",
+    "industry_code": "2645",
+    "industry_name": "染料制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "264",
+    "group_name": "涂料、油墨、颜料及类似产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2646",
+    "industry_code": "2646",
+    "industry_name": "密封用填料及类似品制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "264",
+    "group_name": "涂料、油墨、颜料及类似产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2651",
+    "industry_code": "2651",
+    "industry_name": "初级形态塑料及合成树脂制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "265",
+    "group_name": "合成材料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2652",
+    "industry_code": "2652",
+    "industry_name": "合成橡胶制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "265",
+    "group_name": "合成材料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2653",
+    "industry_code": "2653",
+    "industry_name": "合成纤维单(聚合)体制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "265",
+    "group_name": "合成材料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2659",
+    "industry_code": "2659",
+    "industry_name": "其他合成材料制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "265",
+    "group_name": "合成材料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2661",
+    "industry_code": "2661",
+    "industry_name": "化学试剂和助剂制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "266",
+    "group_name": "专用化学产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2662",
+    "industry_code": "2662",
+    "industry_name": "专项化学用品制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "266",
+    "group_name": "专用化学产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2663",
+    "industry_code": "2663",
+    "industry_name": "林产化学产品制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "266",
+    "group_name": "专用化学产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2664",
+    "industry_code": "2664",
+    "industry_name": "文化用信息化学品制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "266",
+    "group_name": "专用化学产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2665",
+    "industry_code": "2665",
+    "industry_name": "医学生产用信息化学品制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "266",
+    "group_name": "专用化学产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2666",
+    "industry_code": "2666",
+    "industry_name": "环境污染处理专用药剂材料制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "266",
+    "group_name": "专用化学产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2667",
+    "industry_code": "2667",
+    "industry_name": "动物胶制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "266",
+    "group_name": "专用化学产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2669",
+    "industry_code": "2669",
+    "industry_name": "其他专用化学产品制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "266",
+    "group_name": "专用化学产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2671",
+    "industry_code": "2671",
+    "industry_name": "炸药及火工产品制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "267",
+    "group_name": "炸药、火工及焰火产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2672",
+    "industry_code": "2672",
+    "industry_name": "焰火、鞭炮产品制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "267",
+    "group_name": "炸药、火工及焰火产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2681",
+    "industry_code": "2681",
+    "industry_name": "肥皂及洗涤剂制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "268",
+    "group_name": "日用化学产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2682",
+    "industry_code": "2682",
+    "industry_name": "化妆品制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "268",
+    "group_name": "日用化学产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2683",
+    "industry_code": "2683",
+    "industry_name": "口腔清洁用品制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "268",
+    "group_name": "日用化学产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2684",
+    "industry_code": "2684",
+    "industry_name": "香料、香精制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "268",
+    "group_name": "日用化学产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2689",
+    "industry_code": "2689",
+    "industry_name": "其他日用化学产品制造",
+    "division_code": "26",
+    "division_name": "化学原料和化学制品制造业",
+    "group_code": "268",
+    "group_name": "日用化学产品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2710",
+    "industry_code": "2710",
+    "industry_name": "化学药品原料药制造",
+    "division_code": "27",
+    "division_name": "医药制造业",
+    "group_code": "271",
+    "group_name": "化学药品原料药制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2720",
+    "industry_code": "2720",
+    "industry_name": "化学药品制剂制造",
+    "division_code": "27",
+    "division_name": "医药制造业",
+    "group_code": "272",
+    "group_name": "化学药品制剂制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2730",
+    "industry_code": "2730",
+    "industry_name": "中药饮片加工",
+    "division_code": "27",
+    "division_name": "医药制造业",
+    "group_code": "273",
+    "group_name": "中药饮片加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2740",
+    "industry_code": "2740",
+    "industry_name": "中成药生产",
+    "division_code": "27",
+    "division_name": "医药制造业",
+    "group_code": "274",
+    "group_name": "中成药生产",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2750",
+    "industry_code": "2750",
+    "industry_name": "兽用药品制造",
+    "division_code": "27",
+    "division_name": "医药制造业",
+    "group_code": "275",
+    "group_name": "兽用药品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2761",
+    "industry_code": "2761",
+    "industry_name": "生物药品制造",
+    "division_code": "27",
+    "division_name": "医药制造业",
+    "group_code": "276",
+    "group_name": "生物药品制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2762",
+    "industry_code": "2762",
+    "industry_name": "基因工程药物和疫苗制造",
+    "division_code": "27",
+    "division_name": "医药制造业",
+    "group_code": "276",
+    "group_name": "生物药品制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2770",
+    "industry_code": "2770",
+    "industry_name": "卫生材料及医药用品制造",
+    "division_code": "27",
+    "division_name": "医药制造业",
+    "group_code": "277",
+    "group_name": "卫生材料及医药用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2780",
+    "industry_code": "2780",
+    "industry_name": "药用辅料及包装材料制造",
+    "division_code": "27",
+    "division_name": "医药制造业",
+    "group_code": "278",
+    "group_name": "药用辅料及包装材料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2811",
+    "industry_code": "2811",
+    "industry_name": "化纤浆粕制造",
+    "division_code": "28",
+    "division_name": "化学纤维制造业",
+    "group_code": "281",
+    "group_name": "纤维素纤维原料及纤维制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2812",
+    "industry_code": "2812",
+    "industry_name": "人造纤维（纤维素纤维）制造",
+    "division_code": "28",
+    "division_name": "化学纤维制造业",
+    "group_code": "281",
+    "group_name": "纤维素纤维原料及纤维制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2821",
+    "industry_code": "2821",
+    "industry_name": "锦纶纤维制造",
+    "division_code": "28",
+    "division_name": "化学纤维制造业",
+    "group_code": "282",
+    "group_name": "合成纤维制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2822",
+    "industry_code": "2822",
+    "industry_name": "涤纶纤维制造",
+    "division_code": "28",
+    "division_name": "化学纤维制造业",
+    "group_code": "282",
+    "group_name": "合成纤维制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2823",
+    "industry_code": "2823",
+    "industry_name": "腈纶纤维制造",
+    "division_code": "28",
+    "division_name": "化学纤维制造业",
+    "group_code": "282",
+    "group_name": "合成纤维制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2824",
+    "industry_code": "2824",
+    "industry_name": "维纶纤维制造",
+    "division_code": "28",
+    "division_name": "化学纤维制造业",
+    "group_code": "282",
+    "group_name": "合成纤维制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2825",
+    "industry_code": "2825",
+    "industry_name": "丙纶纤维制造",
+    "division_code": "28",
+    "division_name": "化学纤维制造业",
+    "group_code": "282",
+    "group_name": "合成纤维制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2826",
+    "industry_code": "2826",
+    "industry_name": "氨纶纤维制造",
+    "division_code": "28",
+    "division_name": "化学纤维制造业",
+    "group_code": "282",
+    "group_name": "合成纤维制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2829",
+    "industry_code": "2829",
+    "industry_name": "其他合成纤维制造",
+    "division_code": "28",
+    "division_name": "化学纤维制造业",
+    "group_code": "282",
+    "group_name": "合成纤维制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2831",
+    "industry_code": "2831",
+    "industry_name": "生物基化学纤维制造",
+    "division_code": "28",
+    "division_name": "化学纤维制造业",
+    "group_code": "283",
+    "group_name": "生物基材料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH5_GB4754_2832",
+    "industry_code": "2832",
+    "industry_name": "生物基、淀粉基新材料制造",
+    "division_code": "28",
+    "division_name": "化学纤维制造业",
+    "group_code": "283",
+    "group_name": "生物基材料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及化学反应、精馏、萃取、发酵、合成、储罐、装卸、LDAR或危险化学品仓储？",
+      "是否产生高浓度有机废水、VOCs、恶臭、危险废物、废活性炭、废母液、废催化剂或污泥？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch5候选：石化、化工、医药、化纤为高风险行业，只能做候选召回，许可类型和场景均需名录条件与现场确认。"
+  }
+]

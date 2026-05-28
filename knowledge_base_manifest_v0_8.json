@@ -1,0 +1,16 @@
+{
+  "knowledge_base_version": "v0.8-review-backfill-rag-prototype",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_integration": "disabled",
+  "runtime_promotion_status": "not_approved",
+  "source_baseline": "v0.7 human review package + v0.5 rag chunks",
+  "outputs": {
+    "simulated_human_review_input_v0_8.csv": 11,
+    "human_review_overlay_v0_8.csv": 11,
+    "formalization_candidate_queue_v0_8.csv": 5,
+    "still_blocked_queue_v0_8.csv": 6,
+    "rag_prototype_results_v0_8.jsonl": 8
+  },
+  "runtime_effect": "NONE",
+  "notes": "模拟审阅只生成overlay；不覆盖v0.7工作表或v0.4.1源表。"
+}

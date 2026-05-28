@@ -1,0 +1,3125 @@
+[
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3011",
+    "industry_code": "3011",
+    "industry_name": "水泥制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "301",
+    "group_name": "水泥、石灰和石膏制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3012",
+    "industry_code": "3012",
+    "industry_name": "石灰和石膏制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "301",
+    "group_name": "水泥、石灰和石膏制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3021",
+    "industry_code": "3021",
+    "industry_name": "水泥制品制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "302",
+    "group_name": "石膏、水泥制品及类似制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3022",
+    "industry_code": "3022",
+    "industry_name": "砼结构构件制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "302",
+    "group_name": "石膏、水泥制品及类似制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3023",
+    "industry_code": "3023",
+    "industry_name": "石棉水泥制品制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "302",
+    "group_name": "石膏、水泥制品及类似制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3024",
+    "industry_code": "3024",
+    "industry_name": "轻质建筑材料制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "302",
+    "group_name": "石膏、水泥制品及类似制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3029",
+    "industry_code": "3029",
+    "industry_name": "其他水泥类似制品制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "302",
+    "group_name": "石膏、水泥制品及类似制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3031",
+    "industry_code": "3031",
+    "industry_name": "粘土砖瓦及建筑砌块制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "303",
+    "group_name": "砖瓦、石材等建筑材料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3032",
+    "industry_code": "3032",
+    "industry_name": "建筑用石加工",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "303",
+    "group_name": "砖瓦、石材等建筑材料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3033",
+    "industry_code": "3033",
+    "industry_name": "防水建筑材料制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "303",
+    "group_name": "砖瓦、石材等建筑材料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3034",
+    "industry_code": "3034",
+    "industry_name": "隔热和隔音材料制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "303",
+    "group_name": "砖瓦、石材等建筑材料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3039",
+    "industry_code": "3039",
+    "industry_name": "其他建筑材料制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "303",
+    "group_name": "砖瓦、石材等建筑材料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3041",
+    "industry_code": "3041",
+    "industry_name": "平板玻璃制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "304",
+    "group_name": "玻璃制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3042",
+    "industry_code": "3042",
+    "industry_name": "特种玻璃制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "304",
+    "group_name": "玻璃制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3049",
+    "industry_code": "3049",
+    "industry_name": "其他玻璃制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "304",
+    "group_name": "玻璃制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3051",
+    "industry_code": "3051",
+    "industry_name": "技术玻璃制品制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "305",
+    "group_name": "玻璃制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3052",
+    "industry_code": "3052",
+    "industry_name": "光学玻璃制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "305",
+    "group_name": "玻璃制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3053",
+    "industry_code": "3053",
+    "industry_name": "玻璃仪器制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "305",
+    "group_name": "玻璃制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3054",
+    "industry_code": "3054",
+    "industry_name": "日用玻璃制品制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "305",
+    "group_name": "玻璃制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3055",
+    "industry_code": "3055",
+    "industry_name": "玻璃包装容器制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "305",
+    "group_name": "玻璃制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3056",
+    "industry_code": "3056",
+    "industry_name": "玻璃保温容器制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "305",
+    "group_name": "玻璃制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3057",
+    "industry_code": "3057",
+    "industry_name": "制镜及类似品加工",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "305",
+    "group_name": "玻璃制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3059",
+    "industry_code": "3059",
+    "industry_name": "其他玻璃制品制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "305",
+    "group_name": "玻璃制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3061",
+    "industry_code": "3061",
+    "industry_name": "玻璃纤维及制品制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "306",
+    "group_name": "玻璃纤维和玻璃纤维增强塑料制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3062",
+    "industry_code": "3062",
+    "industry_name": "玻璃纤维增强塑料制品制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "306",
+    "group_name": "玻璃纤维和玻璃纤维增强塑料制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3071",
+    "industry_code": "3071",
+    "industry_name": "建筑陶瓷制品制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "307",
+    "group_name": "陶瓷制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3072",
+    "industry_code": "3072",
+    "industry_name": "卫生陶瓷制品制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "307",
+    "group_name": "陶瓷制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3073",
+    "industry_code": "3073",
+    "industry_name": "特种陶瓷制品制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "307",
+    "group_name": "陶瓷制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3074",
+    "industry_code": "3074",
+    "industry_name": "日用陶瓷制品制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "307",
+    "group_name": "陶瓷制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3075",
+    "industry_code": "3075",
+    "industry_name": "陈设艺术陶瓷制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "307",
+    "group_name": "陶瓷制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3076",
+    "industry_code": "3076",
+    "industry_name": "园艺陶瓷制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "307",
+    "group_name": "陶瓷制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3079",
+    "industry_code": "3079",
+    "industry_name": "其他陶瓷制品制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "307",
+    "group_name": "陶瓷制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3081",
+    "industry_code": "3081",
+    "industry_name": "石棉制品制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "308",
+    "group_name": "耐火材料制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3082",
+    "industry_code": "3082",
+    "industry_name": "云母制品制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "308",
+    "group_name": "耐火材料制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3089",
+    "industry_code": "3089",
+    "industry_name": "耐火陶瓷制品及其他耐火材料制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "308",
+    "group_name": "耐火材料制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3091",
+    "industry_code": "3091",
+    "industry_name": "石墨及碳素制品制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "309",
+    "group_name": "石墨及其他非金属矿物制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3099",
+    "industry_code": "3099",
+    "industry_name": "其他非金属矿物制品制造",
+    "division_code": "30",
+    "division_name": "非金属矿物制品业",
+    "group_code": "309",
+    "group_name": "石墨及其他非金属矿物制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有破碎、粉磨、筛分、烧成、熔化、窑炉、散装粉料装卸或除尘设施？",
+      "是否为水泥熟料、水泥粉磨、玻璃、陶瓷、砖瓦、石墨或其他非金属矿物制品？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：非金属矿物以粉尘/炉窑/除尘为确认主线，在线监测按重点管理和地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3110",
+    "industry_code": "3110",
+    "industry_name": "炼铁",
+    "division_code": "31",
+    "division_name": "黑色金属冶炼和压延加工业",
+    "group_code": "311",
+    "group_name": "炼铁",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有烧结、球团、炼铁、炼钢、轧钢、酸洗、涂镀或工业炉窑？",
+      "是否产生含重金属粉尘、污泥、废酸或除尘灰？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：黑色金属冶炼专门因子复杂，全部保留NEED_CONFIRM，不新增模板。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3120",
+    "industry_code": "3120",
+    "industry_name": "炼钢",
+    "division_code": "31",
+    "division_name": "黑色金属冶炼和压延加工业",
+    "group_code": "312",
+    "group_name": "炼钢",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有烧结、球团、炼铁、炼钢、轧钢、酸洗、涂镀或工业炉窑？",
+      "是否产生含重金属粉尘、污泥、废酸或除尘灰？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：黑色金属冶炼专门因子复杂，全部保留NEED_CONFIRM，不新增模板。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3130",
+    "industry_code": "3130",
+    "industry_name": "钢压延加工",
+    "division_code": "31",
+    "division_name": "黑色金属冶炼和压延加工业",
+    "group_code": "313",
+    "group_name": "钢压延加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有烧结、球团、炼铁、炼钢、轧钢、酸洗、涂镀或工业炉窑？",
+      "是否产生含重金属粉尘、污泥、废酸或除尘灰？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：黑色金属冶炼专门因子复杂，全部保留NEED_CONFIRM，不新增模板。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3140",
+    "industry_code": "3140",
+    "industry_name": "铁合金冶炼",
+    "division_code": "31",
+    "division_name": "黑色金属冶炼和压延加工业",
+    "group_code": "314",
+    "group_name": "铁合金冶炼",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有烧结、球团、炼铁、炼钢、轧钢、酸洗、涂镀或工业炉窑？",
+      "是否产生含重金属粉尘、污泥、废酸或除尘灰？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：黑色金属冶炼专门因子复杂，全部保留NEED_CONFIRM，不新增模板。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3211",
+    "industry_code": "3211",
+    "industry_name": "铜冶炼",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "321",
+    "group_name": "常用有色金属冶炼",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3212",
+    "industry_code": "3212",
+    "industry_name": "铅锌冶炼",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "321",
+    "group_name": "常用有色金属冶炼",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3213",
+    "industry_code": "3213",
+    "industry_name": "镍钴冶炼",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "321",
+    "group_name": "常用有色金属冶炼",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3214",
+    "industry_code": "3214",
+    "industry_name": "锡冶炼",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "321",
+    "group_name": "常用有色金属冶炼",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3215",
+    "industry_code": "3215",
+    "industry_name": "锑冶炼",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "321",
+    "group_name": "常用有色金属冶炼",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3216",
+    "industry_code": "3216",
+    "industry_name": "铝冶炼",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "321",
+    "group_name": "常用有色金属冶炼",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3217",
+    "industry_code": "3217",
+    "industry_name": "镁冶炼",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "321",
+    "group_name": "常用有色金属冶炼",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3218",
+    "industry_code": "3218",
+    "industry_name": "硅冶炼",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "321",
+    "group_name": "常用有色金属冶炼",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3219",
+    "industry_code": "3219",
+    "industry_name": "其他常用有色金属冶炼",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "321",
+    "group_name": "常用有色金属冶炼",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3221",
+    "industry_code": "3221",
+    "industry_name": "金冶炼",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "322",
+    "group_name": "贵金属冶炼",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3222",
+    "industry_code": "3222",
+    "industry_name": "银冶炼",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "322",
+    "group_name": "贵金属冶炼",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3229",
+    "industry_code": "3229",
+    "industry_name": "其他贵金属冶炼",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "322",
+    "group_name": "贵金属冶炼",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3231",
+    "industry_code": "3231",
+    "industry_name": "钨钼冶炼",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "323",
+    "group_name": "稀有稀土金属冶炼",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3232",
+    "industry_code": "3232",
+    "industry_name": "稀土金属冶炼",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "323",
+    "group_name": "稀有稀土金属冶炼",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3239",
+    "industry_code": "3239",
+    "industry_name": "其他稀有金属冶炼",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "323",
+    "group_name": "稀有稀土金属冶炼",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3240",
+    "industry_code": "3240",
+    "industry_name": "有色金属合金制造",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "324",
+    "group_name": "有色金属合金制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3251",
+    "industry_code": "3251",
+    "industry_name": "铜压延加工",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "325",
+    "group_name": "有色金属压延加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3252",
+    "industry_code": "3252",
+    "industry_name": "铝压延加工",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "325",
+    "group_name": "有色金属压延加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3253",
+    "industry_code": "3253",
+    "industry_name": "贵金属压延加工",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "325",
+    "group_name": "有色金属压延加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3254",
+    "industry_code": "3254",
+    "industry_name": "稀有稀土金属压延加工",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "325",
+    "group_name": "有色金属压延加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3259",
+    "industry_code": "3259",
+    "industry_name": "其他有色金属压延加工",
+    "division_code": "32",
+    "division_name": "有色金属冶炼和压延加工业",
+    "group_code": "325",
+    "group_name": "有色金属压延加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有熔炼、精炼、电解、湿法冶炼、酸碱浸出、表面处理或工业炉窑？",
+      "是否产生含重金属废水、污泥、烟尘或危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：有色金属涉及重金属和湿法/火法工艺，不能靠行业代码定型。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3311",
+    "industry_code": "3311",
+    "industry_name": "金属结构制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "331",
+    "group_name": "结构性金属制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3312",
+    "industry_code": "3312",
+    "industry_name": "金属门窗制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "331",
+    "group_name": "结构性金属制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3321",
+    "industry_code": "3321",
+    "industry_name": "切削工具制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "332",
+    "group_name": "金属工具制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3322",
+    "industry_code": "3322",
+    "industry_name": "手工具制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "332",
+    "group_name": "金属工具制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3323",
+    "industry_code": "3323",
+    "industry_name": "农用及园林用金属工具制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "332",
+    "group_name": "金属工具制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3324",
+    "industry_code": "3324",
+    "industry_name": "刀剪及类似日用金属工具制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "332",
+    "group_name": "金属工具制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3329",
+    "industry_code": "3329",
+    "industry_name": "其他金属工具制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "332",
+    "group_name": "金属工具制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3331",
+    "industry_code": "3331",
+    "industry_name": "集装箱制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "333",
+    "group_name": "集装箱及金属包装容器制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3332",
+    "industry_code": "3332",
+    "industry_name": "金属压力容器制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "333",
+    "group_name": "集装箱及金属包装容器制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3333",
+    "industry_code": "3333",
+    "industry_name": "金属包装容器及材料制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "333",
+    "group_name": "集装箱及金属包装容器制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3340",
+    "industry_code": "3340",
+    "industry_name": "金属丝绳及其制品制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "334",
+    "group_name": "金属丝绳及其制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3351",
+    "industry_code": "3351",
+    "industry_name": "建筑、家具用金属配件制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "335",
+    "group_name": "建筑、安全用金属制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3352",
+    "industry_code": "3352",
+    "industry_name": "建筑装饰及水暖管道零件制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "335",
+    "group_name": "建筑、安全用金属制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3353",
+    "industry_code": "3353",
+    "industry_name": "安全、消防用金属制品制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "335",
+    "group_name": "建筑、安全用金属制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3359",
+    "industry_code": "3359",
+    "industry_name": "其他建筑、安全用金属制品制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "335",
+    "group_name": "建筑、安全用金属制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3360",
+    "industry_code": "3360",
+    "industry_name": "金属表面处理及热处理加工",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "336",
+    "group_name": "金属表面处理及热处理加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3371",
+    "industry_code": "3371",
+    "industry_name": "生产专用搪瓷制品制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "337",
+    "group_name": "搪瓷制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3372",
+    "industry_code": "3372",
+    "industry_name": "建筑装饰搪瓷制品制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "337",
+    "group_name": "搪瓷制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3373",
+    "industry_code": "3373",
+    "industry_name": "搪瓷卫生洁具制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "337",
+    "group_name": "搪瓷制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3379",
+    "industry_code": "3379",
+    "industry_name": "搪瓷日用品及其他搪瓷制品制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "337",
+    "group_name": "搪瓷制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3381",
+    "industry_code": "3381",
+    "industry_name": "金属制厨房用器具制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "338",
+    "group_name": "金属制日用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3382",
+    "industry_code": "3382",
+    "industry_name": "金属制餐具和器皿制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "338",
+    "group_name": "金属制日用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3383",
+    "industry_code": "3383",
+    "industry_name": "金属制卫生器具制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "338",
+    "group_name": "金属制日用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3389",
+    "industry_code": "3389",
+    "industry_name": "其他金属制日用品制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "338",
+    "group_name": "金属制日用品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3391",
+    "industry_code": "3391",
+    "industry_name": "黑色金属铸造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "339",
+    "group_name": "铸造及其他金属制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3392",
+    "industry_code": "3392",
+    "industry_name": "有色金属铸造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "339",
+    "group_name": "铸造及其他金属制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3393",
+    "industry_code": "3393",
+    "industry_name": "锻件及粉末冶金制品制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "339",
+    "group_name": "铸造及其他金属制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3394",
+    "industry_code": "3394",
+    "industry_name": "交通及公共管理用金属标牌制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "339",
+    "group_name": "铸造及其他金属制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  },
+  {
+    "candidate_rule_id": "BATCH3_GB4754_3399",
+    "industry_code": "3399",
+    "industry_name": "其他未列明金属制品制造",
+    "division_code": "33",
+    "division_name": "金属制品业",
+    "group_code": "339",
+    "group_name": "铸造及其他金属制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有铸造、熔化、抛丸、打磨、喷涂、酸洗、磷化、电镀、热浸镀或表面处理？",
+      "是否产生废砂、除尘灰、废酸碱、含重金属污泥或废涂料包装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch3候选：金属制品需把铸造/表面处理/喷涂/酸洗等作为现场确认触发。"
+  }
+]

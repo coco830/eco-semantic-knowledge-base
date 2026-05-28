@@ -1,0 +1,42 @@
+{
+  "combined_candidate_count": 1382,
+  "expected_class_count": 1382,
+  "missing_class_codes": [],
+  "extra_class_codes": [],
+  "duplicate_class_codes": [],
+  "bad_scenario_references": [],
+  "bad_status_codes": [],
+  "missing_required_fields": [],
+  "legacy_duplicate_rows_excluded": [
+    {
+      "industry_code": "2311",
+      "source_file": "batch2_industry_scenario_candidates.csv",
+      "reason": "legacy_cross_batch_duplicate_excluded_from_v0_2_combined"
+    },
+    {
+      "industry_code": "2312",
+      "source_file": "batch2_industry_scenario_candidates.csv",
+      "reason": "legacy_cross_batch_duplicate_excluded_from_v0_2_combined"
+    },
+    {
+      "industry_code": "2319",
+      "source_file": "batch2_industry_scenario_candidates.csv",
+      "reason": "legacy_cross_batch_duplicate_excluded_from_v0_2_combined"
+    },
+    {
+      "industry_code": "2320",
+      "source_file": "batch2_industry_scenario_candidates.csv",
+      "reason": "legacy_cross_batch_duplicate_excluded_from_v0_2_combined"
+    },
+    {
+      "industry_code": "2330",
+      "source_file": "batch2_industry_scenario_candidates.csv",
+      "reason": "legacy_cross_batch_duplicate_excluded_from_v0_2_combined"
+    }
+  ],
+  "permit_type_all_need_confirm": true,
+  "runtime_status_all_candidate_only": true,
+  "runtime_integration": "disabled",
+  "validation_status": "PASS",
+  "errors": []
+}

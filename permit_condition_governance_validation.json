@@ -1,0 +1,42 @@
+{
+  "industry_code_reference_review_count": 193,
+  "threshold_predicate_governance_count": 66,
+  "parallel_material_threshold_inheritance_count": 4,
+  "candidate_code_level_counts": {
+    "class": 181,
+    "group": 12
+  },
+  "code_review_status_counts": {
+    "LIKELY_CLASS_CODE_NEED_SCOPE_CONFIRM": 181,
+    "LIKELY_GROUP_CODE_NEED_SCOPE_CONFIRM": 12
+  },
+  "threshold_metric_counts": {
+    "annual_material_use": 11,
+    "annual_meat_poultry_processing": 1,
+    "annual_output": 12,
+    "annual_processing_capacity": 7,
+    "annual_production_capacity": 2,
+    "annual_rubber_consumption": 1,
+    "annual_slaughter_cattle": 2,
+    "annual_slaughter_pig": 2,
+    "annual_slaughter_poultry": 2,
+    "annual_slaughter_sheep": 2,
+    "bed_count": 3,
+    "boiler_capacity_single_and_total": 4,
+    "boiler_capacity_single_or_total": 2,
+    "business_area": 1,
+    "daily_sugar_processing_capacity": 1,
+    "daily_transfer_capacity": 2,
+    "daily_treatment_capacity": 7,
+    "single_berth_tonnage": 2,
+    "storage_total_capacity": 2
+  },
+  "threshold_governance_status_counts": {
+    "DRAFT_INHERITED_METRIC_NEED_CONFIRM": 4,
+    "DRAFT_RANGE_PREDICATE_NEED_BOUNDARY_CONFIRM": 8,
+    "DRAFT_THRESHOLD_PREDICATE_NEED_SOURCE_CONFIRM": 54
+  },
+  "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+  "validation_status": "PASS",
+  "errors": []
+}

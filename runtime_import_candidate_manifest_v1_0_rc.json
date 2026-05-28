@@ -1,0 +1,14 @@
+{
+  "manifest_id": "runtime_import_candidate_manifest_v1_0_rc",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_integration": "disabled",
+  "import_action": "NONE_DESIGN_ONLY",
+  "candidate_count": 5,
+  "source_files": [
+    "formalization_candidate_queue_v0_8.csv",
+    "review_impact_analysis_v0_9.csv",
+    "candidate_to_runtime_mapping_v1_0_rc.csv"
+  ],
+  "all_candidates_require_second_approval": true,
+  "all_candidates_runtime_status": "NOT_IMPORTED_DESIGN_ONLY"
+}

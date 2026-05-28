@@ -1,0 +1,42 @@
+{
+  "knowledge_base_version": "v0.4-candidate-governance-denoise",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_integration": "disabled",
+  "runtime_promotion_status": "not_approved",
+  "entry_108_strategy": "第108条是“除1-107外的其他行业，涉及通用工序”的兜底交叉引用条目；v0.4不直接展开为条目-小类适用关系，避免被误读为独立行业覆盖。其治理口径由109-112通用工序候选关系承接，并在正式化前作为开放问题确认。",
+  "positioning": "候选知识库自动降噪与规则修复包；不接运行时，不生成正式许可类型或正式检查模板。",
+  "generated_outputs": {
+    "build_knowledge_base_v0_4.py": 1,
+    "validate_knowledge_base_v0_4.py": 1,
+    "all_context_applicability_review_v0_4.csv": 22815,
+    "all_context_applicability_review_v0_4.json": 22815,
+    "all_permit_condition_backfill_v0_4.csv": 336,
+    "all_permit_condition_backfill_v0_4.json": 336,
+    "open_questions_v0_4.csv": 19,
+    "open_questions_v0_4.md": 1,
+    "knowledge_base_manifest_v0_4.json": 1,
+    "knowledge_base_v0_4_gate_report.md": 1,
+    "knowledge_base_v0_4_gate_report.json": 1,
+    "automated_denoise_diff_report_v0_4.md": 1,
+    "risk_acceptance_queue_v0_4.csv": 4,
+    "FINAL_COMPLETION_REPORT_v0_4.md": 1
+  },
+  "carried_forward_candidate_outputs": {
+    "inspection_candidate_recommendations_v0_3.csv": "仍为CANDIDATE_ONLY，本轮未转正式模板。",
+    "scenario_to_score13_mapping_v0_3.csv": "仍为候选语义映射，本轮只新增开放问题和运行时门禁。"
+  },
+  "quality_gates": {
+    "pure_division_context_applies": 0,
+    "not_apply_missing_blocking_flags": 0,
+    "negative_semantics_positivized": 0,
+    "permit_type_policy": "NEED_CONFIRM",
+    "runtime_status_policy": "DRAFT_NOT_FOR_RUNTIME or CANDIDATE_ONLY"
+  },
+  "hard_boundaries": [
+    "不得接 EcoCheck 小程序运行时",
+    "不得生成企业正式 permit_type",
+    "不得生成正式检查模板",
+    "不得自动扣分",
+    "不得伪造 human_review_label / human_reviewer / human_review_notes"
+  ]
+}

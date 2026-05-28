@@ -1,0 +1,8 @@
+﻿question_id,topic,object_type,object_id,issue,impact,source_basis,owner_role,status,recommended_action
+OQ-001,GB4754_CODE_NAME_CONFLICT,industry_rule,GB4754_1512_*,现有样板将1512写为啤酒制造，但本地GB/T 4754-2017注释中1512为白酒制造，啤酒制造为1513。,不能进入正式规则；会导致行业召回和许可条件错误。,2017国民经济行业分类注释.xlsx 行1777/1787,ETO,OPEN,确认是否将啤酒样板代码改为1513，或将现有1512改成白酒制造样板。
+OQ-002,REPRESENTATIVE_SUBCLASS_SCOPE,industry_rule,GB4754_1521_*,1521为碳酸饮料制造，样板名称写饮料制造；若业务意图为152饮料制造，不应由单一小类承载。,RAG召回可能把其他饮料小类漏掉或误归到碳酸饮料。,2017国民经济行业分类注释.xlsx；固定污染源排污许可分类管理名录(2019年版)第22条,ESO/ETO,OPEN,按152中类展开到各四位小类，或明确1521仅作为碳酸饮料样板。
+OQ-003,REPRESENTATIVE_SUBCLASS_SCOPE,industry_rule,GB4754_2211_KEY,2211为木竹浆制造，样板名称写纸浆制造；2019名录第36条按221纸浆制造中类管理。,非木竹浆纸浆小类覆盖范围不清。,2017国民经济行业分类注释.xlsx；固定污染源排污许可分类管理名录(2019年版)第36条,ETO,OPEN,确认用221中类规则下挂所有纸浆小类，还是仅保留2211样板。
+OQ-004,REPRESENTATIVE_SUBCLASS_SCOPE,industry_rule,GB4754_2231_REGISTRATION,2019名录第38条按223纸制品制造中类判断，2231只是代表性小类，且许可类型取决于是否有工业废水或废气。,登记/简化边界不能只靠2231默认确定。,2017国民经济行业分类注释.xlsx；固定污染源排污许可分类管理名录(2019年版)第38条,ESO/ETO,OPEN,补充是否有工业废水/废气确认问题，并按223中类展开候选。
+OQ-005,GENERAL_PROCESS_TRIGGER,industry_rule,GB4754_1371_*,蔬菜加工样板许可类型依赖通用工序，不能仅靠行业代码定KEY/SIMPLIFIED/REGISTRATION。,会把通用工序触发条件误写成行业默认画像。,固定污染源排污许可分类管理名录(2019年版)第15条,ESO/ETO,OPEN,增加锅炉、工业炉窑、表面处理、水处理等通用工序确认问题。
+OQ-006,GENERAL_PROCESS_TRIGGER,industry_rule,GB4754_3311_*,金属结构制造样板许可类型依赖通用工序和喷涂/酸洗/表面处理事实。,会把喷涂、酸洗、抛光、热浸镀等现场事实漏为行业固有属性。,固定污染源排污许可分类管理名录(2019年版)第80条,ESO/ETO,OPEN,按金属加工场景建立确认问题，不直接默认许可类型。
+OQ-007,TEMPLATE_SECTION_CANDIDATES,inspection_recommendation,S18/S19/S20/S21/S22/S23/S24/M18/M19,排查建议中存在当前模板没有的建议章节，且部分语义曾在模板瘦身中移除。,不得直接生成检查模板或接入小程序运行时。,用户确认：知识库v0.1样板，不直接接入运行时。,Product/ETO,OPEN,将这些章节标记为KNOWLEDGE_CANDIDATE_SECTION，只用于知识库建议和未来评审。

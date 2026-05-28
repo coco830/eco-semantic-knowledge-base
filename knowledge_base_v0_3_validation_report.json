@@ -1,0 +1,18 @@
+{
+  "validation_status": "PASS",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "industry_candidate_coverage": "1382/1382",
+  "permit_catalog_entry_coverage": "1-112",
+  "permit_condition_rows": 336,
+  "context_relation_rows": 22815,
+  "context_gate_status_counts": {
+    "APPLIES": 224,
+    "MAY_APPLY": 1756,
+    "NEED_EIA_OR_PERMIT_CONFIRM": 19894,
+    "NOT_APPLY": 941
+  },
+  "inspection_candidate_rows": 22,
+  "failure_count": 0,
+  "errors": [],
+  "failure_samples": []
+}

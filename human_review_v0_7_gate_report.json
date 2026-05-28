@@ -1,0 +1,30 @@
+{
+  "validation_status": "PASS",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_integration": "disabled",
+  "input_counts": {
+    "context_relations": 22815,
+    "permit_conditions": 336,
+    "open_questions": 19,
+    "risk_queue": 9
+  },
+  "review_queue_rows": 22815,
+  "worksheet_rows": 22815,
+  "review_priority_counts": {
+    "P0": 16584,
+    "P1": 6150,
+    "P2": 81
+  },
+  "review_bucket_counts": {
+    "APPLIES_EVIDENCE_REVIEW": 202,
+    "DIVISION_CONTEXT_RECALL_REVIEW": 5751,
+    "EIA_PERMIT_CONFIRMATION": 1,
+    "GENERAL_PROCESS_109_112_REVIEW": 16584,
+    "MAY_APPLY_CONFIRMATION": 196,
+    "NOT_APPLY_EXCLUSION_REVIEW": 81
+  },
+  "human_review_prefill_count": 0,
+  "runtime_effect": "NONE",
+  "failure_count": 0,
+  "validator": "validate_human_review_package_v0_7.py"
+}

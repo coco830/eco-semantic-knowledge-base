@@ -1,0 +1,11 @@
+{
+  "validation_status": "PASS",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "failure_count": 0,
+  "simulated_review_rows": 11,
+  "overlay_rows": 11,
+  "formalization_candidate_rows": 5,
+  "still_blocked_rows": 6,
+  "rag_query_count": 8,
+  "failure_samples": []
+}

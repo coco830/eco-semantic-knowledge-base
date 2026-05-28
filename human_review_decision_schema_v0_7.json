@@ -1,0 +1,122 @@
+{
+  "schema_version": "v0.7",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_integration": "disabled",
+  "editable_fields": [
+    "human_review_label",
+    "human_reviewer",
+    "human_reviewer_role",
+    "reviewed_at",
+    "human_review_notes",
+    "review_basis",
+    "evidence_refs",
+    "decision_confidence"
+  ],
+  "reviewer_roles": [
+    "ESO",
+    "ETO",
+    "DomainOwner",
+    "Product",
+    "TechLead"
+  ],
+  "decision_confidence_values": [
+    "HIGH",
+    "MEDIUM",
+    "LOW",
+    "NEED_CONFIRM"
+  ],
+  "labels": [
+    {
+      "label": "CONFIRM_APPLIES",
+      "requires_human_reviewer": true,
+      "requires_human_review_notes": true,
+      "requires_review_basis": true,
+      "requires_evidence_refs": true,
+      "runtime_effect": "NO_RUNTIME_EFFECT_IN_V0_7"
+    },
+    {
+      "label": "CONFIRM_MAY_APPLY",
+      "requires_human_reviewer": true,
+      "requires_human_review_notes": true,
+      "requires_review_basis": true,
+      "requires_evidence_refs": true,
+      "runtime_effect": "NO_RUNTIME_EFFECT_IN_V0_7"
+    },
+    {
+      "label": "CONFIRM_NOT_APPLY",
+      "requires_human_reviewer": true,
+      "requires_human_review_notes": true,
+      "requires_review_basis": true,
+      "requires_evidence_refs": true,
+      "runtime_effect": "NO_RUNTIME_EFFECT_IN_V0_7"
+    },
+    {
+      "label": "NEED_EIA_CONFIRM",
+      "requires_human_reviewer": true,
+      "requires_human_review_notes": false,
+      "requires_review_basis": true,
+      "requires_evidence_refs": false,
+      "runtime_effect": "NO_RUNTIME_EFFECT_IN_V0_7"
+    },
+    {
+      "label": "NEED_PERMIT_CONFIRM",
+      "requires_human_reviewer": true,
+      "requires_human_review_notes": false,
+      "requires_review_basis": true,
+      "requires_evidence_refs": false,
+      "runtime_effect": "NO_RUNTIME_EFFECT_IN_V0_7"
+    },
+    {
+      "label": "NEED_SITE_CONFIRM",
+      "requires_human_reviewer": true,
+      "requires_human_review_notes": false,
+      "requires_review_basis": true,
+      "requires_evidence_refs": false,
+      "runtime_effect": "NO_RUNTIME_EFFECT_IN_V0_7"
+    },
+    {
+      "label": "REJECT_CANDIDATE",
+      "requires_human_reviewer": true,
+      "requires_human_review_notes": true,
+      "requires_review_basis": true,
+      "requires_evidence_refs": true,
+      "runtime_effect": "NO_RUNTIME_EFFECT_IN_V0_7"
+    },
+    {
+      "label": "MERGE_DUPLICATE",
+      "requires_human_reviewer": true,
+      "requires_human_review_notes": false,
+      "requires_review_basis": true,
+      "requires_evidence_refs": false,
+      "runtime_effect": "NO_RUNTIME_EFFECT_IN_V0_7"
+    },
+    {
+      "label": "NEED_RULE_FIX",
+      "requires_human_reviewer": true,
+      "requires_human_review_notes": true,
+      "requires_review_basis": true,
+      "requires_evidence_refs": true,
+      "runtime_effect": "NO_RUNTIME_EFFECT_IN_V0_7"
+    }
+  ],
+  "formalization_candidate_labels": [
+    "CONFIRM_APPLIES",
+    "CONFIRM_NOT_APPLY",
+    "CONFIRM_MAY_APPLY"
+  ],
+  "blocks_runtime_labels": [
+    "NEED_EIA_CONFIRM",
+    "NEED_PERMIT_CONFIRM",
+    "NEED_SITE_CONFIRM",
+    "REJECT_CANDIDATE",
+    "MERGE_DUPLICATE",
+    "NEED_RULE_FIX"
+  ],
+  "second_approval_required_for": [
+    "runtime_integration",
+    "formal_permit_type",
+    "formal_inspection_template",
+    "auto_deduct",
+    "score13_report_dimension_change"
+  ]
+}

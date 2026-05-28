@@ -1,0 +1,22 @@
+{
+  "validation_status": "PASS",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "failure_count": 0,
+  "node_count": 24720,
+  "edge_count": 165241,
+  "chunk_count": 23225,
+  "eval_count": 5,
+  "node_type_counts": {
+    "ApplicabilityRelation": 22815,
+    "Industry": 1382,
+    "InspectionCandidate": 22,
+    "KnowledgeBaseManifest": 1,
+    "OpenQuestion": 19,
+    "PermitCatalogEntry": 112,
+    "PermitCondition": 336,
+    "RiskAcceptance": 9,
+    "ScenarioTemplate": 11,
+    "Score13Dimension": 13
+  },
+  "failure_samples": []
+}

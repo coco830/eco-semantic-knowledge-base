@@ -1,0 +1,63 @@
+{
+  "high_priority_divisions": [
+    "13",
+    "22",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "44",
+    "46",
+    "77",
+    "84"
+  ],
+  "high_priority_candidate_count": 201,
+  "division_counts": {
+    "13": 24,
+    "22": 7,
+    "25": 10,
+    "26": 38,
+    "27": 9,
+    "28": 11,
+    "29": 16,
+    "30": 37,
+    "44": 10,
+    "46": 4,
+    "77": 15,
+    "84": 20
+  },
+  "direct_match_candidate_counts": {
+    "13": 11,
+    "22": 3,
+    "25": 7,
+    "26": 36,
+    "27": 5,
+    "28": 11,
+    "29": 16,
+    "30": 24,
+    "44": 3,
+    "84": 7
+  },
+  "condition_candidate_counts": {
+    "13": 576,
+    "22": 63,
+    "25": 90,
+    "26": 912,
+    "27": 189,
+    "28": 33,
+    "29": 96,
+    "30": 888,
+    "44": 60,
+    "46": 24,
+    "77": 45,
+    "84": 60
+  },
+  "rows_without_condition_candidates": [],
+  "permit_type_all_need_confirm": true,
+  "runtime_status_all_candidate_only": true,
+  "permit_backfill_runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+  "validation_status": "PASS",
+  "errors": []
+}

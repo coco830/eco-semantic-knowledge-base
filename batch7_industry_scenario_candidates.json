@@ -1,0 +1,2058 @@
+[
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4411",
+    "industry_code": "4411",
+    "industry_name": "火力发电",
+    "division_code": "44",
+    "division_name": "电力、热力生产和供应业",
+    "group_code": "441",
+    "group_name": "电力生产",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否有燃煤/燃气/生物质锅炉、脱硫脱硝除尘、灰渣、冷却水、在线监测或危废暂存？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：电力热力按燃料、机组、锅炉和治理设施确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4412",
+    "industry_code": "4412",
+    "industry_name": "热电联产",
+    "division_code": "44",
+    "division_name": "电力、热力生产和供应业",
+    "group_code": "441",
+    "group_name": "电力生产",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否有燃煤/燃气/生物质锅炉、脱硫脱硝除尘、灰渣、冷却水、在线监测或危废暂存？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：电力热力按燃料、机组、锅炉和治理设施确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4413",
+    "industry_code": "4413",
+    "industry_name": "水力发电",
+    "division_code": "44",
+    "division_name": "电力、热力生产和供应业",
+    "group_code": "441",
+    "group_name": "电力生产",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否有燃煤/燃气/生物质锅炉、脱硫脱硝除尘、灰渣、冷却水、在线监测或危废暂存？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：电力热力按燃料、机组、锅炉和治理设施确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4414",
+    "industry_code": "4414",
+    "industry_name": "核力发电",
+    "division_code": "44",
+    "division_name": "电力、热力生产和供应业",
+    "group_code": "441",
+    "group_name": "电力生产",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否有燃煤/燃气/生物质锅炉、脱硫脱硝除尘、灰渣、冷却水、在线监测或危废暂存？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：电力热力按燃料、机组、锅炉和治理设施确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4415",
+    "industry_code": "4415",
+    "industry_name": "风力发电",
+    "division_code": "44",
+    "division_name": "电力、热力生产和供应业",
+    "group_code": "441",
+    "group_name": "电力生产",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否有燃煤/燃气/生物质锅炉、脱硫脱硝除尘、灰渣、冷却水、在线监测或危废暂存？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：电力热力按燃料、机组、锅炉和治理设施确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4416",
+    "industry_code": "4416",
+    "industry_name": "太阳能发电",
+    "division_code": "44",
+    "division_name": "电力、热力生产和供应业",
+    "group_code": "441",
+    "group_name": "电力生产",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否有燃煤/燃气/生物质锅炉、脱硫脱硝除尘、灰渣、冷却水、在线监测或危废暂存？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：电力热力按燃料、机组、锅炉和治理设施确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4417",
+    "industry_code": "4417",
+    "industry_name": "生物质能发电",
+    "division_code": "44",
+    "division_name": "电力、热力生产和供应业",
+    "group_code": "441",
+    "group_name": "电力生产",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否有燃煤/燃气/生物质锅炉、脱硫脱硝除尘、灰渣、冷却水、在线监测或危废暂存？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：电力热力按燃料、机组、锅炉和治理设施确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4419",
+    "industry_code": "4419",
+    "industry_name": "其他电力生产",
+    "division_code": "44",
+    "division_name": "电力、热力生产和供应业",
+    "group_code": "441",
+    "group_name": "电力生产",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否有燃煤/燃气/生物质锅炉、脱硫脱硝除尘、灰渣、冷却水、在线监测或危废暂存？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：电力热力按燃料、机组、锅炉和治理设施确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4420",
+    "industry_code": "4420",
+    "industry_name": "电力供应",
+    "division_code": "44",
+    "division_name": "电力、热力生产和供应业",
+    "group_code": "442",
+    "group_name": "电力供应",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否有燃煤/燃气/生物质锅炉、脱硫脱硝除尘、灰渣、冷却水、在线监测或危废暂存？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：电力热力按燃料、机组、锅炉和治理设施确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4430",
+    "industry_code": "4430",
+    "industry_name": "热力生产和供应",
+    "division_code": "44",
+    "division_name": "电力、热力生产和供应业",
+    "group_code": "443",
+    "group_name": "热力生产和供应",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否有燃煤/燃气/生物质锅炉、脱硫脱硝除尘、灰渣、冷却水、在线监测或危废暂存？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：电力热力按燃料、机组、锅炉和治理设施确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4511",
+    "industry_code": "4511",
+    "industry_name": "天然气生产和供应业",
+    "division_code": "45",
+    "division_name": "燃气生产和供应业",
+    "group_code": "451",
+    "group_name": "燃气生产和供应业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及燃气制备、储配站、调压站、储罐、加臭剂、泄漏检测或应急设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：燃气生产供应以储配和风险单元确认，现有模板只能近似承载。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4512",
+    "industry_code": "4512",
+    "industry_name": "液化石油气生产和供应业",
+    "division_code": "45",
+    "division_name": "燃气生产和供应业",
+    "group_code": "451",
+    "group_name": "燃气生产和供应业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及燃气制备、储配站、调压站、储罐、加臭剂、泄漏检测或应急设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：燃气生产供应以储配和风险单元确认，现有模板只能近似承载。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4513",
+    "industry_code": "4513",
+    "industry_name": "煤气生产和供应业",
+    "division_code": "45",
+    "division_name": "燃气生产和供应业",
+    "group_code": "451",
+    "group_name": "燃气生产和供应业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及燃气制备、储配站、调压站、储罐、加臭剂、泄漏检测或应急设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：燃气生产供应以储配和风险单元确认，现有模板只能近似承载。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4520",
+    "industry_code": "4520",
+    "industry_name": "生物质燃气生产和供应业",
+    "division_code": "45",
+    "division_name": "燃气生产和供应业",
+    "group_code": "452",
+    "group_name": "生物质燃气生产和供应业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及燃气制备、储配站、调压站、储罐、加臭剂、泄漏检测或应急设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：燃气生产供应以储配和风险单元确认，现有模板只能近似承载。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4610",
+    "industry_code": "4610",
+    "industry_name": "自来水生产和供应",
+    "division_code": "46",
+    "division_name": "水的生产和供应业",
+    "group_code": "461",
+    "group_name": "自来水生产和供应",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为自来水、污水处理、再生水、海水淡化或其他水处理设施？污泥、药剂和在线监测如何管理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：水生产供应尤其污水处理需按设施类型、规模和许可条件确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4620",
+    "industry_code": "4620",
+    "industry_name": "污水处理及其再生利用",
+    "division_code": "46",
+    "division_name": "水的生产和供应业",
+    "group_code": "462",
+    "group_name": "污水处理及其再生利用",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为自来水、污水处理、再生水、海水淡化或其他水处理设施？污泥、药剂和在线监测如何管理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：水生产供应尤其污水处理需按设施类型、规模和许可条件确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4630",
+    "industry_code": "4630",
+    "industry_name": "海水淡化处理",
+    "division_code": "46",
+    "division_name": "水的生产和供应业",
+    "group_code": "463",
+    "group_name": "海水淡化处理",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为自来水、污水处理、再生水、海水淡化或其他水处理设施？污泥、药剂和在线监测如何管理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：水生产供应尤其污水处理需按设施类型、规模和许可条件确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4690",
+    "industry_code": "4690",
+    "industry_name": "其他水的处理、利用与分配",
+    "division_code": "46",
+    "division_name": "水的生产和供应业",
+    "group_code": "469",
+    "group_name": "其他水的处理、利用与分配",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为自来水、污水处理、再生水、海水淡化或其他水处理设施？污泥、药剂和在线监测如何管理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：水生产供应尤其污水处理需按设施类型、规模和许可条件确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4710",
+    "industry_code": "4710",
+    "industry_name": "住宅房屋建筑",
+    "division_code": "47",
+    "division_name": "房屋建筑业",
+    "group_code": "471",
+    "group_name": "住宅房屋建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4720",
+    "industry_code": "4720",
+    "industry_name": "体育场馆建筑",
+    "division_code": "47",
+    "division_name": "房屋建筑业",
+    "group_code": "472",
+    "group_name": "体育场馆建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4790",
+    "industry_code": "4790",
+    "industry_name": "其他房屋建筑业",
+    "division_code": "47",
+    "division_name": "房屋建筑业",
+    "group_code": "479",
+    "group_name": "其他房屋建筑业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4811",
+    "industry_code": "4811",
+    "industry_name": "铁路工程建筑",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "481",
+    "group_name": "铁路、道路、隧道和桥梁工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4812",
+    "industry_code": "4812",
+    "industry_name": "公路工程建筑",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "481",
+    "group_name": "铁路、道路、隧道和桥梁工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4813",
+    "industry_code": "4813",
+    "industry_name": "市政道路工程建筑",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "481",
+    "group_name": "铁路、道路、隧道和桥梁工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4814",
+    "industry_code": "4814",
+    "industry_name": "城市轨道交通工程建筑",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "481",
+    "group_name": "铁路、道路、隧道和桥梁工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4819",
+    "industry_code": "4819",
+    "industry_name": "其他道路、隧道和桥梁工程建筑",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "481",
+    "group_name": "铁路、道路、隧道和桥梁工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4821",
+    "industry_code": "4821",
+    "industry_name": "水源及供水设施工程建筑",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "482",
+    "group_name": "水利和水运工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4822",
+    "industry_code": "4822",
+    "industry_name": "河湖治理及防洪设施工程建筑",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "482",
+    "group_name": "水利和水运工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4823",
+    "industry_code": "4823",
+    "industry_name": "港口及航运设施工程建筑",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "482",
+    "group_name": "水利和水运工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4831",
+    "industry_code": "4831",
+    "industry_name": "海洋油气资源开发利用工程建筑",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "483",
+    "group_name": "海洋工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4832",
+    "industry_code": "4832",
+    "industry_name": "海洋能源开发利用工程建筑",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "483",
+    "group_name": "海洋工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4833",
+    "industry_code": "4833",
+    "industry_name": "海底隧道工程建筑",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "483",
+    "group_name": "海洋工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4834",
+    "industry_code": "4834",
+    "industry_name": "海底设施铺设工程建筑",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "483",
+    "group_name": "海洋工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4839",
+    "industry_code": "4839",
+    "industry_name": "其他海洋工程建筑",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "483",
+    "group_name": "海洋工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4840",
+    "industry_code": "4840",
+    "industry_name": "工矿工程建筑",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "484",
+    "group_name": "工矿工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4851",
+    "industry_code": "4851",
+    "industry_name": "架线及设备工程建筑",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "485",
+    "group_name": "架线和管道工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4852",
+    "industry_code": "4852",
+    "industry_name": "管道工程建筑",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "485",
+    "group_name": "架线和管道工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4853",
+    "industry_code": "4853",
+    "industry_name": "地下综合管廊工程建筑",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "485",
+    "group_name": "架线和管道工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4861",
+    "industry_code": "4861",
+    "industry_name": "节能工程施工",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "486",
+    "group_name": "节能环保工程施工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4862",
+    "industry_code": "4862",
+    "industry_name": "环保工程施工",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "486",
+    "group_name": "节能环保工程施工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4863",
+    "industry_code": "4863",
+    "industry_name": "生态保护工程施工",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "486",
+    "group_name": "节能环保工程施工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4871",
+    "industry_code": "4871",
+    "industry_name": "火力发电工程施工",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "487",
+    "group_name": "电力工程施工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4872",
+    "industry_code": "4872",
+    "industry_name": "水力发电工程施工",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "487",
+    "group_name": "电力工程施工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4873",
+    "industry_code": "4873",
+    "industry_name": "核电工程施工",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "487",
+    "group_name": "电力工程施工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4874",
+    "industry_code": "4874",
+    "industry_name": "风能发电工程施工",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "487",
+    "group_name": "电力工程施工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4875",
+    "industry_code": "4875",
+    "industry_name": "太阳能发电工程施工",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "487",
+    "group_name": "电力工程施工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4879",
+    "industry_code": "4879",
+    "industry_name": "其他电力工程施工",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "487",
+    "group_name": "电力工程施工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4891",
+    "industry_code": "4891",
+    "industry_name": "园林绿化工程施工",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "489",
+    "group_name": "其他土木工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4892",
+    "industry_code": "4892",
+    "industry_name": "体育场地设施工程施工",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "489",
+    "group_name": "其他土木工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4893",
+    "industry_code": "4893",
+    "industry_name": "游乐设施工程施工",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "489",
+    "group_name": "其他土木工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4899",
+    "industry_code": "4899",
+    "industry_name": "其他土木工程建筑施工",
+    "division_code": "48",
+    "division_name": "土木工程建筑业",
+    "group_code": "489",
+    "group_name": "其他土木工程建筑",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4910",
+    "industry_code": "4910",
+    "industry_name": "电气安装",
+    "division_code": "49",
+    "division_name": "建筑安装业",
+    "group_code": "491",
+    "group_name": "电气安装",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4920",
+    "industry_code": "4920",
+    "industry_name": "管道和设备安装",
+    "division_code": "49",
+    "division_name": "建筑安装业",
+    "group_code": "492",
+    "group_name": "管道和设备安装",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4991",
+    "industry_code": "4991",
+    "industry_name": "体育场地设施安装",
+    "division_code": "49",
+    "division_name": "建筑安装业",
+    "group_code": "499",
+    "group_name": "其他建筑安装业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_4999",
+    "industry_code": "4999",
+    "industry_name": "其他建筑安装",
+    "division_code": "49",
+    "division_name": "建筑安装业",
+    "group_code": "499",
+    "group_name": "其他建筑安装业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_5011",
+    "industry_code": "5011",
+    "industry_name": "公共建筑装饰和装修",
+    "division_code": "50",
+    "division_name": "建筑装饰、装修和其他建筑业",
+    "group_code": "501",
+    "group_name": "建筑装饰和装修业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_5012",
+    "industry_code": "5012",
+    "industry_name": "住宅装饰和装修",
+    "division_code": "50",
+    "division_name": "建筑装饰、装修和其他建筑业",
+    "group_code": "501",
+    "group_name": "建筑装饰和装修业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_5013",
+    "industry_code": "5013",
+    "industry_name": "建筑幕墙装饰和装修",
+    "division_code": "50",
+    "division_name": "建筑装饰、装修和其他建筑业",
+    "group_code": "501",
+    "group_name": "建筑装饰和装修业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_5021",
+    "industry_code": "5021",
+    "industry_name": "建筑物拆除活动",
+    "division_code": "50",
+    "division_name": "建筑装饰、装修和其他建筑业",
+    "group_code": "502",
+    "group_name": "建筑物拆除和场地准备活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_5022",
+    "industry_code": "5022",
+    "industry_name": "场地准备活动",
+    "division_code": "50",
+    "division_name": "建筑装饰、装修和其他建筑业",
+    "group_code": "502",
+    "group_name": "建筑物拆除和场地准备活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_5030",
+    "industry_code": "5030",
+    "industry_name": "提供施工设备服务",
+    "division_code": "50",
+    "division_name": "建筑装饰、装修和其他建筑业",
+    "group_code": "503",
+    "group_name": "提供施工设备服务",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  },
+  {
+    "candidate_rule_id": "BATCH7_GB4754_5090",
+    "industry_code": "5090",
+    "industry_name": "其他未列明建筑业",
+    "division_code": "50",
+    "division_name": "建筑装饰、装修和其他建筑业",
+    "group_code": "509",
+    "group_name": "其他未列明建筑业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否为临时施工项目、固定预制/拌合场、装修喷涂、建筑垃圾堆场、洗车废水或扬尘治理？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch7候选：建筑业多为项目制或临时源，不能直接当固定污染源正式规则。"
+  }
+]

@@ -1,0 +1,5 @@
+﻿risk_id,risk_topic,risk_description,owner_role,acceptance_needed_before,runtime_status
+RISK-V04-001,entry108_strategy,第108条是“除1-107外的其他行业，涉及通用工序”的兜底交叉引用条目；v0.4不直接展开为条目-小类适用关系，避免被误读为独立行业覆盖。其治理口径由109-112通用工序候选关系承接，并在正式化前作为开放问题确认。,ETO,runtime_promotion,DRAFT_NOT_FOR_RUNTIME
+RISK-V04-002,general_process_pseudo_code,109-112通用工序没有GB四位小类代码，正式化前需定义伪编码/工序节点图谱策略。,ETO+KnowledgeGraph,graph_or_runtime_import,DRAFT_NOT_FOR_RUNTIME
+RISK-V04-003,human_review_empty,human_review_label/human_reviewer保持全空，表示待人工审阅而非已审结论。,ESO+ETO,formal_rule_promotion,DRAFT_NOT_FOR_RUNTIME
+RISK-V04-004,score13_secondary_semantics,S01-S13不改报告口径，二级语义层进入RAG/图谱前需产品和ETO确认。,Product+ETO,rag_graph_schema_freeze,DRAFT_NOT_FOR_RUNTIME

@@ -1,0 +1,8 @@
+{
+  "validation_status": "PASS",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "failure_count": 0,
+  "context_relation_rows": 22815,
+  "risk_acceptance_rows": 9,
+  "failure_samples": []
+}

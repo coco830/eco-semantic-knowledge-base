@@ -1,0 +1,14 @@
+{
+  "review_row_count": 408,
+  "sample_industry_count": 35,
+  "label_counts": {
+    "APPLIES": 49,
+    "MAY_APPLY": 18,
+    "NEED_EIA_OR_PERMIT_CONFIRM": 165,
+    "NOT_APPLY": 176
+  },
+  "context_applies_count": 0,
+  "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+  "validation_status": "PASS",
+  "errors": []
+}

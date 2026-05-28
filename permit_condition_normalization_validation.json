@@ -1,0 +1,26 @@
+{
+  "entry_count": 112,
+  "condition_row_count": 336,
+  "missing_entry_nos": [],
+  "condition_status_counts": {
+    "APPLIES_IF_CONDITION_MET": 187,
+    "NOT_APPLICABLE_IN_CATALOG": 53,
+    "ELSE_CONDITION": 96
+  },
+  "audit_flag_counts": {
+    "need_human_normalization": 22,
+    "catalog_cell_slash_not_applicable": 53,
+    "requires_general_process_cross_reference_109_112": 61,
+    "else_condition_requires_peer_condition_exclusion": 96,
+    "asterisk_footnote_requires_industrial_building_condition": 43,
+    "condition_contains_industry_code_candidate_review_needed": 72,
+    "requires_external_key_pollutant_unit_list": 20
+  },
+  "numeric_token_class_counts": {
+    "industry_code_reference_candidate": 193,
+    "threshold_or_capacity_number": 90
+  },
+  "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+  "validation_status": "PASS",
+  "errors": []
+}
