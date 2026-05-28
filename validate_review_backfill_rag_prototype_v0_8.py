@@ -106,7 +106,11 @@ def main():
         fail(failures, "human_review_overlay_v0_8.csv", "duplicate_overlay_id")
     for row in overlay:
         oid = row["overlay_id"]
-        if row.get("final_state") != FINAL_STATE or row.get("runtime_status") != "DRAFT_NOT_FOR_RUNTIME":
+        if (
+            row.get("final_state") != FINAL_STATE
+            or row.get("runtime_status") != "DRAFT_NOT_FOR_RUNTIME"
+            or row.get("runtime_integration") != RUNTIME_INTEGRATION
+        ):
             fail(failures, "human_review_overlay_v0_8.csv", "bad_boundary", oid)
         if row.get("runtime_effect") != "NO_RUNTIME_EFFECT" or row.get("requires_second_approval") != "true":
             fail(failures, "human_review_overlay_v0_8.csv", "bad_runtime_effect", oid)
@@ -114,6 +118,13 @@ def main():
             fail(failures, "human_review_overlay_v0_8.csv", "confirm_not_formalization_candidate", oid)
         if row["human_review_label"] not in CONFIRM_LABELS and row["overlay_status"] != "BLOCKS_RUNTIME":
             fail(failures, "human_review_overlay_v0_8.csv", "non_confirm_not_blocked", oid)
+
+    for row in formalization:
+        oid = row["overlay_id"]
+        if row.get("runtime_integration") != RUNTIME_INTEGRATION or row.get("runtime_effect") != "NO_RUNTIME_EFFECT":
+            fail(failures, "formalization_candidate_queue_v0_8.csv", "bad_formalization_runtime_boundary", oid)
+        if row.get("requires_second_approval") != "true":
+            fail(failures, "formalization_candidate_queue_v0_8.csv", "missing_second_approval", oid)
 
     chunk_ids = {c["chunk_id"] for c in read_jsonl(ROOT / "rag_chunks_v0_5.jsonl")}
     forbidden = ["已接入运行时", "自动扣分", "正式模板已生成", "正式适用"]

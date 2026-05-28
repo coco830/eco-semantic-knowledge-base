@@ -12,6 +12,10 @@ runtime_integration: `disabled`
 - `PROJECT_INDEX_v1_0_rc.md`: 本索引。
 - `HANDOFF_v1_0_rc.md`: 后续人审、RAG demo、运行时接入分支交接说明。
 - `DEPRECATED_AND_REMOVED_FILES_v1_0_rc.md`: 已移出当前主线的历史入口说明。
+- `open_questions_review_guide_v1_0_rc.md`: 19个开放问题的可分派审阅指南。
+- `open_questions_review_matrix_v1_0_rc.csv`: 19个开放问题的分派矩阵。
+- `eto_eso_open_question_decisions_v1_0_rc.md/csv`: ETO/ESO初步审阅决策记录，仍不解除运行时阻断。
+- `process_evidence_schema_v1_1.md`: v1.1 工序/工艺证据层候选 schema，把环评、批复、许可、台账和现场事实转成企业画像 overlay。
 
 ## 核心数据入口
 
@@ -21,7 +25,37 @@ runtime_integration: `disabled`
 - `scenario_to_score13_mapping_v0_3.csv`: 场景到 EcoCheck S01-S13 的候选语义映射。
 - `inspection_candidate_recommendations_v0_3.csv`: 候选排查建议，不能直接生成正式检查模板。
 - `open_questions_v0_4_1.csv`: 高风险开放问题。
+- `open_questions_review_guide_v1_0_rc.md`: 把开放问题拆成“问谁、问什么、查什么、怎么关闭”。
+- `eto_eso_open_question_decisions_v1_0_rc.md/csv`: 已收到的ETO/ESO初步判定，作为后续v1.1治理修复输入。
 - `risk_acceptance_queue_v0_4_1.csv`: 运行时阻断风险队列。
+
+## v1.1 工序/工艺证据层入口
+
+v1.1 不是运行时接入包。它用于表达“行业代码/许可名录只是召回入口，企业画像需要由环评、批复、排污许可、台账和现场事实中的工序证据进一步确认”。
+
+- `process_trigger_dictionary_v1_1.csv/json`: 10 类工序触发词典，含正向/否定关键词、证据要求、拍照要点。
+- `process_to_scenario_activation_v1_1.csv/json`: 工序到产污场景模板的候选激活关系。
+- `process_evidence_predicates_samples_v1_1.csv/json`: 环评/现场证据谓词样例，区分确认、否定、弱证据和新增场景候选。
+- `enterprise_profile_overlay_samples_v1_1.csv/json`: 企业画像 overlay 样例，全部要求许可/现场二次确认。
+- `process_graph_rag_design_v1_1.md/json`: 工序证据层进入图谱和 RAG 的设计。
+- `process_evidence_gate_report_v1_1.md/json`: v1.1 门禁报告。
+- `knowledge_base_manifest_v1_1.json`: v1.1 manifest。
+- `FINAL_COMPLETION_REPORT_v1_1.md`: v1.1 完成报告。
+
+## v1.2-v1.7 候选治理链入口
+
+这组产物按建议 1-6 继续推进，但仍然只属于候选知识库治理层。
+
+- `eia_permit_extraction_samples_v1_2.csv/json`: 5 个脱敏环评/许可文本抽取样例。
+- `eia_permit_extracted_predicates_v1_2.csv/json`: 文本到工序/场景谓词的候选抽取结果。
+- `process_scenario_activation_rules_v1_3.csv/json`: 12 条工序证据到产污场景的激活/否定规则。
+- `open_question_decision_overlay_v1_4.csv/json`: 19 个 open questions 的 ETO/ESO 初步决策 overlay，不关闭运行时门禁。
+- `human_review_slices_v1_5.csv/json`: 7 个 ETO/ESO 审阅专题切片。
+- `retrieval_eval_set_v1_6.jsonl`: 12 条 RAG/图谱检索质量评测项，覆盖工序证据、否定作用域、13维、证据链、运行时边界。
+- `runtime_readiness_matrix_v1_7.csv/json`: 未来接入前差距矩阵。
+- `runtime_readiness_gap_report_v1_7.md/json`: 运行时接入差距报告。
+- `knowledge_base_manifest_v1_2_to_v1_7.json`: v1.2-v1.7 manifest。
+- `FINAL_COMPLETION_REPORT_v1_2_to_v1_7.md`: v1.2-v1.7 完成报告。
 
 ## 审阅与回灌入口
 
@@ -71,6 +105,11 @@ python build_review_impact_graph_v0_9.py
 python validate_review_impact_graph_v0_9.py
 python build_runtime_design_package_v1_0_rc.py
 python validate_runtime_design_package_v1_0_rc.py
+python validate_runtime_preintegration_contracts_v1_0_rc.py
+python build_process_evidence_package_v1_1.py
+python validate_process_evidence_package_v1_1.py
+python build_semantic_governance_roadmap_v1_2_to_v1_7.py
+python validate_semantic_governance_roadmap_v1_2_to_v1_7.py
 ```
 
 注意：大 JSONL 构建和验证不要并行跑，必须先 build 完成再 validate。

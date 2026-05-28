@@ -1,0 +1,14 @@
+{
+  "version": "v1.7-runtime-readiness-gap-report",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_integration": "disabled",
+  "summary": "The knowledge base is ready for internal candidate retrieval, graph demo, and human review, but not for EcoCheck runtime.",
+  "runtime_blockers": [
+    "human_review_not_completed",
+    "open_questions_not_closed",
+    "second_approval_not_signed",
+    "runtime_contract_tests_not_implemented",
+    "rollback_manifest_not_frozen",
+    "security_audit_log_not_deployed"
+  ]
+}

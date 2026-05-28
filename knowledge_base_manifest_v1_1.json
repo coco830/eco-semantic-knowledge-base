@@ -1,0 +1,20 @@
+{
+  "knowledge_base_version": "v1.1-process-evidence-candidate-layer",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_integration": "disabled",
+  "runtime_effect": "NONE",
+  "process_trigger_rows": 10,
+  "activation_rows": 34,
+  "sample_evidence_rows": 6,
+  "overlay_rows": 16,
+  "outputs": [
+    "process_evidence_schema_v1_1.md",
+    "process_trigger_dictionary_v1_1.csv/json",
+    "process_to_scenario_activation_v1_1.csv/json",
+    "process_evidence_predicates_samples_v1_1.csv/json",
+    "enterprise_profile_overlay_samples_v1_1.csv/json",
+    "process_graph_rag_design_v1_1.md/json",
+    "process_evidence_gate_report_v1_1.md/json",
+    "FINAL_COMPLETION_REPORT_v1_1.md"
+  ]
+}

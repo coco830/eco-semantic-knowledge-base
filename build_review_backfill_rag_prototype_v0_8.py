@@ -219,6 +219,7 @@ def build_overlay(queue_by_id, schema):
             "simulation_only": "true",
             "final_state": FINAL_STATE,
             "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+            "runtime_integration": RUNTIME_INTEGRATION,
         }
         simulated_rows.append(simulated)
         overlay_status = "FORMALIZATION_CANDIDATE" if item["human_review_label"].startswith("CONFIRM") else "BLOCKS_RUNTIME"
@@ -242,6 +243,7 @@ def build_overlay(queue_by_id, schema):
             "source_basis": "simulated_human_review_input_v0_8.csv; human_review_queue_v0_7.csv",
             "final_state": FINAL_STATE,
             "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+            "runtime_integration": RUNTIME_INTEGRATION,
         }
         overlay_rows.append(overlay)
         diff_rows.append({
@@ -252,6 +254,7 @@ def build_overlay(queue_by_id, schema):
             "diff_reason": item["human_review_notes"],
             "runtime_effect": "NONE",
             "final_state": FINAL_STATE,
+            "runtime_integration": RUNTIME_INTEGRATION,
         })
     return simulated_rows, overlay_rows, diff_rows
 
