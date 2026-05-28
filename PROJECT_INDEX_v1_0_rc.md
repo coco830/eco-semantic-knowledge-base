@@ -15,6 +15,7 @@ runtime_integration: `disabled`
 - `open_questions_review_guide_v1_0_rc.md`: 19个开放问题的可分派审阅指南。
 - `open_questions_review_matrix_v1_0_rc.csv`: 19个开放问题的分派矩阵。
 - `eto_eso_open_question_decisions_v1_0_rc.md/csv`: ETO/ESO初步审阅决策记录，仍不解除运行时阻断。
+- `process_evidence_schema_v1_1.md`: v1.1 工序/工艺证据层候选 schema，把环评、批复、许可、台账和现场事实转成企业画像 overlay。
 
 ## 核心数据入口
 
@@ -27,6 +28,19 @@ runtime_integration: `disabled`
 - `open_questions_review_guide_v1_0_rc.md`: 把开放问题拆成“问谁、问什么、查什么、怎么关闭”。
 - `eto_eso_open_question_decisions_v1_0_rc.md/csv`: 已收到的ETO/ESO初步判定，作为后续v1.1治理修复输入。
 - `risk_acceptance_queue_v0_4_1.csv`: 运行时阻断风险队列。
+
+## v1.1 工序/工艺证据层入口
+
+v1.1 不是运行时接入包。它用于表达“行业代码/许可名录只是召回入口，企业画像需要由环评、批复、排污许可、台账和现场事实中的工序证据进一步确认”。
+
+- `process_trigger_dictionary_v1_1.csv/json`: 10 类工序触发词典，含正向/否定关键词、证据要求、拍照要点。
+- `process_to_scenario_activation_v1_1.csv/json`: 工序到产污场景模板的候选激活关系。
+- `process_evidence_predicates_samples_v1_1.csv/json`: 环评/现场证据谓词样例，区分确认、否定、弱证据和新增场景候选。
+- `enterprise_profile_overlay_samples_v1_1.csv/json`: 企业画像 overlay 样例，全部要求许可/现场二次确认。
+- `process_graph_rag_design_v1_1.md/json`: 工序证据层进入图谱和 RAG 的设计。
+- `process_evidence_gate_report_v1_1.md/json`: v1.1 门禁报告。
+- `knowledge_base_manifest_v1_1.json`: v1.1 manifest。
+- `FINAL_COMPLETION_REPORT_v1_1.md`: v1.1 完成报告。
 
 ## 审阅与回灌入口
 
@@ -76,6 +90,8 @@ python build_review_impact_graph_v0_9.py
 python validate_review_impact_graph_v0_9.py
 python build_runtime_design_package_v1_0_rc.py
 python validate_runtime_design_package_v1_0_rc.py
+python build_process_evidence_package_v1_1.py
+python validate_process_evidence_package_v1_1.py
 ```
 
 注意：大 JSONL 构建和验证不要并行跑，必须先 build 完成再 validate。

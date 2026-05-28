@@ -8,6 +8,8 @@
 - `HANDOFF_v1_0_rc.md`: 后续人工审阅、RAG demo、图谱 demo、运行时接入前置条件。
 - `open_questions_review_guide_v1_0_rc.md`: 19 个开放问题的分派审阅指南。
 - `eto_eso_open_question_decisions_v1_0_rc.md`: ETO/ESO 初步审阅决策记录，仍保持运行时阻断。
+- `process_evidence_schema_v1_1.md`: 工序/工艺证据层候选 schema，用于把环评和现场事实转成企业画像 overlay。
+- `FINAL_COMPLETION_REPORT_v1_1.md`: v1.1 工序/工艺证据层候选包完成报告。
 - `FINAL_COMPLETION_REPORT_v1_0_rc.md`: v1.0-rc 完成报告。
 
 硬边界：
