@@ -1,6 +1,7 @@
 import csv
 import json
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -102,15 +103,15 @@ def edge(edge_type, edge_id, from_id, to_id, props, source_basis, open_refs=None
 
 
 def main():
-    overlays = read_json(ROOT / "human_review_overlay_v0_8.json")
-    relations = {r["candidate_relation_id"]: r for r in read_csv(ROOT / "all_context_applicability_review_v0_4_1.csv")}
-    scenarios = {s["scenario_id"]: s for s in read_json(ROOT / "scenario_templates.json")}
-    score_map = {r["scenario_id"]: r for r in read_csv(ROOT / "scenario_to_score13_mapping_v0_3.csv")}
-    inspections = read_csv(ROOT / "inspection_candidate_recommendations_v0_3.csv")
+    overlays = read_json(artifact_path("human_review_overlay_v0_8.json"))
+    relations = {r["candidate_relation_id"]: r for r in read_csv(artifact_path("all_context_applicability_review_v0_4_1.csv"))}
+    scenarios = {s["scenario_id"]: s for s in read_json(artifact_path("scenario_templates.json"))}
+    score_map = {r["scenario_id"]: r for r in read_csv(artifact_path("scenario_to_score13_mapping_v0_3.csv"))}
+    inspections = read_csv(artifact_path("inspection_candidate_recommendations_v0_3.csv"))
     inspections_by_scenario = {}
     for row in inspections:
         inspections_by_scenario.setdefault(row["scenario_id"], []).append(row)
-    rag_results = read_jsonl(ROOT / "rag_prototype_results_v0_8.jsonl")
+    rag_results = read_jsonl(artifact_path("rag_prototype_results_v0_8.jsonl"))
     rag_by_relation = {}
     for row in rag_results:
         for ref in row.get("source_node_refs", []):
@@ -268,19 +269,19 @@ flowchart LR
 ```
 """
 
-    write_csv(ROOT / "review_impact_analysis_v0_9.csv", impact_rows)
-    write_json(ROOT / "review_impact_analysis_v0_9.json", impact_rows)
-    write_jsonl(ROOT / "review_impact_graph_edges_v0_9.jsonl", impact_edges)
-    write_json(ROOT / "graph_query_playbook_v0_9.json", playbook)
-    (ROOT / "graph_query_playbook_v0_9.md").write_text(
+    write_csv(artifact_path("review_impact_analysis_v0_9.csv"), impact_rows)
+    write_json(artifact_path("review_impact_analysis_v0_9.json"), impact_rows)
+    write_jsonl(artifact_path("review_impact_graph_edges_v0_9.jsonl"), impact_edges)
+    write_json(artifact_path("graph_query_playbook_v0_9.json"), playbook)
+    (artifact_path("graph_query_playbook_v0_9.md")).write_text(
         "# graph_query_playbook_v0_9\n\n"
         f"final_state: `{FINAL_STATE}`\n\n"
         + "\n".join(f"- `{q['query_id']}` {q['name']}: {' -> '.join(q['path'])}" for q in playbook["query_patterns"])
         + "\n",
         encoding="utf-8",
     )
-    (ROOT / "graph_visualization_samples_v0_9.md").write_text(mermaid, encoding="utf-8")
-    write_json(ROOT / "graph_visualization_samples_v0_9.json", {
+    (artifact_path("graph_visualization_samples_v0_9.md")).write_text(mermaid, encoding="utf-8")
+    write_json(artifact_path("graph_visualization_samples_v0_9.json"), {
         "final_state": FINAL_STATE,
         "runtime_integration": RUNTIME_INTEGRATION,
         "samples": ["3012_registration_not_apply", "0111_general_process_site_confirm", "4620_may_apply_second_approval", "entry108_strategy"],
@@ -298,8 +299,8 @@ flowchart LR
         },
         "runtime_effect": "NONE",
     }
-    write_json(ROOT / "knowledge_base_manifest_v0_9.json", manifest)
-    (ROOT / "FINAL_COMPLETION_REPORT_v0_9.md").write_text(
+    write_json(artifact_path("knowledge_base_manifest_v0_9.json"), manifest)
+    (artifact_path("FINAL_COMPLETION_REPORT_v0_9.md")).write_text(
         "# FINAL COMPLETION REPORT v0.9\n\n"
         f"最终状态：`{FINAL_STATE}`\n\n"
         "v0.9 已生成图谱查询/可视化样例与审阅影响传播分析，未接 EcoCheck runtime。\n\n"

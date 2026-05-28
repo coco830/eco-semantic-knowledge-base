@@ -1,6 +1,7 @@
 import csv
 import json
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -62,22 +63,22 @@ def main():
         "FINAL_COMPLETION_REPORT_v0_8.md",
     ]
     for name in required:
-        if not (ROOT / name).exists():
+        if not (artifact_path(name)).exists():
             fail(failures, name, "missing_required_output")
 
-    v07_worksheet = read_csv(ROOT / "human_review_worksheet_v0_7.csv")
+    v07_worksheet = read_csv(artifact_path("human_review_worksheet_v0_7.csv"))
     if any(r.get("human_review_label") or r.get("human_reviewer") or r.get("reviewed_at") for r in v07_worksheet):
         fail(failures, "human_review_worksheet_v0_7.csv", "source_worksheet_was_modified")
 
-    simulated = read_csv(ROOT / "simulated_human_review_input_v0_8.csv")
-    overlay = read_csv(ROOT / "human_review_overlay_v0_8.csv")
-    formalization = read_csv(ROOT / "formalization_candidate_queue_v0_8.csv")
-    blocked = read_csv(ROOT / "still_blocked_queue_v0_8.csv")
-    rag_queries = read_jsonl(ROOT / "rag_prototype_queries_v0_8.jsonl")
-    rag_results = read_jsonl(ROOT / "rag_prototype_results_v0_8.jsonl")
-    rag_eval = read_json(ROOT / "rag_prototype_eval_report_v0_8.json")
-    backfill_validation = read_json(ROOT / "human_review_backfill_validation_v0_8.json")
-    manifest = read_json(ROOT / "knowledge_base_manifest_v0_8.json")
+    simulated = read_csv(artifact_path("simulated_human_review_input_v0_8.csv"))
+    overlay = read_csv(artifact_path("human_review_overlay_v0_8.csv"))
+    formalization = read_csv(artifact_path("formalization_candidate_queue_v0_8.csv"))
+    blocked = read_csv(artifact_path("still_blocked_queue_v0_8.csv"))
+    rag_queries = read_jsonl(artifact_path("rag_prototype_queries_v0_8.jsonl"))
+    rag_results = read_jsonl(artifact_path("rag_prototype_results_v0_8.jsonl"))
+    rag_eval = read_json(artifact_path("rag_prototype_eval_report_v0_8.json"))
+    backfill_validation = read_json(artifact_path("human_review_backfill_validation_v0_8.json"))
+    manifest = read_json(artifact_path("knowledge_base_manifest_v0_8.json"))
 
     if len(simulated) < 6 or len(overlay) != len(simulated):
         fail(failures, "human_review_overlay_v0_8.csv", "bad_overlay_count")
@@ -126,7 +127,7 @@ def main():
         if row.get("requires_second_approval") != "true":
             fail(failures, "formalization_candidate_queue_v0_8.csv", "missing_second_approval", oid)
 
-    chunk_ids = {c["chunk_id"] for c in read_jsonl(ROOT / "rag_chunks_v0_5.jsonl")}
+    chunk_ids = {c["chunk_id"] for c in read_jsonl(artifact_path("rag_chunks_v0_5.jsonl"))}
     forbidden = ["已接入运行时", "自动扣分", "正式模板已生成", "正式适用"]
     for row in rag_results:
         qid = row["query_id"]
@@ -160,18 +161,18 @@ def main():
         "rag_query_count": len(rag_results),
         "failure_samples": failures[:50],
     }
-    (ROOT / "review_backfill_rag_prototype_v0_8_validation_report.json").write_text(
+    (artifact_path("review_backfill_rag_prototype_v0_8_validation_report.json")).write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
     backfill_validation["validation_status"] = report["validation_status"]
     backfill_validation["failure_count"] = len(failures)
     backfill_validation["validator"] = "validate_review_backfill_rag_prototype_v0_8.py"
-    (ROOT / "human_review_backfill_validation_v0_8.json").write_text(
+    (artifact_path("human_review_backfill_validation_v0_8.json")).write_text(
         json.dumps(backfill_validation, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    (ROOT / "review_backfill_rag_prototype_v0_8_failure_list.json").write_text(
+    (artifact_path("review_backfill_rag_prototype_v0_8_failure_list.json")).write_text(
         json.dumps(failures, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )

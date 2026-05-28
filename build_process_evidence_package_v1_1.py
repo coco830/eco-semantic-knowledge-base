@@ -1,6 +1,7 @@
 import csv
 import json
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -414,7 +415,7 @@ def build_graph_design():
 
 
 def write_markdown_outputs():
-    (ROOT / "process_evidence_schema_v1_1.md").write_text(
+    (artifact_path("process_evidence_schema_v1_1.md")).write_text(
         "# process_evidence_schema_v1_1\n\n"
         f"final_state: `{FINAL_STATE}`\n"
         "runtime_integration: `disabled`\n\n"
@@ -444,7 +445,7 @@ def write_markdown_outputs():
         "- UNKNOWN remains a question, not a negative conclusion.\n",
         encoding="utf-8",
     )
-    (ROOT / "process_graph_rag_design_v1_1.md").write_text(
+    (artifact_path("process_graph_rag_design_v1_1.md")).write_text(
         "# process_graph_rag_design_v1_1\n\n"
         f"final_state: `{FINAL_STATE}`\n"
         "runtime_integration: `disabled`\n\n"
@@ -467,15 +468,15 @@ def main():
     activation_rows = build_activation_rows()
     overlay_rows = build_overlay_rows()
     graph_design = build_graph_design()
-    write_csv(ROOT / "process_trigger_dictionary_v1_1.csv", trigger_rows)
-    write_json(ROOT / "process_trigger_dictionary_v1_1.json", trigger_rows)
-    write_csv(ROOT / "process_to_scenario_activation_v1_1.csv", activation_rows)
-    write_json(ROOT / "process_to_scenario_activation_v1_1.json", activation_rows)
-    write_csv(ROOT / "process_evidence_predicates_samples_v1_1.csv", evidence_rows)
-    write_json(ROOT / "process_evidence_predicates_samples_v1_1.json", evidence_rows)
-    write_csv(ROOT / "enterprise_profile_overlay_samples_v1_1.csv", overlay_rows)
-    write_json(ROOT / "enterprise_profile_overlay_samples_v1_1.json", overlay_rows)
-    write_json(ROOT / "process_graph_rag_design_v1_1.json", graph_design)
+    write_csv(artifact_path("process_trigger_dictionary_v1_1.csv"), trigger_rows)
+    write_json(artifact_path("process_trigger_dictionary_v1_1.json"), trigger_rows)
+    write_csv(artifact_path("process_to_scenario_activation_v1_1.csv"), activation_rows)
+    write_json(artifact_path("process_to_scenario_activation_v1_1.json"), activation_rows)
+    write_csv(artifact_path("process_evidence_predicates_samples_v1_1.csv"), evidence_rows)
+    write_json(artifact_path("process_evidence_predicates_samples_v1_1.json"), evidence_rows)
+    write_csv(artifact_path("enterprise_profile_overlay_samples_v1_1.csv"), overlay_rows)
+    write_json(artifact_path("enterprise_profile_overlay_samples_v1_1.json"), overlay_rows)
+    write_json(artifact_path("process_graph_rag_design_v1_1.json"), graph_design)
     write_markdown_outputs()
     manifest = {
         "knowledge_base_version": VERSION,
@@ -497,7 +498,7 @@ def main():
             "FINAL_COMPLETION_REPORT_v1_1.md",
         ],
     }
-    write_json(ROOT / "knowledge_base_manifest_v1_1.json", manifest)
+    write_json(artifact_path("knowledge_base_manifest_v1_1.json"), manifest)
     gate_report = {
         "validation_target": "process evidence candidate package v1.1",
         "final_state": FINAL_STATE,
@@ -521,8 +522,8 @@ def main():
             "all_tables_carry_runtime_boundary_fields",
         ],
     }
-    write_json(ROOT / "process_evidence_gate_report_v1_1.json", gate_report)
-    (ROOT / "process_evidence_gate_report_v1_1.md").write_text(
+    write_json(artifact_path("process_evidence_gate_report_v1_1.json"), gate_report)
+    (artifact_path("process_evidence_gate_report_v1_1.md")).write_text(
         "# process_evidence_gate_report_v1_1\n\n"
         f"final_state: `{FINAL_STATE}`\n\n"
         "- runtime_integration: disabled\n"
@@ -536,7 +537,7 @@ def main():
         "- hard boundary: candidate process evidence only; no EcoCheck runtime effect.\n",
         encoding="utf-8",
     )
-    (ROOT / "FINAL_COMPLETION_REPORT_v1_1.md").write_text(
+    (artifact_path("FINAL_COMPLETION_REPORT_v1_1.md")).write_text(
         "# FINAL_COMPLETION_REPORT_v1_1\n\n"
         f"最终状态：`{FINAL_STATE}`\n\n"
         "v1.1 已生成工序/工艺证据层候选包，用于把环评、批复、排污许可、台账和现场事实转成可审计的企业画像 overlay。"

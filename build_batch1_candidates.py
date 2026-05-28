@@ -1,6 +1,7 @@
 import csv
 import json
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -10,7 +11,7 @@ BATCH1_DIVISIONS = {"13", "14", "15", "22", "23"}
 
 
 def load_industry_classes():
-    with (ROOT / "industry_catalog_base.csv").open(encoding="utf-8-sig", newline="") as f:
+    with (artifact_path("industry_catalog_base.csv")).open(encoding="utf-8-sig", newline="") as f:
         return [row for row in csv.DictReader(f) if row["level"] == "class" and row["division_code"] in BATCH1_DIVISIONS]
 
 
@@ -114,11 +115,11 @@ def write_csv(path, rows):
 
 def main():
     rows = [profile_for(row) for row in load_industry_classes()]
-    (ROOT / "batch1_industry_scenario_candidates.json").write_text(
+    (artifact_path("batch1_industry_scenario_candidates.json")).write_text(
         json.dumps(rows, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    write_csv(ROOT / "batch1_industry_scenario_candidates.csv", rows)
+    write_csv(artifact_path("batch1_industry_scenario_candidates.csv"), rows)
 
     by_division = {}
     for row in rows:
@@ -155,7 +156,7 @@ def main():
         "- `LOW`、`NEED_CONFIRM`、含 `SCN_WW_PROCESS_AND_TREATMENT`、`SCN_VOCS_SOLVENT_AND_TREATMENT`、`SCN_ONLINE_MONITORING_KEY_UNIT` 的规则 100% 抽检。",
         "- 每条抽检核对 GB 行业名称、2019 名录条目、场景模板复用、confirmation_questions 是否覆盖触发条件。",
     ]
-    (ROOT / "batch1_quality_audit.md").write_text("\n".join(audit) + "\n", encoding="utf-8")
+    (artifact_path("batch1_quality_audit.md")).write_text("\n".join(audit) + "\n", encoding="utf-8")
 
     print(json.dumps({
         "batch1_candidates": len(rows),

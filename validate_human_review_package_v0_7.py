@@ -1,6 +1,7 @@
 import csv
 import json
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -60,18 +61,18 @@ def main():
         "FINAL_COMPLETION_REPORT_v0_7.md",
     ]
     for name in required:
-        if not (ROOT / name).exists():
+        if not (artifact_path(name)).exists():
             fail(failures, name, "missing_required_output")
 
-    context = read_csv(ROOT / "all_context_applicability_review_v0_4_1.csv")
-    permit = read_csv(ROOT / "all_permit_condition_backfill_v0_4_1.csv")
-    open_questions = read_csv(ROOT / "open_questions_v0_4_1.csv")
-    risks = read_csv(ROOT / "risk_acceptance_queue_v0_4_1.csv")
-    queue = read_csv(ROOT / "human_review_queue_v0_7.csv")
-    queue_json = read_json(ROOT / "human_review_queue_v0_7.json")
-    worksheet = read_csv(ROOT / "human_review_worksheet_v0_7.csv")
-    schema = read_json(ROOT / "human_review_decision_schema_v0_7.json")
-    gate = read_json(ROOT / "human_review_v0_7_gate_report.json")
+    context = read_csv(artifact_path("all_context_applicability_review_v0_4_1.csv"))
+    permit = read_csv(artifact_path("all_permit_condition_backfill_v0_4_1.csv"))
+    open_questions = read_csv(artifact_path("open_questions_v0_4_1.csv"))
+    risks = read_csv(artifact_path("risk_acceptance_queue_v0_4_1.csv"))
+    queue = read_csv(artifact_path("human_review_queue_v0_7.csv"))
+    queue_json = read_json(artifact_path("human_review_queue_v0_7.json"))
+    worksheet = read_csv(artifact_path("human_review_worksheet_v0_7.csv"))
+    schema = read_json(artifact_path("human_review_decision_schema_v0_7.json"))
+    gate = read_json(artifact_path("human_review_v0_7_gate_report.json"))
 
     if len(context) != 22815:
         fail(failures, "all_context_applicability_review_v0_4_1.csv", "context_count_drift", str(len(context)))
@@ -129,12 +130,12 @@ def main():
     if gate.get("final_state") != FINAL_STATE or gate.get("runtime_integration") != RUNTIME_INTEGRATION:
         fail(failures, "human_review_v0_7_gate_report.json", "bad_gate_boundary")
 
-    guidance = (ROOT / "human_review_guidance_v0_7.md").read_text(encoding="utf-8")
+    guidance = (artifact_path("human_review_guidance_v0_7.md")).read_text(encoding="utf-8")
     for phrase in ["DIVISION_CONTEXT", "photo_points", "evidence_chain", "人工审阅不等于运行时批准"]:
         if phrase not in guidance:
             fail(failures, "human_review_guidance_v0_7.md", "missing_guidance_phrase", phrase)
 
-    plan = (ROOT / "human_review_backfill_plan_v0_7.md").read_text(encoding="utf-8")
+    plan = (artifact_path("human_review_backfill_plan_v0_7.md")).read_text(encoding="utf-8")
     for phrase in ["不覆盖 v0.4.1 源表", "BLOCKS_RUNTIME", "二次审批", "签字留痕"]:
         if phrase not in plan:
             fail(failures, "human_review_backfill_plan_v0_7.md", "missing_plan_phrase", phrase)
@@ -153,18 +154,18 @@ def main():
         "worksheet_rows": len(worksheet),
         "failure_samples": failures[:50],
     }
-    (ROOT / "human_review_v0_7_validation_report.json").write_text(
+    (artifact_path("human_review_v0_7_validation_report.json")).write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
     gate["validation_status"] = report["validation_status"]
     gate["failure_count"] = len(failures)
     gate["validator"] = "validate_human_review_package_v0_7.py"
-    (ROOT / "human_review_v0_7_gate_report.json").write_text(
+    (artifact_path("human_review_v0_7_gate_report.json")).write_text(
         json.dumps(gate, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    (ROOT / "human_review_v0_7_gate_report.md").write_text(
+    (artifact_path("human_review_v0_7_gate_report.md")).write_text(
         "# human_review_v0_7_gate_report\n\n"
         f"- validation_status: `{report['validation_status']}`\n"
         f"- final_state: `{FINAL_STATE}`\n"
@@ -179,7 +180,7 @@ def main():
         f"- failure_count: {len(failures)}\n",
         encoding="utf-8",
     )
-    (ROOT / "human_review_v0_7_failure_list.json").write_text(
+    (artifact_path("human_review_v0_7_failure_list.json")).write_text(
         json.dumps(failures, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )

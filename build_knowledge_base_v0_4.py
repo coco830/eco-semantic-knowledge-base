@@ -2,6 +2,7 @@ import csv
 import json
 from collections import Counter
 from pathlib import Path
+from kb_paths import artifact_path
 
 ROOT = Path(__file__).resolve().parent
 FINAL_STATE = "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
@@ -201,7 +202,7 @@ def denoise_context_rows(rows, permit_by_key):
 
 
 def build_open_questions_v04():
-    old = {r["question_id"]: r for r in read_csv(ROOT / "open_questions_v0_3.csv")}
+    old = {r["question_id"]: r for r in read_csv(artifact_path("open_questions_v0_3.csv"))}
     rewrites = {
         "OQ-001": ("GB4754_CODE_NAME_CONFLICT", "1512/1513等GB/T 4754小类名称与早期映射是否存在错配？正式化前需以GB/T 4754-2017原表核准代码、名称和行业边界。", "ETO", "P0", "industry_catalog_base.csv; all_industry_scenario_candidates_v0_2.csv", "代码名称冲突经原始GB/T 4754表格复核并形成修正记录。"),
         "OQ-002": ("REPRESENTATIVE_SUBCLASS_SCOPE", "第22条等许可名录条目使用代表性小类或行业短语时，是否可外推到同组/同大类其他小类？", "ETO", "P1", "all_context_applicability_review_v0_4.csv", "形成代表性小类外推规则，明确可外推、不可外推和需环评确认边界。"),
@@ -367,15 +368,15 @@ def build_gate_report(context_rows, permit_rows, open_questions, changed):
 
 def main():
     for required in [
-        ROOT / "all_permit_condition_backfill_v0_3.csv",
-        ROOT / "all_context_applicability_review_v0_3.csv",
-        ROOT / "open_questions_v0_3.csv",
+        artifact_path("all_permit_condition_backfill_v0_3.csv"),
+        artifact_path("all_context_applicability_review_v0_3.csv"),
+        artifact_path("open_questions_v0_3.csv"),
     ]:
         if not required.exists():
             raise FileNotFoundError(f"v0.4 builds from the accepted v0.3 baseline; missing {required.name}")
 
-    v03_permit = read_csv(ROOT / "all_permit_condition_backfill_v0_3.csv")
-    v03_context = read_csv(ROOT / "all_context_applicability_review_v0_3.csv")
+    v03_permit = read_csv(artifact_path("all_permit_condition_backfill_v0_3.csv"))
+    v03_context = read_csv(artifact_path("all_context_applicability_review_v0_3.csv"))
 
     permit_rows = enhance_permit_conditions(v03_permit)
     permit_by_key = {(r["entry_no"], r["target_management_condition"]): r for r in permit_rows}
@@ -384,22 +385,22 @@ def main():
     diff_md, changed = build_diff_report(v03_context, context_rows)
     gate_json, gate_md = build_gate_report(context_rows, permit_rows, open_questions, changed)
 
-    write_csv(ROOT / "all_permit_condition_backfill_v0_4.csv", permit_rows)
-    write_json(ROOT / "all_permit_condition_backfill_v0_4.json", permit_rows)
-    write_csv(ROOT / "all_context_applicability_review_v0_4.csv", context_rows)
-    write_json(ROOT / "all_context_applicability_review_v0_4.json", context_rows)
-    write_csv(ROOT / "open_questions_v0_4.csv", open_questions)
-    write_json(ROOT / "open_questions_v0_4.json", open_questions)
-    (ROOT / "open_questions_v0_4.md").write_text(
+    write_csv(artifact_path("all_permit_condition_backfill_v0_4.csv"), permit_rows)
+    write_json(artifact_path("all_permit_condition_backfill_v0_4.json"), permit_rows)
+    write_csv(artifact_path("all_context_applicability_review_v0_4.csv"), context_rows)
+    write_json(artifact_path("all_context_applicability_review_v0_4.json"), context_rows)
+    write_csv(artifact_path("open_questions_v0_4.csv"), open_questions)
+    write_json(artifact_path("open_questions_v0_4.json"), open_questions)
+    (artifact_path("open_questions_v0_4.md")).write_text(
         "# Open Questions v0.4\n\n" + "\n".join(
             f"- `{q['question_id']}` [{q['priority']}/{q['owner_role']}] {q['question']}  \n  close_criteria: {q['close_criteria']}"
             for q in open_questions
         ) + "\n",
         encoding="utf-8",
     )
-    write_json(ROOT / "knowledge_base_v0_4_gate_report.json", gate_json)
-    (ROOT / "knowledge_base_v0_4_gate_report.md").write_text(gate_md, encoding="utf-8")
-    (ROOT / "automated_denoise_diff_report_v0_4.md").write_text(diff_md, encoding="utf-8")
+    write_json(artifact_path("knowledge_base_v0_4_gate_report.json"), gate_json)
+    (artifact_path("knowledge_base_v0_4_gate_report.md")).write_text(gate_md, encoding="utf-8")
+    (artifact_path("automated_denoise_diff_report_v0_4.md")).write_text(diff_md, encoding="utf-8")
 
     risk_rows = [
         {"risk_id": "RISK-V04-001", "risk_topic": "entry108_strategy", "risk_description": ENTRY_108_STRATEGY, "owner_role": "ETO", "acceptance_needed_before": "runtime_promotion", "runtime_status": "DRAFT_NOT_FOR_RUNTIME"},
@@ -407,7 +408,7 @@ def main():
         {"risk_id": "RISK-V04-003", "risk_topic": "human_review_empty", "risk_description": "human_review_label/human_reviewer保持全空，表示待人工审阅而非已审结论。", "owner_role": "ESO+ETO", "acceptance_needed_before": "formal_rule_promotion", "runtime_status": "DRAFT_NOT_FOR_RUNTIME"},
         {"risk_id": "RISK-V04-004", "risk_topic": "score13_secondary_semantics", "risk_description": "S01-S13不改报告口径，二级语义层进入RAG/图谱前需产品和ETO确认。", "owner_role": "Product+ETO", "acceptance_needed_before": "rag_graph_schema_freeze", "runtime_status": "DRAFT_NOT_FOR_RUNTIME"},
     ]
-    write_csv(ROOT / "risk_acceptance_queue_v0_4.csv", risk_rows)
+    write_csv(artifact_path("risk_acceptance_queue_v0_4.csv"), risk_rows)
 
     outputs = {
         "build_knowledge_base_v0_4.py": 1,
@@ -452,7 +453,7 @@ def main():
             "不得伪造 human_review_label / human_reviewer / human_review_notes",
         ],
     }
-    write_json(ROOT / "knowledge_base_manifest_v0_4.json", manifest)
+    write_json(artifact_path("knowledge_base_manifest_v0_4.json"), manifest)
 
     final_report = [
         "# FINAL COMPLETION REPORT v0.4",
@@ -486,7 +487,7 @@ def main():
         "- RAG/图谱入库设计。",
         "- EcoCheck运行时接入方案设计和审批，不得直接接入。",
     ]
-    (ROOT / "FINAL_COMPLETION_REPORT_v0_4.md").write_text("\n".join(final_report) + "\n", encoding="utf-8")
+    (artifact_path("FINAL_COMPLETION_REPORT_v0_4.md")).write_text("\n".join(final_report) + "\n", encoding="utf-8")
     print(json.dumps({"generated": outputs, "final_state": FINAL_STATE}, ensure_ascii=False, indent=2))
 
 

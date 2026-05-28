@@ -1,6 +1,7 @@
 import json
 from collections import Counter
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -37,14 +38,14 @@ def main():
         "FINAL_COMPLETION_REPORT_v0_6.md",
     ]
     for name in required:
-        if not (ROOT / name).exists():
+        if not (artifact_path(name)).exists():
             fail(failures, name, "missing_required_output")
 
-    nodes = read_jsonl(ROOT / "graph_nodes_v0_5.jsonl")
-    chunks = read_jsonl(ROOT / "rag_chunks_v0_5.jsonl")
-    evals = read_jsonl(ROOT / "retrieval_eval_set_v0_6.jsonl")
-    samples = read_jsonl(ROOT / "graph_query_samples_v0_6.jsonl")
-    coverage = read_json(ROOT / "rag_graph_eval_coverage_v0_6.json")
+    nodes = read_jsonl(artifact_path("graph_nodes_v0_5.jsonl"))
+    chunks = read_jsonl(artifact_path("rag_chunks_v0_5.jsonl"))
+    evals = read_jsonl(artifact_path("retrieval_eval_set_v0_6.jsonl"))
+    samples = read_jsonl(artifact_path("graph_query_samples_v0_6.jsonl"))
+    coverage = read_json(artifact_path("rag_graph_eval_coverage_v0_6.json"))
     node_ids = {n["node_id"] for n in nodes}
     chunk_types = {c["chunk_type"] for c in chunks}
 
@@ -104,11 +105,11 @@ def main():
         "eval_category_counts": dict(sorted(Counter(e["eval_category"] for e in evals).items())),
         "failure_samples": failures[:50],
     }
-    (ROOT / "rag_graph_eval_v0_6_validation_report.json").write_text(
+    (artifact_path("rag_graph_eval_v0_6_validation_report.json")).write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    (ROOT / "rag_graph_eval_v0_6_failure_list.json").write_text(
+    (artifact_path("rag_graph_eval_v0_6_failure_list.json")).write_text(
         json.dumps(failures, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )

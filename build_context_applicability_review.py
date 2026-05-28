@@ -3,11 +3,12 @@ import json
 import re
 from collections import Counter
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
-SAMPLES = ROOT / "high_priority_permit_condition_backfill_audit_samples.csv"
-DETAIL = ROOT / "high_priority_permit_condition_backfill_detail_v0_2.csv"
+SAMPLES = artifact_path("high_priority_permit_condition_backfill_audit_samples.csv")
+DETAIL = artifact_path("high_priority_permit_condition_backfill_detail_v0_2.csv")
 TARGET_REVIEW_CODES = {"4620", "7721", "2211", "2530"}
 
 
@@ -274,9 +275,9 @@ def main():
         "confirmation_question",
         "runtime_status",
     ]
-    write_csv(ROOT / "context_applicability_review_audit_samples.csv", rows, fields)
+    write_csv(artifact_path("context_applicability_review_audit_samples.csv"), rows, fields)
     validation = validate(rows)
-    (ROOT / "context_applicability_review_validation.json").write_text(
+    (artifact_path("context_applicability_review_validation.json")).write_text(
         json.dumps(validation, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
@@ -302,7 +303,7 @@ def main():
         "",
         f"校验状态：`{validation['validation_status']}`",
     ]
-    (ROOT / "context_applicability_review_audit.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+    (artifact_path("context_applicability_review_audit.md")).write_text("\n".join(md) + "\n", encoding="utf-8")
     print(json.dumps(validation, ensure_ascii=False, indent=2))
     if validation["validation_status"] != "PASS":
         raise SystemExit(1)

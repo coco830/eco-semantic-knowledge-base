@@ -3,6 +3,7 @@ import json
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -33,7 +34,7 @@ def catalog_division(text):
 
 
 def load_base_classes():
-    rows = read_csv(ROOT / "industry_catalog_base.csv")
+    rows = read_csv(artifact_path("industry_catalog_base.csv"))
     return {
         row["class_code"]: row
         for row in rows
@@ -42,12 +43,12 @@ def load_base_classes():
 
 
 def load_candidates():
-    rows = json.loads((ROOT / "all_industry_scenario_candidates_v0_2.json").read_text(encoding="utf-8"))
+    rows = json.loads((artifact_path("all_industry_scenario_candidates_v0_2.json")).read_text(encoding="utf-8"))
     return [row for row in rows if row["division_code"] in HIGH_PRIORITY_DIVISIONS]
 
 
 def load_conditions():
-    rows = read_csv(ROOT / "permit_condition_normalization_draft.csv")
+    rows = read_csv(artifact_path("permit_condition_normalization_draft.csv"))
     by_entry = defaultdict(list)
     entry_divisions = defaultdict(set)
     for row in rows:
@@ -60,7 +61,7 @@ def load_conditions():
 
 
 def load_thresholds():
-    rows = read_csv(ROOT / "permit_threshold_predicate_governance.csv")
+    rows = read_csv(artifact_path("permit_threshold_predicate_governance.csv"))
     by_entry_target = defaultdict(list)
     for row in rows:
         by_entry_target[(row["catalog_entry_no"], row["target_management"])].append({
@@ -82,7 +83,7 @@ def load_thresholds():
 
 
 def load_inheritance_reviews():
-    path = ROOT / "permit_parallel_material_threshold_inheritance_review.csv"
+    path = artifact_path("permit_parallel_material_threshold_inheritance_review.csv")
     if not path.exists():
         return defaultdict(list)
     rows = read_csv(path)
@@ -101,7 +102,7 @@ def load_inheritance_reviews():
 
 
 def load_code_review(base_classes):
-    rows = read_csv(ROOT / "permit_industry_code_reference_review.csv")
+    rows = read_csv(artifact_path("permit_industry_code_reference_review.csv"))
     by_class_code = defaultdict(list)
     for row in rows:
         matched_class_codes = []
@@ -365,14 +366,14 @@ def main():
     samples = audit_samples(enriched)
     validation = validate(enriched)
 
-    (ROOT / "high_priority_permit_condition_backfill_v0_2.json").write_text(
+    (artifact_path("high_priority_permit_condition_backfill_v0_2.json")).write_text(
         json.dumps(enriched, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    write_csv(ROOT / "high_priority_permit_condition_backfill_v0_2.csv", flat, list(flat[0].keys()))
-    write_csv(ROOT / "high_priority_permit_condition_backfill_detail_v0_2.csv", details, list(details[0].keys()))
-    write_csv(ROOT / "high_priority_permit_condition_backfill_audit_samples.csv", samples, list(samples[0].keys()))
-    (ROOT / "high_priority_permit_condition_backfill_validation.json").write_text(
+    write_csv(artifact_path("high_priority_permit_condition_backfill_v0_2.csv"), flat, list(flat[0].keys()))
+    write_csv(artifact_path("high_priority_permit_condition_backfill_detail_v0_2.csv"), details, list(details[0].keys()))
+    write_csv(artifact_path("high_priority_permit_condition_backfill_audit_samples.csv"), samples, list(samples[0].keys()))
+    (artifact_path("high_priority_permit_condition_backfill_validation.json")).write_text(
         json.dumps(validation, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
@@ -404,7 +405,7 @@ def main():
         "- 每个高优先大类至少抽取直接代码匹配样本；无直接代码匹配的大类抽取上下文样本。",
         "- 抽检重点：行业代码范围、三类管理条件、阈值、重点排污单位、通用工序、其他/兜底排除关系。",
     ]
-    (ROOT / "high_priority_permit_condition_backfill_audit.md").write_text(
+    (artifact_path("high_priority_permit_condition_backfill_audit.md")).write_text(
         "\n".join(md) + "\n",
         encoding="utf-8",
     )

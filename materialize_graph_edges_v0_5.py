@@ -1,11 +1,12 @@
 import gzip
 import shutil
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
-SOURCE = ROOT / "graph_edges_v0_5.jsonl.gz"
-TARGET = ROOT / "graph_edges_v0_5.jsonl"
+SOURCE = artifact_path("graph_edges_v0_5.jsonl.gz")
+TARGET = artifact_path("graph_edges_v0_5.jsonl")
 
 
 def main() -> None:

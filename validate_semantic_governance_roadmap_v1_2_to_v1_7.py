@@ -1,6 +1,7 @@
 import csv
 import json
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -67,21 +68,21 @@ def main():
         "validate_semantic_governance_roadmap_v1_2_to_v1_7.py",
     ]
     for name in required:
-        if not (ROOT / name).exists():
+        if not (artifact_path(name)).exists():
             fail(failures, name, "missing_required_output")
 
-    samples = read_csv(ROOT / "eia_permit_extraction_samples_v1_2.csv")
-    samples_json = read_json(ROOT / "eia_permit_extraction_samples_v1_2.json")
-    predicates = read_csv(ROOT / "eia_permit_extracted_predicates_v1_2.csv")
-    rules = read_csv(ROOT / "process_scenario_activation_rules_v1_3.csv")
-    oq_overlay = read_csv(ROOT / "open_question_decision_overlay_v1_4.csv")
-    oq_source = read_csv(ROOT / "open_questions_v0_4_1.csv")
-    review_slices = read_csv(ROOT / "human_review_slices_v1_5.csv")
-    eval_rows = read_jsonl(ROOT / "retrieval_eval_set_v1_6.jsonl")
-    readiness = read_csv(ROOT / "runtime_readiness_matrix_v1_7.csv")
-    manifest = read_json(ROOT / "knowledge_base_manifest_v1_2_to_v1_7.json")
-    coverage = read_json(ROOT / "rag_eval_coverage_v1_6.json")
-    gap = read_json(ROOT / "runtime_readiness_gap_report_v1_7.json")
+    samples = read_csv(artifact_path("eia_permit_extraction_samples_v1_2.csv"))
+    samples_json = read_json(artifact_path("eia_permit_extraction_samples_v1_2.json"))
+    predicates = read_csv(artifact_path("eia_permit_extracted_predicates_v1_2.csv"))
+    rules = read_csv(artifact_path("process_scenario_activation_rules_v1_3.csv"))
+    oq_overlay = read_csv(artifact_path("open_question_decision_overlay_v1_4.csv"))
+    oq_source = read_csv(artifact_path("open_questions_v0_4_1.csv"))
+    review_slices = read_csv(artifact_path("human_review_slices_v1_5.csv"))
+    eval_rows = read_jsonl(artifact_path("retrieval_eval_set_v1_6.jsonl"))
+    readiness = read_csv(artifact_path("runtime_readiness_matrix_v1_7.csv"))
+    manifest = read_json(artifact_path("knowledge_base_manifest_v1_2_to_v1_7.json"))
+    coverage = read_json(artifact_path("rag_eval_coverage_v1_6.json"))
+    gap = read_json(artifact_path("runtime_readiness_gap_report_v1_7.json"))
 
     if len(samples) != len(samples_json):
         fail(failures, "eia_permit_extraction_samples_v1_2.json", "csv_json_count_mismatch")
@@ -171,7 +172,7 @@ def main():
         "已接 EcoCheck runtime",
     ]
     for name in required:
-        path = ROOT / name
+        path = artifact_path(name)
         if path.suffix.lower() in {".md", ".json", ".csv", ".jsonl"}:
             text = path.read_text(encoding="utf-8", errors="ignore")
             for phrase in forbidden_claims:
@@ -194,11 +195,11 @@ def main():
         },
         "failure_samples": failures[:50],
     }
-    (ROOT / "semantic_governance_roadmap_validation_report_v1_2_to_v1_7.json").write_text(
+    (artifact_path("semantic_governance_roadmap_validation_report_v1_2_to_v1_7.json")).write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    (ROOT / "semantic_governance_roadmap_failure_list_v1_2_to_v1_7.json").write_text(
+    (artifact_path("semantic_governance_roadmap_failure_list_v1_2_to_v1_7.json")).write_text(
         json.dumps(failures, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )

@@ -1,6 +1,7 @@
 import csv
 import json
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -34,10 +35,10 @@ def main():
         "knowledge_base_v0_4_1_gate_report.json",
         "FINAL_COMPLETION_REPORT_v0_4_1.md",
     ]:
-        if not (ROOT / name).exists():
+        if not (artifact_path(name)).exists():
             fail(failures, name, "missing")
 
-    context = read_csv(ROOT / "all_context_applicability_review_v0_4_1.csv")
+    context = read_csv(artifact_path("all_context_applicability_review_v0_4_1.csv"))
     target = [r for r in context if r["candidate_relation_id"] == "CTXV04_3012_63_REGISTRATION"]
     if len(target) != 1:
         fail(failures, "all_context_applicability_review_v0_4_1.csv", "target_relation_missing_or_duplicate", "CTXV04_3012_63_REGISTRATION")
@@ -52,7 +53,7 @@ def main():
         if r["gate_status"] == "NOT_APPLY" and not parse_json(r["blocking_flags"]):
             fail(failures, "all_context_applicability_review_v0_4_1.csv", "not_apply_missing_blocking_flags", r["candidate_relation_id"])
 
-    risks = read_csv(ROOT / "risk_acceptance_queue_v0_4_1.csv")
+    risks = read_csv(artifact_path("risk_acceptance_queue_v0_4_1.csv"))
     required_topics = {"runtime_approval_gate", "permit_type_not_formal", "inspection_candidate_not_template", "entry108_strategy"}
     topics = {r["risk_topic"] for r in risks}
     for topic in required_topics - topics:
@@ -61,8 +62,8 @@ def main():
         if not r.get("open_question_refs") or r.get("runtime_status") != "DRAFT_NOT_FOR_RUNTIME" or r.get("final_state") != FINAL_STATE:
             fail(failures, "risk_acceptance_queue_v0_4_1.csv", "bad_risk_fields", r.get("risk_id", ""))
 
-    manifest = read_json(ROOT / "knowledge_base_manifest_v0_4_1.json")
-    gate = read_json(ROOT / "knowledge_base_v0_4_1_gate_report.json")
+    manifest = read_json(artifact_path("knowledge_base_manifest_v0_4_1.json"))
+    gate = read_json(artifact_path("knowledge_base_v0_4_1_gate_report.json"))
     if manifest.get("final_state") != FINAL_STATE or manifest.get("runtime_integration") != "disabled":
         fail(failures, "knowledge_base_manifest_v0_4_1.json", "bad_boundary")
     if gate.get("catalog_entry_coverage") != "1-112 continuous in permit_management_catalog_table_cells.csv":
@@ -70,7 +71,7 @@ def main():
     if "第108条" not in gate.get("context_relation_entry_count_note", ""):
         fail(failures, "knowledge_base_v0_4_1_gate_report.json", "entry108_note_missing")
 
-    with (ROOT / "knowledge_base_v0_4_1_failure_list.csv").open("w", encoding="utf-8-sig", newline="") as f:
+    with (artifact_path("knowledge_base_v0_4_1_failure_list.csv")).open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=["file", "reason", "row_id"])
         writer.writeheader()
         writer.writerows(failures)
@@ -82,7 +83,7 @@ def main():
         "risk_acceptance_rows": len(risks),
         "failure_samples": failures[:50],
     }
-    (ROOT / "knowledge_base_v0_4_1_validation_report.json").write_text(
+    (artifact_path("knowledge_base_v0_4_1_validation_report.json")).write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )

@@ -5,6 +5,7 @@ import re
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -309,10 +310,10 @@ def build_rag_results(chunks, overlay_by_relation):
 
 
 def main():
-    queue = read_csv(ROOT / "human_review_queue_v0_7.csv")
-    worksheet_before = read_csv(ROOT / "human_review_worksheet_v0_7.csv")
-    schema = read_json(ROOT / "human_review_decision_schema_v0_7.json")
-    chunks = read_jsonl(ROOT / "rag_chunks_v0_5.jsonl")
+    queue = read_csv(artifact_path("human_review_queue_v0_7.csv"))
+    worksheet_before = read_csv(artifact_path("human_review_worksheet_v0_7.csv"))
+    schema = read_json(artifact_path("human_review_decision_schema_v0_7.json"))
+    chunks = read_jsonl(artifact_path("rag_chunks_v0_5.jsonl"))
     queue_by_id = {row["review_item_id"]: row for row in queue}
 
     simulated_rows, overlay_rows, diff_rows = build_overlay(queue_by_id, schema)
@@ -335,18 +336,18 @@ def main():
         "generated_at": datetime.now(timezone.utc).isoformat(),
     }
 
-    write_csv(ROOT / "simulated_human_review_input_v0_8.csv", simulated_rows)
-    write_json(ROOT / "simulated_human_review_input_v0_8.json", simulated_rows)
-    write_csv(ROOT / "human_review_overlay_v0_8.csv", overlay_rows)
-    write_json(ROOT / "human_review_overlay_v0_8.json", overlay_rows)
-    write_csv(ROOT / "formalization_candidate_queue_v0_8.csv", formalization)
-    write_csv(ROOT / "still_blocked_queue_v0_8.csv", blocked)
-    write_json(ROOT / "human_review_diff_report_v0_8.json", diff_rows)
-    write_json(ROOT / "human_review_backfill_validation_v0_8.json", validation)
-    write_jsonl(ROOT / "rag_prototype_queries_v0_8.jsonl", RAG_QUERIES)
-    write_jsonl(ROOT / "rag_prototype_results_v0_8.jsonl", rag_results)
+    write_csv(artifact_path("simulated_human_review_input_v0_8.csv"), simulated_rows)
+    write_json(artifact_path("simulated_human_review_input_v0_8.json"), simulated_rows)
+    write_csv(artifact_path("human_review_overlay_v0_8.csv"), overlay_rows)
+    write_json(artifact_path("human_review_overlay_v0_8.json"), overlay_rows)
+    write_csv(artifact_path("formalization_candidate_queue_v0_8.csv"), formalization)
+    write_csv(artifact_path("still_blocked_queue_v0_8.csv"), blocked)
+    write_json(artifact_path("human_review_diff_report_v0_8.json"), diff_rows)
+    write_json(artifact_path("human_review_backfill_validation_v0_8.json"), validation)
+    write_jsonl(artifact_path("rag_prototype_queries_v0_8.jsonl"), RAG_QUERIES)
+    write_jsonl(artifact_path("rag_prototype_results_v0_8.jsonl"), rag_results)
 
-    (ROOT / "human_review_diff_report_v0_8.md").write_text(
+    (artifact_path("human_review_diff_report_v0_8.md")).write_text(
         "# human_review_diff_report_v0_8\n\n"
         f"final_state: `{FINAL_STATE}`\n\n"
         "本报告来自模拟审阅输入，不覆盖 v0.7 工作表或 v0.4.1 源表。\n\n"
@@ -381,8 +382,8 @@ def main():
         "failed_query_count": len(rag_results) - passed,
         "items": eval_rows,
     }
-    write_json(ROOT / "rag_prototype_eval_report_v0_8.json", eval_report)
-    (ROOT / "rag_prototype_eval_report_v0_8.md").write_text(
+    write_json(artifact_path("rag_prototype_eval_report_v0_8.json"), eval_report)
+    (artifact_path("rag_prototype_eval_report_v0_8.md")).write_text(
         "# rag_prototype_eval_report_v0_8\n\n"
         f"final_state: `{FINAL_STATE}`\n\n"
         f"- rag_query_count: {len(rag_results)}\n"
@@ -391,7 +392,7 @@ def main():
         "- 所有回答必须带模拟审阅状态和候选边界提示。\n",
         encoding="utf-8",
     )
-    (ROOT / "FINAL_COMPLETION_REPORT_v0_8.md").write_text(
+    (artifact_path("FINAL_COMPLETION_REPORT_v0_8.md")).write_text(
         "# FINAL COMPLETION REPORT v0.8\n\n"
         f"最终状态：`{FINAL_STATE}`\n\n"
         "v0.8 已生成审阅回灌模拟与 RAG 原型检索演示，未接 EcoCheck runtime。\n\n"
@@ -419,7 +420,7 @@ def main():
         "runtime_effect": "NONE",
         "notes": "模拟审阅只生成overlay；不覆盖v0.7工作表或v0.4.1源表。",
     }
-    write_json(ROOT / "knowledge_base_manifest_v0_8.json", manifest)
+    write_json(artifact_path("knowledge_base_manifest_v0_8.json"), manifest)
     print(json.dumps(validation, ensure_ascii=False, indent=2))
 
 

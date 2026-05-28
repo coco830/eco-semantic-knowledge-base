@@ -1,6 +1,7 @@
 import csv
 import json
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -18,7 +19,7 @@ def validate_batch(path):
     if not p.exists():
         return {"exists": False}
     rows = json.loads(p.read_text(encoding="utf-8"))
-    templates = {t["scenario_id"] for t in json.loads((ROOT / "scenario_templates.json").read_text(encoding="utf-8"))}
+    templates = {t["scenario_id"] for t in json.loads((artifact_path("scenario_templates.json")).read_text(encoding="utf-8"))}
     bad_refs = []
     for row in rows:
         for scenario_id in row["scenario_template_ids"] + row["unknown_scenarios"]:
@@ -39,7 +40,7 @@ def main():
         "Batch2": validate_batch("batch2_industry_scenario_candidates.json"),
         "Batch3": validate_batch("batch3_industry_scenario_candidates.json"),
     }
-    table_validation_path = ROOT / "permit_management_catalog_table_cells_validation.json"
+    table_validation_path = artifact_path("permit_management_catalog_table_cells_validation.json")
     table_validation = json.loads(table_validation_path.read_text(encoding="utf-8")) if table_validation_path.exists() else None
     total_candidates = sum(v.get("count", 0) for v in batches.values())
 
@@ -82,7 +83,7 @@ def main():
         "- 不新增场景模板；扩展批次只复用 `scenario_templates.json` 里的 `SCN_*`。",
         "- 排污许可名录表格级 raw 条件必须二次规则化和人工抽检后，才能进入正式规则。",
     ])
-    (ROOT / "candidate_coverage_report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (artifact_path("candidate_coverage_report.md")).write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     print(json.dumps({
         "total_candidates": total_candidates,

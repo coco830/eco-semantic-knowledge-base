@@ -1,6 +1,7 @@
 import csv
 import json
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -37,8 +38,8 @@ def normalize_json_value(value):
 
 
 def check_csv_json_parity(failures, csv_name, json_name, id_field):
-    csv_rows = read_csv(ROOT / csv_name)
-    json_rows = read_json(ROOT / json_name)
+    csv_rows = read_csv(artifact_path(csv_name))
+    json_rows = read_json(artifact_path(json_name))
     if len(csv_rows) != len(json_rows):
         fail(failures, json_name, "csv_json_count_mismatch", f"{len(csv_rows)}!={len(json_rows)}")
         return
@@ -81,18 +82,18 @@ def main():
         "validate_process_evidence_package_v1_1.py",
     ]
     for name in required:
-        if not (ROOT / name).exists():
+        if not (artifact_path(name)).exists():
             fail(failures, name, "missing_required_output")
 
-    scenarios = {row["scenario_id"] for row in read_json(ROOT / "scenario_templates.json")}
-    triggers = read_csv(ROOT / "process_trigger_dictionary_v1_1.csv")
-    triggers_json = read_json(ROOT / "process_trigger_dictionary_v1_1.json")
-    activations = read_csv(ROOT / "process_to_scenario_activation_v1_1.csv")
-    evidence = read_csv(ROOT / "process_evidence_predicates_samples_v1_1.csv")
-    overlays = read_csv(ROOT / "enterprise_profile_overlay_samples_v1_1.csv")
-    manifest = read_json(ROOT / "knowledge_base_manifest_v1_1.json")
-    gate = read_json(ROOT / "process_evidence_gate_report_v1_1.json")
-    graph_design = read_json(ROOT / "process_graph_rag_design_v1_1.json")
+    scenarios = {row["scenario_id"] for row in read_json(artifact_path("scenario_templates.json"))}
+    triggers = read_csv(artifact_path("process_trigger_dictionary_v1_1.csv"))
+    triggers_json = read_json(artifact_path("process_trigger_dictionary_v1_1.json"))
+    activations = read_csv(artifact_path("process_to_scenario_activation_v1_1.csv"))
+    evidence = read_csv(artifact_path("process_evidence_predicates_samples_v1_1.csv"))
+    overlays = read_csv(artifact_path("enterprise_profile_overlay_samples_v1_1.csv"))
+    manifest = read_json(artifact_path("knowledge_base_manifest_v1_1.json"))
+    gate = read_json(artifact_path("process_evidence_gate_report_v1_1.json"))
+    graph_design = read_json(artifact_path("process_graph_rag_design_v1_1.json"))
 
     check_csv_json_parity(failures, "process_trigger_dictionary_v1_1.csv", "process_trigger_dictionary_v1_1.json", "process_id")
     check_csv_json_parity(failures, "process_to_scenario_activation_v1_1.csv", "process_to_scenario_activation_v1_1.json", "activation_id")
@@ -228,14 +229,14 @@ def main():
         "已接 EcoCheck runtime",
     ]
     for name in required:
-        path = ROOT / name
+        path = artifact_path(name)
         if path.suffix.lower() in {".md", ".json", ".csv"}:
             text = path.read_text(encoding="utf-8", errors="ignore")
             for phrase in forbidden_claims:
                 if phrase in text:
                     fail(failures, name, "forbidden_runtime_claim", phrase)
 
-    schema_text = (ROOT / "process_evidence_schema_v1_1.md").read_text(encoding="utf-8")
+    schema_text = (artifact_path("process_evidence_schema_v1_1.md")).read_text(encoding="utf-8")
     for phrase in ["PROCESS_EVIDENCE_CONFIRMED", "SCENARIO_EVIDENCE_CONFIRMED", "NOT_APPLY_WITH_EVIDENCE", "SITE_VERIFICATION_REQUIRED", FINAL_STATE]:
         if phrase not in schema_text:
             fail(failures, "process_evidence_schema_v1_1.md", "missing_schema_phrase", phrase)
@@ -251,11 +252,11 @@ def main():
         "overlay_rows": len(overlays),
         "failure_samples": failures[:50],
     }
-    (ROOT / "process_evidence_validation_report_v1_1.json").write_text(
+    (artifact_path("process_evidence_validation_report_v1_1.json")).write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    (ROOT / "process_evidence_failure_list_v1_1.json").write_text(
+    (artifact_path("process_evidence_failure_list_v1_1.json")).write_text(
         json.dumps(failures, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )

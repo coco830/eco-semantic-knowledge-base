@@ -1,6 +1,7 @@
 import csv
 import json
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -53,12 +54,12 @@ def main():
         "FINAL_COMPLETION_REPORT_v0_4.md",
     ]
     for name in required:
-        if not (ROOT / name).exists():
+        if not (artifact_path(name)).exists():
             add_failure(failures, name, "missing_required_output")
 
-    classes = [r for r in read_csv(ROOT / "industry_catalog_base.csv") if r["level"] == "class"]
+    classes = [r for r in read_csv(artifact_path("industry_catalog_base.csv")) if r["level"] == "class"]
     class_codes = {r["class_code"] for r in classes}
-    candidates = read_json(ROOT / "all_industry_scenario_candidates_v0_2.json")
+    candidates = read_json(artifact_path("all_industry_scenario_candidates_v0_2.json"))
     if {r["industry_code"] for r in candidates} != class_codes or len({r["industry_code"] for r in candidates}) != 1382:
         add_failure(failures, "all_industry_scenario_candidates_v0_2.json", "industry_candidate_coverage_not_1382")
     if len({r["candidate_rule_id"] for r in candidates}) != len(candidates):
@@ -67,12 +68,12 @@ def main():
         if r["permit_type"] != "NEED_CONFIRM" or r["runtime_status"] != "CANDIDATE_ONLY":
             add_failure(failures, "all_industry_scenario_candidates_v0_2.json", "bad_candidate_status", r["industry_code"])
 
-    raw_entries = read_csv(ROOT / "permit_management_catalog_table_cells.csv")
+    raw_entries = read_csv(artifact_path("permit_management_catalog_table_cells.csv"))
     entry_nos = [int(r["catalog_entry_no"]) for r in raw_entries]
     if sorted(entry_nos) != list(range(1, 113)) or len(entry_nos) != len(set(entry_nos)):
         add_failure(failures, "permit_management_catalog_table_cells.csv", "permit_catalog_entries_not_1_112_continuous")
 
-    permit_rows = read_csv(ROOT / "all_permit_condition_backfill_v0_4.csv")
+    permit_rows = read_csv(artifact_path("all_permit_condition_backfill_v0_4.csv"))
     if len(permit_rows) != 336:
         add_failure(failures, "all_permit_condition_backfill_v0_4.csv", "permit_condition_rows_not_112_times_3", str(len(permit_rows)))
     for r in permit_rows:
@@ -89,8 +90,8 @@ def main():
             if "未被纳入" not in questions and "若已纳入" not in questions:
                 add_failure(failures, "all_permit_condition_backfill_v0_4.csv", "negative_confirmation_question_missing", row_id)
 
-    scenario_ids = {r["scenario_id"] for r in read_json(ROOT / "scenario_templates.json")}
-    context_rows = read_csv(ROOT / "all_context_applicability_review_v0_4.csv")
+    scenario_ids = {r["scenario_id"] for r in read_json(artifact_path("scenario_templates.json"))}
+    context_rows = read_csv(artifact_path("all_context_applicability_review_v0_4.csv"))
     for r in context_rows:
         row_id = r.get("candidate_relation_id", "")
         if r.get("industry_code") not in class_codes:
@@ -109,7 +110,7 @@ def main():
             if sid not in scenario_ids:
                 add_failure(failures, "all_context_applicability_review_v0_4.csv", "orphan_scenario_id", row_id, sid)
 
-    open_questions = read_csv(ROOT / "open_questions_v0_4.csv")
+    open_questions = read_csv(artifact_path("open_questions_v0_4.csv"))
     for r in open_questions:
         row_id = r.get("question_id", "")
         for field in ["question", "owner_role", "priority", "affected_artifacts", "close_criteria"]:
@@ -120,8 +121,8 @@ def main():
     if not any(r.get("question_id") == "V04_ENTRY_108_CONTEXT_001" for r in open_questions):
         add_failure(failures, "open_questions_v0_4.csv", "entry108_open_question_missing")
 
-    manifest = read_json(ROOT / "knowledge_base_manifest_v0_4.json")
-    gate = read_json(ROOT / "knowledge_base_v0_4_gate_report.json")
+    manifest = read_json(artifact_path("knowledge_base_manifest_v0_4.json"))
+    gate = read_json(artifact_path("knowledge_base_v0_4_gate_report.json"))
     for name, doc in [("knowledge_base_manifest_v0_4.json", manifest), ("knowledge_base_v0_4_gate_report.json", gate)]:
         if doc.get("final_state") != FINAL_STATE:
             add_failure(failures, name, "bad_final_state")
@@ -130,7 +131,7 @@ def main():
     if manifest.get("runtime_integration") != "disabled":
         add_failure(failures, "knowledge_base_manifest_v0_4.json", "runtime_integration_not_disabled")
 
-    inspection_path = ROOT / "inspection_candidate_recommendations_v0_3.csv"
+    inspection_path = artifact_path("inspection_candidate_recommendations_v0_3.csv")
     if inspection_path.exists():
         for r in read_csv(inspection_path):
             if r.get("runtime_status") != "CANDIDATE_ONLY":
@@ -139,7 +140,7 @@ def main():
                 add_failure(failures, "inspection_candidate_recommendations_v0_3.csv", "missing_photo_points_or_evidence_chain", r.get("scenario_id"))
 
     fail_fields = ["file", "reason", "row_id", "extra"]
-    with (ROOT / "knowledge_base_v0_4_failure_list.csv").open("w", encoding="utf-8-sig", newline="") as f:
+    with (artifact_path("knowledge_base_v0_4_failure_list.csv")).open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fail_fields)
         writer.writeheader()
         writer.writerows(failures)
@@ -156,7 +157,7 @@ def main():
         "open_questions": len(open_questions),
         "failure_samples": failures[:50],
     }
-    (ROOT / "knowledge_base_v0_4_validation_report.json").write_text(
+    (artifact_path("knowledge_base_v0_4_validation_report.json")).write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )

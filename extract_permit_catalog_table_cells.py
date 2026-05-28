@@ -3,10 +3,11 @@ import json
 import re
 import sys
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
-PDF_PATH = ROOT / "固定污染源排污许可分类管理名录(2019年版).pdf"
+PDF_PATH = artifact_path("固定污染源排污许可分类管理名录(2019年版).pdf")
 
 
 def require_fitz():
@@ -169,16 +170,16 @@ def main():
         print(json.dumps(validation, ensure_ascii=False, indent=2))
         raise SystemExit(1)
 
-    (ROOT / "permit_management_catalog_table_cells.json").write_text(
+    (artifact_path("permit_management_catalog_table_cells.json")).write_text(
         json.dumps(entries, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    write_csv(ROOT / "permit_management_catalog_table_cells.csv", entries)
-    (ROOT / "permit_management_catalog_table_cells_validation.json").write_text(
+    write_csv(artifact_path("permit_management_catalog_table_cells.csv"), entries)
+    (artifact_path("permit_management_catalog_table_cells_validation.json")).write_text(
         json.dumps(validation, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    (ROOT / "permit_management_catalog_table_cells_README.md").write_text(
+    (artifact_path("permit_management_catalog_table_cells_README.md")).write_text(
         "# 排污许可名录表格级抽取中间表\n\n"
         "本产物由 PyMuPDF `page.find_tables()` 从 `固定污染源排污许可分类管理名录(2019年版).pdf` 第 4-20 页抽取。"
         "它是审计型中间层，不是运行时规则库。\n\n"

@@ -3,6 +3,7 @@ import json
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -97,15 +98,15 @@ def catalog_division(text):
 
 
 def load_inputs():
-    raw = {r["catalog_entry_no"]: r for r in read_csv(ROOT / "permit_management_catalog_table_cells.csv")}
-    conditions = read_csv(ROOT / "permit_condition_normalization_draft.csv")
-    candidates = json.loads((ROOT / "all_industry_scenario_candidates_v0_2.json").read_text(encoding="utf-8"))
+    raw = {r["catalog_entry_no"]: r for r in read_csv(artifact_path("permit_management_catalog_table_cells.csv"))}
+    conditions = read_csv(artifact_path("permit_condition_normalization_draft.csv"))
+    candidates = json.loads((artifact_path("all_industry_scenario_candidates_v0_2.json")).read_text(encoding="utf-8"))
     classes = {
         r["class_code"]: r
-        for r in read_csv(ROOT / "industry_catalog_base.csv")
+        for r in read_csv(artifact_path("industry_catalog_base.csv"))
         if r["level"] == "class"
     }
-    scenarios = json.loads((ROOT / "scenario_templates.json").read_text(encoding="utf-8"))
+    scenarios = json.loads((artifact_path("scenario_templates.json")).read_text(encoding="utf-8"))
     return raw, conditions, candidates, classes, scenarios
 
 
@@ -161,7 +162,7 @@ def build_entry_indexes(raw, conditions, classes):
             entry_divisions[c["catalog_entry_no"]].add(div)
         entry_text[c["catalog_entry_no"]] += " " + c["industry_category_text"] + " " + c["raw_condition"]
 
-    code_review = read_csv(ROOT / "permit_industry_code_reference_review.csv")
+    code_review = read_csv(artifact_path("permit_industry_code_reference_review.csv"))
     direct_by_code = defaultdict(set)
     for r in code_review:
         if r["candidate_code_level"] == "class" and r["candidate_code"] in classes:
@@ -309,7 +310,7 @@ def build_scenario_governance(scenarios):
 
 
 def build_score13_mapping_v03(scenario_governance):
-    old = {r["scenario_id"]: r for r in read_csv(ROOT / "scenario_to_score13_mapping.csv")}
+    old = {r["scenario_id"]: r for r in read_csv(artifact_path("scenario_to_score13_mapping.csv"))}
     rows = []
     for s in scenario_governance:
         base = old.get(s["scenario_id"], {})
@@ -358,8 +359,8 @@ def build_inspection_candidates(scenario_governance):
 
 def build_open_questions():
     rows = []
-    if (ROOT / "open_questions.csv").exists():
-        rows.extend(read_csv(ROOT / "open_questions.csv"))
+    if (artifact_path("open_questions.csv")).exists():
+        rows.extend(read_csv(artifact_path("open_questions.csv")))
     additions = [
         ("V03_CONTEXT_SCOPE_001", "DIVISION_CONTEXT条目-小类适用关系需要人工审阅后才能从MAY_APPLY/NEED_EIA升级。"),
         ("V03_PERMIT_TYPE_001", "所有target_management_condition只代表名录单元格类型，不得作为企业正式permit_type。"),
@@ -420,23 +421,23 @@ def main():
     inspections = build_inspection_candidates(scenario_gov)
     open_questions = build_open_questions()
 
-    write_csv(ROOT / "all_permit_condition_backfill_v0_3.csv", permit_rows)
-    write_json(ROOT / "all_permit_condition_backfill_v0_3.json", permit_rows)
-    write_csv(ROOT / "all_context_applicability_review_v0_3.csv", context_rows)
-    write_json(ROOT / "all_context_applicability_review_v0_3.json", context_rows)
-    write_json(ROOT / "scenario_template_governance_v0_3.json", scenario_gov)
-    write_csv(ROOT / "scenario_to_score13_mapping_v0_3.csv", score13)
-    write_csv(ROOT / "inspection_candidate_recommendations_v0_3.csv", inspections)
-    write_csv(ROOT / "open_questions_v0_3.csv", open_questions)
+    write_csv(artifact_path("all_permit_condition_backfill_v0_3.csv"), permit_rows)
+    write_json(artifact_path("all_permit_condition_backfill_v0_3.json"), permit_rows)
+    write_csv(artifact_path("all_context_applicability_review_v0_3.csv"), context_rows)
+    write_json(artifact_path("all_context_applicability_review_v0_3.json"), context_rows)
+    write_json(artifact_path("scenario_template_governance_v0_3.json"), scenario_gov)
+    write_csv(artifact_path("scenario_to_score13_mapping_v0_3.csv"), score13)
+    write_csv(artifact_path("inspection_candidate_recommendations_v0_3.csv"), inspections)
+    write_csv(artifact_path("open_questions_v0_3.csv"), open_questions)
 
-    (ROOT / "scenario_template_governance_v0_3.md").write_text(
+    (artifact_path("scenario_template_governance_v0_3.md")).write_text(
         "# 场景模板治理 v0.3\n\n"
         "本文件对应 `scenario_template_governance_v0_3.json`。场景是产污场景，不是行业硬编码；行业只作为召回入口，最终以环评、批复、排污许可、台账和现场事实确认。\n\n"
         + "\n".join(f"- `{s['scenario_id']}`：{s['scenario_name']}；风险点：{'；'.join(s['risk_points'])}" for s in scenario_gov)
         + "\n",
         encoding="utf-8",
     )
-    (ROOT / "open_questions_v0_3.md").write_text(
+    (artifact_path("open_questions_v0_3.md")).write_text(
         "# Open Questions v0.3\n\n" + "\n".join(
             f"- `{q['question_id']}` [{q['blocking_level']}] {q['question']}" for q in open_questions
         ) + "\n",
@@ -456,8 +457,8 @@ def main():
         "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
     }
     context_gate_report["validation_status"] = "PASS" if not context_gate_report["division_context_unjustified_applies"] else "FAIL"
-    write_json(ROOT / "all_context_applicability_review_gate_report.json", context_gate_report)
-    (ROOT / "all_context_applicability_review_gate_report.md").write_text(
+    write_json(artifact_path("all_context_applicability_review_gate_report.json"), context_gate_report)
+    (artifact_path("all_context_applicability_review_gate_report.md")).write_text(
         "# 全量条目-小类适用关系门禁报告\n\n"
         f"- final_state: `{FINAL_STATE}`\n"
         f"- context_relation_count: {len(context_rows)}\n"
@@ -494,7 +495,7 @@ def main():
         "runtime_status_policy": "CANDIDATE_ONLY or DRAFT_NOT_FOR_RUNTIME",
         "permit_type_policy": "NEED_CONFIRM",
     })
-    write_json(ROOT / "knowledge_base_manifest_v0_3.json", manifest)
+    write_json(artifact_path("knowledge_base_manifest_v0_3.json"), manifest)
 
     report = [
         "# FINAL COMPLETION REPORT",
@@ -518,7 +519,7 @@ def main():
         "- 针对开放问题做业务确认。",
         "- 经审批后再设计运行时接入方案。",
     ]
-    (ROOT / "FINAL_COMPLETION_REPORT.md").write_text("\n".join(report) + "\n", encoding="utf-8")
+    (artifact_path("FINAL_COMPLETION_REPORT.md")).write_text("\n".join(report) + "\n", encoding="utf-8")
 
     print(json.dumps({"generated": outputs, "final_state": FINAL_STATE}, ensure_ascii=False, indent=2))
 
