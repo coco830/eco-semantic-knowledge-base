@@ -1,0 +1,15 @@
+{
+  "validation_status": "PASS",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_integration": "disabled",
+  "failure_count": 0,
+  "checked_contracts": [
+    "reject_simulated_reviewers_as_real_signatures",
+    "reject_not_for_runtime_import",
+    "reject_formal_permit_type_generation",
+    "reject_formal_inspection_template_generation",
+    "reject_auto_deduct_generation",
+    "require_second_approval_before_runtime_scope"
+  ],
+  "failure_samples": []
+}

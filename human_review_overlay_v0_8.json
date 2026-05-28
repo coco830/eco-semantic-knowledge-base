@@ -18,7 +18,8 @@
     "requires_second_approval": "true",
     "source_basis": "simulated_human_review_input_v0_8.csv; human_review_queue_v0_7.csv",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "overlay_id": "HRV08::CTXV04_3012_63_SIMPLIFIED",
@@ -39,7 +40,8 @@
     "requires_second_approval": "true",
     "source_basis": "simulated_human_review_input_v0_8.csv; human_review_queue_v0_7.csv",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "overlay_id": "HRV08::CTXV04_0111_109_SIMPLIFIED",
@@ -60,7 +62,8 @@
     "requires_second_approval": "true",
     "source_basis": "simulated_human_review_input_v0_8.csv; human_review_queue_v0_7.csv",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "overlay_id": "HRV08::CTXV04_4620_99_KEY",
@@ -81,7 +84,8 @@
     "requires_second_approval": "true",
     "source_basis": "simulated_human_review_input_v0_8.csv; human_review_queue_v0_7.csv",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "overlay_id": "HRV08::CTXV04_3021_63_KEY",
@@ -102,7 +106,8 @@
     "requires_second_approval": "true",
     "source_basis": "simulated_human_review_input_v0_8.csv; human_review_queue_v0_7.csv",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "overlay_id": "HRV08::CTXV04_3021_63_SIMPLIFIED",
@@ -123,7 +128,8 @@
     "requires_second_approval": "true",
     "source_basis": "simulated_human_review_input_v0_8.csv; human_review_queue_v0_7.csv",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "overlay_id": "HRV08::CTXV04_2211_36_KEY",
@@ -144,7 +150,8 @@
     "requires_second_approval": "true",
     "source_basis": "simulated_human_review_input_v0_8.csv; human_review_queue_v0_7.csv",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "overlay_id": "HRV08::CTXV04_7721_103_KEY",
@@ -165,7 +172,8 @@
     "requires_second_approval": "true",
     "source_basis": "simulated_human_review_input_v0_8.csv; human_review_queue_v0_7.csv",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "overlay_id": "HRV08::CTXV04_2710_53_KEY",
@@ -186,7 +194,8 @@
     "requires_second_approval": "true",
     "source_basis": "simulated_human_review_input_v0_8.csv; human_review_queue_v0_7.csv",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "overlay_id": "HRV08::CTXV04_1311_9_SIMPLIFIED",
@@ -207,7 +216,8 @@
     "requires_second_approval": "true",
     "source_basis": "simulated_human_review_input_v0_8.csv; human_review_queue_v0_7.csv",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "overlay_id": "HRV08::CTXV04_1361_14_REGISTRATION",
@@ -228,6 +238,7 @@
     "requires_second_approval": "true",
     "source_basis": "simulated_human_review_input_v0_8.csv; human_review_queue_v0_7.csv",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   }
 ]

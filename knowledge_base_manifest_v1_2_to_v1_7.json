@@ -1,0 +1,26 @@
+{
+  "knowledge_base_version": "v1.2-to-v1.7-candidate-governance-roadmap",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_integration": "disabled",
+  "runtime_effect": "NONE",
+  "input_locks": {
+    "open_questions_v0_4_1": 19,
+    "human_review_queue_v0_7": 22815
+  },
+  "output_counts": {
+    "v1_2_extraction_samples": 5,
+    "v1_2_predicates": 22,
+    "v1_3_activation_rules": 12,
+    "v1_4_open_question_overlay": 19,
+    "v1_5_review_slices": 7,
+    "v1_6_eval_items": 12,
+    "v1_7_readiness_rows": 8
+  },
+  "hard_boundaries": [
+    "no_ecocheck_runtime_integration",
+    "no_formal_permit_type",
+    "no_formal_inspection_template",
+    "no_auto_deduct",
+    "no_fake_human_review"
+  ]
+}

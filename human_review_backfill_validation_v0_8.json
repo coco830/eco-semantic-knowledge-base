@@ -9,7 +9,7 @@
   "still_blocked_rows": 6,
   "rag_query_count": 8,
   "runtime_effect": "NONE",
-  "generated_at": "2026-05-28T05:29:31.650672+00:00",
+  "generated_at": "2026-05-28T10:31:26.282137+00:00",
   "failure_count": 0,
   "validator": "validate_review_backfill_rag_prototype_v0_8.py"
 }

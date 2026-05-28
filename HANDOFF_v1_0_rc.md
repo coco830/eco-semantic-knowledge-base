@@ -13,11 +13,13 @@ runtime_integration: `disabled`
 2. RAG demo：使用 `rag_chunks_v0_5.jsonl`、`retrieval_eval_set_v0_6.jsonl` 和 `rag_prototype_results_v0_8.jsonl`，回答必须展示候选边界和审阅状态。
 3. 图谱 demo：使用 `graph_nodes_v0_5.jsonl`、`graph_edges_v0_5.jsonl`、`review_impact_graph_edges_v0_9.jsonl` 展示行业、许可条件、场景、13维、排查项影响链。
 4. EcoCheck 接入：必须另开实现任务或分支，先通过 `runtime_promotion_gate_design_v1_0_rc.md` 中全部闸门。
+5. 工序证据层：使用 `process_evidence_schema_v1_1.md`、`process_trigger_dictionary_v1_1.csv/json` 和 `enterprise_profile_overlay_samples_v1_1.csv/json` 做企业画像证据 overlay。环评/批复/许可/台账/现场事实可以确认场景候选，但仍不能绕过人工审阅和运行时二次审批。
 
 ## 真正接入前置条件
 
 - 人工审阅字段完整，且无伪造审阅。
 - P0/P1 open questions 关闭或有签字风险接受。
+- 工序/工艺证据已经从环评、批复、排污许可、台账或现场事实留痕，并通过 `process_evidence_gate_report_v1_1.md/json` 的候选门禁。
 - Product、ETO、TechLead 完成二次审批。
 - 后端导入契约、前端呈现契约、RAG 边界契约、回滚契约全部通过。
 - 导入前生成版本冻结 manifest、rollback manifest 和审计日志方案。
