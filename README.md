@@ -6,6 +6,7 @@
 
 - `PROJECT_INDEX_v1_0_rc.md`: 封版索引、关键文件、验证命令和禁止事项。
 - `HANDOFF_v1_0_rc.md`: 后续人工审阅、RAG demo、图谱 demo、运行时接入前置条件。
+- `open_questions_review_guide_v1_0_rc.md`: 19 个开放问题的分派审阅指南。
 - `FINAL_COMPLETION_REPORT_v1_0_rc.md`: v1.0-rc 完成报告。
 
 硬边界：
@@ -16,4 +17,3 @@
 - 不生成正式 `permit_type`。
 - 不生成正式检查模板。
 - 不自动扣分。
-

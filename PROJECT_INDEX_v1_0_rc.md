@@ -12,6 +12,8 @@ runtime_integration: `disabled`
 - `PROJECT_INDEX_v1_0_rc.md`: 本索引。
 - `HANDOFF_v1_0_rc.md`: 后续人审、RAG demo、运行时接入分支交接说明。
 - `DEPRECATED_AND_REMOVED_FILES_v1_0_rc.md`: 已移出当前主线的历史入口说明。
+- `open_questions_review_guide_v1_0_rc.md`: 19个开放问题的可分派审阅指南。
+- `open_questions_review_matrix_v1_0_rc.csv`: 19个开放问题的分派矩阵。
 
 ## 核心数据入口
 
@@ -21,6 +23,7 @@ runtime_integration: `disabled`
 - `scenario_to_score13_mapping_v0_3.csv`: 场景到 EcoCheck S01-S13 的候选语义映射。
 - `inspection_candidate_recommendations_v0_3.csv`: 候选排查建议，不能直接生成正式检查模板。
 - `open_questions_v0_4_1.csv`: 高风险开放问题。
+- `open_questions_review_guide_v1_0_rc.md`: 把开放问题拆成“问谁、问什么、查什么、怎么关闭”。
 - `risk_acceptance_queue_v0_4_1.csv`: 运行时阻断风险队列。
 
 ## 审阅与回灌入口

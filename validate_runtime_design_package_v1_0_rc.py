@@ -27,6 +27,8 @@ def main():
         "PROJECT_INDEX_v1_0_rc.md",
         "HANDOFF_v1_0_rc.md",
         "DEPRECATED_AND_REMOVED_FILES_v1_0_rc.md",
+        "open_questions_review_guide_v1_0_rc.md",
+        "open_questions_review_matrix_v1_0_rc.csv",
         "runtime_promotion_gate_design_v1_0_rc.md",
         "runtime_promotion_gate_design_v1_0_rc.json",
         "runtime_data_contract_v1_0_rc.md",
@@ -87,6 +89,7 @@ def main():
         "PROJECT_INDEX_v1_0_rc.md",
         "HANDOFF_v1_0_rc.md",
         "DEPRECATED_AND_REMOVED_FILES_v1_0_rc.md",
+        "open_questions_review_guide_v1_0_rc.md",
         "runtime_rollback_plan_v1_0_rc.md",
         "runtime_contract_test_plan_v1_0_rc.md",
         "approval_workflow_v1_0_rc.md",
@@ -141,6 +144,39 @@ def main():
     for name in removed_legacy_files:
         if (ROOT / name).exists():
             fail(failures, name, "legacy_runtime_entry_should_be_removed")
+
+    review_matrix = read_csv(ROOT / "open_questions_review_matrix_v1_0_rc.csv")
+    open_questions = read_csv(ROOT / "open_questions_v0_4_1.csv")
+    if len(review_matrix) != len(open_questions):
+        fail(failures, "open_questions_review_matrix_v1_0_rc.csv", "row_count_mismatch")
+    matrix_ids = {r.get("question_id", "") for r in review_matrix}
+    open_ids = {r.get("question_id", "") for r in open_questions}
+    if matrix_ids != open_ids:
+        fail(failures, "open_questions_review_matrix_v1_0_rc.csv", "question_id_set_mismatch")
+    for row in review_matrix:
+        qid = row.get("question_id", "")
+        for field in [
+            "ask_who",
+            "concrete_question",
+            "check_materials",
+            "decision_options",
+            "evidence_to_record",
+            "close_condition",
+            "runtime_effect",
+        ]:
+            if not row.get(field, "").strip():
+                fail(failures, "open_questions_review_matrix_v1_0_rc.csv", f"missing_{field}", qid)
+    guide = (ROOT / "open_questions_review_guide_v1_0_rc.md").read_text(encoding="utf-8")
+    for phrase in [
+        "找谁问",
+        "具体要问",
+        "怎么查",
+        "要留什么证据",
+        "关闭条件",
+        "BLOCKS_RUNTIME",
+    ]:
+        if phrase not in guide:
+            fail(failures, "open_questions_review_guide_v1_0_rc.md", "missing_guide_phrase", phrase)
 
     forbidden_claims = ["runtime_integration: enabled", "自动扣分已启用", "正式模板已生成", "已接 EcoCheck runtime"]
     for name in required:
