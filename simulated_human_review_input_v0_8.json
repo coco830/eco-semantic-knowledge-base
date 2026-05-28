@@ -11,7 +11,8 @@
     "decision_confidence": "HIGH",
     "simulation_only": "true",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "review_item_id": "HRV07::CTXV04_3012_63_SIMPLIFIED",
@@ -25,7 +26,8 @@
     "decision_confidence": "HIGH",
     "simulation_only": "true",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "review_item_id": "HRV07::CTXV04_0111_109_SIMPLIFIED",
@@ -39,7 +41,8 @@
     "decision_confidence": "MEDIUM",
     "simulation_only": "true",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "review_item_id": "HRV07::CTXV04_4620_99_KEY",
@@ -53,7 +56,8 @@
     "decision_confidence": "MEDIUM",
     "simulation_only": "true",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "review_item_id": "HRV07::CTXV04_3021_63_KEY",
@@ -67,7 +71,8 @@
     "decision_confidence": "HIGH",
     "simulation_only": "true",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "review_item_id": "HRV07::CTXV04_3021_63_SIMPLIFIED",
@@ -81,7 +86,8 @@
     "decision_confidence": "MEDIUM",
     "simulation_only": "true",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "review_item_id": "HRV07::CTXV04_2211_36_KEY",
@@ -95,7 +101,8 @@
     "decision_confidence": "MEDIUM",
     "simulation_only": "true",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "review_item_id": "HRV07::CTXV04_7721_103_KEY",
@@ -109,7 +116,8 @@
     "decision_confidence": "LOW",
     "simulation_only": "true",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "review_item_id": "HRV07::CTXV04_2710_53_KEY",
@@ -123,7 +131,8 @@
     "decision_confidence": "HIGH",
     "simulation_only": "true",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "review_item_id": "HRV07::CTXV04_1311_9_SIMPLIFIED",
@@ -137,7 +146,8 @@
     "decision_confidence": "MEDIUM",
     "simulation_only": "true",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   },
   {
     "review_item_id": "HRV07::CTXV04_1361_14_REGISTRATION",
@@ -151,6 +161,7 @@
     "decision_confidence": "LOW",
     "simulation_only": "true",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
-    "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "runtime_integration": "disabled"
   }
 ]

@@ -6,7 +6,8 @@
     "overlay_status": "FORMALIZATION_CANDIDATE",
     "diff_reason": "登记条件原文列3021/3022/3023/3024/3029，未列3012；确认不适用。",
     "runtime_effect": "NONE",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "candidate_relation_id": "CTXV04_3012_63_SIMPLIFIED",
@@ -15,7 +16,8 @@
     "overlay_status": "FORMALIZATION_CANDIDATE",
     "diff_reason": "简化管理条件明确包含石灰和石膏制造3012；仍需企业级许可与现场事实确认。",
     "runtime_effect": "NONE",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "candidate_relation_id": "CTXV04_0111_109_SIMPLIFIED",
@@ -24,7 +26,8 @@
     "overlay_status": "BLOCKS_RUNTIME",
     "diff_reason": "稻谷种植只有通用工序锅炉触发，需现场确认是否存在锅炉及出力阈值。",
     "runtime_effect": "NONE",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "candidate_relation_id": "CTXV04_4620_99_KEY",
@@ -33,7 +36,8 @@
     "overlay_status": "FORMALIZATION_CANDIDATE",
     "diff_reason": "4620与污水处理条目高度相关，但仍需按工业废水集中处理、城乡污水处理和处理能力确认。",
     "runtime_effect": "NONE",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "candidate_relation_id": "CTXV04_3021_63_KEY",
@@ -42,7 +46,8 @@
     "overlay_status": "FORMALIZATION_CANDIDATE",
     "diff_reason": "重点管理条件为水泥熟料制造，不覆盖3021水泥制品制造。",
     "runtime_effect": "NONE",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "candidate_relation_id": "CTXV04_3021_63_SIMPLIFIED",
@@ -51,7 +56,8 @@
     "overlay_status": "BLOCKS_RUNTIME",
     "diff_reason": "简化条件涉及水泥粉磨站或3012边界，3021企业需环评文件确认工序和产品归属。",
     "runtime_effect": "NONE",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "candidate_relation_id": "CTXV04_2211_36_KEY",
@@ -60,7 +66,8 @@
     "overlay_status": "BLOCKS_RUNTIME",
     "diff_reason": "2211与纸浆制造221相关，但仍需排污许可证或登记回执确认企业管理类别。",
     "runtime_effect": "NONE",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "candidate_relation_id": "CTXV04_7721_103_KEY",
@@ -69,7 +76,8 @@
     "overlay_status": "BLOCKS_RUNTIME",
     "diff_reason": "水污染治理7721与第103条固废/危废处理处置业务范围存在错位，需要专项规则拆分。",
     "runtime_effect": "NONE",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "candidate_relation_id": "CTXV04_2710_53_KEY",
@@ -78,7 +86,8 @@
     "overlay_status": "FORMALIZATION_CANDIDATE",
     "diff_reason": "化学药品原料药制造2710与第53条直接相关，确认进入正式化候选。",
     "runtime_effect": "NONE",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "candidate_relation_id": "CTXV04_1311_9_SIMPLIFIED",
@@ -87,7 +96,8 @@
     "overlay_status": "BLOCKS_RUNTIME",
     "diff_reason": "该候选关系与稻谷加工登记条件同条目兄弟条件冲突，当前简化条件不应保留为审阅候选。",
     "runtime_effect": "NONE",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "candidate_relation_id": "CTXV04_1361_14_REGISTRATION",
@@ -96,6 +106,7 @@
     "overlay_status": "BLOCKS_RUNTIME",
     "diff_reason": "该登记条件与同类蔬菜加工相邻候选可合并为同一代表性审阅结论，不直接生成运行时规则。",
     "runtime_effect": "NONE",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   }
 ]

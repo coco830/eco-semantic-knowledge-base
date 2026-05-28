@@ -26,6 +26,39 @@ def split_semicolon(value):
     return [x for x in (value or "").split(";") if x]
 
 
+def normalize_json_value(value):
+    if value is True:
+        return "true"
+    if value is False:
+        return "false"
+    if value is None:
+        return ""
+    return str(value)
+
+
+def check_csv_json_parity(failures, csv_name, json_name, id_field):
+    csv_rows = read_csv(ROOT / csv_name)
+    json_rows = read_json(ROOT / json_name)
+    if len(csv_rows) != len(json_rows):
+        fail(failures, json_name, "csv_json_count_mismatch", f"{len(csv_rows)}!={len(json_rows)}")
+        return
+    csv_by_id = {row.get(id_field, ""): row for row in csv_rows}
+    json_by_id = {normalize_json_value(row.get(id_field, "")): row for row in json_rows}
+    if set(csv_by_id) != set(json_by_id):
+        fail(failures, json_name, "csv_json_id_set_mismatch", id_field)
+        return
+    for row_id, csv_row in csv_by_id.items():
+        json_row = json_by_id[row_id]
+        csv_fields = set(csv_row)
+        json_fields = set(json_row)
+        if csv_fields != json_fields:
+            fail(failures, json_name, "csv_json_field_set_mismatch", row_id)
+            continue
+        for field in csv_fields:
+            if csv_row.get(field, "") != normalize_json_value(json_row.get(field, "")):
+                fail(failures, json_name, f"csv_json_value_mismatch:{field}", row_id)
+
+
 def main():
     failures = []
     required = [
@@ -61,8 +94,10 @@ def main():
     gate = read_json(ROOT / "process_evidence_gate_report_v1_1.json")
     graph_design = read_json(ROOT / "process_graph_rag_design_v1_1.json")
 
-    if len(triggers) != len(triggers_json):
-        fail(failures, "process_trigger_dictionary_v1_1.json", "csv_json_count_mismatch")
+    check_csv_json_parity(failures, "process_trigger_dictionary_v1_1.csv", "process_trigger_dictionary_v1_1.json", "process_id")
+    check_csv_json_parity(failures, "process_to_scenario_activation_v1_1.csv", "process_to_scenario_activation_v1_1.json", "activation_id")
+    check_csv_json_parity(failures, "process_evidence_predicates_samples_v1_1.csv", "process_evidence_predicates_samples_v1_1.json", "evidence_id")
+    check_csv_json_parity(failures, "enterprise_profile_overlay_samples_v1_1.csv", "enterprise_profile_overlay_samples_v1_1.json", "overlay_id")
     if len(triggers) < 10:
         fail(failures, "process_trigger_dictionary_v1_1.csv", "too_few_process_triggers")
     if len(evidence) < 5:

@@ -105,6 +105,7 @@ python build_review_impact_graph_v0_9.py
 python validate_review_impact_graph_v0_9.py
 python build_runtime_design_package_v1_0_rc.py
 python validate_runtime_design_package_v1_0_rc.py
+python validate_runtime_preintegration_contracts_v1_0_rc.py
 python build_process_evidence_package_v1_1.py
 python validate_process_evidence_package_v1_1.py
 python build_semantic_governance_roadmap_v1_2_to_v1_7.py
