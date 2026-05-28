@@ -29,6 +29,8 @@ def main():
         "DEPRECATED_AND_REMOVED_FILES_v1_0_rc.md",
         "open_questions_review_guide_v1_0_rc.md",
         "open_questions_review_matrix_v1_0_rc.csv",
+        "eto_eso_open_question_decisions_v1_0_rc.md",
+        "eto_eso_open_question_decisions_v1_0_rc.csv",
         "runtime_promotion_gate_design_v1_0_rc.md",
         "runtime_promotion_gate_design_v1_0_rc.json",
         "runtime_data_contract_v1_0_rc.md",
@@ -90,6 +92,7 @@ def main():
         "HANDOFF_v1_0_rc.md",
         "DEPRECATED_AND_REMOVED_FILES_v1_0_rc.md",
         "open_questions_review_guide_v1_0_rc.md",
+        "eto_eso_open_question_decisions_v1_0_rc.md",
         "runtime_rollback_plan_v1_0_rc.md",
         "runtime_contract_test_plan_v1_0_rc.md",
         "approval_workflow_v1_0_rc.md",
@@ -177,6 +180,34 @@ def main():
     ]:
         if phrase not in guide:
             fail(failures, "open_questions_review_guide_v1_0_rc.md", "missing_guide_phrase", phrase)
+
+    decision_rows = read_csv(ROOT / "eto_eso_open_question_decisions_v1_0_rc.csv")
+    if len(decision_rows) != len(open_questions):
+        fail(failures, "eto_eso_open_question_decisions_v1_0_rc.csv", "row_count_mismatch")
+    decision_ids = {r.get("question_id", "") for r in decision_rows}
+    if decision_ids != open_ids:
+        fail(failures, "eto_eso_open_question_decisions_v1_0_rc.csv", "question_id_set_mismatch")
+    for row in decision_rows:
+        qid = row.get("question_id", "")
+        if row.get("runtime_boundary") != "BLOCKS_RUNTIME":
+            fail(failures, "eto_eso_open_question_decisions_v1_0_rc.csv", "runtime_boundary_not_blocked", qid)
+        if row.get("implementation_required") != "true":
+            fail(failures, "eto_eso_open_question_decisions_v1_0_rc.csv", "implementation_required_not_true", qid)
+        for field in ["owner_decision", "decision_status", "evidence_required"]:
+            if not row.get(field, "").strip():
+                fail(failures, "eto_eso_open_question_decisions_v1_0_rc.csv", f"missing_{field}", qid)
+    decision_text = (ROOT / "eto_eso_open_question_decisions_v1_0_rc.md").read_text(encoding="utf-8")
+    for phrase in [
+        "PRELIMINARY_ETO_ESO_REVIEW_RECORDED",
+        "BLOCKS_RUNTIME",
+        "不解除任何运行时阻断",
+        "不填写或伪造",
+        "1512=白酒制造",
+        "1513=啤酒制造",
+        "另开 v1.1 治理修复任务",
+    ]:
+        if phrase not in decision_text:
+            fail(failures, "eto_eso_open_question_decisions_v1_0_rc.md", "missing_decision_phrase", phrase)
 
     forbidden_claims = ["runtime_integration: enabled", "自动扣分已启用", "正式模板已生成", "已接 EcoCheck runtime"]
     for name in required:

@@ -14,6 +14,7 @@ runtime_integration: `disabled`
 - `DEPRECATED_AND_REMOVED_FILES_v1_0_rc.md`: 已移出当前主线的历史入口说明。
 - `open_questions_review_guide_v1_0_rc.md`: 19个开放问题的可分派审阅指南。
 - `open_questions_review_matrix_v1_0_rc.csv`: 19个开放问题的分派矩阵。
+- `eto_eso_open_question_decisions_v1_0_rc.md/csv`: ETO/ESO初步审阅决策记录，仍不解除运行时阻断。
 
 ## 核心数据入口
 
@@ -24,6 +25,7 @@ runtime_integration: `disabled`
 - `inspection_candidate_recommendations_v0_3.csv`: 候选排查建议，不能直接生成正式检查模板。
 - `open_questions_v0_4_1.csv`: 高风险开放问题。
 - `open_questions_review_guide_v1_0_rc.md`: 把开放问题拆成“问谁、问什么、查什么、怎么关闭”。
+- `eto_eso_open_question_decisions_v1_0_rc.md/csv`: 已收到的ETO/ESO初步判定，作为后续v1.1治理修复输入。
 - `risk_acceptance_queue_v0_4_1.csv`: 运行时阻断风险队列。
 
 ## 审阅与回灌入口
