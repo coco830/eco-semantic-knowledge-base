@@ -1,0 +1,1567 @@
+[
+  {
+    "rule_id": "GB4754_8411_KEY",
+    "industry_code": "8411",
+    "industry_name": "综合医院",
+    "permit_type": "KEY",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_MEDICAL_WASTE_RADIATION",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "special_scenarios": [
+      "SCN_MEDICAL_WASTE_RADIATION"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019)第107条",
+      "HJ 1105-2020"
+    ],
+    "confidence": "HIGH",
+    "confirmation_questions": [
+      {
+        "question_key": "bed_count",
+        "label": "医院床位数是多少？",
+        "target_tags": [
+          "wastewater_station",
+          "online_monitoring"
+        ],
+        "answer_type": "number",
+        "affects_fields": [
+          "permit_type"
+        ],
+        "evidence_hint": "查看医疗机构执业许可证"
+      },
+      {
+        "question_key": "wastewater_station_exists",
+        "label": "是否设有污水处理站？",
+        "target_tags": [
+          "wastewater_station"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "有",
+          "无"
+        ],
+        "affects_fields": [
+          "wastewater_station"
+        ],
+        "evidence_hint": "现场查看污水处理站"
+      },
+      {
+        "question_key": "wastewater_station_process",
+        "label": "污水处理工艺是什么？",
+        "target_tags": [
+          "wastewater_station"
+        ],
+        "answer_type": "text",
+        "affects_fields": [
+          "environmental_facility_operation"
+        ],
+        "evidence_hint": "查看环评批复或现场确认"
+      },
+      {
+        "question_key": "radiation_dept_exists",
+        "label": "是否设有放射科、核医学科？",
+        "target_tags": [
+          "radiation"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "有",
+          "无"
+        ],
+        "affects_fields": [
+          "radiation_types"
+        ],
+        "evidence_hint": "查看辐射安全许可证"
+      },
+      {
+        "question_key": "radiation_equipment",
+        "label": "放射科设备类型？",
+        "target_tags": [
+          "radiation"
+        ],
+        "answer_type": "multi_select",
+        "options": [
+          "X光",
+          "CT",
+          "DSA",
+          "核医学",
+          "无"
+        ],
+        "affects_fields": [
+          "radiation_types"
+        ],
+        "evidence_hint": "现场查看设备"
+      },
+      {
+        "question_key": "lab_organic_solvents",
+        "label": "检验科、病理科是否使用有机溶剂？",
+        "target_tags": [
+          "vocs_emission",
+          "unorganized_exhaust"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "使用",
+          "不使用"
+        ],
+        "affects_fields": [
+          "vocs_emission",
+          "exhaust_treatment_facility"
+        ],
+        "evidence_hint": "现场查看检验科、病理科"
+      },
+      {
+        "question_key": "medical_waste_storage",
+        "label": "医疗废物暂存间管理情况？",
+        "target_tags": [
+          "medical_waste"
+        ],
+        "answer_type": "text",
+        "affects_fields": [
+          "waste_transfer_ledger"
+        ],
+        "evidence_hint": "现场查看暂存间，查看转移联单"
+      },
+      {
+        "question_key": "online_monitoring_exists",
+        "label": "是否有废水在线监测设备？",
+        "target_tags": [
+          "online_monitoring"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "有",
+          "无"
+        ],
+        "affects_fields": [
+          "special_scenarios"
+        ],
+        "evidence_hint": "现场查看在线监测设备"
+      }
+    ],
+    "notes": "医疗机构按床位数分类：500张及以上=重点，100-499张=简化，100张以下=登记"
+  },
+  {
+    "rule_id": "GB4754_8411_SIMPLIFIED",
+    "industry_code": "8411",
+    "industry_name": "综合医院",
+    "permit_type": "SIMPLIFIED",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_MEDICAL_WASTE_RADIATION",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [
+      "SCN_MEDICAL_WASTE_RADIATION"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录107条",
+      "HJ 1105-2020"
+    ],
+    "confidence": "HIGH",
+    "confirmation_questions": [
+      {
+        "question_key": "bed_count",
+        "label": "医院床位数？",
+        "target_tags": [
+          "wastewater_station"
+        ],
+        "answer_type": "number",
+        "evidence_hint": "查看执业许可证"
+      },
+      {
+        "question_key": "wastewater_facility",
+        "label": "污水处理设施类型？",
+        "target_tags": [
+          "wastewater_station"
+        ],
+        "answer_type": "text",
+        "evidence_hint": "现场查看"
+      },
+      {
+        "question_key": "radiation_dept",
+        "label": "是否有放射科？",
+        "target_tags": [
+          "radiation"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "有",
+          "无"
+        ],
+        "evidence_hint": "现场确认"
+      },
+      {
+        "question_key": "medical_waste_mgmt",
+        "label": "医疗废物管理情况？",
+        "target_tags": [
+          "medical_waste"
+        ],
+        "answer_type": "text",
+        "evidence_hint": "查看转移联单"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "rule_id": "GB4754_8411_REGISTRATION",
+    "industry_code": "8411",
+    "industry_name": "综合医院",
+    "permit_type": "REGISTRATION",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_MEDICAL_WASTE_RADIATION",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [
+      "SCN_MEDICAL_WASTE_RADIATION"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录107条",
+      "HJ 1105-2020"
+    ],
+    "confidence": "HIGH",
+    "confirmation_questions": [
+      {
+        "question_key": "bed_count",
+        "label": "床位数？",
+        "target_tags": [
+          "wastewater_station"
+        ],
+        "answer_type": "number",
+        "evidence_hint": "查看执业许可证"
+      },
+      {
+        "question_key": "wastewater_treatment",
+        "label": "污水如何处理？",
+        "target_tags": [
+          "wastewater_station"
+        ],
+        "answer_type": "text",
+        "evidence_hint": "现场确认"
+      },
+      {
+        "question_key": "medical_waste_mgmt",
+        "label": "医疗废物管理？",
+        "target_tags": [
+          "medical_waste"
+        ],
+        "answer_type": "text",
+        "evidence_hint": "查看台账"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "rule_id": "GB4754_2319_KEY",
+    "industry_code": "2319",
+    "industry_name": "包装装潢印刷",
+    "permit_type": "KEY",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录39条",
+      "HJ 1066-2019"
+    ],
+    "confidence": "HIGH",
+    "confirmation_questions": [
+      {
+        "question_key": "is_key_polluter",
+        "label": "是否纳入重点排污单位名录？",
+        "target_tags": [
+          "online_monitoring"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "是",
+          "否"
+        ],
+        "affects_fields": [
+          "permit_type"
+        ],
+        "evidence_hint": "查询当地名录"
+      },
+      {
+        "question_key": "solvent_ink_usage",
+        "label": "年使用溶剂型油墨量(吨)？",
+        "target_tags": [
+          "vocs_emission"
+        ],
+        "answer_type": "number",
+        "affects_fields": [
+          "permit_type"
+        ],
+        "evidence_hint": "查看采购记录"
+      },
+      {
+        "question_key": "ink_type",
+        "label": "使用的油墨类型？",
+        "target_tags": [
+          "vocs_emission"
+        ],
+        "answer_type": "multi_select",
+        "options": [
+          "溶剂型",
+          "水性",
+          "UV"
+        ],
+        "affects_fields": [
+          "vocs_emission"
+        ],
+        "evidence_hint": "查看MSDS"
+      },
+      {
+        "question_key": "vocs_treatment",
+        "label": "是否有废气收集和治理设施？",
+        "target_tags": [
+          "exhaust_treatment_facility"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "有",
+          "无"
+        ],
+        "affects_fields": [
+          "exhaust_treatment_facility"
+        ],
+        "evidence_hint": "现场查看"
+      },
+      {
+        "question_key": "has_storage_tank",
+        "label": "是否有储罐？",
+        "target_tags": [
+          "ldar"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "有",
+          "无"
+        ],
+        "affects_fields": [
+          "special_scenarios"
+        ],
+        "evidence_hint": "现场查看"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "rule_id": "GB4754_2319_SIMPLIFIED",
+    "industry_code": "2319",
+    "industry_name": "包装装潢印刷",
+    "permit_type": "SIMPLIFIED",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录39条",
+      "HJ 1066-2019"
+    ],
+    "confidence": "HIGH",
+    "confirmation_questions": [
+      {
+        "question_key": "ink_usage",
+        "label": "年使用油墨量？",
+        "target_tags": [
+          "vocs_emission"
+        ],
+        "answer_type": "number",
+        "evidence_hint": "查看采购记录"
+      },
+      {
+        "question_key": "ink_type",
+        "label": "油墨类型？",
+        "target_tags": [
+          "vocs_emission"
+        ],
+        "answer_type": "multi_select",
+        "options": [
+          "溶剂型",
+          "水性",
+          "UV"
+        ],
+        "affects_fields": [
+          "vocs_emission"
+        ],
+        "evidence_hint": "查看标签"
+      },
+      {
+        "question_key": "vocs_facility",
+        "label": "废气治理设施？",
+        "target_tags": [
+          "exhaust_treatment_facility"
+        ],
+        "answer_type": "text",
+        "evidence_hint": "现场查看"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "rule_id": "GB4754_2319_REGISTRATION",
+    "industry_code": "2319",
+    "industry_name": "包装装潢印刷",
+    "permit_type": "REGISTRATION",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录39条",
+      "HJ 1066-2019"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      {
+        "question_key": "ink_type",
+        "label": "油墨类型？",
+        "target_tags": [
+          "vocs_emission"
+        ],
+        "answer_type": "multi_select",
+        "options": [
+          "水性",
+          "UV",
+          "溶剂型"
+        ],
+        "affects_fields": [
+          "vocs_emission"
+        ],
+        "evidence_hint": "查看标签"
+      },
+      {
+        "question_key": "has_hazwaste",
+        "label": "是否产生危废？",
+        "target_tags": [
+          "hazardous_waste"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "是",
+          "否"
+        ],
+        "affects_fields": [
+          "waste_types"
+        ],
+        "evidence_hint": "现场确认"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "rule_id": "GB4754_2641_KEY",
+    "industry_code": "2641",
+    "industry_name": "涂料制造",
+    "permit_type": "KEY",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE"
+    ],
+    "special_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录48条",
+      "HJ 1116-2020"
+    ],
+    "confidence": "HIGH",
+    "confirmation_questions": [
+      {
+        "question_key": "has_reaction",
+        "label": "是否有化学反应工艺？",
+        "target_tags": [
+          "production_process_activity"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "有",
+          "无"
+        ],
+        "affects_fields": [
+          "permit_type"
+        ],
+        "evidence_hint": "查看工艺流程"
+      },
+      {
+        "question_key": "storage_tank",
+        "label": "储罐情况？",
+        "target_tags": [
+          "ldar"
+        ],
+        "answer_type": "text",
+        "evidence_hint": "现场查看储罐区"
+      },
+      {
+        "question_key": "ldar_done",
+        "label": "是否开展LDAR？",
+        "target_tags": [
+          "ldar"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "是",
+          "否"
+        ],
+        "affects_fields": [
+          "special_scenarios"
+        ],
+        "evidence_hint": "查看检测记录"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "rule_id": "GB4754_2641_SIMPLIFIED",
+    "industry_code": "2641",
+    "industry_name": "涂料制造",
+    "permit_type": "SIMPLIFIED",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录48条",
+      "HJ 1116-2020"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      {
+        "question_key": "is_mixing_only",
+        "label": "是否单纯混合分装？",
+        "target_tags": [
+          "production_process_activity"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "是",
+          "否"
+        ],
+        "affects_fields": [
+          "permit_type"
+        ],
+        "evidence_hint": "查看工艺"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "rule_id": "GB4754_2641_REGISTRATION",
+    "industry_code": "2641",
+    "industry_name": "涂料制造",
+    "permit_type": "REGISTRATION",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录48条",
+      "HJ 1116-2020"
+    ],
+    "confidence": "LOW",
+    "confirmation_questions": [
+      {
+        "question_key": "production_scale",
+        "label": "生产规模？",
+        "target_tags": [
+          "production_process_activity"
+        ],
+        "answer_type": "text",
+        "evidence_hint": "查看生产记录"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "rule_id": "GB4754_2925_KEY",
+    "industry_code": "2925",
+    "industry_name": "塑料人造革合成革",
+    "permit_type": "KEY",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录62条",
+      "HJ1122-2020"
+    ],
+    "confidence": "HIGH",
+    "confirmation_questions": [
+      {
+        "question_key": "product_type",
+        "label": "产品类型？",
+        "target_tags": [
+          "vocs_emission"
+        ],
+        "answer_type": "text",
+        "evidence_hint": "确认是否人造革"
+      },
+      {
+        "question_key": "vocs_treatment",
+        "label": "VOCs治理设施？",
+        "target_tags": [
+          "exhaust_treatment_facility"
+        ],
+        "answer_type": "text",
+        "evidence_hint": "现场查看"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "rule_id": "GB4754_2924_SIMPLIFIED",
+    "industry_code": "2924",
+    "industry_name": "泡沫塑料制造",
+    "permit_type": "SIMPLIFIED",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录62条",
+      "HJ1122-2020"
+    ],
+    "confidence": "HIGH",
+    "confirmation_questions": [
+      {
+        "question_key": "annual_output",
+        "label": "年产量(吨)？",
+        "target_tags": [
+          "production_process_activity"
+        ],
+        "answer_type": "number",
+        "evidence_hint": "查看生产记录"
+      },
+      {
+        "question_key": "foaming_agent",
+        "label": "发泡剂类型？",
+        "target_tags": [
+          "vocs_emission"
+        ],
+        "answer_type": "text",
+        "evidence_hint": "查看原辅料"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "rule_id": "GB4754_2921_REGISTRATION",
+    "industry_code": "2921",
+    "industry_name": "塑料薄膜制造",
+    "permit_type": "REGISTRATION",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录62条",
+      "HJ1122-2020"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      {
+        "question_key": "process_type",
+        "label": "生产工艺？",
+        "target_tags": [
+          "vocs_emission"
+        ],
+        "answer_type": "multi_select",
+        "options": [
+          "注塑",
+          "挤出",
+          "吹塑",
+          "其他"
+        ],
+        "affects_fields": [
+          "vocs_emission"
+        ],
+        "evidence_hint": "现场确认"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "rule_id": "GB4754_5265_SIMPLIFIED",
+    "industry_code": "5265",
+    "industry_name": "加油站",
+    "permit_type": "SIMPLIFIED",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_GAS_STATION_VAPOR_UST",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [
+      "SCN_GAS_STATION_VAPOR_UST"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录100条",
+      "HJ 1118-2020"
+    ],
+    "confidence": "HIGH",
+    "confirmation_questions": [
+      {
+        "question_key": "vapor_recovery",
+        "label": "油气回收系统运行情况？",
+        "target_tags": [
+          "gas_station_vapor_recovery"
+        ],
+        "answer_type": "text",
+        "evidence_hint": "查看检测报告"
+      },
+      {
+        "question_key": "tank_leakproof",
+        "label": "地下储罐防渗检测？",
+        "target_tags": [
+          "underground_storage_tank"
+        ],
+        "answer_type": "text",
+        "evidence_hint": "查看检测报告"
+      },
+      {
+        "question_key": "has_carwash",
+        "label": "是否有洗车业务？",
+        "target_tags": [
+          "wastewater_generation"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "有",
+          "无"
+        ],
+        "affects_fields": [
+          "wastewater_station"
+        ],
+        "evidence_hint": "现场确认"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "rule_id": "GB4754_5265_REGISTRATION",
+    "industry_code": "5265",
+    "industry_name": "加油站",
+    "permit_type": "REGISTRATION",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_GAS_STATION_VAPOR_UST",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [
+      "SCN_GAS_STATION_VAPOR_UST"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录100条",
+      "HJ 1118-2020"
+    ],
+    "confidence": "HIGH",
+    "confirmation_questions": [
+      {
+        "question_key": "vapor_recovery",
+        "label": "油气回收？",
+        "target_tags": [
+          "gas_station_vapor_recovery"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "有",
+          "无"
+        ],
+        "affects_fields": [
+          "special_scenarios"
+        ],
+        "evidence_hint": "现场查看"
+      },
+      {
+        "question_key": "tank_status",
+        "label": "地下储罐情况？",
+        "target_tags": [
+          "underground_storage_tank"
+        ],
+        "answer_type": "text",
+        "evidence_hint": "查看防渗检测"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "rule_id": "GB4754_1512_KEY",
+    "industry_code": "1512",
+    "industry_name": "啤酒制造",
+    "permit_type": "KEY",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录21条",
+      "HJ1028-2019"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      {
+        "question_key": "annual_capacity",
+        "label": "年产能(千升)？",
+        "target_tags": [
+          "wastewater_station"
+        ],
+        "answer_type": "number",
+        "evidence_hint": "查看生产记录"
+      }
+    ],
+    "notes": "NEED_CONFIRM: 本地2017国民经济行业分类注释.xlsx显示1512为白酒制造，啤酒制造应核对1513。"
+  },
+  {
+    "rule_id": "GB4754_1512_SIMPLIFIED",
+    "industry_code": "1512",
+    "industry_name": "啤酒制造",
+    "permit_type": "SIMPLIFIED",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录21条",
+      "HJ1028-2019"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      {
+        "question_key": "annual_capacity",
+        "label": "年产能(千升)？",
+        "target_tags": [
+          "wastewater_station"
+        ],
+        "answer_type": "number",
+        "evidence_hint": "查看生产记录"
+      }
+    ],
+    "notes": "NEED_CONFIRM: 本地2017国民经济行业分类注释.xlsx显示1512为白酒制造，啤酒制造应核对1513。"
+  },
+  {
+    "rule_id": "GB4754_1512_REGISTRATION",
+    "industry_code": "1512",
+    "industry_name": "啤酒制造",
+    "permit_type": "REGISTRATION",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录21条",
+      "HJ1028-2019"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      {
+        "question_key": "annual_capacity",
+        "label": "年产能(千升)？",
+        "target_tags": [
+          "wastewater_station"
+        ],
+        "answer_type": "number",
+        "evidence_hint": "查看生产记录"
+      }
+    ],
+    "notes": "NEED_CONFIRM: 本地2017国民经济行业分类注释.xlsx显示1512为白酒制造，啤酒制造应核对1513。"
+  },
+  {
+    "rule_id": "GB4754_1521_SIMPLIFIED",
+    "industry_code": "1521",
+    "industry_name": "饮料制造",
+    "permit_type": "SIMPLIFIED",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录22条",
+      "HJ1028-2019"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      {
+        "question_key": "has_fermentation",
+        "label": "是否有发酵或原汁生产？",
+        "target_tags": [
+          "wastewater_generation"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "有",
+          "无"
+        ],
+        "affects_fields": [
+          "permit_type"
+        ],
+        "evidence_hint": "现场确认"
+      }
+    ],
+    "notes": "NEED_CONFIRM: 1521为碳酸饮料制造，若规则意图为泛饮料制造需扩展到152大类或其他小类。"
+  },
+  {
+    "rule_id": "GB4754_1521_REGISTRATION",
+    "industry_code": "1521",
+    "industry_name": "饮料制造",
+    "permit_type": "REGISTRATION",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录22条",
+      "HJ1028-2019"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      {
+        "question_key": "has_fermentation",
+        "label": "是否有发酵或原汁生产？",
+        "target_tags": [
+          "wastewater_generation"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "有",
+          "无"
+        ],
+        "affects_fields": [
+          "permit_type"
+        ],
+        "evidence_hint": "现场确认"
+      }
+    ],
+    "notes": "NEED_CONFIRM: 1521为碳酸饮料制造，若规则意图为泛饮料制造需扩展到152大类或其他小类。"
+  },
+  {
+    "rule_id": "GB4754_1371_KEY",
+    "industry_code": "1371",
+    "industry_name": "蔬菜加工",
+    "permit_type": "KEY",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录15条",
+      "HJ942-2018"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      {
+        "question_key": "has_boiler",
+        "label": "是否有锅炉等通用工序？",
+        "target_tags": [
+          "boiler_combustion"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "有",
+          "无"
+        ],
+        "affects_fields": [
+          "permit_type"
+        ],
+        "evidence_hint": "现场查看"
+      }
+    ],
+    "notes": "NEED_CONFIRM: 名录第15类主要按通用工序触发重点/简化，行业+许可类型不能脱离现场工序直接定型。"
+  },
+  {
+    "rule_id": "GB4754_1371_SIMPLIFIED",
+    "industry_code": "1371",
+    "industry_name": "蔬菜加工",
+    "permit_type": "SIMPLIFIED",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录15条",
+      "HJ942-2018"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      {
+        "question_key": "has_boiler",
+        "label": "是否有锅炉等通用工序？",
+        "target_tags": [
+          "boiler_combustion"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "有",
+          "无"
+        ],
+        "affects_fields": [
+          "permit_type"
+        ],
+        "evidence_hint": "现场查看"
+      }
+    ],
+    "notes": "NEED_CONFIRM: 名录第15类主要按通用工序触发重点/简化，行业+许可类型不能脱离现场工序直接定型。"
+  },
+  {
+    "rule_id": "GB4754_1371_REGISTRATION",
+    "industry_code": "1371",
+    "industry_name": "蔬菜加工",
+    "permit_type": "REGISTRATION",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录15条",
+      "HJ942-2018"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      {
+        "question_key": "has_boiler",
+        "label": "是否有锅炉等通用工序？",
+        "target_tags": [
+          "boiler_combustion"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "有",
+          "无"
+        ],
+        "affects_fields": [
+          "permit_type"
+        ],
+        "evidence_hint": "现场查看"
+      }
+    ],
+    "notes": "NEED_CONFIRM: 名录第15类主要按通用工序触发重点/简化，行业+许可类型不能脱离现场工序直接定型。"
+  },
+  {
+    "rule_id": "GB4754_3311_KEY",
+    "industry_code": "3311",
+    "industry_name": "金属结构制造",
+    "permit_type": "KEY",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录80条",
+      "HJ942-2018"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      {
+        "question_key": "has_coating",
+        "label": "是否有喷涂、酸洗？",
+        "target_tags": [
+          "vocs_emission"
+        ],
+        "answer_type": "multi_select",
+        "options": [
+          "喷涂",
+          "酸洗",
+          "无"
+        ],
+        "affects_fields": [
+          "vocs_emission",
+          "wastewater_generation"
+        ],
+        "evidence_hint": "现场确认"
+      }
+    ],
+    "notes": "NEED_CONFIRM: 名录第80类主要按通用工序触发重点/简化，需确认喷涂、酸洗、热浸镀、表面处理等。"
+  },
+  {
+    "rule_id": "GB4754_3311_SIMPLIFIED",
+    "industry_code": "3311",
+    "industry_name": "金属结构制造",
+    "permit_type": "SIMPLIFIED",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录80条",
+      "HJ942-2018"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      {
+        "question_key": "has_coating",
+        "label": "是否有喷涂、酸洗？",
+        "target_tags": [
+          "vocs_emission"
+        ],
+        "answer_type": "multi_select",
+        "options": [
+          "喷涂",
+          "酸洗",
+          "无"
+        ],
+        "affects_fields": [
+          "vocs_emission",
+          "wastewater_generation"
+        ],
+        "evidence_hint": "现场确认"
+      }
+    ],
+    "notes": "NEED_CONFIRM: 名录第80类主要按通用工序触发重点/简化，需确认喷涂、酸洗、热浸镀、表面处理等。"
+  },
+  {
+    "rule_id": "GB4754_3311_REGISTRATION",
+    "industry_code": "3311",
+    "industry_name": "金属结构制造",
+    "permit_type": "REGISTRATION",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录80条",
+      "HJ942-2018"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      {
+        "question_key": "has_coating",
+        "label": "是否有喷涂、酸洗？",
+        "target_tags": [
+          "vocs_emission"
+        ],
+        "answer_type": "multi_select",
+        "options": [
+          "喷涂",
+          "酸洗",
+          "无"
+        ],
+        "affects_fields": [
+          "vocs_emission",
+          "wastewater_generation"
+        ],
+        "evidence_hint": "现场确认"
+      }
+    ],
+    "notes": "NEED_CONFIRM: 名录第80类主要按通用工序触发重点/简化，需确认喷涂、酸洗、热浸镀、表面处理等。"
+  },
+  {
+    "rule_id": "GB4754_3011_KEY",
+    "industry_code": "3011",
+    "industry_name": "水泥制造",
+    "permit_type": "KEY",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录63条",
+      "HJ 847-2017"
+    ],
+    "confidence": "HIGH",
+    "confirmation_questions": [
+      {
+        "question_key": "has_clinker",
+        "label": "是否有熟料生产？",
+        "target_tags": [
+          "dust_particulate"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "有",
+          "无"
+        ],
+        "affects_fields": [
+          "permit_type"
+        ],
+        "evidence_hint": "现场查看"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "rule_id": "GB4754_3011_SIMPLIFIED",
+    "industry_code": "3011",
+    "industry_name": "水泥粉磨站",
+    "permit_type": "SIMPLIFIED",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录63条",
+      "HJ 847-2017"
+    ],
+    "confidence": "HIGH",
+    "confirmation_questions": [
+      {
+        "question_key": "is_grinding_only",
+        "label": "是否仅粉磨？",
+        "target_tags": [
+          "dust_particulate"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "是",
+          "否"
+        ],
+        "affects_fields": [
+          "permit_type"
+        ],
+        "evidence_hint": "现场确认"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "rule_id": "GB4754_3012_SIMPLIFIED",
+    "industry_code": "3012",
+    "industry_name": "石灰石膏制造",
+    "permit_type": "SIMPLIFIED",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录63条",
+      "HJ 847-2017"
+    ],
+    "confidence": "HIGH",
+    "confirmation_questions": [
+      {
+        "question_key": "kiln_type",
+        "label": "窑炉类型？",
+        "target_tags": [
+          "dust_particulate"
+        ],
+        "answer_type": "text",
+        "evidence_hint": "现场查看"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "rule_id": "GB4754_2211_KEY",
+    "industry_code": "2211",
+    "industry_name": "纸浆制造",
+    "permit_type": "KEY",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录36条",
+      "HJ942-2018"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      {
+        "question_key": "has_pulping",
+        "label": "是否有制浆工序？",
+        "target_tags": [
+          "wastewater_generation"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "有",
+          "无"
+        ],
+        "affects_fields": [
+          "permit_type"
+        ],
+        "evidence_hint": "现场确认"
+      }
+    ],
+    "notes": "NEED_CONFIRM: 2211为木竹浆制造，JSON使用纸浆制造泛称，需确认是否代表整个221中类。"
+  },
+  {
+    "rule_id": "GB4754_2221_KEY",
+    "industry_code": "2221",
+    "industry_name": "机制纸及纸板制造",
+    "permit_type": "KEY",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录37条",
+      "HJ942-2018"
+    ],
+    "confidence": "HIGH",
+    "confirmation_questions": [
+      {
+        "question_key": "papermaking_process",
+        "label": "造纸工艺？",
+        "target_tags": [
+          "wastewater_generation"
+        ],
+        "answer_type": "text",
+        "evidence_hint": "现场确认"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "rule_id": "GB4754_2231_REGISTRATION",
+    "industry_code": "2231",
+    "industry_name": "纸和纸板容器制造",
+    "permit_type": "REGISTRATION",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "special_scenarios": [],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录38条",
+      "HJ942-2018"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      {
+        "question_key": "process_simple",
+        "label": "是否仅切割粘合？",
+        "target_tags": [
+          "production_process_activity"
+        ],
+        "answer_type": "boolean",
+        "options": [
+          "是",
+          "否"
+        ],
+        "evidence_hint": "现场确认"
+      }
+    ],
+    "notes": "注意：223为中类代码，这里使用2231(纸和纸板容器)作为代表性小类 NEED_CONFIRM: 2019名录按223纸制品制造分类，2231只是代表性小类，需确认是否有工业废水/废气。"
+  }
+]

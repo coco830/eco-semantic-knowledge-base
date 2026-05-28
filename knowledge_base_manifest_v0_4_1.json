@@ -1,0 +1,20 @@
+{
+  "knowledge_base_version": "v0.4.1-candidate-governance-denoise-patch",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_integration": "disabled",
+  "runtime_promotion_status": "not_approved",
+  "entry_108_strategy": "许可名录原始条目覆盖1-112连续；第108条是“除1-107外的其他行业，涉及通用工序”的兜底承接条，不作为独立条目-小类适用关系展开，因此适用关系表涉及111个条目不是许可名录缺失。第108条由109-112通用工序候选关系承接，正式化前必须通过开放问题确认。",
+  "risk_queue_open_questions_relationship": "risk_acceptance_queue_v0_4_1.csv是open_questions的风险承接队列；只列运行时正式化或图谱/RAG入库前必须接受/关闭的阻断风险，不替代open_questions全量问题清单。",
+  "patches": [
+    "CTXV04_3012_63_REGISTRATION降为NOT_APPLY，因为登记条件文本仅列3021/3022/3023/3024/3029，未列3012。",
+    "risk_acceptance_queue补入runtime approval gate、permit_type、inspection candidate、negation、DIVISION_CONTEXT等阻断风险。",
+    "gate report明确许可名录1-112连续，适用关系entry_count=111是因为entry108承接策略特殊项。"
+  ],
+  "hard_boundaries": [
+    "不得接 EcoCheck 小程序运行时",
+    "不得生成企业正式 permit_type",
+    "不得生成正式检查模板",
+    "不得自动扣分",
+    "不得伪造 human_review_label / human_reviewer / human_review_notes"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "knowledge_base_version": "v0.9-review-impact-graph",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_integration": "disabled",
+  "runtime_promotion_status": "not_approved",
+  "outputs": {
+    "review_impact_analysis_v0_9.csv": 11,
+    "review_impact_graph_edges_v0_9.jsonl": 469,
+    "graph_query_playbook_v0_9.md": 1,
+    "graph_visualization_samples_v0_9.md": 1
+  },
+  "runtime_effect": "NONE"
+}

@@ -1,0 +1,3931 @@
+[
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0111",
+    "industry_code": "0111",
+    "industry_name": "稻谷种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "011",
+    "group_name": "谷物种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0112",
+    "industry_code": "0112",
+    "industry_name": "小麦种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "011",
+    "group_name": "谷物种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0113",
+    "industry_code": "0113",
+    "industry_name": "玉米种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "011",
+    "group_name": "谷物种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0119",
+    "industry_code": "0119",
+    "industry_name": "其他谷物种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "011",
+    "group_name": "谷物种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0121",
+    "industry_code": "0121",
+    "industry_name": "豆类种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "012",
+    "group_name": "豆类、油料和薯类种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0122",
+    "industry_code": "0122",
+    "industry_name": "油料种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "012",
+    "group_name": "豆类、油料和薯类种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0123",
+    "industry_code": "0123",
+    "industry_name": "薯类种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "012",
+    "group_name": "豆类、油料和薯类种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0131",
+    "industry_code": "0131",
+    "industry_name": "棉花种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "013",
+    "group_name": "棉、麻、糖、烟草种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0132",
+    "industry_code": "0132",
+    "industry_name": "麻类种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "013",
+    "group_name": "棉、麻、糖、烟草种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0133",
+    "industry_code": "0133",
+    "industry_name": "糖料种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "013",
+    "group_name": "棉、麻、糖、烟草种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0134",
+    "industry_code": "0134",
+    "industry_name": "烟草种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "013",
+    "group_name": "棉、麻、糖、烟草种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0141",
+    "industry_code": "0141",
+    "industry_name": "蔬菜种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "014",
+    "group_name": "蔬菜、食用菌及园艺作物种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0142",
+    "industry_code": "0142",
+    "industry_name": "食用菌种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "014",
+    "group_name": "蔬菜、食用菌及园艺作物种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0143",
+    "industry_code": "0143",
+    "industry_name": "花卉种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "014",
+    "group_name": "蔬菜、食用菌及园艺作物种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0149",
+    "industry_code": "0149",
+    "industry_name": "其他园艺作物种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "014",
+    "group_name": "蔬菜、食用菌及园艺作物种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0151",
+    "industry_code": "0151",
+    "industry_name": "仁果类和核果类水果种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "015",
+    "group_name": "水果种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0152",
+    "industry_code": "0152",
+    "industry_name": "葡萄种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "015",
+    "group_name": "水果种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0153",
+    "industry_code": "0153",
+    "industry_name": "柑橘类种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "015",
+    "group_name": "水果种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0154",
+    "industry_code": "0154",
+    "industry_name": "香蕉等亚热带水果种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "015",
+    "group_name": "水果种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0159",
+    "industry_code": "0159",
+    "industry_name": "其他水果种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "015",
+    "group_name": "水果种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0161",
+    "industry_code": "0161",
+    "industry_name": "坚果种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "016",
+    "group_name": "坚果、含油果、香料和饮料作物种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0162",
+    "industry_code": "0162",
+    "industry_name": "含油果种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "016",
+    "group_name": "坚果、含油果、香料和饮料作物种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0163",
+    "industry_code": "0163",
+    "industry_name": "香料作物种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "016",
+    "group_name": "坚果、含油果、香料和饮料作物种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0164",
+    "industry_code": "0164",
+    "industry_name": "茶叶种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "016",
+    "group_name": "坚果、含油果、香料和饮料作物种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0169",
+    "industry_code": "0169",
+    "industry_name": "其他饮料作物种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "016",
+    "group_name": "坚果、含油果、香料和饮料作物种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0171",
+    "industry_code": "0171",
+    "industry_name": "中草药种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "017",
+    "group_name": "中药材种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0179",
+    "industry_code": "0179",
+    "industry_name": "其他中药材种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "017",
+    "group_name": "中药材种植",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0181",
+    "industry_code": "0181",
+    "industry_name": "草种植",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "018",
+    "group_name": "草种植及割草",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0182",
+    "industry_code": "0182",
+    "industry_name": "天然草原割草",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "018",
+    "group_name": "草种植及割草",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0190",
+    "industry_code": "0190",
+    "industry_name": "其他农业",
+    "division_code": "01",
+    "division_name": "农业",
+    "group_code": "019",
+    "group_name": "其他农业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0211",
+    "industry_code": "0211",
+    "industry_name": "林木育种",
+    "division_code": "02",
+    "division_name": "林业",
+    "group_code": "021",
+    "group_name": "林木育种和育苗",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0212",
+    "industry_code": "0212",
+    "industry_name": "林木育苗",
+    "division_code": "02",
+    "division_name": "林业",
+    "group_code": "021",
+    "group_name": "林木育种和育苗",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0220",
+    "industry_code": "0220",
+    "industry_name": "造林和更新",
+    "division_code": "02",
+    "division_name": "林业",
+    "group_code": "022",
+    "group_name": "造林和更新",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0231",
+    "industry_code": "0231",
+    "industry_name": "森林经营和管护",
+    "division_code": "02",
+    "division_name": "林业",
+    "group_code": "023",
+    "group_name": "森林经营、管护和改培",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0232",
+    "industry_code": "0232",
+    "industry_name": "森林改培",
+    "division_code": "02",
+    "division_name": "林业",
+    "group_code": "023",
+    "group_name": "森林经营、管护和改培",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0241",
+    "industry_code": "0241",
+    "industry_name": "木材采运",
+    "division_code": "02",
+    "division_name": "林业",
+    "group_code": "024",
+    "group_name": "木材和竹材采运",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0242",
+    "industry_code": "0242",
+    "industry_name": "竹材采运",
+    "division_code": "02",
+    "division_name": "林业",
+    "group_code": "024",
+    "group_name": "木材和竹材采运",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0251",
+    "industry_code": "0251",
+    "industry_name": "木竹材林产品采集",
+    "division_code": "02",
+    "division_name": "林业",
+    "group_code": "025",
+    "group_name": "林产品采集",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0252",
+    "industry_code": "0252",
+    "industry_name": "非木竹材林产品采集",
+    "division_code": "02",
+    "division_name": "林业",
+    "group_code": "025",
+    "group_name": "林产品采集",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0311",
+    "industry_code": "0311",
+    "industry_name": "牛的饲养",
+    "division_code": "03",
+    "division_name": "畜牧业",
+    "group_code": "031",
+    "group_name": "牲畜饲养",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？",
+      "养殖规模是否达到名录或地方畜禽养殖污染防治管理要求？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0312",
+    "industry_code": "0312",
+    "industry_name": "马的饲养",
+    "division_code": "03",
+    "division_name": "畜牧业",
+    "group_code": "031",
+    "group_name": "牲畜饲养",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？",
+      "养殖规模是否达到名录或地方畜禽养殖污染防治管理要求？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0313",
+    "industry_code": "0313",
+    "industry_name": "猪的饲养",
+    "division_code": "03",
+    "division_name": "畜牧业",
+    "group_code": "031",
+    "group_name": "牲畜饲养",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？",
+      "养殖规模是否达到名录或地方畜禽养殖污染防治管理要求？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0314",
+    "industry_code": "0314",
+    "industry_name": "羊的饲养",
+    "division_code": "03",
+    "division_name": "畜牧业",
+    "group_code": "031",
+    "group_name": "牲畜饲养",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？",
+      "养殖规模是否达到名录或地方畜禽养殖污染防治管理要求？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0315",
+    "industry_code": "0315",
+    "industry_name": "骆驼饲养",
+    "division_code": "03",
+    "division_name": "畜牧业",
+    "group_code": "031",
+    "group_name": "牲畜饲养",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？",
+      "养殖规模是否达到名录或地方畜禽养殖污染防治管理要求？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0319",
+    "industry_code": "0319",
+    "industry_name": "其他牲畜饲养",
+    "division_code": "03",
+    "division_name": "畜牧业",
+    "group_code": "031",
+    "group_name": "牲畜饲养",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？",
+      "养殖规模是否达到名录或地方畜禽养殖污染防治管理要求？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0321",
+    "industry_code": "0321",
+    "industry_name": "鸡的饲养",
+    "division_code": "03",
+    "division_name": "畜牧业",
+    "group_code": "032",
+    "group_name": "家禽饲养",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？",
+      "养殖规模是否达到名录或地方畜禽养殖污染防治管理要求？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0322",
+    "industry_code": "0322",
+    "industry_name": "鸭的饲养",
+    "division_code": "03",
+    "division_name": "畜牧业",
+    "group_code": "032",
+    "group_name": "家禽饲养",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？",
+      "养殖规模是否达到名录或地方畜禽养殖污染防治管理要求？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0323",
+    "industry_code": "0323",
+    "industry_name": "鹅的饲养",
+    "division_code": "03",
+    "division_name": "畜牧业",
+    "group_code": "032",
+    "group_name": "家禽饲养",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？",
+      "养殖规模是否达到名录或地方畜禽养殖污染防治管理要求？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0329",
+    "industry_code": "0329",
+    "industry_name": "其他家禽饲养",
+    "division_code": "03",
+    "division_name": "畜牧业",
+    "group_code": "032",
+    "group_name": "家禽饲养",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？",
+      "养殖规模是否达到名录或地方畜禽养殖污染防治管理要求？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0330",
+    "industry_code": "0330",
+    "industry_name": "狩猎和捕捉动物",
+    "division_code": "03",
+    "division_name": "畜牧业",
+    "group_code": "033",
+    "group_name": "狩猎和捕捉动物",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？",
+      "养殖规模是否达到名录或地方畜禽养殖污染防治管理要求？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0391",
+    "industry_code": "0391",
+    "industry_name": "兔的饲养",
+    "division_code": "03",
+    "division_name": "畜牧业",
+    "group_code": "039",
+    "group_name": "其他畜牧业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？",
+      "养殖规模是否达到名录或地方畜禽养殖污染防治管理要求？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0392",
+    "industry_code": "0392",
+    "industry_name": "蜜蜂饲养",
+    "division_code": "03",
+    "division_name": "畜牧业",
+    "group_code": "039",
+    "group_name": "其他畜牧业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？",
+      "养殖规模是否达到名录或地方畜禽养殖污染防治管理要求？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0399",
+    "industry_code": "0399",
+    "industry_name": "其他未列明畜牧业",
+    "division_code": "03",
+    "division_name": "畜牧业",
+    "group_code": "039",
+    "group_name": "其他畜牧业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？",
+      "养殖规模是否达到名录或地方畜禽养殖污染防治管理要求？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0411",
+    "industry_code": "0411",
+    "industry_name": "海水养殖",
+    "division_code": "04",
+    "division_name": "渔业",
+    "group_code": "041",
+    "group_name": "水产养殖",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0412",
+    "industry_code": "0412",
+    "industry_name": "内陆养殖",
+    "division_code": "04",
+    "division_name": "渔业",
+    "group_code": "041",
+    "group_name": "水产养殖",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0421",
+    "industry_code": "0421",
+    "industry_name": "海水捕捞",
+    "division_code": "04",
+    "division_name": "渔业",
+    "group_code": "042",
+    "group_name": "水产捕捞",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0422",
+    "industry_code": "0422",
+    "industry_name": "内陆捕捞",
+    "division_code": "04",
+    "division_name": "渔业",
+    "group_code": "042",
+    "group_name": "水产捕捞",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0511",
+    "industry_code": "0511",
+    "industry_name": "种子种苗培育活动",
+    "division_code": "05",
+    "division_name": "农、林、牧、渔专业及辅助性活动",
+    "group_code": "051",
+    "group_name": "农业专业及辅助性活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0512",
+    "industry_code": "0512",
+    "industry_name": "农业机械活动",
+    "division_code": "05",
+    "division_name": "农、林、牧、渔专业及辅助性活动",
+    "group_code": "051",
+    "group_name": "农业专业及辅助性活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0513",
+    "industry_code": "0513",
+    "industry_name": "灌溉活动",
+    "division_code": "05",
+    "division_name": "农、林、牧、渔专业及辅助性活动",
+    "group_code": "051",
+    "group_name": "农业专业及辅助性活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0514",
+    "industry_code": "0514",
+    "industry_name": "农产品初加工活动",
+    "division_code": "05",
+    "division_name": "农、林、牧、渔专业及辅助性活动",
+    "group_code": "051",
+    "group_name": "农业专业及辅助性活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0515",
+    "industry_code": "0515",
+    "industry_name": "农作物病虫害防治活动",
+    "division_code": "05",
+    "division_name": "农、林、牧、渔专业及辅助性活动",
+    "group_code": "051",
+    "group_name": "农业专业及辅助性活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0519",
+    "industry_code": "0519",
+    "industry_name": "其他农业专业及辅助性活动",
+    "division_code": "05",
+    "division_name": "农、林、牧、渔专业及辅助性活动",
+    "group_code": "051",
+    "group_name": "农业专业及辅助性活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0521",
+    "industry_code": "0521",
+    "industry_name": "林业有害生物防治活动",
+    "division_code": "05",
+    "division_name": "农、林、牧、渔专业及辅助性活动",
+    "group_code": "052",
+    "group_name": "林业专业及辅助性活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0522",
+    "industry_code": "0522",
+    "industry_name": "森林防火活动",
+    "division_code": "05",
+    "division_name": "农、林、牧、渔专业及辅助性活动",
+    "group_code": "052",
+    "group_name": "林业专业及辅助性活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0523",
+    "industry_code": "0523",
+    "industry_name": "林产品初级加工活动",
+    "division_code": "05",
+    "division_name": "农、林、牧、渔专业及辅助性活动",
+    "group_code": "052",
+    "group_name": "林业专业及辅助性活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0529",
+    "industry_code": "0529",
+    "industry_name": "其他林业专业及辅助性活动",
+    "division_code": "05",
+    "division_name": "农、林、牧、渔专业及辅助性活动",
+    "group_code": "052",
+    "group_name": "林业专业及辅助性活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0531",
+    "industry_code": "0531",
+    "industry_name": "畜牧良种繁殖活动",
+    "division_code": "05",
+    "division_name": "农、林、牧、渔专业及辅助性活动",
+    "group_code": "053",
+    "group_name": "畜牧专业及辅助性活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0532",
+    "industry_code": "0532",
+    "industry_name": "畜禽粪污处理活动",
+    "division_code": "05",
+    "division_name": "农、林、牧、渔专业及辅助性活动",
+    "group_code": "053",
+    "group_name": "畜牧专业及辅助性活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0539",
+    "industry_code": "0539",
+    "industry_name": "其他畜牧专业及辅助性活动",
+    "division_code": "05",
+    "division_name": "农、林、牧、渔专业及辅助性活动",
+    "group_code": "053",
+    "group_name": "畜牧专业及辅助性活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0541",
+    "industry_code": "0541",
+    "industry_name": "鱼苗及鱼种场活动",
+    "division_code": "05",
+    "division_name": "农、林、牧、渔专业及辅助性活动",
+    "group_code": "054",
+    "group_name": "渔业专业及辅助性活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0549",
+    "industry_code": "0549",
+    "industry_name": "其他渔业专业及辅助性活动",
+    "division_code": "05",
+    "division_name": "农、林、牧、渔专业及辅助性活动",
+    "group_code": "054",
+    "group_name": "渔业专业及辅助性活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在规模化养殖、水产养殖、农产品初加工、清洗、烘干、堆肥、病死动物处置或农药/兽药包装物暂存？",
+      "是否有粪污、养殖尾水、清洗废水、恶臭、粉尘、锅炉或烘干设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：一产及辅助活动不得仅按行业代码判定污染场景，养殖/清洗/烘干/农药兽药包装等均需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0610",
+    "industry_code": "0610",
+    "industry_name": "烟煤和无烟煤开采洗选",
+    "division_code": "06",
+    "division_name": "煤炭开采和洗选业",
+    "group_code": "061",
+    "group_name": "烟煤和无烟煤开采洗选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0620",
+    "industry_code": "0620",
+    "industry_name": "褐煤开采洗选",
+    "division_code": "06",
+    "division_name": "煤炭开采和洗选业",
+    "group_code": "062",
+    "group_name": "褐煤开采洗选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0690",
+    "industry_code": "0690",
+    "industry_name": "其他煤炭采选",
+    "division_code": "06",
+    "division_name": "煤炭开采和洗选业",
+    "group_code": "069",
+    "group_name": "其他煤炭采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0711",
+    "industry_code": "0711",
+    "industry_name": "陆地石油开采",
+    "division_code": "07",
+    "division_name": "石油和天然气开采业",
+    "group_code": "071",
+    "group_name": "石油开采",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及油气开采、集输、储罐、含油污水、伴生气、LDAR、井场防渗或应急池？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：油气开采和辅助活动触发储罐/LDAR/含油废水/防渗风险需资料和现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0712",
+    "industry_code": "0712",
+    "industry_name": "海洋石油开采",
+    "division_code": "07",
+    "division_name": "石油和天然气开采业",
+    "group_code": "071",
+    "group_name": "石油开采",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及油气开采、集输、储罐、含油污水、伴生气、LDAR、井场防渗或应急池？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：油气开采和辅助活动触发储罐/LDAR/含油废水/防渗风险需资料和现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0721",
+    "industry_code": "0721",
+    "industry_name": "陆地天然气开采",
+    "division_code": "07",
+    "division_name": "石油和天然气开采业",
+    "group_code": "072",
+    "group_name": "天然气开采",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及油气开采、集输、储罐、含油污水、伴生气、LDAR、井场防渗或应急池？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：油气开采和辅助活动触发储罐/LDAR/含油废水/防渗风险需资料和现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0722",
+    "industry_code": "0722",
+    "industry_name": "海洋天然气及可燃冰开采",
+    "division_code": "07",
+    "division_name": "石油和天然气开采业",
+    "group_code": "072",
+    "group_name": "天然气开采",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否涉及油气开采、集输、储罐、含油污水、伴生气、LDAR、井场防渗或应急池？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：油气开采和辅助活动触发储罐/LDAR/含油废水/防渗风险需资料和现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0810",
+    "industry_code": "0810",
+    "industry_name": "铁矿采选",
+    "division_code": "08",
+    "division_name": "黑色金属矿采选业",
+    "group_code": "081",
+    "group_name": "铁矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0820",
+    "industry_code": "0820",
+    "industry_name": "锰矿、铬矿采选",
+    "division_code": "08",
+    "division_name": "黑色金属矿采选业",
+    "group_code": "082",
+    "group_name": "锰矿、铬矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0890",
+    "industry_code": "0890",
+    "industry_name": "其他黑色金属矿采选",
+    "division_code": "08",
+    "division_name": "黑色金属矿采选业",
+    "group_code": "089",
+    "group_name": "其他黑色金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0911",
+    "industry_code": "0911",
+    "industry_name": "铜矿采选",
+    "division_code": "09",
+    "division_name": "有色金属矿采选业",
+    "group_code": "091",
+    "group_name": "常用有色金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0912",
+    "industry_code": "0912",
+    "industry_name": "铅锌矿采选",
+    "division_code": "09",
+    "division_name": "有色金属矿采选业",
+    "group_code": "091",
+    "group_name": "常用有色金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0913",
+    "industry_code": "0913",
+    "industry_name": "镍钴矿采选",
+    "division_code": "09",
+    "division_name": "有色金属矿采选业",
+    "group_code": "091",
+    "group_name": "常用有色金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0914",
+    "industry_code": "0914",
+    "industry_name": "锡矿采选",
+    "division_code": "09",
+    "division_name": "有色金属矿采选业",
+    "group_code": "091",
+    "group_name": "常用有色金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0915",
+    "industry_code": "0915",
+    "industry_name": "锑矿采选",
+    "division_code": "09",
+    "division_name": "有色金属矿采选业",
+    "group_code": "091",
+    "group_name": "常用有色金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0916",
+    "industry_code": "0916",
+    "industry_name": "铝矿采选",
+    "division_code": "09",
+    "division_name": "有色金属矿采选业",
+    "group_code": "091",
+    "group_name": "常用有色金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0917",
+    "industry_code": "0917",
+    "industry_name": "镁矿采选",
+    "division_code": "09",
+    "division_name": "有色金属矿采选业",
+    "group_code": "091",
+    "group_name": "常用有色金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0919",
+    "industry_code": "0919",
+    "industry_name": "其他常用有色金属矿采选",
+    "division_code": "09",
+    "division_name": "有色金属矿采选业",
+    "group_code": "091",
+    "group_name": "常用有色金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0921",
+    "industry_code": "0921",
+    "industry_name": "金矿采选",
+    "division_code": "09",
+    "division_name": "有色金属矿采选业",
+    "group_code": "092",
+    "group_name": "贵金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0922",
+    "industry_code": "0922",
+    "industry_name": "银矿采选",
+    "division_code": "09",
+    "division_name": "有色金属矿采选业",
+    "group_code": "092",
+    "group_name": "贵金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0929",
+    "industry_code": "0929",
+    "industry_name": "其他贵金属矿采选",
+    "division_code": "09",
+    "division_name": "有色金属矿采选业",
+    "group_code": "092",
+    "group_name": "贵金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0931",
+    "industry_code": "0931",
+    "industry_name": "钨钼矿采选",
+    "division_code": "09",
+    "division_name": "有色金属矿采选业",
+    "group_code": "093",
+    "group_name": "稀有稀土金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0932",
+    "industry_code": "0932",
+    "industry_name": "稀土金属矿采选",
+    "division_code": "09",
+    "division_name": "有色金属矿采选业",
+    "group_code": "093",
+    "group_name": "稀有稀土金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0933",
+    "industry_code": "0933",
+    "industry_name": "放射性金属矿采选",
+    "division_code": "09",
+    "division_name": "有色金属矿采选业",
+    "group_code": "093",
+    "group_name": "稀有稀土金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_0939",
+    "industry_code": "0939",
+    "industry_name": "其他稀有金属矿采选",
+    "division_code": "09",
+    "division_name": "有色金属矿采选业",
+    "group_code": "093",
+    "group_name": "稀有稀土金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_1011",
+    "industry_code": "1011",
+    "industry_name": "石灰石、石膏开采",
+    "division_code": "10",
+    "division_name": "非金属矿采选业",
+    "group_code": "101",
+    "group_name": "土砂石开采",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_1012",
+    "industry_code": "1012",
+    "industry_name": "建筑装饰用石开采",
+    "division_code": "10",
+    "division_name": "非金属矿采选业",
+    "group_code": "101",
+    "group_name": "土砂石开采",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_1013",
+    "industry_code": "1013",
+    "industry_name": "耐火土石开采",
+    "division_code": "10",
+    "division_name": "非金属矿采选业",
+    "group_code": "101",
+    "group_name": "土砂石开采",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_1019",
+    "industry_code": "1019",
+    "industry_name": "粘土及其他土砂石开采",
+    "division_code": "10",
+    "division_name": "非金属矿采选业",
+    "group_code": "101",
+    "group_name": "土砂石开采",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_1020",
+    "industry_code": "1020",
+    "industry_name": "化学矿开采",
+    "division_code": "10",
+    "division_name": "非金属矿采选业",
+    "group_code": "102",
+    "group_name": "化学矿开采",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_1030",
+    "industry_code": "1030",
+    "industry_name": "采盐",
+    "division_code": "10",
+    "division_name": "非金属矿采选业",
+    "group_code": "103",
+    "group_name": "采盐",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_1091",
+    "industry_code": "1091",
+    "industry_name": "石棉、云母矿采选",
+    "division_code": "10",
+    "division_name": "非金属矿采选业",
+    "group_code": "109",
+    "group_name": "石棉及其他非金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_1092",
+    "industry_code": "1092",
+    "industry_name": "石墨、滑石采选",
+    "division_code": "10",
+    "division_name": "非金属矿采选业",
+    "group_code": "109",
+    "group_name": "石棉及其他非金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_1093",
+    "industry_code": "1093",
+    "industry_name": "宝石、玉石采选",
+    "division_code": "10",
+    "division_name": "非金属矿采选业",
+    "group_code": "109",
+    "group_name": "石棉及其他非金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_1099",
+    "industry_code": "1099",
+    "industry_name": "其他未列明非金属矿采选",
+    "division_code": "10",
+    "division_name": "非金属矿采选业",
+    "group_code": "109",
+    "group_name": "石棉及其他非金属矿采选",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_1110",
+    "industry_code": "1110",
+    "industry_name": "煤炭开采和洗选专业及辅助性活动",
+    "division_code": "11",
+    "division_name": "开采专业及辅助性活动",
+    "group_code": "111",
+    "group_name": "煤炭开采和洗选专业及辅助性活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_1120",
+    "industry_code": "1120",
+    "industry_name": "石油和天然气开采专业及辅助性活动",
+    "division_code": "11",
+    "division_name": "开采专业及辅助性活动",
+    "group_code": "112",
+    "group_name": "石油和天然气开采专业及辅助性活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_1190",
+    "industry_code": "1190",
+    "industry_name": "其他开采专业及辅助性活动",
+    "division_code": "11",
+    "division_name": "开采专业及辅助性活动",
+    "group_code": "119",
+    "group_name": "其他开采专业及辅助性活动",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_1200",
+    "industry_code": "1200",
+    "industry_name": "其他采矿业",
+    "division_code": "12",
+    "division_name": "其他采矿业",
+    "group_code": "120",
+    "group_name": "其他采矿业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在采掘、洗选、破碎、筛分、堆场、尾矿库、矿井水、酸性废水或除尘设施？",
+      "是否产生废石、尾矿、除尘灰、含重金属污泥或其他危险废物？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：采矿类以粉尘、矿井水/选矿废水、固废堆场和生态环境风险确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_1610",
+    "industry_code": "1610",
+    "industry_name": "烟叶复烤",
+    "division_code": "16",
+    "division_name": "烟草制品业",
+    "group_code": "161",
+    "group_name": "烟叶复烤",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在烟叶复烤、卷烟制造、香精香料使用、除尘、废气或废水治理设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：烟草制品需按复烤/卷烟/辅料和通用工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_1620",
+    "industry_code": "1620",
+    "industry_name": "卷烟制造",
+    "division_code": "16",
+    "division_name": "烟草制品业",
+    "group_code": "162",
+    "group_name": "卷烟制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在烟叶复烤、卷烟制造、香精香料使用、除尘、废气或废水治理设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：烟草制品需按复烤/卷烟/辅料和通用工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH4_GB4754_1690",
+    "industry_code": "1690",
+    "industry_name": "其他烟草制品制造",
+    "division_code": "16",
+    "division_name": "烟草制品业",
+    "group_code": "169",
+    "group_name": "其他烟草制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017 industry_catalog_base.csv",
+      "固定污染源排污许可分类管理名录(2019年版)表格级抽取与条件规则化草案，仅作为候选召回依据",
+      "scenario_templates.json v0.1 复用；不新增运行时模板"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "企业实际经营、生产、服务或作业活动是否与营业执照行业一致？",
+      "环评、批复、排污许可、登记回执、监测报告或现场事实中载明的主要污染物、设施和排口是什么？",
+      "是否涉及锅炉、工业炉窑、污水处理、表面处理、喷涂、危废暂存、在线监测、事故水或其他通用工序？",
+      "是否存在烟叶复烤、卷烟制造、香精香料使用、除尘、废气或废水治理设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch4候选：烟草制品需按复烤/卷烟/辅料和通用工序确认。"
+  }
+]

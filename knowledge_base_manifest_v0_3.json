@@ -1,0 +1,40 @@
+{
+  "knowledge_base_version": "v0.3-candidate-governance-complete",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_integration": "disabled",
+  "runtime_promotion_status": "not_approved",
+  "positioning": "候选知识库治理闭环包；覆盖全量行业候选、排污许可名录条件、条目-小类适用关系、场景治理、13维映射和候选排查项；不接运行时。",
+  "generated_outputs": {
+    "all_permit_condition_backfill_v0_3.csv": 336,
+    "all_permit_condition_backfill_v0_3.json": 336,
+    "all_context_applicability_review_v0_3.csv": 22815,
+    "all_context_applicability_review_v0_3.json": 22815,
+    "all_context_applicability_review_gate_report.md": 1,
+    "all_context_applicability_review_gate_report.json": 1,
+    "scenario_template_governance_v0_3.json": 11,
+    "scenario_template_governance_v0_3.md": 1,
+    "scenario_to_score13_mapping_v0_3.csv": 11,
+    "inspection_candidate_recommendations_v0_3.csv": 22,
+    "open_questions_v0_3.csv": 12,
+    "open_questions_v0_3.md": 1,
+    "knowledge_base_manifest_v0_3.json": 1,
+    "validate_knowledge_base_v0_3.py": 1,
+    "build_knowledge_base_v0_3.py": 1,
+    "knowledge_base_v0_3_validation_report.json": 1,
+    "knowledge_base_v0_3_failure_list.csv": 1,
+    "FINAL_COMPLETION_REPORT.md": 1
+  },
+  "quality_gates": {
+    "industry_candidate_coverage": "1382/1382",
+    "permit_catalog_entries": "1-112 continuous",
+    "runtime_status_policy": "CANDIDATE_ONLY or DRAFT_NOT_FOR_RUNTIME",
+    "permit_type_policy": "NEED_CONFIRM"
+  },
+  "hard_boundaries": [
+    "不得接 EcoCheck 小程序运行时",
+    "不得生成企业正式 permit_type",
+    "不得生成正式检查模板",
+    "不得自动扣分",
+    "最终企业画像必须由 ESO/ETO 结合环评、批复、排污许可、台账和现场事实确认"
+  ]
+}

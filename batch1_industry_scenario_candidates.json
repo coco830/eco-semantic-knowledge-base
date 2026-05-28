@@ -1,0 +1,2388 @@
+[
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1311",
+    "industry_code": "1311",
+    "industry_name": "稻谷加工",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "131",
+    "group_name": "谷物磨制",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1312",
+    "industry_code": "1312",
+    "industry_name": "小麦加工",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "131",
+    "group_name": "谷物磨制",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1313",
+    "industry_code": "1313",
+    "industry_name": "玉米加工",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "131",
+    "group_name": "谷物磨制",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1314",
+    "industry_code": "1314",
+    "industry_name": "杂粮加工",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "131",
+    "group_name": "谷物磨制",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1319",
+    "industry_code": "1319",
+    "industry_name": "其他谷物磨制",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "131",
+    "group_name": "谷物磨制",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1321",
+    "industry_code": "1321",
+    "industry_name": "宠物饲料加工",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "132",
+    "group_name": "饲料加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1329",
+    "industry_code": "1329",
+    "industry_name": "其他饲料加工",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "132",
+    "group_name": "饲料加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1331",
+    "industry_code": "1331",
+    "industry_name": "食用植物油加工",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "133",
+    "group_name": "植物油加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1332",
+    "industry_code": "1332",
+    "industry_name": "非食用植物油加工",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "133",
+    "group_name": "植物油加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1340",
+    "industry_code": "1340",
+    "industry_name": "制糖业",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "134",
+    "group_name": "制糖业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1351",
+    "industry_code": "1351",
+    "industry_name": "牲畜屠宰",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "135",
+    "group_name": "屠宰及肉类加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1352",
+    "industry_code": "1352",
+    "industry_name": "禽类屠宰",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "135",
+    "group_name": "屠宰及肉类加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1353",
+    "industry_code": "1353",
+    "industry_name": "肉制品及副产品加工",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "135",
+    "group_name": "屠宰及肉类加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1361",
+    "industry_code": "1361",
+    "industry_name": "水产品冷冻加工",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "136",
+    "group_name": "水产品加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1362",
+    "industry_code": "1362",
+    "industry_name": "鱼糜制品及水产品干腌制加工",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "136",
+    "group_name": "水产品加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1363",
+    "industry_code": "1363",
+    "industry_name": "鱼油提取及制品制造",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "136",
+    "group_name": "水产品加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1369",
+    "industry_code": "1369",
+    "industry_name": "其他水产品加工",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "136",
+    "group_name": "水产品加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1371",
+    "industry_code": "1371",
+    "industry_name": "蔬菜加工",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "137",
+    "group_name": "蔬菜、菌类、水果和坚果加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1372",
+    "industry_code": "1372",
+    "industry_name": "食用菌加工",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "137",
+    "group_name": "蔬菜、菌类、水果和坚果加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1373",
+    "industry_code": "1373",
+    "industry_name": "水果和坚果加工",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "137",
+    "group_name": "蔬菜、菌类、水果和坚果加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1391",
+    "industry_code": "1391",
+    "industry_name": "淀粉及淀粉制品制造",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "139",
+    "group_name": "其他农副食品加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1392",
+    "industry_code": "1392",
+    "industry_name": "豆制品制造",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "139",
+    "group_name": "其他农副食品加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1393",
+    "industry_code": "1393",
+    "industry_name": "蛋品加工",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "139",
+    "group_name": "其他农副食品加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1399",
+    "industry_code": "1399",
+    "industry_name": "其他未列明农副食品加工",
+    "division_code": "13",
+    "division_name": "农副食品加工业",
+    "group_code": "139",
+    "group_name": "其他农副食品加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第9-16条，农副食品加工业多按产能、发酵、通用工序或是否工业建筑生产触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "年加工/屠宰/生产能力是多少？",
+      "是否有清洗、蒸煮、屠宰、冷冻、淀粉、发酵或高浓度有机废水？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：农副食品废水强相关，但具体管理类别需按产能/工序确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1411",
+    "industry_code": "1411",
+    "industry_name": "糕点、面包制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "141",
+    "group_name": "焙烤食品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1419",
+    "industry_code": "1419",
+    "industry_name": "饼干及其他焙烤食品制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "141",
+    "group_name": "焙烤食品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1421",
+    "industry_code": "1421",
+    "industry_name": "糖果、巧克力制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "142",
+    "group_name": "糖果、巧克力及蜜饯制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1422",
+    "industry_code": "1422",
+    "industry_name": "蜜饯制作",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "142",
+    "group_name": "糖果、巧克力及蜜饯制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1431",
+    "industry_code": "1431",
+    "industry_name": "米、面制品制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "143",
+    "group_name": "方便食品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1432",
+    "industry_code": "1432",
+    "industry_name": "速冻食品制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "143",
+    "group_name": "方便食品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1433",
+    "industry_code": "1433",
+    "industry_name": "方便面制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "143",
+    "group_name": "方便食品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1439",
+    "industry_code": "1439",
+    "industry_name": "其他方便食品制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "143",
+    "group_name": "方便食品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1441",
+    "industry_code": "1441",
+    "industry_name": "液体乳制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "144",
+    "group_name": "乳制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1442",
+    "industry_code": "1442",
+    "industry_name": "乳粉制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "144",
+    "group_name": "乳制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1449",
+    "industry_code": "1449",
+    "industry_name": "其他乳制品制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "144",
+    "group_name": "乳制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1451",
+    "industry_code": "1451",
+    "industry_name": "肉、禽类罐头制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "145",
+    "group_name": "罐头食品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1452",
+    "industry_code": "1452",
+    "industry_name": "水产品罐头制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "145",
+    "group_name": "罐头食品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1453",
+    "industry_code": "1453",
+    "industry_name": "蔬菜、水果罐头制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "145",
+    "group_name": "罐头食品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1459",
+    "industry_code": "1459",
+    "industry_name": "其他罐头食品制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "145",
+    "group_name": "罐头食品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1461",
+    "industry_code": "1461",
+    "industry_name": "味精制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "146",
+    "group_name": "调味品、发酵制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1462",
+    "industry_code": "1462",
+    "industry_name": "酱油、食醋及类似制品制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "146",
+    "group_name": "调味品、发酵制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1469",
+    "industry_code": "1469",
+    "industry_name": "其他调味品、发酵制品制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "146",
+    "group_name": "调味品、发酵制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1491",
+    "industry_code": "1491",
+    "industry_name": "营养食品制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "149",
+    "group_name": "其他食品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1492",
+    "industry_code": "1492",
+    "industry_name": "保健食品制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "149",
+    "group_name": "其他食品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1493",
+    "industry_code": "1493",
+    "industry_name": "冷冻饮品及食用冰制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "149",
+    "group_name": "其他食品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1494",
+    "industry_code": "1494",
+    "industry_name": "盐加工",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "149",
+    "group_name": "其他食品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1495",
+    "industry_code": "1495",
+    "industry_name": "食品及饲料添加剂制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "149",
+    "group_name": "其他食品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1499",
+    "industry_code": "1499",
+    "industry_name": "其他未列明食品制造",
+    "division_code": "14",
+    "division_name": "食品制造业",
+    "group_code": "149",
+    "group_name": "其他食品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第17-20条，食品制造按发酵、产能、是否单纯混合分装、通用工序等触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵、蒸煮、清洗、CIP、冷却或高浓度有机废水？",
+      "是否仅手工制作、单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：食品制造不默认全部有污水站，湿法/发酵/清洗进入确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1511",
+    "industry_code": "1511",
+    "industry_name": "酒精制造",
+    "division_code": "15",
+    "division_name": "酒、饮料和精制茶制造业",
+    "group_code": "151",
+    "group_name": "酒的制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第21-23条，酒/饮料/茶按发酵、原汁生产、产能或通用工序触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵工艺或原汁生产？",
+      "年生产能力是否达到名录阈值？",
+      "是否为单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：酒饮料以废水/污水站为主，在线监测只按重点/地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1512",
+    "industry_code": "1512",
+    "industry_name": "白酒制造",
+    "division_code": "15",
+    "division_name": "酒、饮料和精制茶制造业",
+    "group_code": "151",
+    "group_name": "酒的制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第21-23条，酒/饮料/茶按发酵、原汁生产、产能或通用工序触发。"
+    ],
+    "confidence": "LOW",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵工艺或原汁生产？",
+      "年生产能力是否达到名录阈值？",
+      "是否为单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "NEED_CONFIRM: GB/T 4754-2017中1512为白酒制造，不能继续作为啤酒制造使用。 Batch1候选：酒饮料以废水/污水站为主，在线监测只按重点/地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1513",
+    "industry_code": "1513",
+    "industry_name": "啤酒制造",
+    "division_code": "15",
+    "division_name": "酒、饮料和精制茶制造业",
+    "group_code": "151",
+    "group_name": "酒的制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第21-23条，酒/饮料/茶按发酵、原汁生产、产能或通用工序触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵工艺或原汁生产？",
+      "年生产能力是否达到名录阈值？",
+      "是否为单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "1513为啤酒制造，应作为啤酒样板的优先修正候选。 Batch1候选：酒饮料以废水/污水站为主，在线监测只按重点/地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1514",
+    "industry_code": "1514",
+    "industry_name": "黄酒制造",
+    "division_code": "15",
+    "division_name": "酒、饮料和精制茶制造业",
+    "group_code": "151",
+    "group_name": "酒的制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第21-23条，酒/饮料/茶按发酵、原汁生产、产能或通用工序触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵工艺或原汁生产？",
+      "年生产能力是否达到名录阈值？",
+      "是否为单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：酒饮料以废水/污水站为主，在线监测只按重点/地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1515",
+    "industry_code": "1515",
+    "industry_name": "葡萄酒制造",
+    "division_code": "15",
+    "division_name": "酒、饮料和精制茶制造业",
+    "group_code": "151",
+    "group_name": "酒的制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第21-23条，酒/饮料/茶按发酵、原汁生产、产能或通用工序触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵工艺或原汁生产？",
+      "年生产能力是否达到名录阈值？",
+      "是否为单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：酒饮料以废水/污水站为主，在线监测只按重点/地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1519",
+    "industry_code": "1519",
+    "industry_name": "其他酒制造",
+    "division_code": "15",
+    "division_name": "酒、饮料和精制茶制造业",
+    "group_code": "151",
+    "group_name": "酒的制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第21-23条，酒/饮料/茶按发酵、原汁生产、产能或通用工序触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵工艺或原汁生产？",
+      "年生产能力是否达到名录阈值？",
+      "是否为单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：酒饮料以废水/污水站为主，在线监测只按重点/地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1521",
+    "industry_code": "1521",
+    "industry_name": "碳酸饮料制造",
+    "division_code": "15",
+    "division_name": "酒、饮料和精制茶制造业",
+    "group_code": "152",
+    "group_name": "饮料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第21-23条，酒/饮料/茶按发酵、原汁生产、产能或通用工序触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵工艺或原汁生产？",
+      "年生产能力是否达到名录阈值？",
+      "是否为单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：酒饮料以废水/污水站为主，在线监测只按重点/地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1522",
+    "industry_code": "1522",
+    "industry_name": "瓶（罐）装饮用水制造",
+    "division_code": "15",
+    "division_name": "酒、饮料和精制茶制造业",
+    "group_code": "152",
+    "group_name": "饮料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第21-23条，酒/饮料/茶按发酵、原汁生产、产能或通用工序触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵工艺或原汁生产？",
+      "年生产能力是否达到名录阈值？",
+      "是否为单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：酒饮料以废水/污水站为主，在线监测只按重点/地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1523",
+    "industry_code": "1523",
+    "industry_name": "果菜汁及果菜汁饮料制造",
+    "division_code": "15",
+    "division_name": "酒、饮料和精制茶制造业",
+    "group_code": "152",
+    "group_name": "饮料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第21-23条，酒/饮料/茶按发酵、原汁生产、产能或通用工序触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵工艺或原汁生产？",
+      "年生产能力是否达到名录阈值？",
+      "是否为单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：酒饮料以废水/污水站为主，在线监测只按重点/地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1524",
+    "industry_code": "1524",
+    "industry_name": "含乳饮料和植物蛋白饮料制造",
+    "division_code": "15",
+    "division_name": "酒、饮料和精制茶制造业",
+    "group_code": "152",
+    "group_name": "饮料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第21-23条，酒/饮料/茶按发酵、原汁生产、产能或通用工序触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵工艺或原汁生产？",
+      "年生产能力是否达到名录阈值？",
+      "是否为单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：酒饮料以废水/污水站为主，在线监测只按重点/地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1525",
+    "industry_code": "1525",
+    "industry_name": "固体饮料制造",
+    "division_code": "15",
+    "division_name": "酒、饮料和精制茶制造业",
+    "group_code": "152",
+    "group_name": "饮料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第21-23条，酒/饮料/茶按发酵、原汁生产、产能或通用工序触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵工艺或原汁生产？",
+      "年生产能力是否达到名录阈值？",
+      "是否为单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：酒饮料以废水/污水站为主，在线监测只按重点/地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1529",
+    "industry_code": "1529",
+    "industry_name": "茶饮料及其他饮料制造",
+    "division_code": "15",
+    "division_name": "酒、饮料和精制茶制造业",
+    "group_code": "152",
+    "group_name": "饮料制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第21-23条，酒/饮料/茶按发酵、原汁生产、产能或通用工序触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵工艺或原汁生产？",
+      "年生产能力是否达到名录阈值？",
+      "是否为单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：酒饮料以废水/污水站为主，在线监测只按重点/地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_1530",
+    "industry_code": "1530",
+    "industry_name": "精制茶加工",
+    "division_code": "15",
+    "division_name": "酒、饮料和精制茶制造业",
+    "group_code": "153",
+    "group_name": "精制茶加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第21-23条，酒/饮料/茶按发酵、原汁生产、产能或通用工序触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否有发酵工艺或原汁生产？",
+      "年生产能力是否达到名录阈值？",
+      "是否为单纯混合或分装？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：酒饮料以废水/污水站为主，在线监测只按重点/地方要求确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_2211",
+    "industry_code": "2211",
+    "industry_name": "木竹浆制造",
+    "division_code": "22",
+    "division_name": "造纸和纸制品业",
+    "group_code": "221",
+    "group_name": "纸浆制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第36-38条，纸浆制造全部重点；造纸和纸制品按工业废水/废气排放条件区分。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否为纸浆制造、机制纸及纸板制造、加工纸或纸制品制造？",
+      "是否有工业废水或废气排放？",
+      "是否纳入重点排污单位或安装在线监测？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：造纸强废水场景，纸制品取决于工业废水/废气。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_2212",
+    "industry_code": "2212",
+    "industry_name": "非木竹浆制造",
+    "division_code": "22",
+    "division_name": "造纸和纸制品业",
+    "group_code": "221",
+    "group_name": "纸浆制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第36-38条，纸浆制造全部重点；造纸和纸制品按工业废水/废气排放条件区分。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否为纸浆制造、机制纸及纸板制造、加工纸或纸制品制造？",
+      "是否有工业废水或废气排放？",
+      "是否纳入重点排污单位或安装在线监测？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：造纸强废水场景，纸制品取决于工业废水/废气。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_2221",
+    "industry_code": "2221",
+    "industry_name": "机制纸及纸板制造",
+    "division_code": "22",
+    "division_name": "造纸和纸制品业",
+    "group_code": "222",
+    "group_name": "造纸",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第36-38条，纸浆制造全部重点；造纸和纸制品按工业废水/废气排放条件区分。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否为纸浆制造、机制纸及纸板制造、加工纸或纸制品制造？",
+      "是否有工业废水或废气排放？",
+      "是否纳入重点排污单位或安装在线监测？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：造纸强废水场景，纸制品取决于工业废水/废气。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_2222",
+    "industry_code": "2222",
+    "industry_name": "手工纸制造",
+    "division_code": "22",
+    "division_name": "造纸和纸制品业",
+    "group_code": "222",
+    "group_name": "造纸",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第36-38条，纸浆制造全部重点；造纸和纸制品按工业废水/废气排放条件区分。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否为纸浆制造、机制纸及纸板制造、加工纸或纸制品制造？",
+      "是否有工业废水或废气排放？",
+      "是否纳入重点排污单位或安装在线监测？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：造纸强废水场景，纸制品取决于工业废水/废气。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_2223",
+    "industry_code": "2223",
+    "industry_name": "加工纸制造",
+    "division_code": "22",
+    "division_name": "造纸和纸制品业",
+    "group_code": "222",
+    "group_name": "造纸",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第36-38条，纸浆制造全部重点；造纸和纸制品按工业废水/废气排放条件区分。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否为纸浆制造、机制纸及纸板制造、加工纸或纸制品制造？",
+      "是否有工业废水或废气排放？",
+      "是否纳入重点排污单位或安装在线监测？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：造纸强废水场景，纸制品取决于工业废水/废气。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_2231",
+    "industry_code": "2231",
+    "industry_name": "纸和纸板容器制造",
+    "division_code": "22",
+    "division_name": "造纸和纸制品业",
+    "group_code": "223",
+    "group_name": "纸制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第36-38条，纸浆制造全部重点；造纸和纸制品按工业废水/废气排放条件区分。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否为纸浆制造、机制纸及纸板制造、加工纸或纸制品制造？",
+      "是否有工业废水或废气排放？",
+      "是否纳入重点排污单位或安装在线监测？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "NEED_CONFIRM: 纸制品223需确认是否有工业废水或废气排放，不能默认登记或简化。 Batch1候选：造纸强废水场景，纸制品取决于工业废水/废气。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_2239",
+    "industry_code": "2239",
+    "industry_name": "其他纸制品制造",
+    "division_code": "22",
+    "division_name": "造纸和纸制品业",
+    "group_code": "223",
+    "group_name": "纸制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第36-38条，纸浆制造全部重点；造纸和纸制品按工业废水/废气排放条件区分。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否为纸浆制造、机制纸及纸板制造、加工纸或纸制品制造？",
+      "是否有工业废水或废气排放？",
+      "是否纳入重点排污单位或安装在线监测？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "NEED_CONFIRM: 纸制品223需确认是否有工业废水或废气排放，不能默认登记或简化。 Batch1候选：造纸强废水场景，纸制品取决于工业废水/废气。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_2311",
+    "industry_code": "2311",
+    "industry_name": "书、报刊印刷",
+    "division_code": "23",
+    "division_name": "印刷和记录媒介复制业",
+    "group_code": "231",
+    "group_name": "印刷",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第39-40条，印刷按重点排污单位、溶剂型油墨/稀释剂用量或通用工序触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否为包装装潢印刷？",
+      "溶剂型油墨、涂料、稀释剂年用量是多少？",
+      "是否纳入重点排污单位名录？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：印刷VOCs/危废场景强相关，但许可类型需按用量和重点名单确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_2312",
+    "industry_code": "2312",
+    "industry_name": "本册印制",
+    "division_code": "23",
+    "division_name": "印刷和记录媒介复制业",
+    "group_code": "231",
+    "group_name": "印刷",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第39-40条，印刷按重点排污单位、溶剂型油墨/稀释剂用量或通用工序触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否为包装装潢印刷？",
+      "溶剂型油墨、涂料、稀释剂年用量是多少？",
+      "是否纳入重点排污单位名录？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：印刷VOCs/危废场景强相关，但许可类型需按用量和重点名单确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_2319",
+    "industry_code": "2319",
+    "industry_name": "包装装潢及其他印刷",
+    "division_code": "23",
+    "division_name": "印刷和记录媒介复制业",
+    "group_code": "231",
+    "group_name": "印刷",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第39-40条，印刷按重点排污单位、溶剂型油墨/稀释剂用量或通用工序触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否为包装装潢印刷？",
+      "溶剂型油墨、涂料、稀释剂年用量是多少？",
+      "是否纳入重点排污单位名录？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：印刷VOCs/危废场景强相关，但许可类型需按用量和重点名单确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_2320",
+    "industry_code": "2320",
+    "industry_name": "装订及印刷相关服务",
+    "division_code": "23",
+    "division_name": "印刷和记录媒介复制业",
+    "group_code": "232",
+    "group_name": "装订及印刷相关服务",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第39-40条，印刷按重点排污单位、溶剂型油墨/稀释剂用量或通用工序触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否为包装装潢印刷？",
+      "溶剂型油墨、涂料、稀释剂年用量是多少？",
+      "是否纳入重点排污单位名录？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：印刷VOCs/危废场景强相关，但许可类型需按用量和重点名单确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH1_GB4754_2330",
+    "industry_code": "2330",
+    "industry_name": "记录媒介复制",
+    "division_code": "23",
+    "division_name": "印刷和记录媒介复制业",
+    "group_code": "233",
+    "group_name": "记录媒介复制",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "2019名录第39-40条，印刷按重点排污单位、溶剂型油墨/稀释剂用量或通用工序触发。"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、发酵、蒸煮、印刷或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理等通用工序？",
+      "是否为包装装潢印刷？",
+      "溶剂型油墨、涂料、稀释剂年用量是多少？",
+      "是否纳入重点排污单位名录？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch1候选：印刷VOCs/危废场景强相关，但许可类型需按用量和重点名单确认。"
+  }
+]

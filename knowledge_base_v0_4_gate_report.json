@@ -1,0 +1,21 @@
+{
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "validation_status": "PASS",
+  "context_relation_count": 22815,
+  "industry_count": 1382,
+  "entry_count": 111,
+  "entry_108_direct_relation_count": 0,
+  "entry_108_strategy": "第108条是“除1-107外的其他行业，涉及通用工序”的兜底交叉引用条目；v0.4不直接展开为条目-小类适用关系，避免被误读为独立行业覆盖。其治理口径由109-112通用工序候选关系承接，并在正式化前作为开放问题确认。",
+  "gate_status_counts": {
+    "APPLIES": 202,
+    "MAY_APPLY": 1774,
+    "NEED_EIA_OR_PERMIT_CONFIRM": 19895,
+    "NOT_APPLY": 944
+  },
+  "pure_division_context_applies_count": 0,
+  "not_apply_missing_blocking_flags_count": 0,
+  "negative_semantics_positivized_count": 0,
+  "open_questions_count": 19,
+  "automated_changed_relation_count": 123,
+  "runtime_status": "DRAFT_NOT_FOR_RUNTIME"
+}

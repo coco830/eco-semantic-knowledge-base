@@ -1,0 +1,2975 @@
+[
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1711",
+    "industry_code": "1711",
+    "industry_name": "棉纺纱加工",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "171",
+    "group_name": "棉纺织及印染精加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1712",
+    "industry_code": "1712",
+    "industry_name": "棉织造加工",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "171",
+    "group_name": "棉纺织及印染精加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1713",
+    "industry_code": "1713",
+    "industry_name": "棉印染精加工",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "171",
+    "group_name": "棉纺织及印染精加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1721",
+    "industry_code": "1721",
+    "industry_name": "毛条和毛纱线加工",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "172",
+    "group_name": "毛纺织及染整精加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1722",
+    "industry_code": "1722",
+    "industry_name": "毛织造加工",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "172",
+    "group_name": "毛纺织及染整精加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1723",
+    "industry_code": "1723",
+    "industry_name": "毛染整精加工",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "172",
+    "group_name": "毛纺织及染整精加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1731",
+    "industry_code": "1731",
+    "industry_name": "麻纤维纺前加工和纺纱",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "173",
+    "group_name": "麻纺织及染整精加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1732",
+    "industry_code": "1732",
+    "industry_name": "麻织造加工",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "173",
+    "group_name": "麻纺织及染整精加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1733",
+    "industry_code": "1733",
+    "industry_name": "麻染整精加工",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "173",
+    "group_name": "麻纺织及染整精加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1741",
+    "industry_code": "1741",
+    "industry_name": "缫丝加工",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "174",
+    "group_name": "丝绢纺织及印染精加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1742",
+    "industry_code": "1742",
+    "industry_name": "绢纺和丝织加工",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "174",
+    "group_name": "丝绢纺织及印染精加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1743",
+    "industry_code": "1743",
+    "industry_name": "丝印染精加工",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "174",
+    "group_name": "丝绢纺织及印染精加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1751",
+    "industry_code": "1751",
+    "industry_name": "化纤织造加工",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "175",
+    "group_name": "化纤织造及印染精加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1752",
+    "industry_code": "1752",
+    "industry_name": "化纤织物染整精加工",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "175",
+    "group_name": "化纤织造及印染精加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1761",
+    "industry_code": "1761",
+    "industry_name": "针织或钩针编织物织造",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "176",
+    "group_name": "针织或钩针编织物及其制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1762",
+    "industry_code": "1762",
+    "industry_name": "针织或钩针编织物印染精加工",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "176",
+    "group_name": "针织或钩针编织物及其制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1763",
+    "industry_code": "1763",
+    "industry_name": "针织或钩针编织品制造",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "176",
+    "group_name": "针织或钩针编织物及其制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1771",
+    "industry_code": "1771",
+    "industry_name": "床上用品制造",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "177",
+    "group_name": "家用纺织制成品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1772",
+    "industry_code": "1772",
+    "industry_name": "毛巾类制品制造",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "177",
+    "group_name": "家用纺织制成品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1773",
+    "industry_code": "1773",
+    "industry_name": "窗帘、布艺类产品制造",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "177",
+    "group_name": "家用纺织制成品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1779",
+    "industry_code": "1779",
+    "industry_name": "其他家用纺织制成品制造",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "177",
+    "group_name": "家用纺织制成品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1781",
+    "industry_code": "1781",
+    "industry_name": "非织造布制造",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "178",
+    "group_name": "产业用纺织制成品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1782",
+    "industry_code": "1782",
+    "industry_name": "绳、索、缆制造",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "178",
+    "group_name": "产业用纺织制成品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1783",
+    "industry_code": "1783",
+    "industry_name": "纺织带和帘子布制造",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "178",
+    "group_name": "产业用纺织制成品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1784",
+    "industry_code": "1784",
+    "industry_name": "篷、帆布制造",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "178",
+    "group_name": "产业用纺织制成品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1789",
+    "industry_code": "1789",
+    "industry_name": "其他产业用纺织制成品制造",
+    "division_code": "17",
+    "division_name": "纺织业",
+    "group_code": "178",
+    "group_name": "产业用纺织制成品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有前处理、染色、印花、洗毛、麻脱胶、缫丝、喷水织造或整理工序？",
+      "是否使用染料、助剂、定型油烟或有机溶剂？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：纺织业污染场景高度依赖前处理/染整/印花/喷水织造等工序，全部需现场确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1811",
+    "industry_code": "1811",
+    "industry_name": "运动机织服装制造",
+    "division_code": "18",
+    "division_name": "纺织服装、服饰业",
+    "group_code": "181",
+    "group_name": "机织服装制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有水洗、湿法印花、染色、喷胶、整烫或有机溶剂使用？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：服装服饰通常不默认VOCs或废水，水洗/印花/染色/喷胶触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1819",
+    "industry_code": "1819",
+    "industry_name": "其他机织服装制造",
+    "division_code": "18",
+    "division_name": "纺织服装、服饰业",
+    "group_code": "181",
+    "group_name": "机织服装制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有水洗、湿法印花、染色、喷胶、整烫或有机溶剂使用？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：服装服饰通常不默认VOCs或废水，水洗/印花/染色/喷胶触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1821",
+    "industry_code": "1821",
+    "industry_name": "运动休闲针织服装制造",
+    "division_code": "18",
+    "division_name": "纺织服装、服饰业",
+    "group_code": "182",
+    "group_name": "针织或钩针编织服装制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有水洗、湿法印花、染色、喷胶、整烫或有机溶剂使用？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：服装服饰通常不默认VOCs或废水，水洗/印花/染色/喷胶触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1829",
+    "industry_code": "1829",
+    "industry_name": "其他针织或钩针编织服装制造",
+    "division_code": "18",
+    "division_name": "纺织服装、服饰业",
+    "group_code": "182",
+    "group_name": "针织或钩针编织服装制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有水洗、湿法印花、染色、喷胶、整烫或有机溶剂使用？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：服装服饰通常不默认VOCs或废水，水洗/印花/染色/喷胶触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1830",
+    "industry_code": "1830",
+    "industry_name": "服饰制造",
+    "division_code": "18",
+    "division_name": "纺织服装、服饰业",
+    "group_code": "183",
+    "group_name": "服饰制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有水洗、湿法印花、染色、喷胶、整烫或有机溶剂使用？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：服装服饰通常不默认VOCs或废水，水洗/印花/染色/喷胶触发确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1910",
+    "industry_code": "1910",
+    "industry_name": "皮革鞣制加工",
+    "division_code": "19",
+    "division_name": "皮革、毛皮、羽毛及其制品和制鞋业",
+    "group_code": "191",
+    "group_name": "皮革鞣制加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有鞣制、水洗、涂饰、喷胶、胶粘剂或处理剂使用？",
+      "是否产生含铬污泥、废溶剂、废胶粘剂包装或其他危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：皮革/毛皮/制鞋以废水、VOCs、危废为确认重点，不能默认YES。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1921",
+    "industry_code": "1921",
+    "industry_name": "皮革服装制造",
+    "division_code": "19",
+    "division_name": "皮革、毛皮、羽毛及其制品和制鞋业",
+    "group_code": "192",
+    "group_name": "皮革制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有鞣制、水洗、涂饰、喷胶、胶粘剂或处理剂使用？",
+      "是否产生含铬污泥、废溶剂、废胶粘剂包装或其他危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：皮革/毛皮/制鞋以废水、VOCs、危废为确认重点，不能默认YES。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1922",
+    "industry_code": "1922",
+    "industry_name": "皮箱、包(袋)制造",
+    "division_code": "19",
+    "division_name": "皮革、毛皮、羽毛及其制品和制鞋业",
+    "group_code": "192",
+    "group_name": "皮革制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有鞣制、水洗、涂饰、喷胶、胶粘剂或处理剂使用？",
+      "是否产生含铬污泥、废溶剂、废胶粘剂包装或其他危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：皮革/毛皮/制鞋以废水、VOCs、危废为确认重点，不能默认YES。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1923",
+    "industry_code": "1923",
+    "industry_name": "皮手套及皮装饰制品制造",
+    "division_code": "19",
+    "division_name": "皮革、毛皮、羽毛及其制品和制鞋业",
+    "group_code": "192",
+    "group_name": "皮革制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有鞣制、水洗、涂饰、喷胶、胶粘剂或处理剂使用？",
+      "是否产生含铬污泥、废溶剂、废胶粘剂包装或其他危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：皮革/毛皮/制鞋以废水、VOCs、危废为确认重点，不能默认YES。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1929",
+    "industry_code": "1929",
+    "industry_name": "其他皮革制品制造",
+    "division_code": "19",
+    "division_name": "皮革、毛皮、羽毛及其制品和制鞋业",
+    "group_code": "192",
+    "group_name": "皮革制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有鞣制、水洗、涂饰、喷胶、胶粘剂或处理剂使用？",
+      "是否产生含铬污泥、废溶剂、废胶粘剂包装或其他危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：皮革/毛皮/制鞋以废水、VOCs、危废为确认重点，不能默认YES。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1931",
+    "industry_code": "1931",
+    "industry_name": "毛皮鞣制加工",
+    "division_code": "19",
+    "division_name": "皮革、毛皮、羽毛及其制品和制鞋业",
+    "group_code": "193",
+    "group_name": "毛皮鞣制及制品加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有鞣制、水洗、涂饰、喷胶、胶粘剂或处理剂使用？",
+      "是否产生含铬污泥、废溶剂、废胶粘剂包装或其他危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：皮革/毛皮/制鞋以废水、VOCs、危废为确认重点，不能默认YES。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1932",
+    "industry_code": "1932",
+    "industry_name": "毛皮服装加工",
+    "division_code": "19",
+    "division_name": "皮革、毛皮、羽毛及其制品和制鞋业",
+    "group_code": "193",
+    "group_name": "毛皮鞣制及制品加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有鞣制、水洗、涂饰、喷胶、胶粘剂或处理剂使用？",
+      "是否产生含铬污泥、废溶剂、废胶粘剂包装或其他危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：皮革/毛皮/制鞋以废水、VOCs、危废为确认重点，不能默认YES。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1939",
+    "industry_code": "1939",
+    "industry_name": "其他毛皮制品加工",
+    "division_code": "19",
+    "division_name": "皮革、毛皮、羽毛及其制品和制鞋业",
+    "group_code": "193",
+    "group_name": "毛皮鞣制及制品加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有鞣制、水洗、涂饰、喷胶、胶粘剂或处理剂使用？",
+      "是否产生含铬污泥、废溶剂、废胶粘剂包装或其他危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：皮革/毛皮/制鞋以废水、VOCs、危废为确认重点，不能默认YES。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1941",
+    "industry_code": "1941",
+    "industry_name": "羽毛(绒)加工",
+    "division_code": "19",
+    "division_name": "皮革、毛皮、羽毛及其制品和制鞋业",
+    "group_code": "194",
+    "group_name": "羽毛（绒）加工及制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有鞣制、水洗、涂饰、喷胶、胶粘剂或处理剂使用？",
+      "是否产生含铬污泥、废溶剂、废胶粘剂包装或其他危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：皮革/毛皮/制鞋以废水、VOCs、危废为确认重点，不能默认YES。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1942",
+    "industry_code": "1942",
+    "industry_name": "羽毛(绒)制品加工",
+    "division_code": "19",
+    "division_name": "皮革、毛皮、羽毛及其制品和制鞋业",
+    "group_code": "194",
+    "group_name": "羽毛（绒）加工及制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有鞣制、水洗、涂饰、喷胶、胶粘剂或处理剂使用？",
+      "是否产生含铬污泥、废溶剂、废胶粘剂包装或其他危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：皮革/毛皮/制鞋以废水、VOCs、危废为确认重点，不能默认YES。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1951",
+    "industry_code": "1951",
+    "industry_name": "纺织面料鞋制造",
+    "division_code": "19",
+    "division_name": "皮革、毛皮、羽毛及其制品和制鞋业",
+    "group_code": "195",
+    "group_name": "制鞋业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有鞣制、水洗、涂饰、喷胶、胶粘剂或处理剂使用？",
+      "是否产生含铬污泥、废溶剂、废胶粘剂包装或其他危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：皮革/毛皮/制鞋以废水、VOCs、危废为确认重点，不能默认YES。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1952",
+    "industry_code": "1952",
+    "industry_name": "皮鞋制造",
+    "division_code": "19",
+    "division_name": "皮革、毛皮、羽毛及其制品和制鞋业",
+    "group_code": "195",
+    "group_name": "制鞋业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有鞣制、水洗、涂饰、喷胶、胶粘剂或处理剂使用？",
+      "是否产生含铬污泥、废溶剂、废胶粘剂包装或其他危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：皮革/毛皮/制鞋以废水、VOCs、危废为确认重点，不能默认YES。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1953",
+    "industry_code": "1953",
+    "industry_name": "塑料鞋制造",
+    "division_code": "19",
+    "division_name": "皮革、毛皮、羽毛及其制品和制鞋业",
+    "group_code": "195",
+    "group_name": "制鞋业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有鞣制、水洗、涂饰、喷胶、胶粘剂或处理剂使用？",
+      "是否产生含铬污泥、废溶剂、废胶粘剂包装或其他危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：皮革/毛皮/制鞋以废水、VOCs、危废为确认重点，不能默认YES。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1954",
+    "industry_code": "1954",
+    "industry_name": "橡胶鞋制造",
+    "division_code": "19",
+    "division_name": "皮革、毛皮、羽毛及其制品和制鞋业",
+    "group_code": "195",
+    "group_name": "制鞋业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有鞣制、水洗、涂饰、喷胶、胶粘剂或处理剂使用？",
+      "是否产生含铬污泥、废溶剂、废胶粘剂包装或其他危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：皮革/毛皮/制鞋以废水、VOCs、危废为确认重点，不能默认YES。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_1959",
+    "industry_code": "1959",
+    "industry_name": "其他制鞋业",
+    "division_code": "19",
+    "division_name": "皮革、毛皮、羽毛及其制品和制鞋业",
+    "group_code": "195",
+    "group_name": "制鞋业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_WW_PROCESS_AND_TREATMENT",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有鞣制、水洗、涂饰、喷胶、胶粘剂或处理剂使用？",
+      "是否产生含铬污泥、废溶剂、废胶粘剂包装或其他危废？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：皮革/毛皮/制鞋以废水、VOCs、危废为确认重点，不能默认YES。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2011",
+    "industry_code": "2011",
+    "industry_name": "锯材加工",
+    "division_code": "20",
+    "division_name": "木材加工和木、竹、藤、棕、草制品业",
+    "group_code": "201",
+    "group_name": "木材加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有人造板胶合、涂胶、热压、喷漆、砂光、木粉尘或除尘设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：木材加工和人造板需确认胶黏剂、粉尘和废气治理。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2012",
+    "industry_code": "2012",
+    "industry_name": "木片加工",
+    "division_code": "20",
+    "division_name": "木材加工和木、竹、藤、棕、草制品业",
+    "group_code": "201",
+    "group_name": "木材加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有人造板胶合、涂胶、热压、喷漆、砂光、木粉尘或除尘设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：木材加工和人造板需确认胶黏剂、粉尘和废气治理。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2013",
+    "industry_code": "2013",
+    "industry_name": "单板加工",
+    "division_code": "20",
+    "division_name": "木材加工和木、竹、藤、棕、草制品业",
+    "group_code": "201",
+    "group_name": "木材加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有人造板胶合、涂胶、热压、喷漆、砂光、木粉尘或除尘设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：木材加工和人造板需确认胶黏剂、粉尘和废气治理。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2019",
+    "industry_code": "2019",
+    "industry_name": "其他木材加工",
+    "division_code": "20",
+    "division_name": "木材加工和木、竹、藤、棕、草制品业",
+    "group_code": "201",
+    "group_name": "木材加工",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有人造板胶合、涂胶、热压、喷漆、砂光、木粉尘或除尘设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：木材加工和人造板需确认胶黏剂、粉尘和废气治理。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2021",
+    "industry_code": "2021",
+    "industry_name": "胶合板制造",
+    "division_code": "20",
+    "division_name": "木材加工和木、竹、藤、棕、草制品业",
+    "group_code": "202",
+    "group_name": "人造板制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有人造板胶合、涂胶、热压、喷漆、砂光、木粉尘或除尘设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：木材加工和人造板需确认胶黏剂、粉尘和废气治理。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2022",
+    "industry_code": "2022",
+    "industry_name": "纤维板制造",
+    "division_code": "20",
+    "division_name": "木材加工和木、竹、藤、棕、草制品业",
+    "group_code": "202",
+    "group_name": "人造板制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有人造板胶合、涂胶、热压、喷漆、砂光、木粉尘或除尘设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：木材加工和人造板需确认胶黏剂、粉尘和废气治理。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2023",
+    "industry_code": "2023",
+    "industry_name": "刨花板制造",
+    "division_code": "20",
+    "division_name": "木材加工和木、竹、藤、棕、草制品业",
+    "group_code": "202",
+    "group_name": "人造板制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有人造板胶合、涂胶、热压、喷漆、砂光、木粉尘或除尘设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：木材加工和人造板需确认胶黏剂、粉尘和废气治理。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2029",
+    "industry_code": "2029",
+    "industry_name": "其他人造板制造",
+    "division_code": "20",
+    "division_name": "木材加工和木、竹、藤、棕、草制品业",
+    "group_code": "202",
+    "group_name": "人造板制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有人造板胶合、涂胶、热压、喷漆、砂光、木粉尘或除尘设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：木材加工和人造板需确认胶黏剂、粉尘和废气治理。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2031",
+    "industry_code": "2031",
+    "industry_name": "建筑用木料及木材组件加工",
+    "division_code": "20",
+    "division_name": "木材加工和木、竹、藤、棕、草制品业",
+    "group_code": "203",
+    "group_name": "木质制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有人造板胶合、涂胶、热压、喷漆、砂光、木粉尘或除尘设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：木材加工和人造板需确认胶黏剂、粉尘和废气治理。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2032",
+    "industry_code": "2032",
+    "industry_name": "木门窗制造",
+    "division_code": "20",
+    "division_name": "木材加工和木、竹、藤、棕、草制品业",
+    "group_code": "203",
+    "group_name": "木质制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有人造板胶合、涂胶、热压、喷漆、砂光、木粉尘或除尘设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：木材加工和人造板需确认胶黏剂、粉尘和废气治理。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2033",
+    "industry_code": "2033",
+    "industry_name": "木楼梯制造",
+    "division_code": "20",
+    "division_name": "木材加工和木、竹、藤、棕、草制品业",
+    "group_code": "203",
+    "group_name": "木质制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有人造板胶合、涂胶、热压、喷漆、砂光、木粉尘或除尘设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：木材加工和人造板需确认胶黏剂、粉尘和废气治理。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2034",
+    "industry_code": "2034",
+    "industry_name": "木地板制造",
+    "division_code": "20",
+    "division_name": "木材加工和木、竹、藤、棕、草制品业",
+    "group_code": "203",
+    "group_name": "木质制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有人造板胶合、涂胶、热压、喷漆、砂光、木粉尘或除尘设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：木材加工和人造板需确认胶黏剂、粉尘和废气治理。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2035",
+    "industry_code": "2035",
+    "industry_name": "木制容器制造",
+    "division_code": "20",
+    "division_name": "木材加工和木、竹、藤、棕、草制品业",
+    "group_code": "203",
+    "group_name": "木质制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有人造板胶合、涂胶、热压、喷漆、砂光、木粉尘或除尘设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：木材加工和人造板需确认胶黏剂、粉尘和废气治理。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2039",
+    "industry_code": "2039",
+    "industry_name": "软木制品及其他木制品制造",
+    "division_code": "20",
+    "division_name": "木材加工和木、竹、藤、棕、草制品业",
+    "group_code": "203",
+    "group_name": "木质制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有人造板胶合、涂胶、热压、喷漆、砂光、木粉尘或除尘设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：木材加工和人造板需确认胶黏剂、粉尘和废气治理。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2041",
+    "industry_code": "2041",
+    "industry_name": "竹制品制造",
+    "division_code": "20",
+    "division_name": "木材加工和木、竹、藤、棕、草制品业",
+    "group_code": "204",
+    "group_name": "竹、藤、棕、草等制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有人造板胶合、涂胶、热压、喷漆、砂光、木粉尘或除尘设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：木材加工和人造板需确认胶黏剂、粉尘和废气治理。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2042",
+    "industry_code": "2042",
+    "industry_name": "藤制品制造",
+    "division_code": "20",
+    "division_name": "木材加工和木、竹、藤、棕、草制品业",
+    "group_code": "204",
+    "group_name": "竹、藤、棕、草等制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有人造板胶合、涂胶、热压、喷漆、砂光、木粉尘或除尘设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：木材加工和人造板需确认胶黏剂、粉尘和废气治理。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2043",
+    "industry_code": "2043",
+    "industry_name": "棕制品制造",
+    "division_code": "20",
+    "division_name": "木材加工和木、竹、藤、棕、草制品业",
+    "group_code": "204",
+    "group_name": "竹、藤、棕、草等制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有人造板胶合、涂胶、热压、喷漆、砂光、木粉尘或除尘设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：木材加工和人造板需确认胶黏剂、粉尘和废气治理。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2049",
+    "industry_code": "2049",
+    "industry_name": "草及其他制品制造",
+    "division_code": "20",
+    "division_name": "木材加工和木、竹、藤、棕、草制品业",
+    "group_code": "204",
+    "group_name": "竹、藤、棕、草等制品制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有人造板胶合、涂胶、热压、喷漆、砂光、木粉尘或除尘设施？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：木材加工和人造板需确认胶黏剂、粉尘和废气治理。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2110",
+    "industry_code": "2110",
+    "industry_name": "木质家具制造",
+    "division_code": "21",
+    "division_name": "家具制造业",
+    "group_code": "211",
+    "group_name": "木质家具制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否喷涂、涂胶、打磨、砂光、磷化或水帘喷漆？",
+      "溶剂型涂料/胶黏剂或水性涂料年用量是多少？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：家具许可和场景高度依赖涂料/胶黏剂用量、磷化和喷涂事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2120",
+    "industry_code": "2120",
+    "industry_name": "竹、藤家具制造",
+    "division_code": "21",
+    "division_name": "家具制造业",
+    "group_code": "212",
+    "group_name": "竹、藤家具制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否喷涂、涂胶、打磨、砂光、磷化或水帘喷漆？",
+      "溶剂型涂料/胶黏剂或水性涂料年用量是多少？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：家具许可和场景高度依赖涂料/胶黏剂用量、磷化和喷涂事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2130",
+    "industry_code": "2130",
+    "industry_name": "金属家具制造",
+    "division_code": "21",
+    "division_name": "家具制造业",
+    "group_code": "213",
+    "group_name": "金属家具制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否喷涂、涂胶、打磨、砂光、磷化或水帘喷漆？",
+      "溶剂型涂料/胶黏剂或水性涂料年用量是多少？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：家具许可和场景高度依赖涂料/胶黏剂用量、磷化和喷涂事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2140",
+    "industry_code": "2140",
+    "industry_name": "塑料家具制造",
+    "division_code": "21",
+    "division_name": "家具制造业",
+    "group_code": "214",
+    "group_name": "塑料家具制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否喷涂、涂胶、打磨、砂光、磷化或水帘喷漆？",
+      "溶剂型涂料/胶黏剂或水性涂料年用量是多少？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：家具许可和场景高度依赖涂料/胶黏剂用量、磷化和喷涂事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2190",
+    "industry_code": "2190",
+    "industry_name": "其他家具制造",
+    "division_code": "21",
+    "division_name": "家具制造业",
+    "group_code": "219",
+    "group_name": "其他家具制造",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否喷涂、涂胶、打磨、砂光、磷化或水帘喷漆？",
+      "溶剂型涂料/胶黏剂或水性涂料年用量是多少？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：家具许可和场景高度依赖涂料/胶黏剂用量、磷化和喷涂事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2311",
+    "industry_code": "2311",
+    "industry_name": "书、报刊印刷",
+    "division_code": "23",
+    "division_name": "印刷和记录媒介复制业",
+    "group_code": "231",
+    "group_name": "印刷",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否为包装装潢印刷？",
+      "溶剂型油墨、涂料或稀释剂年用量是多少？",
+      "是否纳入重点排污单位名录？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：印刷复制扩展沿用VOCs/危废模板，许可类型按重点名单和用量确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2312",
+    "industry_code": "2312",
+    "industry_name": "本册印制",
+    "division_code": "23",
+    "division_name": "印刷和记录媒介复制业",
+    "group_code": "231",
+    "group_name": "印刷",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否为包装装潢印刷？",
+      "溶剂型油墨、涂料或稀释剂年用量是多少？",
+      "是否纳入重点排污单位名录？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：印刷复制扩展沿用VOCs/危废模板，许可类型按重点名单和用量确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2319",
+    "industry_code": "2319",
+    "industry_name": "包装装潢及其他印刷",
+    "division_code": "23",
+    "division_name": "印刷和记录媒介复制业",
+    "group_code": "231",
+    "group_name": "印刷",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否为包装装潢印刷？",
+      "溶剂型油墨、涂料或稀释剂年用量是多少？",
+      "是否纳入重点排污单位名录？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：印刷复制扩展沿用VOCs/危废模板，许可类型按重点名单和用量确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2320",
+    "industry_code": "2320",
+    "industry_name": "装订及印刷相关服务",
+    "division_code": "23",
+    "division_name": "印刷和记录媒介复制业",
+    "group_code": "232",
+    "group_name": "装订及印刷相关服务",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否为包装装潢印刷？",
+      "溶剂型油墨、涂料或稀释剂年用量是多少？",
+      "是否纳入重点排污单位名录？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：印刷复制扩展沿用VOCs/危废模板，许可类型按重点名单和用量确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2330",
+    "industry_code": "2330",
+    "industry_name": "记录媒介复制",
+    "division_code": "23",
+    "division_name": "印刷和记录媒介复制业",
+    "group_code": "233",
+    "group_name": "记录媒介复制",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_ONLINE_MONITORING_KEY_UNIT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否为包装装潢印刷？",
+      "溶剂型油墨、涂料或稀释剂年用量是多少？",
+      "是否纳入重点排污单位名录？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：印刷复制扩展沿用VOCs/危废模板，许可类型按重点名单和用量确认。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2911",
+    "industry_code": "2911",
+    "industry_name": "轮胎制造",
+    "division_code": "29",
+    "division_name": "橡胶和塑料制品业",
+    "group_code": "291",
+    "group_name": "橡胶制品业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有橡胶炼胶、硫化、塑料改性、发泡、涂布、清洗或废气治理设施？",
+      "年产量是否达到名录阈值？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：橡胶塑料扩展需确认炼胶/硫化/发泡/改性/涂布等事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2912",
+    "industry_code": "2912",
+    "industry_name": "橡胶板、管、带制造",
+    "division_code": "29",
+    "division_name": "橡胶和塑料制品业",
+    "group_code": "291",
+    "group_name": "橡胶制品业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有橡胶炼胶、硫化、塑料改性、发泡、涂布、清洗或废气治理设施？",
+      "年产量是否达到名录阈值？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：橡胶塑料扩展需确认炼胶/硫化/发泡/改性/涂布等事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2913",
+    "industry_code": "2913",
+    "industry_name": "橡胶零件制造",
+    "division_code": "29",
+    "division_name": "橡胶和塑料制品业",
+    "group_code": "291",
+    "group_name": "橡胶制品业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有橡胶炼胶、硫化、塑料改性、发泡、涂布、清洗或废气治理设施？",
+      "年产量是否达到名录阈值？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：橡胶塑料扩展需确认炼胶/硫化/发泡/改性/涂布等事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2914",
+    "industry_code": "2914",
+    "industry_name": "再生橡胶制造",
+    "division_code": "29",
+    "division_name": "橡胶和塑料制品业",
+    "group_code": "291",
+    "group_name": "橡胶制品业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有橡胶炼胶、硫化、塑料改性、发泡、涂布、清洗或废气治理设施？",
+      "年产量是否达到名录阈值？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：橡胶塑料扩展需确认炼胶/硫化/发泡/改性/涂布等事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2915",
+    "industry_code": "2915",
+    "industry_name": "日用及医用橡胶制品制造",
+    "division_code": "29",
+    "division_name": "橡胶和塑料制品业",
+    "group_code": "291",
+    "group_name": "橡胶制品业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有橡胶炼胶、硫化、塑料改性、发泡、涂布、清洗或废气治理设施？",
+      "年产量是否达到名录阈值？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：橡胶塑料扩展需确认炼胶/硫化/发泡/改性/涂布等事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2916",
+    "industry_code": "2916",
+    "industry_name": "运动场地用塑胶制造",
+    "division_code": "29",
+    "division_name": "橡胶和塑料制品业",
+    "group_code": "291",
+    "group_name": "橡胶制品业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有橡胶炼胶、硫化、塑料改性、发泡、涂布、清洗或废气治理设施？",
+      "年产量是否达到名录阈值？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：橡胶塑料扩展需确认炼胶/硫化/发泡/改性/涂布等事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2919",
+    "industry_code": "2919",
+    "industry_name": "其他橡胶制品制造",
+    "division_code": "29",
+    "division_name": "橡胶和塑料制品业",
+    "group_code": "291",
+    "group_name": "橡胶制品业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有橡胶炼胶、硫化、塑料改性、发泡、涂布、清洗或废气治理设施？",
+      "年产量是否达到名录阈值？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：橡胶塑料扩展需确认炼胶/硫化/发泡/改性/涂布等事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2921",
+    "industry_code": "2921",
+    "industry_name": "塑料薄膜制造",
+    "division_code": "29",
+    "division_name": "橡胶和塑料制品业",
+    "group_code": "292",
+    "group_name": "塑料制品业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有橡胶炼胶、硫化、塑料改性、发泡、涂布、清洗或废气治理设施？",
+      "年产量是否达到名录阈值？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：橡胶塑料扩展需确认炼胶/硫化/发泡/改性/涂布等事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2922",
+    "industry_code": "2922",
+    "industry_name": "塑料板、管、型材制造",
+    "division_code": "29",
+    "division_name": "橡胶和塑料制品业",
+    "group_code": "292",
+    "group_name": "塑料制品业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有橡胶炼胶、硫化、塑料改性、发泡、涂布、清洗或废气治理设施？",
+      "年产量是否达到名录阈值？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：橡胶塑料扩展需确认炼胶/硫化/发泡/改性/涂布等事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2923",
+    "industry_code": "2923",
+    "industry_name": "塑料丝、绳及编织品制造",
+    "division_code": "29",
+    "division_name": "橡胶和塑料制品业",
+    "group_code": "292",
+    "group_name": "塑料制品业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有橡胶炼胶、硫化、塑料改性、发泡、涂布、清洗或废气治理设施？",
+      "年产量是否达到名录阈值？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：橡胶塑料扩展需确认炼胶/硫化/发泡/改性/涂布等事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2924",
+    "industry_code": "2924",
+    "industry_name": "泡沫塑料制造",
+    "division_code": "29",
+    "division_name": "橡胶和塑料制品业",
+    "group_code": "292",
+    "group_name": "塑料制品业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有橡胶炼胶、硫化、塑料改性、发泡、涂布、清洗或废气治理设施？",
+      "年产量是否达到名录阈值？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：橡胶塑料扩展需确认炼胶/硫化/发泡/改性/涂布等事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2925",
+    "industry_code": "2925",
+    "industry_name": "塑料人造革、合成革制造",
+    "division_code": "29",
+    "division_name": "橡胶和塑料制品业",
+    "group_code": "292",
+    "group_name": "塑料制品业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有橡胶炼胶、硫化、塑料改性、发泡、涂布、清洗或废气治理设施？",
+      "年产量是否达到名录阈值？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：橡胶塑料扩展需确认炼胶/硫化/发泡/改性/涂布等事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2926",
+    "industry_code": "2926",
+    "industry_name": "塑料包装箱及容器制造",
+    "division_code": "29",
+    "division_name": "橡胶和塑料制品业",
+    "group_code": "292",
+    "group_name": "塑料制品业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有橡胶炼胶、硫化、塑料改性、发泡、涂布、清洗或废气治理设施？",
+      "年产量是否达到名录阈值？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：橡胶塑料扩展需确认炼胶/硫化/发泡/改性/涂布等事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2927",
+    "industry_code": "2927",
+    "industry_name": "日用塑料制品制造",
+    "division_code": "29",
+    "division_name": "橡胶和塑料制品业",
+    "group_code": "292",
+    "group_name": "塑料制品业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有橡胶炼胶、硫化、塑料改性、发泡、涂布、清洗或废气治理设施？",
+      "年产量是否达到名录阈值？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：橡胶塑料扩展需确认炼胶/硫化/发泡/改性/涂布等事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2928",
+    "industry_code": "2928",
+    "industry_name": "人造草坪制造",
+    "division_code": "29",
+    "division_name": "橡胶和塑料制品业",
+    "group_code": "292",
+    "group_name": "塑料制品业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有橡胶炼胶、硫化、塑料改性、发泡、涂布、清洗或废气治理设施？",
+      "年产量是否达到名录阈值？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：橡胶塑料扩展需确认炼胶/硫化/发泡/改性/涂布等事实。"
+  },
+  {
+    "candidate_rule_id": "BATCH2_GB4754_2929",
+    "industry_code": "2929",
+    "industry_name": "塑料零件及其他塑料制品制造",
+    "division_code": "29",
+    "division_name": "橡胶和塑料制品业",
+    "group_code": "292",
+    "group_name": "塑料制品业",
+    "permit_type": "NEED_CONFIRM",
+    "scenario_template_ids": [
+      "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER"
+    ],
+    "unknown_scenarios": [
+      "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "SCN_DUST_PARTICULATE_CONTROL",
+      "SCN_WW_PROCESS_AND_TREATMENT"
+    ],
+    "source_basis": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)相关条目待表格级抽取确认"
+    ],
+    "confidence": "MEDIUM",
+    "confirmation_questions": [
+      "是否存在实际生产、加工、清洗、涂布、喷涂、染整、粉磨、冶炼、铸造或包装等产污活动？",
+      "环评、批复、排污许可或登记回执中载明的主要污染物和治理设施是什么？",
+      "是否存在锅炉、工业炉窑、污水处理、表面处理、水处理等通用工序？",
+      "是否有橡胶炼胶、硫化、塑料改性、发泡、涂布、清洗或废气治理设施？",
+      "年产量是否达到名录阈值？"
+    ],
+    "runtime_status": "CANDIDATE_ONLY",
+    "notes": "Batch2候选：橡胶塑料扩展需确认炼胶/硫化/发泡/改性/涂布等事实。"
+  }
+]

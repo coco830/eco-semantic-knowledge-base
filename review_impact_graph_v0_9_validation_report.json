@@ -1,0 +1,15 @@
+{
+  "validation_status": "PASS",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "failure_count": 0,
+  "impact_rows": 11,
+  "impact_edges": 469,
+  "edge_type_counts": {
+    "RAG_QUERY_REFERENCES_REVIEW_OVERLAY": 5,
+    "RELATION_AFFECTS_SCENARIO": 61,
+    "REVIEW_OVERLAY_AFFECTS_RELATION": 11,
+    "SCENARIO_AFFECTS_INSPECTION": 122,
+    "SCENARIO_AFFECTS_SCORE13": 270
+  },
+  "failure_samples": []
+}

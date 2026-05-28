@@ -1,0 +1,69 @@
+{
+  "knowledge_base_version": "v0.2-candidate-base+v0.2-high-priority-overlay",
+  "manifest_filename_status": "legacy_name_kept_for_compatibility",
+  "legacy_labels": [
+    "v0.1-sample"
+  ],
+  "runtime_promotion_status": "not_approved",
+  "positioning": "auditable candidate knowledge base for full GB/T 4754 scenario recall plus high-priority permit-condition overlay; not runtime input.",
+  "version_components": {
+    "scenario_template_sample": "v0.1",
+    "all_industry_candidate_base": "v0.2-candidate-base",
+    "high_priority_permit_condition_overlay": "v0.2-high-priority-overlay",
+    "runtime_policy": "disabled"
+  },
+  "runtime_integration": "disabled",
+  "generated_outputs": {
+    "industry_catalog_base.csv": 1952,
+    "permit_management_catalog_draft.csv": 86,
+    "permit_management_catalog_table_cells.csv": 112,
+    "all_industry_scenario_candidates_v0_2.csv": 1382,
+    "all_industry_scenario_candidates_v0_2.json": 1382,
+    "all_industry_scenario_candidates_v0_2_gate_report.json": 1,
+    "high_priority_permit_condition_backfill_v0_2.csv": 201,
+    "high_priority_permit_condition_backfill_detail_v0_2.csv": 3036,
+    "high_priority_permit_condition_backfill_audit_samples.csv": 34,
+    "context_applicability_review_audit_samples.csv": 408,
+    "open_questions.csv": 7,
+    "inspection_item_recommendations.csv": 19,
+    "inspection_candidate_recommendations_v0_1.csv": 19
+  },
+  "quality_gates_before_runtime": [
+    "resolve all OPEN questions that affect industry code or permit type",
+    "use permit_management_catalog_table_cells.csv as the raw audit source and verify catalog entries 1-112",
+    "split permit raw rows into key/simplified/registration conditions with page references",
+    "map candidate sections to current template sections or explicitly approve new sections",
+    "run duplicate scenario and source_basis audit",
+    "ESO/ETO confirms final enterprise profile from EIA, approval, permit, ledger and site facts"
+  ],
+  "permit_catalog_table_cell_validation": {
+    "entry_count": 112,
+    "unique_entry_count": 112,
+    "min_entry_no": 1,
+    "max_entry_no": 112,
+    "missing_entry_nos": [],
+    "duplicate_entry_nos": [],
+    "page_table_counts": {
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 1,
+      "11": 1,
+      "12": 1,
+      "13": 1,
+      "14": 1,
+      "15": 1,
+      "16": 1,
+      "17": 1,
+      "18": 1,
+      "19": 1,
+      "20": 1
+    },
+    "runtime_status": "NOT_FOR_RUNTIME_RAW_AUDIT_ONLY",
+    "validation_status": "PASS",
+    "errors": []
+  }
+}

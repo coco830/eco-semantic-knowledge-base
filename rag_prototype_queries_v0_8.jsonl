@@ -1,0 +1,8 @@
+{"expected_terms": ["CONFIRM_NOT_APPLY", "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"], "focus_relation_id": "CTXV04_3012_63_REGISTRATION", "query": "3012 石灰和石膏制造第63条登记管理是否适用？", "query_id": "RAGV08-001"}
+{"expected_terms": ["CONFIRM_APPLIES", "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"], "focus_relation_id": "CTXV04_3012_63_SIMPLIFIED", "query": "3012 第63条简化管理有没有人工确认？", "query_id": "RAGV08-002"}
+{"expected_terms": ["NEED_SITE_CONFIRM", "通用工序", "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"], "focus_relation_id": "CTXV04_0111_109_SIMPLIFIED", "query": "稻谷种植涉及锅炉通用工序时应如何处理？", "query_id": "RAGV08-003"}
+{"expected_terms": ["CONFIRM_MAY_APPLY", "不是运行时批准", "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"], "focus_relation_id": "CTXV04_4620_99_KEY", "query": "4620 污水处理第99条重点管理是否已经正式适用？", "query_id": "RAGV08-004"}
+{"expected_terms": ["CONFIRM_NOT_APPLY", "水泥熟料", "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"], "focus_relation_id": "CTXV04_3021_63_KEY", "query": "3021 水泥制品第63条重点管理为什么不适用？", "query_id": "RAGV08-005"}
+{"expected_terms": ["承接", "不接运行时", "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"], "focus_relation_id": "", "query": "第108条和109-112通用工序在RAG回答中要提醒什么？", "query_id": "RAGV08-006"}
+{"expected_terms": ["photo_points", "evidence_chain", "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"], "focus_relation_id": "", "query": "废水场景现场排查要哪些证据和拍照点？", "query_id": "RAGV08-007"}
+{"expected_terms": ["NEED_SITE_CONFIRM", "NEED_RULE_FIX", "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"], "focus_relation_id": "", "query": "哪些模拟审阅结论仍然 BLOCKS_RUNTIME？", "query_id": "RAGV08-008"}

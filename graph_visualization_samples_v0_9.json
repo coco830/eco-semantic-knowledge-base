@@ -1,0 +1,10 @@
+{
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_integration": "disabled",
+  "samples": [
+    "3012_registration_not_apply",
+    "0111_general_process_site_confirm",
+    "4620_may_apply_second_approval",
+    "entry108_strategy"
+  ]
+}

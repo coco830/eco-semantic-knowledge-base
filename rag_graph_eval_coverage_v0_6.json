@@ -1,0 +1,27 @@
+{
+  "eval_count": 24,
+  "query_sample_count": 8,
+  "eval_category_counts": {
+    "division_context": 1,
+    "emergency": 1,
+    "general_process": 1,
+    "industry_code": 3,
+    "inspection_evidence": 2,
+    "medical_special": 1,
+    "negative_condition": 2,
+    "not_apply_evidence": 1,
+    "open_question_trace": 1,
+    "permit_catalog": 2,
+    "permit_type_boundary": 1,
+    "rag_boundary": 1,
+    "risk_trace": 1,
+    "runtime_boundary": 1,
+    "scenario_template": 2,
+    "score13": 2,
+    "solid_waste": 1
+  },
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_integration": "disabled",
+  "precheck_missing_nodes": [],
+  "precheck_missing_chunk_types": []
+}

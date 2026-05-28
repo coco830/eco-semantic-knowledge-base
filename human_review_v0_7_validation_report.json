@@ -1,0 +1,14 @@
+{
+  "validation_status": "PASS",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "failure_count": 0,
+  "input_counts": {
+    "context_relations": 22815,
+    "permit_conditions": 336,
+    "open_questions": 19,
+    "risk_queue": 9
+  },
+  "review_queue_rows": 22815,
+  "worksheet_rows": 22815,
+  "failure_samples": []
+}

@@ -1,0 +1,58 @@
+{
+  "version": "v1.0-rc-runtime-promotion-design-only",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_integration": "disabled",
+  "design_only": true,
+  "gates": [
+    {
+      "gate_id": "GATE-001",
+      "gate_name": "candidate_source_freeze",
+      "required_evidence": "v0.4.1/v0.5/v0.7/v0.8/v0.9 manifests and validation reports are PASS and immutable for the release candidate.",
+      "blocks_until": "候选源数据版本冻结，且 hash/manifest 记录完整。",
+      "owner_role": "TechLead"
+    },
+    {
+      "gate_id": "GATE-002",
+      "gate_name": "human_review_completion",
+      "required_evidence": "All promoted rows have valid human_review_label, reviewer, reviewer_role, reviewed_at, notes, basis, evidence_refs, decision_confidence.",
+      "blocks_until": "人工审阅签字留痕完整。",
+      "owner_role": "ESO+ETO"
+    },
+    {
+      "gate_id": "GATE-003",
+      "gate_name": "second_approval",
+      "required_evidence": "Formalization candidates are approved by Product+ETO+TechLead and have runtime scope explicitly granted.",
+      "blocks_until": "二次审批通过，且审批记录不可篡改。",
+      "owner_role": "Product+ETO+TechLead"
+    },
+    {
+      "gate_id": "GATE-004",
+      "gate_name": "runtime_contract_tests",
+      "required_evidence": "Backend import contract, miniprogram display contract, RAG boundary contract, rollback contract all PASS.",
+      "blocks_until": "契约测试全部通过。",
+      "owner_role": "TechLead"
+    },
+    {
+      "gate_id": "GATE-005",
+      "gate_name": "rollback_ready",
+      "required_evidence": "A versioned rollback manifest and previous runtime snapshot are available before any import.",
+      "blocks_until": "可回滚版本与演练记录齐全。",
+      "owner_role": "TechLead"
+    },
+    {
+      "gate_id": "GATE-006",
+      "gate_name": "audit_logging_ready",
+      "required_evidence": "Every import/reject/promote/read path writes actor, role, source version, before/after hash and reason.",
+      "blocks_until": "审计日志设计和测试通过。",
+      "owner_role": "Security+TechLead"
+    }
+  ],
+  "forbidden_actions": [
+    "automatic_permit_type_generation",
+    "automatic_inspection_template_generation",
+    "automatic_deduct_generation",
+    "runtime_import_without_second_approval",
+    "score13_report_dimension_change_without_product_approval"
+  ],
+  "minimum_release_rule": "No candidate row may be imported until all gates pass and second approval explicitly grants runtime scope."
+}

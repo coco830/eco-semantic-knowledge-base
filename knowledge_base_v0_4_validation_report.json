@@ -1,0 +1,12 @@
+{
+  "validation_status": "PASS",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "failure_count": 0,
+  "industry_candidate_coverage": "1382/1382",
+  "permit_condition_rows": 336,
+  "context_relation_rows": 22815,
+  "pure_division_context_applies": 0,
+  "not_apply_missing_blocking_flags": 0,
+  "open_questions": 19,
+  "failure_samples": []
+}

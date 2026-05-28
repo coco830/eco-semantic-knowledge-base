@@ -1,0 +1,44 @@
+{
+  "knowledge_base_version": "v0.9-review-impact-graph",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_integration": "disabled",
+  "query_patterns": [
+    {
+      "query_id": "PLAY09-001",
+      "name": "industry_to_inspection_path",
+      "path": [
+        "Industry",
+        "PermitCondition",
+        "ApplicabilityRelation",
+        "ScenarioTemplate",
+        "Score13Dimension",
+        "InspectionCandidate"
+      ],
+      "description": "行业召回后，经许可条件和候选适用关系进入场景本体，再映射13维和候选排查项。"
+    },
+    {
+      "query_id": "PLAY09-002",
+      "name": "review_overlay_impact_path",
+      "path": [
+        "ReviewOverlay",
+        "ApplicabilityRelation",
+        "ScenarioTemplate",
+        "Score13Dimension",
+        "InspectionCandidate",
+        "RagQuery"
+      ],
+      "description": "查看一条模拟审阅结论影响哪些场景、13维、排查项和RAG回答。"
+    },
+    {
+      "query_id": "PLAY09-003",
+      "name": "entry108_general_process_path",
+      "path": [
+        "PermitCatalogEntry108",
+        "PermitCatalogEntry109-112",
+        "OpenQuestion",
+        "RiskAcceptance"
+      ],
+      "description": "解释第108条承接到109-112通用工序，不代表许可名录缺失。"
+    }
+  ]
+}

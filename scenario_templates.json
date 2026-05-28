@@ -1,0 +1,585 @@
+[
+  {
+    "scenario_id": "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+    "scenario_name": "通用生产经营、一般固废、噪声与基础台账",
+    "aliases": [
+      "基础产污画像",
+      "生产加工活动",
+      "一般固废与噪声源",
+      "台账基础项"
+    ],
+    "tags_24": [
+      "production_process_activity",
+      "general_solid_waste",
+      "noise_source",
+      "environmental_facility_operation",
+      "waste_transfer_ledger"
+    ],
+    "media_type": "cross_media",
+    "facility_or_risk_unit": "生产线、加工设备、包装/边角料暂存点、噪声设备、一般固废暂存区",
+    "triggers": [
+      "存在实际生产、加工、分装、清洗、粉磨、印刷、诊疗或经营活动",
+      "现有31条规则均默认存在生产经营活动和一般固废画像"
+    ],
+    "not_applicable_conditions": [
+      "仅办公、仓储、贸易且无实际产污活动",
+      "现场确认无一般固废、无主要噪声源时可降级为不适用"
+    ],
+    "confirmation_questions": [
+      "是否有实际生产/加工/分装/清洗/粉磨/印刷等活动？",
+      "一般固废种类和去向是什么？",
+      "是否有主要噪声设备？",
+      "是否建立固废/危废/医废台账？"
+    ],
+    "evidence_requirements": [
+      "营业执照或医疗机构执业许可证",
+      "环评/批复/排污许可或登记回执",
+      "生产设备清单",
+      "一般固废合同或台账",
+      "厂区平面图"
+    ],
+    "photo_points": [
+      "厂区入口或生产区域全景",
+      "主要生产线/加工设备",
+      "一般固废暂存点全景和标识",
+      "高噪声设备及隔声/减振措施",
+      "台账封面和最近记录页"
+    ],
+    "related_regulations": [
+      "GB/T 4754-2017",
+      "固定污染源排污许可分类管理名录(2019年版)",
+      "各行业排污许可证申请与核发技术规范"
+    ],
+    "confidence": "HIGH"
+  },
+  {
+    "scenario_id": "SCN_WW_PROCESS_AND_TREATMENT",
+    "scenario_name": "生产/医疗/清洗废水与污水处理设施",
+    "aliases": [
+      "废水产生",
+      "污水站",
+      "预处理设施",
+      "清洗废水",
+      "生产废水"
+    ],
+    "tags_24": [
+      "wastewater_generation",
+      "wastewater_station",
+      "environmental_facility_operation",
+      "online_monitoring"
+    ],
+    "media_type": "wastewater",
+    "facility_or_risk_unit": "污水处理站、预处理设施、隔油/沉淀/生化设施、废水排口、在线监测站房",
+    "triggers": [
+      "医疗机构、食品饮料、蔬菜加工、制浆造纸、涂料重点管理、人造革合成革等可能产生废水",
+      "重点管理或高水量场景优先确认污水站和在线监测"
+    ],
+    "not_applicable_conditions": [
+      "无湿法工序、无清洗废水、无医疗废水",
+      "仅生活污水且接管市政并无预处理管理要求"
+    ],
+    "confirmation_questions": [
+      "是否产生生产废水/清洗废水/医疗废水？",
+      "是否自建污水处理站或仅预处理后接管？",
+      "污水处理工艺是什么？",
+      "是否有废水在线监测？"
+    ],
+    "evidence_requirements": [
+      "排水去向证明",
+      "污水站工艺流程图",
+      "运行台账",
+      "监测报告",
+      "排口信息",
+      "在线监测联网证明"
+    ],
+    "photo_points": [
+      "废水产生工位或清洗点",
+      "污水站全景",
+      "关键处理单元和设备铭牌",
+      "废水总排口/接管口",
+      "在线监测设备、数采仪和联网状态屏"
+    ],
+    "related_regulations": [
+      "固定污染源排污许可分类管理名录(2019年版)",
+      "HJ 1105-2020",
+      "HJ1028-2019",
+      "HJ1122-2020"
+    ],
+    "confidence": "HIGH"
+  },
+  {
+    "scenario_id": "SCN_VOCS_SOLVENT_AND_TREATMENT",
+    "scenario_name": "VOCs溶剂使用、无组织排放与废气治理",
+    "aliases": [
+      "VOCs治理",
+      "有机废气",
+      "溶剂型油墨",
+      "涂料生产",
+      "喷涂废气",
+      "发泡剂废气"
+    ],
+    "tags_24": [
+      "vocs_emission",
+      "unorganized_exhaust",
+      "exhaust_treatment_facility",
+      "hazardous_waste",
+      "environmental_facility_operation"
+    ],
+    "media_type": "exhaust",
+    "facility_or_risk_unit": "印刷、调墨、涂布、喷涂、发泡、混合分装、集气罩、活性炭/催化燃烧等治理设施",
+    "triggers": [
+      "使用油墨、涂料、胶黏剂、清洗剂、溶剂或发泡剂",
+      "存在喷涂、涂布、调配、加热、溶剂清洗或有机废气治理设施"
+    ],
+    "not_applicable_conditions": [
+      "全水性低VOCs原辅料且无加热、喷涂、涂布、溶剂清洗",
+      "仅登记小规模时不得默认排除，应保留UNKNOWN确认"
+    ],
+    "confirmation_questions": [
+      "使用油墨/涂料/胶黏剂/清洗剂类型和年用量？",
+      "是否有密闭收集和治理设施？",
+      "是否产生废活性炭/废过滤棉/废包装桶？"
+    ],
+    "evidence_requirements": [
+      "原辅料MSDS",
+      "采购或领用台账",
+      "废气治理设施运行记录",
+      "活性炭更换记录",
+      "废气监测报告",
+      "危废台账"
+    ],
+    "photo_points": [
+      "含VOCs物料包装标签和MSDS关键页",
+      "调配/转移/使用点位密闭状态",
+      "集气罩或密闭间",
+      "治理设施全景和铭牌",
+      "废活性炭/废过滤棉暂存状态"
+    ],
+    "related_regulations": [
+      "HJ 1066-2019",
+      "HJ 1116-2020",
+      "HJ1122-2020",
+      "固定污染源排污许可分类管理名录(2019年版)第39/48/62/80条"
+    ],
+    "confidence": "HIGH"
+  },
+  {
+    "scenario_id": "SCN_HAZWASTE_STORAGE_TRANSFER",
+    "scenario_name": "危险废物识别、暂存与转移",
+    "aliases": [
+      "危废暂存",
+      "废活性炭",
+      "废油墨",
+      "废溶剂",
+      "废包装桶",
+      "废机油"
+    ],
+    "tags_24": [
+      "hazardous_waste",
+      "waste_transfer_ledger",
+      "soil_groundwater_risk",
+      "emergency_response_materials"
+    ],
+    "media_type": "solid_waste_risk",
+    "facility_or_risk_unit": "危废暂存间、化学品库、油墨/涂料/溶剂包装桶区、废活性炭暂存点",
+    "triggers": [
+      "使用危险化学品、油墨、涂料、溶剂、机油或有废气治理耗材",
+      "医疗检验试剂、加油站废机油、废包装桶等场景"
+    ],
+    "not_applicable_conditions": [
+      "无危险特性原辅料、无废气治理耗材、无机修废油且环评/许可明确不产生危废"
+    ],
+    "confirmation_questions": [
+      "是否产生废油墨/废溶剂/废活性炭/废包装桶/废机油？",
+      "危废代码和去向是什么？",
+      "暂存间是否防渗防雨防流失？"
+    ],
+    "evidence_requirements": [
+      "危废合同",
+      "转移联单",
+      "危废台账",
+      "暂存间标识",
+      "MSDS",
+      "环评或许可危废章节"
+    ],
+    "photo_points": [
+      "危废暂存间门口标识",
+      "分区、通道、防渗地面和围挡",
+      "危废标签和容器状态",
+      "吸附堵漏物资",
+      "转移联单编号和台账最近记录"
+    ],
+    "related_regulations": [
+      "危险废物贮存污染控制标准",
+      "固定污染源排污许可分类管理名录(2019年版)",
+      "相关行业排污许可技术规范"
+    ],
+    "confidence": "HIGH"
+  },
+  {
+    "scenario_id": "SCN_MEDICAL_WASTE_RADIATION",
+    "scenario_name": "医疗废物、医疗废水与放射诊疗确认",
+    "aliases": [
+      "医废管理",
+      "放射科",
+      "核医学",
+      "医疗机构画像",
+      "医疗危废"
+    ],
+    "tags_24": [
+      "medical_waste",
+      "hazardous_waste",
+      "radiation",
+      "wastewater_generation",
+      "wastewater_station",
+      "waste_transfer_ledger"
+    ],
+    "media_type": "medical_cross_media",
+    "facility_or_risk_unit": "医废暂存间、检验科/病理科、放射科/核医学科、医院污水处理设施",
+    "triggers": [
+      "综合医院及其他医疗机构",
+      "床位数、检验/病理科、有无放射科影响污水、VOCs、辐射、在线监测"
+    ],
+    "not_applicable_conditions": [
+      "非医疗机构",
+      "无诊疗活动的办公或咨询场所",
+      "无放射诊疗设备时辐射场景可落NO"
+    ],
+    "confirmation_questions": [
+      "床位数是多少？",
+      "是否设检验科/病理科并使用有机溶剂？",
+      "是否有放射科/核医学科？",
+      "医废暂存间如何管理？",
+      "污水如何处理？"
+    ],
+    "evidence_requirements": [
+      "医疗机构执业许可证",
+      "床位证明",
+      "医废合同和转移联单",
+      "放射诊疗许可证或设备清单",
+      "污水站运行台账"
+    ],
+    "photo_points": [
+      "医疗机构证照关键页",
+      "医废暂存间门口和内部分类包装",
+      "医废交接/消毒记录",
+      "放射诊疗设备和警示标识",
+      "医院污水站和消毒设施"
+    ],
+    "related_regulations": [
+      "固定污染源排污许可分类管理名录(2019年版)第107条",
+      "HJ 1105-2020",
+      "医疗废物管理相关要求"
+    ],
+    "confidence": "HIGH"
+  },
+  {
+    "scenario_id": "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+    "scenario_name": "液态化学品储罐、LDAR与防渗风险",
+    "aliases": [
+      "储罐区",
+      "LDAR",
+      "化学品库",
+      "防渗风险",
+      "罐区管理"
+    ],
+    "tags_24": [
+      "liquid_chemical_tank_area",
+      "ldar",
+      "soil_groundwater_risk",
+      "rainwater_accident_risk",
+      "emergency_response_materials"
+    ],
+    "media_type": "risk_unit",
+    "facility_or_risk_unit": "液态化学品储罐、油墨/溶剂储存区、涂料原料罐区、围堰、事故应急池",
+    "triggers": [
+      "涂料制造重点管理、有大型油墨/溶剂储存、液态化学品罐区、挥发性有机液体装卸"
+    ],
+    "not_applicable_conditions": [
+      "无液态化学品储存",
+      "仅小包装桶且无固定管线/阀门组件时LDAR不宜默认YES"
+    ],
+    "confirmation_questions": [
+      "是否有固定储罐或液态化学品罐区？",
+      "储存物料是否为挥发性有机液体？",
+      "是否开展LDAR？",
+      "围堰/防渗/事故收集是否完善？"
+    ],
+    "evidence_requirements": [
+      "储罐清单",
+      "平面布置图",
+      "LDAR检测记录",
+      "防渗验收或照片",
+      "围堰/事故池资料",
+      "应急预案和物资清单"
+    ],
+    "photo_points": [
+      "罐区全景和物料标识",
+      "围堰、防渗地面和雨水切换阀",
+      "泵阀法兰密封点",
+      "装卸区截流/收集设施",
+      "LDAR记录或检测设备读数"
+    ],
+    "related_regulations": [
+      "HJ 1116-2020",
+      "HJ 1066-2019",
+      "固定污染源排污许可分类管理名录(2019年版)第48/39条"
+    ],
+    "confidence": "MEDIUM"
+  },
+  {
+    "scenario_id": "SCN_GAS_STATION_VAPOR_UST",
+    "scenario_name": "加油站油气回收、地下储罐与土壤地下水风险",
+    "aliases": [
+      "油气回收",
+      "地下油罐",
+      "加油站防渗",
+      "油罐泄漏风险"
+    ],
+    "tags_24": [
+      "gas_station_vapor_recovery",
+      "underground_storage_tank",
+      "soil_groundwater_risk",
+      "vocs_emission",
+      "rainwater_accident_risk",
+      "environmental_facility_operation"
+    ],
+    "media_type": "exhaust_soil_groundwater",
+    "facility_or_risk_unit": "卸油油气回收、加油油气回收、地下储罐、加油区、洗车排水设施",
+    "triggers": [
+      "行业代码5265",
+      "经营汽油/柴油",
+      "存在地下储罐或油气回收系统"
+    ],
+    "not_applicable_conditions": [
+      "非成品油零售",
+      "仅充电站/便利店",
+      "无地下储罐或不经营汽柴油"
+    ],
+    "confirmation_questions": [
+      "是否经营汽油/柴油？",
+      "油气回收系统是否正常运行？",
+      "地下储罐是否双层罐或有防渗检测？",
+      "是否有洗车业务？"
+    ],
+    "evidence_requirements": [
+      "油气回收检测报告",
+      "地下储罐资料",
+      "防渗/泄漏检测记录",
+      "排污登记或许可材料"
+    ],
+    "photo_points": [
+      "卸油口和油气回收接口",
+      "加油枪和油气回收管路",
+      "地下储罐人孔井/检测井",
+      "防渗或泄漏监测装置",
+      "油气回收检测报告关键页"
+    ],
+    "related_regulations": [
+      "固定污染源排污许可分类管理名录(2019年版)第100条",
+      "HJ 1118-2020"
+    ],
+    "confidence": "HIGH"
+  },
+  {
+    "scenario_id": "SCN_DUST_PARTICULATE_CONTROL",
+    "scenario_name": "粉尘颗粒物产生与除尘设施",
+    "aliases": [
+      "粉尘治理",
+      "颗粒物",
+      "除尘器",
+      "粉磨粉碎",
+      "水泥石灰粉尘"
+    ],
+    "tags_24": [
+      "dust_particulate",
+      "exhaust_treatment_facility",
+      "unorganized_exhaust",
+      "online_monitoring",
+      "environmental_facility_operation"
+    ],
+    "media_type": "exhaust_particulate",
+    "facility_or_risk_unit": "破碎、粉磨、筛分、熟料/水泥/石灰石膏生产线、袋式除尘器、物料堆场",
+    "triggers": [
+      "水泥制造、水泥粉磨、石灰石膏制造等粉尘颗粒物场景",
+      "熟料、粉磨、破碎、筛分、散装粉料装卸"
+    ],
+    "not_applicable_conditions": [
+      "无粉碎、粉磨、破碎、筛分、散装粉料装卸",
+      "纯湿法且无颗粒物排放工序"
+    ],
+    "confirmation_questions": [
+      "是否有熟料生产/粉磨/破碎/筛分？",
+      "是否仅粉磨？",
+      "除尘设施类型是什么？",
+      "是否安装在线监测？"
+    ],
+    "evidence_requirements": [
+      "工艺流程图",
+      "除尘设施运行台账",
+      "颗粒物监测报告",
+      "在线监测联网证明"
+    ],
+    "photo_points": [
+      "破碎/粉磨/筛分点位",
+      "输送转运和落料点",
+      "袋式除尘器全景和铭牌",
+      "堆场围挡/喷淋/苫盖",
+      "在线监测设备或颗粒物排口"
+    ],
+    "related_regulations": [
+      "固定污染源排污许可分类管理名录(2019年版)第63条",
+      "HJ 847-2017"
+    ],
+    "confidence": "HIGH"
+  },
+  {
+    "scenario_id": "SCN_ONLINE_MONITORING_KEY_UNIT",
+    "scenario_name": "重点管理/重点排污单位在线监测",
+    "aliases": [
+      "在线监控",
+      "自动监测",
+      "重点单位联网",
+      "废水在线",
+      "废气在线"
+    ],
+    "tags_24": [
+      "online_monitoring",
+      "wastewater_station",
+      "exhaust_treatment_facility",
+      "permit_execution_reporting"
+    ],
+    "media_type": "compliance_monitoring",
+    "facility_or_risk_unit": "废水总排口、废气主要排口、在线监测站房、数采仪、视频监控设备",
+    "triggers": [
+      "重点管理、重点排污单位、地方要求安装在线监测",
+      "重点废水或废气主要排口"
+    ],
+    "not_applicable_conditions": [
+      "登记管理、小规模且未纳入重点排污单位名录",
+      "无主要排口或无地方安装要求"
+    ],
+    "confirmation_questions": [
+      "是否为重点排污单位？",
+      "哪些排口安装在线监测？",
+      "是否联网生态环境部门？",
+      "在线设备是否运维有效？"
+    ],
+    "evidence_requirements": [
+      "重点排污单位名录截图",
+      "在线设备清单",
+      "联网证明",
+      "运维记录",
+      "比对监测报告"
+    ],
+    "photo_points": [
+      "在线站房外观",
+      "分析仪和采样管线",
+      "数采仪联网状态",
+      "视频监控设备",
+      "运维/校准/比对记录关键页"
+    ],
+    "related_regulations": [
+      "固定污染源排污许可分类管理名录(2019年版)",
+      "行业排污许可技术规范",
+      "地方自动监测联网要求"
+    ],
+    "confidence": "MEDIUM"
+  },
+  {
+    "scenario_id": "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+    "scenario_name": "雨污分流、事故水与环境应急",
+    "aliases": [
+      "雨污混排风险",
+      "事故水风险",
+      "环境应急",
+      "应急物资"
+    ],
+    "tags_24": [
+      "rainwater_accident_risk",
+      "emergency_response_materials",
+      "soil_groundwater_risk",
+      "liquid_chemical_tank_area"
+    ],
+    "media_type": "environmental_risk",
+    "facility_or_risk_unit": "雨水口、事故池、围堰、危化品/危废暂存区、应急物资柜",
+    "triggers": [
+      "有化学品、危废、污水站、储罐、地下罐、装卸区或事故水收集要求",
+      "大多数行业该项应保留UNKNOWN由现场确认"
+    ],
+    "not_applicable_conditions": [
+      "无涉水/涉危/涉油/涉化风险单元",
+      "厂区雨污分流清晰且无事故水收集要求"
+    ],
+    "confirmation_questions": [
+      "厂区是否雨污分流？",
+      "风险单元是否有围堰和防渗？",
+      "是否有事故水收集设施？",
+      "应急物资是否按风险配置？"
+    ],
+    "evidence_requirements": [
+      "厂区雨污管网图",
+      "雨水口/污水口照片",
+      "事故池或围堰资料",
+      "应急物资清单",
+      "突发环境事件应急预案"
+    ],
+    "photo_points": [
+      "雨水口和污水口标识",
+      "雨污切换阀/事故阀阀位",
+      "事故池或应急收集设施",
+      "应急物资柜内外观",
+      "应急预案/演练/事故记录关键页"
+    ],
+    "related_regulations": [
+      "固定污染源排污许可分类管理名录(2019年版)",
+      "各行业排污许可技术规范",
+      "突发环境事件应急管理相关要求"
+    ],
+    "confidence": "MEDIUM"
+  },
+  {
+    "scenario_id": "SCN_TRAINING_SIGNAGE_REVIEW_GAP",
+    "scenario_name": "环保培训、标识公示与历史问题闭环补强",
+    "aliases": [
+      "培训缺口",
+      "标识标牌",
+      "制度公示",
+      "历史问题整改",
+      "复发防控"
+    ],
+    "tags_24": [],
+    "media_type": "governance",
+    "facility_or_risk_unit": "人员培训档案、制度公示牌、排口/危废/辐射标识、整改闭环记录",
+    "triggers": [
+      "现有24标签没有承载S08/S09/S11的完整语义",
+      "作为知识图谱二级维度补强而非默认行业产污场景"
+    ],
+    "not_applicable_conditions": [
+      "不得作为行业默认污染场景判断企业适用性",
+      "仅在排查模板或报告维度增强时启用"
+    ],
+    "confirmation_questions": [
+      "是否开展环保培训并留存签到/照片/试卷？",
+      "关键环保标识、标牌、制度是否上墙？",
+      "历史问题是否闭环并有防复发措施？"
+    ],
+    "evidence_requirements": [
+      "培训计划、签到、照片、试卷",
+      "标识标牌照片",
+      "整改前后对比",
+      "复查记录"
+    ],
+    "photo_points": [
+      "培训签到和现场照片",
+      "危废/排口/辐射/应急制度标牌",
+      "整改前后对比照片",
+      "复发防控措施现场照片"
+    ],
+    "related_regulations": [
+      "EcoCheck S08/S09/S11报告维度",
+      "项目现场排查模板"
+    ],
+    "confidence": "NEED_CONFIRM"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "validation_status": "PASS",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "failure_count": 0,
+  "candidate_mapping_rows": 5,
+  "gate_count": 6,
+  "audit_event_count": 8,
+  "failure_samples": []
+}

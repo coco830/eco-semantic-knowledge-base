@@ -1,0 +1,21 @@
+{
+  "knowledge_base_version": "v1.0-rc-runtime-promotion-design-only",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_integration": "disabled",
+  "runtime_promotion_status": "DESIGN_ONLY_NOT_APPROVED",
+  "runtime_effect": "NONE",
+  "candidate_mapping_rows": 5,
+  "outputs": [
+    "PROJECT_INDEX_v1_0_rc.md",
+    "HANDOFF_v1_0_rc.md",
+    "DEPRECATED_AND_REMOVED_FILES_v1_0_rc.md",
+    "runtime_promotion_gate_design_v1_0_rc.md/json",
+    "runtime_data_contract_v1_0_rc.md/json",
+    "runtime_import_candidate_manifest_v1_0_rc.json",
+    "runtime_rollback_plan_v1_0_rc.md",
+    "runtime_contract_test_plan_v1_0_rc.md",
+    "approval_workflow_v1_0_rc.md",
+    "security_audit_log_design_v1_0_rc.md/json",
+    "candidate_to_runtime_mapping_v1_0_rc.csv"
+  ]
+}
