@@ -3,12 +3,13 @@ import json
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
-CANDIDATES_JSON = ROOT / "all_industry_scenario_candidates_v0_2.json"
-BASE_CSV = ROOT / "industry_catalog_base.csv"
-SCENARIOS_JSON = ROOT / "scenario_templates.json"
+CANDIDATES_JSON = artifact_path("all_industry_scenario_candidates_v0_2.json")
+BASE_CSV = artifact_path("industry_catalog_base.csv")
+SCENARIOS_JSON = artifact_path("scenario_templates.json")
 
 ALLOWED_CONFIDENCE = {"HIGH", "MEDIUM", "LOW", "NEED_CONFIRM"}
 FORMAL_PERMIT_VALUES = {"KEY", "SIMPLIFIED", "REGISTRATION", "重点管理", "简化管理", "登记管理", "NONE", "UNKNOWN_AS_NO"}
@@ -216,7 +217,7 @@ def main():
         "blocking_errors": blocking_errors,
     }
 
-    (ROOT / "all_industry_scenario_candidates_v0_2_gate_report.json").write_text(
+    (artifact_path("all_industry_scenario_candidates_v0_2_gate_report.json")).write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
@@ -247,7 +248,7 @@ def main():
     ]
     if not blocking_errors:
         md.append("- 无")
-    (ROOT / "all_industry_scenario_candidates_v0_2_gate_report.md").write_text(
+    (artifact_path("all_industry_scenario_candidates_v0_2_gate_report.md")).write_text(
         "\n".join(md) + "\n",
         encoding="utf-8",
     )

@@ -1,6 +1,7 @@
 import csv
 import json
 from pathlib import Path
+from kb_paths import artifact_path
 
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Font, PatternFill, Protection
@@ -87,7 +88,7 @@ def parse_json(value, default=None):
 
 def load_graph_refs():
     refs = {}
-    for node in read_jsonl(ROOT / "graph_nodes_v0_5.jsonl"):
+    for node in read_jsonl(artifact_path("graph_nodes_v0_5.jsonl")):
         if node.get("node_type") != "ApplicabilityRelation":
             continue
         rel_id = node["natural_key"]
@@ -163,7 +164,7 @@ def build_worksheet(queue_rows):
         for field in EDITABLE_FIELDS:
             out[field] = ""
         rows.append(out)
-    write_csv(ROOT / "human_review_worksheet_v0_7.csv", rows, fields)
+    write_csv(artifact_path("human_review_worksheet_v0_7.csv"), rows, fields)
 
     wb = Workbook()
     ws = wb.active
@@ -230,7 +231,7 @@ def build_worksheet(queue_rows):
     info.column_dimensions["B"].width = 100
     ws.protection.sheet = True
     ws.protection.enable()
-    wb.save(ROOT / "human_review_worksheet_v0_7.xlsx")
+    wb.save(artifact_path("human_review_worksheet_v0_7.xlsx"))
     return rows
 
 
@@ -257,7 +258,7 @@ def build_decision_schema():
         "blocks_runtime_labels": ["NEED_EIA_CONFIRM", "NEED_PERMIT_CONFIRM", "NEED_SITE_CONFIRM", "REJECT_CANDIDATE", "MERGE_DUPLICATE", "NEED_RULE_FIX"],
         "second_approval_required_for": ["runtime_integration", "formal_permit_type", "formal_inspection_template", "auto_deduct", "score13_report_dimension_change"],
     }
-    write_json(ROOT / "human_review_decision_schema_v0_7.json", schema)
+    write_json(artifact_path("human_review_decision_schema_v0_7.json"), schema)
     lines = [
         "# human_review_decision_schema_v0_7",
         "",
@@ -277,12 +278,12 @@ def build_decision_schema():
         "ACCEPT/CONFIRM 类标签必须填写 human_reviewer、human_reviewer_role、reviewed_at、human_review_notes、review_basis、evidence_refs、decision_confidence。",
         "任何正式化、模板化、扣分、报告口径升级动作必须进入二次审批，不在 v0.7 自动生效。",
     ]
-    (ROOT / "human_review_decision_schema_v0_7.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (artifact_path("human_review_decision_schema_v0_7.md")).write_text("\n".join(lines) + "\n", encoding="utf-8")
     return schema
 
 
 def write_guidance_and_plan(queue_rows, schema):
-    (ROOT / "human_review_guidance_v0_7.md").write_text(
+    (artifact_path("human_review_guidance_v0_7.md")).write_text(
         "# human_review_guidance_v0_7\n\n"
         f"final_state: `{FINAL_STATE}`\n\n"
         "v0.7 是人工审阅工作台数据包，不接 EcoCheck runtime。\n\n"
@@ -297,7 +298,7 @@ def write_guidance_and_plan(queue_rows, schema):
         "- 需要改规则时填写 `NEED_RULE_FIX`，不要直接覆盖 v0.4.1 源表。\n",
         encoding="utf-8",
     )
-    (ROOT / "human_review_backfill_plan_v0_7.md").write_text(
+    (artifact_path("human_review_backfill_plan_v0_7.md")).write_text(
         "# human_review_backfill_plan_v0_7\n\n"
         f"final_state: `{FINAL_STATE}`\n\n"
         "本计划只设计回灌闭环，不覆盖 v0.4.1 源表。\n\n"
@@ -325,14 +326,14 @@ def write_guidance_and_plan(queue_rows, schema):
 
 
 def main():
-    context_rows = read_csv(ROOT / "all_context_applicability_review_v0_4_1.csv")
-    permit_rows = read_csv(ROOT / "all_permit_condition_backfill_v0_4_1.csv")
-    open_questions = read_csv(ROOT / "open_questions_v0_4_1.csv")
-    risks = read_csv(ROOT / "risk_acceptance_queue_v0_4_1.csv")
+    context_rows = read_csv(artifact_path("all_context_applicability_review_v0_4_1.csv"))
+    permit_rows = read_csv(artifact_path("all_permit_condition_backfill_v0_4_1.csv"))
+    open_questions = read_csv(artifact_path("open_questions_v0_4_1.csv"))
+    risks = read_csv(artifact_path("risk_acceptance_queue_v0_4_1.csv"))
     graph_refs = load_graph_refs()
     queue_rows = build_queue(context_rows, graph_refs)
-    write_csv(ROOT / "human_review_queue_v0_7.csv", queue_rows)
-    write_json(ROOT / "human_review_queue_v0_7.json", queue_rows)
+    write_csv(artifact_path("human_review_queue_v0_7.csv"), queue_rows)
+    write_json(artifact_path("human_review_queue_v0_7.json"), queue_rows)
     worksheet_rows = build_worksheet(queue_rows)
     schema = build_decision_schema()
     write_guidance_and_plan(queue_rows, schema)
@@ -354,8 +355,8 @@ def main():
         "human_review_prefill_count": 0,
         "runtime_effect": "NONE",
     }
-    write_json(ROOT / "human_review_v0_7_gate_report.json", gate)
-    (ROOT / "human_review_v0_7_gate_report.md").write_text(
+    write_json(artifact_path("human_review_v0_7_gate_report.json"), gate)
+    (artifact_path("human_review_v0_7_gate_report.md")).write_text(
         "# human_review_v0_7_gate_report\n\n"
         f"- final_state: `{FINAL_STATE}`\n"
         f"- runtime_integration: `{RUNTIME_INTEGRATION}`\n"
@@ -367,7 +368,7 @@ def main():
         f"- human_review_prefill_count: 0\n",
         encoding="utf-8",
     )
-    (ROOT / "FINAL_COMPLETION_REPORT_v0_7.md").write_text(
+    (artifact_path("FINAL_COMPLETION_REPORT_v0_7.md")).write_text(
         "# FINAL COMPLETION REPORT v0.7\n\n"
         f"最终状态：`{FINAL_STATE}`\n\n"
         "v0.7 已生成人工审阅工作台数据包与审阅闭环设计，未接 EcoCheck runtime。\n\n"

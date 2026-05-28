@@ -2,6 +2,7 @@ import csv
 import json
 from collections import Counter
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -396,7 +397,7 @@ def build_v1_7():
 
 
 def write_markdown(outputs):
-    (ROOT / "eia_permit_extraction_schema_v1_2.md").write_text(
+    (artifact_path("eia_permit_extraction_schema_v1_2.md")).write_text(
         "# eia_permit_extraction_schema_v1_2\n\n"
         f"final_state: `{FINAL_STATE}`\n"
         "runtime_integration: `disabled`\n\n"
@@ -404,7 +405,7 @@ def write_markdown(outputs):
         "The extracted predicates can activate candidate scenarios, but cannot generate formal permit_type or runtime inspection templates.\n",
         encoding="utf-8",
     )
-    (ROOT / "human_review_slice_guidance_v1_5.md").write_text(
+    (artifact_path("human_review_slice_guidance_v1_5.md")).write_text(
         "# human_review_slice_guidance_v1_5\n\n"
         f"final_state: `{FINAL_STATE}`\n"
         "runtime_integration: `disabled`\n\n"
@@ -412,7 +413,7 @@ def write_markdown(outputs):
         "DIVISION_CONTEXT remains recall-only. Process evidence and photo_points are first-class review inputs.\n",
         encoding="utf-8",
     )
-    (ROOT / "rag_eval_coverage_v1_6.md").write_text(
+    (artifact_path("rag_eval_coverage_v1_6.md")).write_text(
         "# rag_eval_coverage_v1_6\n\n"
         f"final_state: `{FINAL_STATE}`\n"
         "runtime_integration: `disabled`\n\n"
@@ -421,7 +422,7 @@ def write_markdown(outputs):
         + ". Every answer must include candidate boundary notices and must not claim runtime readiness.\n",
         encoding="utf-8",
     )
-    (ROOT / "runtime_readiness_gap_report_v1_7.md").write_text(
+    (artifact_path("runtime_readiness_gap_report_v1_7.md")).write_text(
         "# runtime_readiness_gap_report_v1_7\n\n"
         f"final_state: `{FINAL_STATE}`\n"
         "runtime_integration: `disabled`\n\n"
@@ -430,7 +431,7 @@ def write_markdown(outputs):
         "Runtime blockers: human review, open question closure, second approval, contract tests, rollback manifest, and security audit logging.\n",
         encoding="utf-8",
     )
-    (ROOT / "FINAL_COMPLETION_REPORT_v1_2_to_v1_7.md").write_text(
+    (artifact_path("FINAL_COMPLETION_REPORT_v1_2_to_v1_7.md")).write_text(
         "# FINAL_COMPLETION_REPORT_v1_2_to_v1_7\n\n"
         f"final_state: `{FINAL_STATE}`\n\n"
         "已按建议 1-6 生成候选治理链：v1.2 环评/许可抽取样例，v1.3 工序-场景激活规则，v1.4 open questions 决策 overlay，"
@@ -455,8 +456,8 @@ def write_markdown(outputs):
 
 
 def main():
-    open_questions = read_csv(ROOT / "open_questions_v0_4_1.csv")
-    review_rows = read_csv(ROOT / "human_review_queue_v0_7.csv")
+    open_questions = read_csv(artifact_path("open_questions_v0_4_1.csv"))
+    review_rows = read_csv(artifact_path("human_review_queue_v0_7.csv"))
     extraction_samples, predicates, extraction_schema = build_v1_2()
     activation_rules = build_v1_3()
     oq_overlay, oq_summary = build_v1_4(open_questions)
@@ -467,28 +468,28 @@ def main():
         "v1_6_coverage": eval_coverage,
     }
 
-    write_csv(ROOT / "eia_permit_extraction_samples_v1_2.csv", extraction_samples)
-    write_json(ROOT / "eia_permit_extraction_samples_v1_2.json", extraction_samples)
-    write_csv(ROOT / "eia_permit_extracted_predicates_v1_2.csv", predicates)
-    write_json(ROOT / "eia_permit_extracted_predicates_v1_2.json", predicates)
-    write_json(ROOT / "eia_permit_extraction_schema_v1_2.json", extraction_schema)
+    write_csv(artifact_path("eia_permit_extraction_samples_v1_2.csv"), extraction_samples)
+    write_json(artifact_path("eia_permit_extraction_samples_v1_2.json"), extraction_samples)
+    write_csv(artifact_path("eia_permit_extracted_predicates_v1_2.csv"), predicates)
+    write_json(artifact_path("eia_permit_extracted_predicates_v1_2.json"), predicates)
+    write_json(artifact_path("eia_permit_extraction_schema_v1_2.json"), extraction_schema)
 
-    write_csv(ROOT / "process_scenario_activation_rules_v1_3.csv", activation_rules)
-    write_json(ROOT / "process_scenario_activation_rules_v1_3.json", activation_rules)
+    write_csv(artifact_path("process_scenario_activation_rules_v1_3.csv"), activation_rules)
+    write_json(artifact_path("process_scenario_activation_rules_v1_3.json"), activation_rules)
 
-    write_csv(ROOT / "open_question_decision_overlay_v1_4.csv", oq_overlay)
-    write_json(ROOT / "open_question_decision_overlay_v1_4.json", oq_overlay)
-    write_json(ROOT / "open_question_closure_status_v1_4.json", oq_summary)
+    write_csv(artifact_path("open_question_decision_overlay_v1_4.csv"), oq_overlay)
+    write_json(artifact_path("open_question_decision_overlay_v1_4.json"), oq_overlay)
+    write_json(artifact_path("open_question_closure_status_v1_4.json"), oq_summary)
 
-    write_csv(ROOT / "human_review_slices_v1_5.csv", review_slices)
-    write_json(ROOT / "human_review_slices_v1_5.json", review_slices)
+    write_csv(artifact_path("human_review_slices_v1_5.csv"), review_slices)
+    write_json(artifact_path("human_review_slices_v1_5.json"), review_slices)
 
-    write_jsonl(ROOT / "retrieval_eval_set_v1_6.jsonl", eval_rows)
-    write_json(ROOT / "rag_eval_coverage_v1_6.json", eval_coverage)
+    write_jsonl(artifact_path("retrieval_eval_set_v1_6.jsonl"), eval_rows)
+    write_json(artifact_path("rag_eval_coverage_v1_6.json"), eval_coverage)
 
-    write_csv(ROOT / "runtime_readiness_matrix_v1_7.csv", readiness_matrix)
-    write_json(ROOT / "runtime_readiness_matrix_v1_7.json", readiness_matrix)
-    write_json(ROOT / "runtime_readiness_gap_report_v1_7.json", readiness_report)
+    write_csv(artifact_path("runtime_readiness_matrix_v1_7.csv"), readiness_matrix)
+    write_json(artifact_path("runtime_readiness_matrix_v1_7.json"), readiness_matrix)
+    write_json(artifact_path("runtime_readiness_gap_report_v1_7.json"), readiness_report)
 
     manifest = {
         "knowledge_base_version": VERSION,
@@ -516,7 +517,7 @@ def main():
             "no_fake_human_review",
         ],
     }
-    write_json(ROOT / "knowledge_base_manifest_v1_2_to_v1_7.json", manifest)
+    write_json(artifact_path("knowledge_base_manifest_v1_2_to_v1_7.json"), manifest)
     write_markdown(outputs)
     print(json.dumps(manifest, ensure_ascii=False, indent=2))
 

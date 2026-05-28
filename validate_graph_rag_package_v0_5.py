@@ -1,6 +1,7 @@
 import json
 from collections import Counter
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -56,14 +57,14 @@ def main():
         "knowledge_base_manifest_v0_5.json",
     ]
     for name in required:
-        if not (ROOT / name).exists():
+        if not (artifact_path(name)).exists():
             fail(failures, name, "missing_required_output")
 
-    nodes = read_jsonl(ROOT / "graph_nodes_v0_5.jsonl")
-    edges = read_jsonl(ROOT / "graph_edges_v0_5.jsonl")
-    chunks = read_jsonl(ROOT / "rag_chunks_v0_5.jsonl")
-    evals = read_jsonl(ROOT / "retrieval_eval_set_v0_5.jsonl")
-    manifest = read_json(ROOT / "knowledge_base_manifest_v0_5.json")
+    nodes = read_jsonl(artifact_path("graph_nodes_v0_5.jsonl"))
+    edges = read_jsonl(artifact_path("graph_edges_v0_5.jsonl"))
+    chunks = read_jsonl(artifact_path("rag_chunks_v0_5.jsonl"))
+    evals = read_jsonl(artifact_path("retrieval_eval_set_v0_5.jsonl"))
+    manifest = read_json(artifact_path("knowledge_base_manifest_v0_5.json"))
 
     node_ids = [n["node_id"] for n in nodes]
     edge_ids = [e["edge_id"] for e in edges]
@@ -120,7 +121,7 @@ def main():
     if manifest.get("final_state") != FINAL_STATE or manifest.get("runtime_integration") != "disabled":
         fail(failures, "knowledge_base_manifest_v0_5.json", "bad_manifest_boundary")
 
-    with (ROOT / "graph_rag_package_v0_5_failure_list.json").open("w", encoding="utf-8") as f:
+    with (artifact_path("graph_rag_package_v0_5_failure_list.json")).open("w", encoding="utf-8") as f:
         json.dump(failures, f, ensure_ascii=False, indent=2)
 
     report = {
@@ -134,7 +135,7 @@ def main():
         "node_type_counts": dict(sorted(node_type_counts.items())),
         "failure_samples": failures[:50],
     }
-    (ROOT / "graph_rag_package_v0_5_validation_report.json").write_text(
+    (artifact_path("graph_rag_package_v0_5_validation_report.json")).write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )

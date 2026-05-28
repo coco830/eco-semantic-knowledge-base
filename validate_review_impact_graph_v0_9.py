@@ -1,6 +1,7 @@
 import csv
 import json
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -52,15 +53,15 @@ def main():
         "knowledge_base_manifest_v0_9.json",
     ]
     for name in required:
-        if not (ROOT / name).exists():
+        if not (artifact_path(name)).exists():
             fail(failures, name, "missing_required_output")
 
-    overlays = read_json(ROOT / "human_review_overlay_v0_8.json")
-    impact = read_csv(ROOT / "review_impact_analysis_v0_9.csv")
-    impact_json = read_json(ROOT / "review_impact_analysis_v0_9.json")
-    edges = read_jsonl(ROOT / "review_impact_graph_edges_v0_9.jsonl")
-    playbook = read_json(ROOT / "graph_query_playbook_v0_9.json")
-    manifest = read_json(ROOT / "knowledge_base_manifest_v0_9.json")
+    overlays = read_json(artifact_path("human_review_overlay_v0_8.json"))
+    impact = read_csv(artifact_path("review_impact_analysis_v0_9.csv"))
+    impact_json = read_json(artifact_path("review_impact_analysis_v0_9.json"))
+    edges = read_jsonl(artifact_path("review_impact_graph_edges_v0_9.jsonl"))
+    playbook = read_json(artifact_path("graph_query_playbook_v0_9.json"))
+    manifest = read_json(artifact_path("knowledge_base_manifest_v0_9.json"))
     overlay_relations = {o["candidate_relation_id"] for o in overlays}
     impact_relations = {r["candidate_relation_id"] for r in impact}
     if overlay_relations != impact_relations or len(impact_json) != len(impact):
@@ -100,7 +101,7 @@ def main():
         if "不代表企业现场事实已确认适用" not in edge.get("properties", {}).get("impact_scope_note", ""):
             fail(failures, "review_impact_graph_edges_v0_9.jsonl", "missing_edge_impact_scope_note", edge.get("edge_id", ""))
 
-    visual_md = (ROOT / "graph_visualization_samples_v0_9.md").read_text(encoding="utf-8")
+    visual_md = (artifact_path("graph_visualization_samples_v0_9.md")).read_text(encoding="utf-8")
     for phrase in ["mermaid", FINAL_STATE, "Entry 108", "CONFIRM_NOT_APPLY", "NEED_SITE_CONFIRM", "不代表企业现场事实已确认适用"]:
         if phrase not in visual_md:
             fail(failures, "graph_visualization_samples_v0_9.md", "missing_visual_phrase", phrase)
@@ -119,11 +120,11 @@ def main():
         "edge_type_counts": {edge_type: sum(1 for e in edges if e["edge_type"] == edge_type) for edge_type in sorted(edge_types)},
         "failure_samples": failures[:50],
     }
-    (ROOT / "review_impact_graph_v0_9_validation_report.json").write_text(
+    (artifact_path("review_impact_graph_v0_9_validation_report.json")).write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    (ROOT / "review_impact_graph_v0_9_failure_list.json").write_text(
+    (artifact_path("review_impact_graph_v0_9_failure_list.json")).write_text(
         json.dumps(failures, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )

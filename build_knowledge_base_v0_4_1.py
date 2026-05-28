@@ -2,6 +2,7 @@ import csv
 import json
 from collections import Counter
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -49,7 +50,7 @@ def add_flags(row, *flags):
 
 
 def build_context_v041():
-    rows = read_csv(ROOT / "all_context_applicability_review_v0_4.csv")
+    rows = read_csv(artifact_path("all_context_applicability_review_v0_4.csv"))
     for row in rows:
         row["v0_4_1_action"] = ""
         row["v0_4_1_reason"] = ""
@@ -139,19 +140,19 @@ def build_gate_report(context_rows, risk_rows):
 
 def main():
     context_rows = build_context_v041()
-    permit_rows = read_csv(ROOT / "all_permit_condition_backfill_v0_4.csv")
-    open_questions = read_csv(ROOT / "open_questions_v0_4.csv")
+    permit_rows = read_csv(artifact_path("all_permit_condition_backfill_v0_4.csv"))
+    open_questions = read_csv(artifact_path("open_questions_v0_4.csv"))
     risk_rows = build_risk_queue_v041(open_questions)
     gate_json, gate_md = build_gate_report(context_rows, risk_rows)
 
-    write_csv(ROOT / "all_context_applicability_review_v0_4_1.csv", context_rows)
-    write_json(ROOT / "all_context_applicability_review_v0_4_1.json", context_rows)
-    write_csv(ROOT / "all_permit_condition_backfill_v0_4_1.csv", permit_rows)
-    write_json(ROOT / "all_permit_condition_backfill_v0_4_1.json", permit_rows)
-    write_csv(ROOT / "open_questions_v0_4_1.csv", open_questions)
-    write_csv(ROOT / "risk_acceptance_queue_v0_4_1.csv", risk_rows)
-    write_json(ROOT / "knowledge_base_v0_4_1_gate_report.json", gate_json)
-    (ROOT / "knowledge_base_v0_4_1_gate_report.md").write_text(gate_md, encoding="utf-8")
+    write_csv(artifact_path("all_context_applicability_review_v0_4_1.csv"), context_rows)
+    write_json(artifact_path("all_context_applicability_review_v0_4_1.json"), context_rows)
+    write_csv(artifact_path("all_permit_condition_backfill_v0_4_1.csv"), permit_rows)
+    write_json(artifact_path("all_permit_condition_backfill_v0_4_1.json"), permit_rows)
+    write_csv(artifact_path("open_questions_v0_4_1.csv"), open_questions)
+    write_csv(artifact_path("risk_acceptance_queue_v0_4_1.csv"), risk_rows)
+    write_json(artifact_path("knowledge_base_v0_4_1_gate_report.json"), gate_json)
+    (artifact_path("knowledge_base_v0_4_1_gate_report.md")).write_text(gate_md, encoding="utf-8")
 
     manifest = {
         "knowledge_base_version": "v0.4.1-candidate-governance-denoise-patch",
@@ -173,8 +174,8 @@ def main():
             "不得伪造 human_review_label / human_reviewer / human_review_notes",
         ],
     }
-    write_json(ROOT / "knowledge_base_manifest_v0_4_1.json", manifest)
-    (ROOT / "FINAL_COMPLETION_REPORT_v0_4_1.md").write_text(
+    write_json(artifact_path("knowledge_base_manifest_v0_4_1.json"), manifest)
+    (artifact_path("FINAL_COMPLETION_REPORT_v0_4_1.md")).write_text(
         "# FINAL COMPLETION REPORT v0.4.1\n\n"
         f"最终状态：`{FINAL_STATE}`\n\n"
         "- `CTXV04_3012_63_REGISTRATION` 已降为 `NOT_APPLY`。\n"

@@ -1,6 +1,7 @@
 import json
 from collections import Counter
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -66,9 +67,9 @@ def query_sample(sample_id, category, description, start_node_ids, edge_types, e
 
 
 def main():
-    nodes = read_jsonl(ROOT / "graph_nodes_v0_5.jsonl")
-    edges = read_jsonl(ROOT / "graph_edges_v0_5.jsonl")
-    chunks = read_jsonl(ROOT / "rag_chunks_v0_5.jsonl")
+    nodes = read_jsonl(artifact_path("graph_nodes_v0_5.jsonl"))
+    edges = read_jsonl(artifact_path("graph_edges_v0_5.jsonl"))
+    chunks = read_jsonl(artifact_path("rag_chunks_v0_5.jsonl"))
     node_ids = {n["node_id"] for n in nodes}
     chunk_types = {c["chunk_type"] for c in chunks}
 
@@ -123,10 +124,10 @@ def main():
     coverage["precheck_missing_nodes"] = missing_nodes
     coverage["precheck_missing_chunk_types"] = missing_chunk_types
 
-    write_jsonl(ROOT / "retrieval_eval_set_v0_6.jsonl", evals)
-    write_jsonl(ROOT / "graph_query_samples_v0_6.jsonl", query_samples)
-    write_json(ROOT / "rag_graph_eval_coverage_v0_6.json", coverage)
-    (ROOT / "rag_graph_eval_spec_v0_6.md").write_text(
+    write_jsonl(artifact_path("retrieval_eval_set_v0_6.jsonl"), evals)
+    write_jsonl(artifact_path("graph_query_samples_v0_6.jsonl"), query_samples)
+    write_json(artifact_path("rag_graph_eval_coverage_v0_6.json"), coverage)
+    (artifact_path("rag_graph_eval_spec_v0_6.md")).write_text(
         "# rag_graph_eval_spec_v0_6\n\n"
         f"final_state: `{FINAL_STATE}`\n\n"
         "v0.6 是 RAG 检索质量评测与图谱查询样例层，不接 EcoCheck runtime。\n\n"
@@ -140,7 +141,7 @@ def main():
         "所有 eval 都必须要求回答包含候选边界提示，不得把候选知识当作正式运行时规则。\n",
         encoding="utf-8",
     )
-    (ROOT / "FINAL_COMPLETION_REPORT_v0_6.md").write_text(
+    (artifact_path("FINAL_COMPLETION_REPORT_v0_6.md")).write_text(
         "# FINAL COMPLETION REPORT v0.6\n\n"
         f"最终状态：`{FINAL_STATE}`\n\n"
         "v0.6 已生成 RAG 检索质量评测与图谱查询样例层，未接 EcoCheck runtime。\n\n"

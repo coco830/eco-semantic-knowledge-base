@@ -1,6 +1,7 @@
 import csv
 import json
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -12,7 +13,7 @@ BATCHES = {
 
 
 def load_classes(divisions):
-    with (ROOT / "industry_catalog_base.csv").open(encoding="utf-8-sig", newline="") as f:
+    with (artifact_path("industry_catalog_base.csv")).open(encoding="utf-8-sig", newline="") as f:
         return [r for r in csv.DictReader(f) if r["level"] == "class" and r["division_code"] in divisions]
 
 

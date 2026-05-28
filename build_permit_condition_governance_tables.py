@@ -1,11 +1,12 @@
 import csv
 import json
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
-NORMALIZED = ROOT / "permit_condition_normalization_draft.csv"
-INDUSTRY_CATALOG = ROOT / "industry_catalog_base.csv"
+NORMALIZED = artifact_path("permit_condition_normalization_draft.csv")
+INDUSTRY_CATALOG = artifact_path("industry_catalog_base.csv")
 
 
 def read_csv(path):
@@ -285,27 +286,27 @@ def main():
         "runtime_status",
         "source_page",
     ]
-    write_csv(ROOT / "permit_industry_code_reference_review.csv", code_rows, code_fields)
-    write_csv(ROOT / "permit_threshold_predicate_governance.csv", threshold_rows, threshold_fields)
-    write_csv(ROOT / "permit_parallel_material_threshold_inheritance_review.csv", inherited_rows, inherited_fields)
-    (ROOT / "permit_industry_code_reference_review.json").write_text(
+    write_csv(artifact_path("permit_industry_code_reference_review.csv"), code_rows, code_fields)
+    write_csv(artifact_path("permit_threshold_predicate_governance.csv"), threshold_rows, threshold_fields)
+    write_csv(artifact_path("permit_parallel_material_threshold_inheritance_review.csv"), inherited_rows, inherited_fields)
+    (artifact_path("permit_industry_code_reference_review.json")).write_text(
         json.dumps(code_rows, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    (ROOT / "permit_threshold_predicate_governance.json").write_text(
+    (artifact_path("permit_threshold_predicate_governance.json")).write_text(
         json.dumps(threshold_rows, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    (ROOT / "permit_parallel_material_threshold_inheritance_review.json").write_text(
+    (artifact_path("permit_parallel_material_threshold_inheritance_review.json")).write_text(
         json.dumps(inherited_rows, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
     validation = summarize(code_rows, threshold_rows, inherited_rows)
-    (ROOT / "permit_condition_governance_validation.json").write_text(
+    (artifact_path("permit_condition_governance_validation.json")).write_text(
         json.dumps(validation, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    (ROOT / "permit_condition_governance_README.md").write_text(
+    (artifact_path("permit_condition_governance_README.md")).write_text(
         "# 排污许可条件治理台账\n\n"
         "本批文件从 `permit_condition_normalization_draft.csv` 派生，用于把二次规则化结果拆成两类可审计台账。\n\n"
         "## 文件\n\n"

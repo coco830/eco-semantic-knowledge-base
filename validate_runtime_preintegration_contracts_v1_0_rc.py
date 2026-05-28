@@ -1,6 +1,7 @@
 import csv
 import json
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -22,7 +23,7 @@ def fail(failures, file, reason, row_id=""):
 
 
 def assert_text_contains(failures, file_name, phrases):
-    text = (ROOT / file_name).read_text(encoding="utf-8", errors="ignore")
+    text = (artifact_path(file_name)).read_text(encoding="utf-8", errors="ignore")
     for phrase in phrases:
         if phrase not in text:
             fail(failures, file_name, "missing_contract_phrase", phrase)
@@ -44,18 +45,18 @@ def main():
         "knowledge_base_manifest_v1_2_to_v1_7.json",
     ]
     for name in required:
-        if not (ROOT / name).exists():
+        if not (artifact_path(name)).exists():
             fail(failures, name, "missing_required_input")
 
-    gate = read_json(ROOT / "runtime_promotion_gate_design_v1_0_rc.json")
-    contract = read_json(ROOT / "runtime_data_contract_v1_0_rc.json")
-    import_manifest = read_json(ROOT / "runtime_import_candidate_manifest_v1_0_rc.json")
-    audit = read_json(ROOT / "security_audit_log_design_v1_0_rc.json")
-    kb_manifest = read_json(ROOT / "knowledge_base_manifest_v1_2_to_v1_7.json")
-    mapping = read_csv(ROOT / "candidate_to_runtime_mapping_v1_0_rc.csv")
-    review_overlay = read_csv(ROOT / "human_review_overlay_v0_8.csv")
-    formalization = read_csv(ROOT / "formalization_candidate_queue_v0_8.csv")
-    readiness = read_csv(ROOT / "runtime_readiness_matrix_v1_7.csv")
+    gate = read_json(artifact_path("runtime_promotion_gate_design_v1_0_rc.json"))
+    contract = read_json(artifact_path("runtime_data_contract_v1_0_rc.json"))
+    import_manifest = read_json(artifact_path("runtime_import_candidate_manifest_v1_0_rc.json"))
+    audit = read_json(artifact_path("security_audit_log_design_v1_0_rc.json"))
+    kb_manifest = read_json(artifact_path("knowledge_base_manifest_v1_2_to_v1_7.json"))
+    mapping = read_csv(artifact_path("candidate_to_runtime_mapping_v1_0_rc.csv"))
+    review_overlay = read_csv(artifact_path("human_review_overlay_v0_8.csv"))
+    formalization = read_csv(artifact_path("formalization_candidate_queue_v0_8.csv"))
+    readiness = read_csv(artifact_path("runtime_readiness_matrix_v1_7.csv"))
 
     for file, doc in [
         ("runtime_promotion_gate_design_v1_0_rc.json", gate),
@@ -158,11 +159,11 @@ def main():
         ],
         "failure_samples": failures[:50],
     }
-    (ROOT / "runtime_preintegration_contract_validation_report_v1_0_rc.json").write_text(
+    (artifact_path("runtime_preintegration_contract_validation_report_v1_0_rc.json")).write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    (ROOT / "runtime_preintegration_contract_failure_list_v1_0_rc.json").write_text(
+    (artifact_path("runtime_preintegration_contract_failure_list_v1_0_rc.json")).write_text(
         json.dumps(failures, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )

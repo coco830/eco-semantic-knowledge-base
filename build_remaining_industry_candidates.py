@@ -1,6 +1,7 @@
 import csv
 import json
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -51,7 +52,7 @@ def write_csv(path, rows):
 
 
 def load_classes(divisions=None):
-    rows = read_csv(ROOT / "industry_catalog_base.csv")
+    rows = read_csv(artifact_path("industry_catalog_base.csv"))
     return [
         r for r in rows
         if r["level"] == "class" and (divisions is None or r["division_code"] in divisions)
@@ -59,7 +60,7 @@ def load_classes(divisions=None):
 
 
 def load_template_ids():
-    data = json.loads((ROOT / "scenario_templates.json").read_text(encoding="utf-8"))
+    data = json.loads((artifact_path("scenario_templates.json")).read_text(encoding="utf-8"))
     return {row["scenario_id"] for row in data}
 
 
@@ -351,7 +352,7 @@ def combine_all(new_batches):
     }
     for file in EXISTING_BATCH_FILES:
         batch = file.split("_", 1)[0]
-        for row in read_csv(ROOT / file):
+        for row in read_csv(artifact_path(file)):
             parsed = parse_existing_row(row)
             code = parsed["industry_code"]
             if parsed["division_code"] not in preferred_divisions[batch]:
@@ -442,12 +443,12 @@ def validate(rows, missing, extra, legacy_duplicates):
 
 
 def write_combined(rows, validation):
-    (ROOT / "all_industry_scenario_candidates_v0_2.json").write_text(
+    (artifact_path("all_industry_scenario_candidates_v0_2.json")).write_text(
         json.dumps(rows, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    write_csv(ROOT / "all_industry_scenario_candidates_v0_2.csv", rows)
-    (ROOT / "all_industry_scenario_candidates_v0_2_validation.json").write_text(
+    write_csv(artifact_path("all_industry_scenario_candidates_v0_2.csv"), rows)
+    (artifact_path("all_industry_scenario_candidates_v0_2_validation.json")).write_text(
         json.dumps(validation, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
@@ -482,7 +483,7 @@ def write_combined(rows, validation):
         "- 低污染服务业和机关组织类只做轻画像确认，不能按工业场景默认适用。",
         "- 最终企业画像必须由 ESO/ETO 根据环评、批复、排污许可、台账和现场事实确认。",
     ]
-    (ROOT / "all_industry_scenario_candidates_v0_2_coverage_report.md").write_text(
+    (artifact_path("all_industry_scenario_candidates_v0_2_coverage_report.md")).write_text(
         "\n".join(report) + "\n",
         encoding="utf-8",
     )

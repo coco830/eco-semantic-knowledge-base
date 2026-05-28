@@ -2,6 +2,7 @@ import csv
 import hashlib
 import json
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -170,16 +171,16 @@ def chunk(chunk_type, natural_key, text, metadata):
 
 
 def main():
-    industries = read_json(ROOT / "all_industry_scenario_candidates_v0_2.json")
-    raw_entries = read_csv(ROOT / "permit_management_catalog_table_cells.csv")
-    permit_conditions = read_csv(ROOT / "all_permit_condition_backfill_v0_4_1.csv")
-    context = read_csv(ROOT / "all_context_applicability_review_v0_4_1.csv")
-    scenarios = read_json(ROOT / "scenario_templates.json")
-    score_map = read_csv(ROOT / "scenario_to_score13_mapping_v0_3.csv")
-    inspections = read_csv(ROOT / "inspection_candidate_recommendations_v0_3.csv")
-    open_questions = read_csv(ROOT / "open_questions_v0_4_1.csv")
-    risks = read_csv(ROOT / "risk_acceptance_queue_v0_4_1.csv")
-    manifest = read_json(ROOT / "knowledge_base_manifest_v0_4_1.json")
+    industries = read_json(artifact_path("all_industry_scenario_candidates_v0_2.json"))
+    raw_entries = read_csv(artifact_path("permit_management_catalog_table_cells.csv"))
+    permit_conditions = read_csv(artifact_path("all_permit_condition_backfill_v0_4_1.csv"))
+    context = read_csv(artifact_path("all_context_applicability_review_v0_4_1.csv"))
+    scenarios = read_json(artifact_path("scenario_templates.json"))
+    score_map = read_csv(artifact_path("scenario_to_score13_mapping_v0_3.csv"))
+    inspections = read_csv(artifact_path("inspection_candidate_recommendations_v0_3.csv"))
+    open_questions = read_csv(artifact_path("open_questions_v0_4_1.csv"))
+    risks = read_csv(artifact_path("risk_acceptance_queue_v0_4_1.csv"))
+    manifest = read_json(artifact_path("knowledge_base_manifest_v0_4_1.json"))
 
     nodes = []
     edges = []
@@ -260,7 +261,7 @@ def main():
             edges.append(edge("RISK_LINKED_TO_OPEN_QUESTION", f"edge:risk_oq:{rid}:{qid}", f"risk:{rid}", f"open_question:{qid}", {"ref_reason": row["risk_topic"]}, "risk_acceptance_queue_v0_4_1.csv", "DRAFT_NOT_FOR_RUNTIME", "HIGH", "BLOCKS_RUNTIME", [qid], [rid]))
         chunks.append(chunk("risk_acceptance_chunk", rid, build_text("风险接受队列", row), common("risk_acceptance_queue_v0_4_1.csv", "DRAFT_NOT_FOR_RUNTIME", "HIGH", "BLOCKS_RUNTIME", refs, [rid])))
 
-    strategy_text = (ROOT / "automated_denoise_diff_report_v0_4.md").read_text(encoding="utf-8") if (ROOT / "automated_denoise_diff_report_v0_4.md").exists() else ""
+    strategy_text = (artifact_path("automated_denoise_diff_report_v0_4.md")).read_text(encoding="utf-8") if (artifact_path("automated_denoise_diff_report_v0_4.md")).exists() else ""
     chunks.append(chunk("denoise_decision_chunk", "v0_4_to_v0_4_1_denoise", strategy_text + "\n\nv0.4.1: CTXV04_3012_63_REGISTRATION降为NOT_APPLY；entry108承接策略和risk queue关系已明确。", common("automated_denoise_diff_report_v0_4.md; FINAL_COMPLETION_REPORT_v0_4_1.md", "DRAFT_NOT_FOR_RUNTIME", "HIGH", "BLOCKS_RUNTIME", ["V04_ENTRY_108_CONTEXT_001", "V04_DIVISION_CONTEXT_APPLIES_001"], ["RISK-V041-001", "RISK-V041-009"])))
 
     eval_set = [
@@ -271,10 +272,10 @@ def main():
         {"eval_id": "EVAL-V05-005", "query": "现场排查拍照要点是否保留？", "expected_node_ids": ["inspection:SCN_WW_PROCESS_AND_TREATMENT:FIRST"], "expected_answer_contains": ["photo_points", "候选"], "final_state": FINAL_STATE, "runtime_status": "CANDIDATE_ONLY"},
     ]
 
-    write_jsonl(ROOT / "graph_nodes_v0_5.jsonl", nodes)
-    write_jsonl(ROOT / "graph_edges_v0_5.jsonl", edges)
-    write_jsonl(ROOT / "rag_chunks_v0_5.jsonl", chunks)
-    write_jsonl(ROOT / "retrieval_eval_set_v0_5.jsonl", eval_set)
+    write_jsonl(artifact_path("graph_nodes_v0_5.jsonl"), nodes)
+    write_jsonl(artifact_path("graph_edges_v0_5.jsonl"), edges)
+    write_jsonl(artifact_path("rag_chunks_v0_5.jsonl"), chunks)
+    write_jsonl(artifact_path("retrieval_eval_set_v0_5.jsonl"), eval_set)
 
     schema_md = [
         "# kb_graph_schema_v0_5",
@@ -303,7 +304,7 @@ def main():
         "",
         "`HAS_CONDITION`, `CANDIDATE_APPLICABILITY`, `HAS_APPLICABILITY_RELATION`, `RELATED_TO_SCENARIO`, `MAPS_TO_SCORE13`, `HAS_INSPECTION_CANDIDATE`, `RISK_LINKED_TO_OPEN_QUESTION`。",
     ]
-    (ROOT / "kb_graph_schema_v0_5.md").write_text("\n".join(schema_md) + "\n", encoding="utf-8")
+    (artifact_path("kb_graph_schema_v0_5.md")).write_text("\n".join(schema_md) + "\n", encoding="utf-8")
 
     rag_md = [
         "# rag_chunk_spec_v0_5",
@@ -326,7 +327,7 @@ def main():
         "",
         "所有chunk必须显式携带候选边界字段，RAG回答不得把候选关系当成正式permit_type或正式检查模板。",
     ]
-    (ROOT / "rag_chunk_spec_v0_5.md").write_text("\n".join(rag_md) + "\n", encoding="utf-8")
+    (artifact_path("rag_chunk_spec_v0_5.md")).write_text("\n".join(rag_md) + "\n", encoding="utf-8")
 
     manifest_v05 = {
         "knowledge_base_version": KB_VERSION,
@@ -346,8 +347,8 @@ def main():
             "FINAL_COMPLETION_REPORT_v0_5.md": 1,
         },
     }
-    write_json(ROOT / "knowledge_base_manifest_v0_5.json", manifest_v05)
-    (ROOT / "FINAL_COMPLETION_REPORT_v0_5.md").write_text(
+    write_json(artifact_path("knowledge_base_manifest_v0_5.json"), manifest_v05)
+    (artifact_path("FINAL_COMPLETION_REPORT_v0_5.md")).write_text(
         "# FINAL COMPLETION REPORT v0.5\n\n"
         f"最终状态：`{FINAL_STATE}`\n\n"
         "v0.5 已生成 RAG/环保语义图谱候选入库设计包，未接 EcoCheck runtime。\n\n"

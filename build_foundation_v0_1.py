@@ -2,14 +2,15 @@ import csv
 import json
 import re
 from pathlib import Path
+from kb_paths import artifact_path
 
 from openpyxl import load_workbook
 from pypdf import PdfReader
 
 
 ROOT = Path(__file__).resolve().parent
-GB_XLSX = ROOT / "2017国民经济行业分类注释.xlsx"
-PERMIT_PDF = ROOT / "固定污染源排污许可分类管理名录(2019年版).pdf"
+GB_XLSX = artifact_path("2017国民经济行业分类注释.xlsx")
+PERMIT_PDF = artifact_path("固定污染源排污许可分类管理名录(2019年版).pdf")
 
 
 CURRENT_FIRST_SECTIONS = {f"S{i:02d}" for i in range(1, 18)} | {"RADIATION"}
@@ -272,7 +273,7 @@ def section_status(code, inspection_type):
 
 
 def annotate_inspection_recommendations():
-    path = ROOT / "inspection_item_recommendations.csv"
+    path = artifact_path("inspection_item_recommendations.csv")
     if not path.exists():
         return []
     with path.open(encoding="utf-8-sig", newline="") as f:
@@ -283,7 +284,7 @@ def annotate_inspection_recommendations():
         row["runtime_status"] = "NOT_FOR_RUNTIME_V0_1" if status != "CURRENT_TEMPLATE_SECTION" else "REVIEW_BEFORE_RUNTIME"
         row["knowledge_base_role"] = "candidate_recommendation"
     headers = list(rows[0].keys()) if rows else []
-    write_csv(ROOT / "inspection_item_recommendations.csv", headers, rows)
+    write_csv(artifact_path("inspection_item_recommendations.csv"), headers, rows)
     candidate_rows = []
     for row in rows:
         candidate_rows.append({
@@ -305,7 +306,7 @@ def annotate_inspection_recommendations():
         })
     if candidate_rows:
         write_csv(
-            ROOT / "inspection_candidate_recommendations_v0_1.csv",
+            artifact_path("inspection_candidate_recommendations_v0_1.csv"),
             list(candidate_rows[0].keys()),
             candidate_rows,
         )
@@ -314,7 +315,7 @@ def annotate_inspection_recommendations():
 
 def write_open_questions():
     headers = list(OPEN_QUESTIONS[0].keys())
-    write_csv(ROOT / "open_questions.csv", headers, OPEN_QUESTIONS)
+    write_csv(artifact_path("open_questions.csv"), headers, OPEN_QUESTIONS)
     lines = [
         "# Open Questions",
         "",
@@ -332,11 +333,11 @@ def write_open_questions():
             f"- 建议动作：{q['recommended_action']}",
             "",
         ])
-    (ROOT / "open_questions.md").write_text("\n".join(lines), encoding="utf-8")
+    (artifact_path("open_questions.md")).write_text("\n".join(lines), encoding="utf-8")
 
 
 def write_manifest_and_plan(industry_rows, permit_rows, inspection_rows):
-    table_validation_path = ROOT / "permit_management_catalog_table_cells_validation.json"
+    table_validation_path = artifact_path("permit_management_catalog_table_cells_validation.json")
     table_validation = None
     if table_validation_path.exists():
         table_validation = json.loads(table_validation_path.read_text(encoding="utf-8"))
@@ -362,12 +363,12 @@ def write_manifest_and_plan(industry_rows, permit_rows, inspection_rows):
         ],
         "permit_catalog_table_cell_validation": table_validation or "NOT_GENERATED",
     }
-    (ROOT / "knowledge_base_v0_1_manifest.json").write_text(
+    (artifact_path("knowledge_base_v0_1_manifest.json")).write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
 
-    (ROOT / "runtime_integration_boundary.md").write_text(
+    (artifact_path("runtime_integration_boundary.md")).write_text(
         "# Runtime Integration Boundary\n\n"
         "本批产物定位为 `knowledge_base_version = v0.1-sample`，不直接接入小程序或 EcoCheck 运行时。\n\n"
         "## 可以使用\n\n"
@@ -385,7 +386,7 @@ def write_manifest_and_plan(industry_rows, permit_rows, inspection_rows):
         encoding="utf-8",
     )
 
-    (ROOT / "README_KNOWLEDGE_BASE_V0_1.md").write_text(
+    (artifact_path("README_KNOWLEDGE_BASE_V0_1.md")).write_text(
         "# 行业产污场景知识库 v0.1 样板\n\n"
         "## 定位\n\n"
         "本目录当前产物是知识库 v0.1 样板，不是运行时规则库。它用于 RAG、环保语义图谱、规则治理、首轮企业画像预填、现场确认问题和拍照提示设计。\n\n"
@@ -416,7 +417,7 @@ def write_manifest_and_plan(industry_rows, permit_rows, inspection_rows):
         encoding="utf-8",
     )
 
-    (ROOT / "expansion_batch_plan.md").write_text(
+    (artifact_path("expansion_batch_plan.md")).write_text(
         "# 剩余行业底座扩展计划\n\n"
         "## 原则\n\n"
         "- 先复用现有场景模板，不为每个行业单独造规则。\n"
@@ -441,14 +442,14 @@ def write_manifest_and_plan(industry_rows, permit_rows, inspection_rows):
 def main():
     industry_rows = build_industry_catalog()
     write_csv(
-        ROOT / "industry_catalog_base.csv",
+        artifact_path("industry_catalog_base.csv"),
         ["level", "section_code", "section_name", "division_code", "division_name", "group_code", "group_name", "class_code", "class_name", "gb_source_row", "status", "notes"],
         industry_rows,
     )
 
     permit_rows = build_permit_catalog_draft()
     write_csv(
-        ROOT / "permit_management_catalog_draft.csv",
+        artifact_path("permit_management_catalog_draft.csv"),
         ["catalog_entry_no", "major_category_text", "industry_category_text", "gb_code_fragments", "key_management_condition", "simplified_management_condition", "registration_management_condition", "source_page", "extraction_confidence", "audit_status", "notes"],
         permit_rows,
     )

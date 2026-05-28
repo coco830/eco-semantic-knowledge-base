@@ -2,10 +2,11 @@ import csv
 import json
 import re
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
-INPUT = ROOT / "permit_management_catalog_table_cells.csv"
+INPUT = artifact_path("permit_management_catalog_table_cells.csv")
 
 
 CN_NUM = {
@@ -523,16 +524,16 @@ def main():
         print(json.dumps(validation, ensure_ascii=False, indent=2))
         raise SystemExit(1)
 
-    (ROOT / "permit_condition_normalization_draft.json").write_text(
+    (artifact_path("permit_condition_normalization_draft.json")).write_text(
         json.dumps(entries, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    write_csv(ROOT / "permit_condition_normalization_draft.csv", condition_rows)
-    (ROOT / "permit_condition_normalization_validation.json").write_text(
+    write_csv(artifact_path("permit_condition_normalization_draft.csv"), condition_rows)
+    (artifact_path("permit_condition_normalization_validation.json")).write_text(
         json.dumps(validation, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    (ROOT / "permit_condition_normalization_README.md").write_text(
+    (artifact_path("permit_condition_normalization_README.md")).write_text(
         "# 排污许可名录条件二次规则化草案\n\n"
         "本产物把 `permit_management_catalog_table_cells.csv` 的三类管理条件从 raw text 转成 `normalized_predicates` 草案。"
         "它是治理中间层，不是运行时规则库。\n\n"

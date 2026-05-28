@@ -1,6 +1,7 @@
 import csv
 import json
 from pathlib import Path
+from kb_paths import artifact_path
 
 
 ROOT = Path(__file__).resolve().parent
@@ -48,16 +49,16 @@ def main():
         "knowledge_base_manifest_v1_0_rc.json",
     ]
     for name in required:
-        if not (ROOT / name).exists():
+        if not (artifact_path(name)).exists():
             fail(failures, name, "missing_required_output")
 
-    gate = read_json(ROOT / "runtime_promotion_gate_design_v1_0_rc.json")
-    contract = read_json(ROOT / "runtime_data_contract_v1_0_rc.json")
-    import_manifest = read_json(ROOT / "runtime_import_candidate_manifest_v1_0_rc.json")
-    audit = read_json(ROOT / "security_audit_log_design_v1_0_rc.json")
-    manifest = read_json(ROOT / "knowledge_base_manifest_v1_0_rc.json")
-    mapping = read_csv(ROOT / "candidate_to_runtime_mapping_v1_0_rc.csv")
-    formalization = read_csv(ROOT / "formalization_candidate_queue_v0_8.csv")
+    gate = read_json(artifact_path("runtime_promotion_gate_design_v1_0_rc.json"))
+    contract = read_json(artifact_path("runtime_data_contract_v1_0_rc.json"))
+    import_manifest = read_json(artifact_path("runtime_import_candidate_manifest_v1_0_rc.json"))
+    audit = read_json(artifact_path("security_audit_log_design_v1_0_rc.json"))
+    manifest = read_json(artifact_path("knowledge_base_manifest_v1_0_rc.json"))
+    mapping = read_csv(artifact_path("candidate_to_runtime_mapping_v1_0_rc.csv"))
+    formalization = read_csv(artifact_path("formalization_candidate_queue_v0_8.csv"))
 
     for file, doc in [
         ("runtime_promotion_gate_design_v1_0_rc.json", gate),
@@ -99,12 +100,12 @@ def main():
         "FINAL_COMPLETION_REPORT_v1_0_rc.md",
     ]
     for name in text_files:
-        text = (ROOT / name).read_text(encoding="utf-8")
+        text = (artifact_path(name)).read_text(encoding="utf-8")
         for phrase in [FINAL_STATE, "不", "runtime"]:
             if phrase not in text:
                 fail(failures, name, "missing_boundary_phrase", phrase)
 
-    project_index = (ROOT / "PROJECT_INDEX_v1_0_rc.md").read_text(encoding="utf-8")
+    project_index = (artifact_path("PROJECT_INDEX_v1_0_rc.md")).read_text(encoding="utf-8")
     for phrase in [
         "v1.0-rc design-only baseline",
         "human_review_worksheet_v0_7.xlsx",
@@ -116,7 +117,7 @@ def main():
         if phrase not in project_index:
             fail(failures, "PROJECT_INDEX_v1_0_rc.md", "missing_index_phrase", phrase)
 
-    handoff = (ROOT / "HANDOFF_v1_0_rc.md").read_text(encoding="utf-8")
+    handoff = (artifact_path("HANDOFF_v1_0_rc.md")).read_text(encoding="utf-8")
     for phrase in [
         "人工审阅",
         "RAG demo",
@@ -127,7 +128,7 @@ def main():
         if phrase not in handoff:
             fail(failures, "HANDOFF_v1_0_rc.md", "missing_handoff_phrase", phrase)
 
-    deprecation = (ROOT / "DEPRECATED_AND_REMOVED_FILES_v1_0_rc.md").read_text(encoding="utf-8")
+    deprecation = (artifact_path("DEPRECATED_AND_REMOVED_FILES_v1_0_rc.md")).read_text(encoding="utf-8")
     for phrase in [
         "已移除",
         "12个优先行业规则库_v1.1接入版.json",
@@ -145,11 +146,11 @@ def main():
         "build_knowledge_base.py",
     ]
     for name in removed_legacy_files:
-        if (ROOT / name).exists():
+        if (artifact_path(name)).exists():
             fail(failures, name, "legacy_runtime_entry_should_be_removed")
 
-    review_matrix = read_csv(ROOT / "open_questions_review_matrix_v1_0_rc.csv")
-    open_questions = read_csv(ROOT / "open_questions_v0_4_1.csv")
+    review_matrix = read_csv(artifact_path("open_questions_review_matrix_v1_0_rc.csv"))
+    open_questions = read_csv(artifact_path("open_questions_v0_4_1.csv"))
     if len(review_matrix) != len(open_questions):
         fail(failures, "open_questions_review_matrix_v1_0_rc.csv", "row_count_mismatch")
     matrix_ids = {r.get("question_id", "") for r in review_matrix}
@@ -169,7 +170,7 @@ def main():
         ]:
             if not row.get(field, "").strip():
                 fail(failures, "open_questions_review_matrix_v1_0_rc.csv", f"missing_{field}", qid)
-    guide = (ROOT / "open_questions_review_guide_v1_0_rc.md").read_text(encoding="utf-8")
+    guide = (artifact_path("open_questions_review_guide_v1_0_rc.md")).read_text(encoding="utf-8")
     for phrase in [
         "找谁问",
         "具体要问",
@@ -181,7 +182,7 @@ def main():
         if phrase not in guide:
             fail(failures, "open_questions_review_guide_v1_0_rc.md", "missing_guide_phrase", phrase)
 
-    decision_rows = read_csv(ROOT / "eto_eso_open_question_decisions_v1_0_rc.csv")
+    decision_rows = read_csv(artifact_path("eto_eso_open_question_decisions_v1_0_rc.csv"))
     if len(decision_rows) != len(open_questions):
         fail(failures, "eto_eso_open_question_decisions_v1_0_rc.csv", "row_count_mismatch")
     decision_ids = {r.get("question_id", "") for r in decision_rows}
@@ -196,7 +197,7 @@ def main():
         for field in ["owner_decision", "decision_status", "evidence_required"]:
             if not row.get(field, "").strip():
                 fail(failures, "eto_eso_open_question_decisions_v1_0_rc.csv", f"missing_{field}", qid)
-    decision_text = (ROOT / "eto_eso_open_question_decisions_v1_0_rc.md").read_text(encoding="utf-8")
+    decision_text = (artifact_path("eto_eso_open_question_decisions_v1_0_rc.md")).read_text(encoding="utf-8")
     for phrase in [
         "PRELIMINARY_ETO_ESO_REVIEW_RECORDED",
         "BLOCKS_RUNTIME",
@@ -211,7 +212,7 @@ def main():
 
     forbidden_claims = ["runtime_integration: enabled", "自动扣分已启用", "正式模板已生成", "已接 EcoCheck runtime"]
     for name in required:
-        path = ROOT / name
+        path = artifact_path(name)
         if path.suffix.lower() in {".md", ".json", ".csv"}:
             text = path.read_text(encoding="utf-8", errors="ignore")
             for phrase in forbidden_claims:
@@ -227,11 +228,11 @@ def main():
         "audit_event_count": len(audit.get("events", [])),
         "failure_samples": failures[:50],
     }
-    (ROOT / "runtime_design_package_v1_0_rc_validation_report.json").write_text(
+    (artifact_path("runtime_design_package_v1_0_rc_validation_report.json")).write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    (ROOT / "runtime_design_package_v1_0_rc_failure_list.json").write_text(
+    (artifact_path("runtime_design_package_v1_0_rc_failure_list.json")).write_text(
         json.dumps(failures, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
