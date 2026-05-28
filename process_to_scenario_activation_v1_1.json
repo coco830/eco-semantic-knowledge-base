@@ -12,7 +12,8 @@
     "photo_points": "喷涂/调漆工位；烘干室；集气罩；治理设施；废过滤棉/废活性炭暂存点",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_spraying_coating__SCN_HAZWASTE_STORAGE_TRANSFER",
@@ -27,7 +28,8 @@
     "photo_points": "喷涂/调漆工位；烘干室；集气罩；治理设施；废过滤棉/废活性炭暂存点",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_spraying_coating__SCN_RAINWATER_ACCIDENT_EMERGENCY",
@@ -42,7 +44,8 @@
     "photo_points": "喷涂/调漆工位；烘干室；集气罩；治理设施；废过滤棉/废活性炭暂存点",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_electroplating_acid_pickling__SCN_WW_PROCESS_AND_TREATMENT",
@@ -57,7 +60,8 @@
     "photo_points": "电镀/酸洗槽；药剂库；废水收集沟；污水站；危废暂存间",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_electroplating_acid_pickling__SCN_HAZWASTE_STORAGE_TRANSFER",
@@ -72,7 +76,8 @@
     "photo_points": "电镀/酸洗槽；药剂库；废水收集沟；污水站；危废暂存间",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_electroplating_acid_pickling__SCN_RAINWATER_ACCIDENT_EMERGENCY",
@@ -87,7 +92,8 @@
     "photo_points": "电镀/酸洗槽；药剂库；废水收集沟；污水站；危废暂存间",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_electroplating_acid_pickling__SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
@@ -102,7 +108,8 @@
     "photo_points": "电镀/酸洗槽；药剂库；废水收集沟；污水站；危废暂存间",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_fermentation_distillation__SCN_WW_PROCESS_AND_TREATMENT",
@@ -117,7 +124,8 @@
     "photo_points": "发酵罐；蒸馏设备；清洗点；污水站；酒糟/一般固废暂存点",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_fermentation_distillation__SCN_RAINWATER_ACCIDENT_EMERGENCY",
@@ -132,7 +140,8 @@
     "photo_points": "发酵罐；蒸馏设备；清洗点；污水站；酒糟/一般固废暂存点",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_fermentation_distillation__SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
@@ -147,7 +156,8 @@
     "photo_points": "发酵罐；蒸馏设备；清洗点；污水站；酒糟/一般固废暂存点",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_printing_gluing__SCN_VOCS_SOLVENT_AND_TREATMENT",
@@ -162,7 +172,8 @@
     "photo_points": "印刷机；油墨/胶黏剂标签；集气罩；废气治理设施；洗版/清洗点",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_printing_gluing__SCN_HAZWASTE_STORAGE_TRANSFER",
@@ -177,7 +188,8 @@
     "photo_points": "印刷机；油墨/胶黏剂标签；集气罩；废气治理设施；洗版/清洗点",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_printing_gluing__SCN_WW_PROCESS_AND_TREATMENT",
@@ -192,7 +204,8 @@
     "photo_points": "印刷机；油墨/胶黏剂标签；集气罩；废气治理设施；洗版/清洗点",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_boiler_combustion__SCN_DUST_PARTICULATE_CONTROL",
@@ -207,7 +220,8 @@
     "photo_points": "锅炉铭牌；燃料供应点；排气筒；废气治理设施；运行记录",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_boiler_combustion__SCN_ONLINE_MONITORING_KEY_UNIT",
@@ -222,7 +236,8 @@
     "photo_points": "锅炉铭牌；燃料供应点；排气筒；废气治理设施；运行记录",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_boiler_combustion__SCN_RAINWATER_ACCIDENT_EMERGENCY",
@@ -237,7 +252,8 @@
     "photo_points": "锅炉铭牌；燃料供应点；排气筒；废气治理设施；运行记录",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_wastewater_treatment_station__SCN_WW_PROCESS_AND_TREATMENT",
@@ -252,7 +268,8 @@
     "photo_points": "污水站全景；关键处理单元；总排口；在线监测设备；污泥暂存点",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_wastewater_treatment_station__SCN_ONLINE_MONITORING_KEY_UNIT",
@@ -267,7 +284,8 @@
     "photo_points": "污水站全景；关键处理单元；总排口；在线监测设备；污泥暂存点",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_wastewater_treatment_station__SCN_RAINWATER_ACCIDENT_EMERGENCY",
@@ -282,7 +300,8 @@
     "photo_points": "污水站全景；关键处理单元；总排口；在线监测设备；污泥暂存点",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_wastewater_treatment_station__SCN_HAZWASTE_STORAGE_TRANSFER",
@@ -297,7 +316,8 @@
     "photo_points": "污水站全景；关键处理单元；总排口；在线监测设备；污泥暂存点",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_medical_wastewater_waste_radiation__SCN_MEDICAL_WASTE_RADIATION",
@@ -312,7 +332,8 @@
     "photo_points": "医废暂存间；污水消毒设施；放射设备警示标识；医废交接记录；床位证明",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_medical_wastewater_waste_radiation__SCN_WW_PROCESS_AND_TREATMENT",
@@ -327,7 +348,8 @@
     "photo_points": "医废暂存间；污水消毒设施；放射设备警示标识；医废交接记录；床位证明",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_medical_wastewater_waste_radiation__SCN_HAZWASTE_STORAGE_TRANSFER",
@@ -342,7 +364,8 @@
     "photo_points": "医废暂存间；污水消毒设施；放射设备警示标识；医废交接记录；床位证明",
     "confidence": "HIGH",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_laboratory_waste_liquid__SCN_HAZWASTE_STORAGE_TRANSFER",
@@ -357,7 +380,8 @@
     "photo_points": "实验室操作台；试剂柜；废液桶标签；危废暂存间；应急吸附物资",
     "confidence": "MEDIUM",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_laboratory_waste_liquid__SCN_RAINWATER_ACCIDENT_EMERGENCY",
@@ -372,7 +396,8 @@
     "photo_points": "实验室操作台；试剂柜；废液桶标签；危废暂存间；应急吸附物资",
     "confidence": "MEDIUM",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_laboratory_waste_liquid__NEW_SCN_LAB_WASTE_CANDIDATE",
@@ -387,7 +412,8 @@
     "photo_points": "实验室操作台；试剂柜；废液桶标签；危废暂存间；应急吸附物资",
     "confidence": "MEDIUM",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_tailings_storage__SCN_RAINWATER_ACCIDENT_EMERGENCY",
@@ -402,7 +428,8 @@
     "photo_points": "尾矿坝；排洪系统；回水池；渗滤液收集点；在线/巡检记录",
     "confidence": "MEDIUM",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_tailings_storage__SCN_WW_PROCESS_AND_TREATMENT",
@@ -417,7 +444,8 @@
     "photo_points": "尾矿坝；排洪系统；回水池；渗滤液收集点；在线/巡检记录",
     "confidence": "MEDIUM",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_tailings_storage__NEW_SCN_TAILINGS_CANDIDATE",
@@ -432,7 +460,8 @@
     "photo_points": "尾矿坝；排洪系统；回水池；渗滤液收集点；在线/巡检记录",
     "confidence": "MEDIUM",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_waste_incineration_landfill__SCN_DUST_PARTICULATE_CONTROL",
@@ -447,7 +476,8 @@
     "photo_points": "焚烧炉/填埋作业区；烟气净化设施；渗滤液站；飞灰暂存；在线监测站房",
     "confidence": "MEDIUM",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_waste_incineration_landfill__SCN_WW_PROCESS_AND_TREATMENT",
@@ -462,7 +492,8 @@
     "photo_points": "焚烧炉/填埋作业区；烟气净化设施；渗滤液站；飞灰暂存；在线监测站房",
     "confidence": "MEDIUM",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_waste_incineration_landfill__SCN_HAZWASTE_STORAGE_TRANSFER",
@@ -477,7 +508,8 @@
     "photo_points": "焚烧炉/填埋作业区；烟气净化设施；渗滤液站；飞灰暂存；在线监测站房",
     "confidence": "MEDIUM",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_waste_incineration_landfill__SCN_ONLINE_MONITORING_KEY_UNIT",
@@ -492,7 +524,8 @@
     "photo_points": "焚烧炉/填埋作业区；烟气净化设施；渗滤液站；飞灰暂存；在线监测站房",
     "confidence": "MEDIUM",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   },
   {
     "activation_id": "ACT11_waste_incineration_landfill__NEW_SCN_WASTE_DISPOSAL_CANDIDATE",
@@ -507,6 +540,7 @@
     "photo_points": "焚烧炉/填埋作业区；烟气净化设施；渗滤液站；飞灰暂存；在线监测站房",
     "confidence": "MEDIUM",
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
-    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY"
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   }
 ]

@@ -17,6 +17,9 @@
     "no_formal_inspection_template",
     "no_auto_deduct",
     "all_evidence_has_source_excerpt",
-    "all_overlay_requires_site_verification_or_explicit_status"
+    "all_overlay_requires_site_verification_or_explicit_status",
+    "not_apply_overlay_must_declare_process_only_scope",
+    "no_enterprise_scenario_confirmed_and_not_apply_conflict_without_scope",
+    "all_tables_carry_runtime_boundary_fields"
   ]
 }

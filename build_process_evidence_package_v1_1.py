@@ -302,6 +302,17 @@ def split_semicolon(value):
     return [x for x in value.split(";") if x]
 
 
+def with_runtime_boundary(rows):
+    bounded = []
+    for row in rows:
+        copy = dict(row)
+        copy.setdefault("runtime_status", RUNTIME_STATUS)
+        copy.setdefault("final_state", FINAL_STATE)
+        copy.setdefault("runtime_integration", RUNTIME_INTEGRATION)
+        bounded.append(copy)
+    return bounded
+
+
 def build_activation_rows():
     rows = []
     for trigger in PROCESS_TRIGGERS:
@@ -320,6 +331,7 @@ def build_activation_rows():
                 "confidence": trigger["confidence"],
                 "runtime_status": RUNTIME_STATUS,
                 "final_state": FINAL_STATE,
+                "runtime_integration": RUNTIME_INTEGRATION,
             })
     return rows
 
@@ -330,10 +342,18 @@ def build_overlay_rows():
         for scenario_id in split_semicolon(evidence["linked_scenario_ids"]):
             if evidence["evidence_strength"] == "NEGATED":
                 overlay_status = "NOT_APPLY_WITH_EVIDENCE"
+                overlay_scope = "PROCESS_ONLY"
+                overlay_scope_reason = (
+                    "否定证据只排除该工序触发，不排除同一企业因其他工序触发同一场景。"
+                )
             elif scenario_id.startswith("NEW_SCN_"):
                 overlay_status = "NEW_SCENARIO_CANDIDATE"
+                overlay_scope = "SCENARIO_WIDE"
+                overlay_scope_reason = "证据指向尚未正式入库的新场景候选，仍需ETO/ESO评审。"
             else:
                 overlay_status = "SCENARIO_EVIDENCE_CONFIRMED"
+                overlay_scope = "SCENARIO_WIDE"
+                overlay_scope_reason = "直接工序证据可确认该场景候选相关，但仍需现场核验和许可确认。"
             rows.append({
                 "overlay_id": f"OVL11_{evidence['evidence_id']}__{scenario_id}",
                 "enterprise_id": evidence["enterprise_id"],
@@ -343,6 +363,8 @@ def build_overlay_rows():
                 "scenario_id": scenario_id,
                 "previous_state": "CANDIDATE_RECALLED",
                 "overlay_status": overlay_status,
+                "overlay_scope": overlay_scope,
+                "overlay_scope_reason": overlay_scope_reason,
                 "site_verification_status": "SITE_VERIFICATION_REQUIRED" if evidence["site_verification_required"] == "true" else "NOT_REQUIRED",
                 "permit_type_status": "NEED_PERMIT_CONFIRM",
                 "source_document_type": evidence["source_document_type"],
@@ -412,10 +434,12 @@ def write_markdown_outputs():
         "- `process_id`, `process_name`, `aliases`, `positive_keywords`, `negative_keywords`.\n"
         "- `evidence_id`, `enterprise_id`, `industry_code`, `evidence_strength`, `source_document_type`, `source_excerpt`.\n"
         "- `linked_scenario_ids`, `linked_permit_entry_nos`, `confirmation_questions`, `photo_points`.\n"
+        "- `overlay_scope`: `PROCESS_ONLY` means the evidence only includes/excludes one process trigger; `SCENARIO_WIDE` means the evidence supports a scenario-level candidate.\n"
         "- `runtime_status`, `final_state`, `runtime_integration`.\n\n"
         "## Evidence Rules\n\n"
         "- DIRECT evidence can activate a scenario but still requires site verification.\n"
         "- NEGATED evidence can support `NOT_APPLY_WITH_EVIDENCE` only when the source excerpt explicitly excludes the process.\n"
+        "- NEGATED process evidence must use `overlay_scope=PROCESS_ONLY` unless it explicitly excludes the entire scenario/risk unit.\n"
         "- IMPLIED evidence cannot upgrade to `APPLIES` without ETO/ESO review.\n"
         "- UNKNOWN remains a question, not a negative conclusion.\n",
         encoding="utf-8",
@@ -438,15 +462,17 @@ def write_markdown_outputs():
 
 
 def main():
+    trigger_rows = with_runtime_boundary(PROCESS_TRIGGERS)
+    evidence_rows = with_runtime_boundary(SAMPLE_EVIDENCE)
     activation_rows = build_activation_rows()
     overlay_rows = build_overlay_rows()
     graph_design = build_graph_design()
-    write_csv(ROOT / "process_trigger_dictionary_v1_1.csv", PROCESS_TRIGGERS)
-    write_json(ROOT / "process_trigger_dictionary_v1_1.json", PROCESS_TRIGGERS)
+    write_csv(ROOT / "process_trigger_dictionary_v1_1.csv", trigger_rows)
+    write_json(ROOT / "process_trigger_dictionary_v1_1.json", trigger_rows)
     write_csv(ROOT / "process_to_scenario_activation_v1_1.csv", activation_rows)
     write_json(ROOT / "process_to_scenario_activation_v1_1.json", activation_rows)
-    write_csv(ROOT / "process_evidence_predicates_samples_v1_1.csv", SAMPLE_EVIDENCE)
-    write_json(ROOT / "process_evidence_predicates_samples_v1_1.json", SAMPLE_EVIDENCE)
+    write_csv(ROOT / "process_evidence_predicates_samples_v1_1.csv", evidence_rows)
+    write_json(ROOT / "process_evidence_predicates_samples_v1_1.json", evidence_rows)
     write_csv(ROOT / "enterprise_profile_overlay_samples_v1_1.csv", overlay_rows)
     write_json(ROOT / "enterprise_profile_overlay_samples_v1_1.json", overlay_rows)
     write_json(ROOT / "process_graph_rag_design_v1_1.json", graph_design)
@@ -456,9 +482,9 @@ def main():
         "final_state": FINAL_STATE,
         "runtime_integration": RUNTIME_INTEGRATION,
         "runtime_effect": "NONE",
-        "process_trigger_rows": len(PROCESS_TRIGGERS),
+        "process_trigger_rows": len(trigger_rows),
         "activation_rows": len(activation_rows),
-        "sample_evidence_rows": len(SAMPLE_EVIDENCE),
+        "sample_evidence_rows": len(evidence_rows),
         "overlay_rows": len(overlay_rows),
         "outputs": [
             "process_evidence_schema_v1_1.md",
@@ -478,9 +504,9 @@ def main():
         "runtime_integration": RUNTIME_INTEGRATION,
         "runtime_status_allowed": [RUNTIME_STATUS],
         "expected_counts": {
-            "process_triggers": len(PROCESS_TRIGGERS),
+            "process_triggers": len(trigger_rows),
             "activation_rows": len(activation_rows),
-            "sample_evidence_rows": len(SAMPLE_EVIDENCE),
+            "sample_evidence_rows": len(evidence_rows),
             "overlay_rows": len(overlay_rows),
         },
         "hard_gates": [
@@ -490,6 +516,9 @@ def main():
             "no_auto_deduct",
             "all_evidence_has_source_excerpt",
             "all_overlay_requires_site_verification_or_explicit_status",
+            "not_apply_overlay_must_declare_process_only_scope",
+            "no_enterprise_scenario_confirmed_and_not_apply_conflict_without_scope",
+            "all_tables_carry_runtime_boundary_fields",
         ],
     }
     write_json(ROOT / "process_evidence_gate_report_v1_1.json", gate_report)
@@ -497,10 +526,13 @@ def main():
         "# process_evidence_gate_report_v1_1\n\n"
         f"final_state: `{FINAL_STATE}`\n\n"
         "- runtime_integration: disabled\n"
-        f"- process_triggers: {len(PROCESS_TRIGGERS)}\n"
+        f"- process_triggers: {len(trigger_rows)}\n"
         f"- activation_rows: {len(activation_rows)}\n"
-        f"- sample_evidence_rows: {len(SAMPLE_EVIDENCE)}\n"
+        f"- sample_evidence_rows: {len(evidence_rows)}\n"
         f"- overlay_rows: {len(overlay_rows)}\n"
+        "- not_apply_scope_gate: PROCESS_ONLY required for process negation.\n"
+        "- conflict_gate: same enterprise + scenario confirmed/not_apply requires explicit process-only scope.\n"
+        "- boundary_fields_gate: runtime_status/final_state/runtime_integration are row-level fields.\n"
         "- hard boundary: candidate process evidence only; no EcoCheck runtime effect.\n",
         encoding="utf-8",
     )
@@ -513,6 +545,8 @@ def main():
         "- 建立 10 类工序触发词典：喷涂/涂装、电镀/酸洗、发酵/蒸馏、印刷/粘合、锅炉燃烧、污水处理站、医疗废水/医废/辐射、实验室废液、尾矿库、垃圾焚烧/填埋。\n"
         "- 生成 34 条工序到产污场景的候选激活关系，场景仍是知识本体，行业代码只做召回入口。\n"
         "- 生成 6 条环评/现场证据谓词样例和 16 条企业画像 overlay 样例，展示“环评能确认工序，工序能确认或排除场景候选”的闭环。\n"
+        "- 修正否定证据作用域：`NOT_APPLY_WITH_EVIDENCE` 默认只排除对应工序触发，不能排除同企业因其他工序确认的同一场景。\n"
+        "- 补齐行级边界字段：trigger、activation、evidence、overlay 均带 `runtime_status`、`final_state`、`runtime_integration`。\n"
         "- 新增工序证据层图谱/RAG 设计，要求 chunk 和边都保留 `source_basis`、`confidence`、`runtime_status`、`final_state`、`open_question_refs`、`risk_refs`。\n\n"
         "## 验证\n\n"
         "```powershell\n"
@@ -530,9 +564,9 @@ def main():
     )
     print(json.dumps({
         "final_state": FINAL_STATE,
-        "process_triggers": len(PROCESS_TRIGGERS),
+        "process_triggers": len(trigger_rows),
         "activation_rows": len(activation_rows),
-        "sample_evidence_rows": len(SAMPLE_EVIDENCE),
+        "sample_evidence_rows": len(evidence_rows),
         "overlay_rows": len(overlay_rows),
     }, ensure_ascii=False, indent=2))
 

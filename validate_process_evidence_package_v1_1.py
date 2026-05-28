@@ -95,6 +95,8 @@ def main():
                 fail(failures, "process_trigger_dictionary_v1_1.csv", f"missing_{field}", pid)
         if row.get("runtime_status") != RUNTIME_STATUS:
             fail(failures, "process_trigger_dictionary_v1_1.csv", "bad_runtime_status", pid)
+        if row.get("final_state") != FINAL_STATE or row.get("runtime_integration") != RUNTIME_INTEGRATION:
+            fail(failures, "process_trigger_dictionary_v1_1.csv", "bad_runtime_boundary", pid)
 
     allowed_new_scenarios = {
         "NEW_SCN_LAB_WASTE_CANDIDATE",
@@ -108,7 +110,11 @@ def main():
         sid = row.get("scenario_id")
         if sid not in scenarios and sid not in allowed_new_scenarios:
             fail(failures, "process_to_scenario_activation_v1_1.csv", "dangling_scenario_id", aid)
-        if row.get("runtime_status") != RUNTIME_STATUS or row.get("final_state") != FINAL_STATE:
+        if (
+            row.get("runtime_status") != RUNTIME_STATUS
+            or row.get("final_state") != FINAL_STATE
+            or row.get("runtime_integration") != RUNTIME_INTEGRATION
+        ):
             fail(failures, "process_to_scenario_activation_v1_1.csv", "bad_boundary", aid)
         for field in ["activation_condition", "confirmation_questions", "photo_points"]:
             if not row.get(field, "").strip():
@@ -128,6 +134,8 @@ def main():
             fail(failures, "process_evidence_predicates_samples_v1_1.csv", "missing_confirmation_questions", eid)
         if row.get("runtime_status") != RUNTIME_STATUS:
             fail(failures, "process_evidence_predicates_samples_v1_1.csv", "bad_runtime_status", eid)
+        if row.get("final_state") != FINAL_STATE or row.get("runtime_integration") != RUNTIME_INTEGRATION:
+            fail(failures, "process_evidence_predicates_samples_v1_1.csv", "bad_runtime_boundary", eid)
         if row.get("evidence_strength") == "NEGATED":
             text = row.get("source_excerpt", "")
             if not any(token in text for token in ["不设置", "无", "外协", "不产生"]):
@@ -139,18 +147,43 @@ def main():
         "NEW_SCENARIO_CANDIDATE",
         "SITE_CONFLICT_NEEDS_REVIEW",
     }
+    allowed_overlay_scope = {"PROCESS_ONLY", "SCENARIO_WIDE"}
+    overlay_groups = {}
     for row in overlays:
         oid = row.get("overlay_id", "")
+        overlay_groups.setdefault((row.get("enterprise_id"), row.get("scenario_id")), []).append(row)
         if row.get("evidence_id") not in evidence_ids:
             fail(failures, "enterprise_profile_overlay_samples_v1_1.csv", "dangling_evidence_id", oid)
         if row.get("overlay_status") not in allowed_overlay_status:
             fail(failures, "enterprise_profile_overlay_samples_v1_1.csv", "bad_overlay_status", oid)
+        if row.get("overlay_scope") not in allowed_overlay_scope:
+            fail(failures, "enterprise_profile_overlay_samples_v1_1.csv", "bad_overlay_scope", oid)
+        if not row.get("overlay_scope_reason", "").strip():
+            fail(failures, "enterprise_profile_overlay_samples_v1_1.csv", "missing_overlay_scope_reason", oid)
         if row.get("permit_type_status") != "NEED_PERMIT_CONFIRM":
             fail(failures, "enterprise_profile_overlay_samples_v1_1.csv", "permit_type_not_blocked", oid)
-        if row.get("runtime_status") != RUNTIME_STATUS or row.get("runtime_integration") != RUNTIME_INTEGRATION:
+        if (
+            row.get("runtime_status") != RUNTIME_STATUS
+            or row.get("final_state") != FINAL_STATE
+            or row.get("runtime_integration") != RUNTIME_INTEGRATION
+        ):
             fail(failures, "enterprise_profile_overlay_samples_v1_1.csv", "bad_runtime_boundary", oid)
         if row.get("overlay_status") == "SCENARIO_EVIDENCE_CONFIRMED" and row.get("site_verification_status") != "SITE_VERIFICATION_REQUIRED":
             fail(failures, "enterprise_profile_overlay_samples_v1_1.csv", "confirmed_without_site_verification", oid)
+        if row.get("overlay_status") == "NOT_APPLY_WITH_EVIDENCE" and row.get("overlay_scope") != "PROCESS_ONLY":
+            fail(failures, "enterprise_profile_overlay_samples_v1_1.csv", "not_apply_without_process_scope", oid)
+
+    for (enterprise_id, scenario_id), rows in overlay_groups.items():
+        confirmed = [row for row in rows if row.get("overlay_status") == "SCENARIO_EVIDENCE_CONFIRMED"]
+        not_apply = [row for row in rows if row.get("overlay_status") == "NOT_APPLY_WITH_EVIDENCE"]
+        if confirmed and not_apply:
+            confirmed_processes = {row.get("process_id") for row in confirmed}
+            for row in not_apply:
+                row_key = f"{enterprise_id}|{scenario_id}|{row.get('overlay_id')}"
+                if row.get("overlay_scope") != "PROCESS_ONLY":
+                    fail(failures, "enterprise_profile_overlay_samples_v1_1.csv", "scenario_conflict_without_scope", row_key)
+                if row.get("process_id") in confirmed_processes:
+                    fail(failures, "enterprise_profile_overlay_samples_v1_1.csv", "same_process_confirmed_and_not_apply", row_key)
 
     forbidden_claims = [
         "runtime_integration: enabled",

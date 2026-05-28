@@ -22,11 +22,13 @@ v1.1 introduces a process/evidence layer between industry-code recall and enterp
 - `process_id`, `process_name`, `aliases`, `positive_keywords`, `negative_keywords`.
 - `evidence_id`, `enterprise_id`, `industry_code`, `evidence_strength`, `source_document_type`, `source_excerpt`.
 - `linked_scenario_ids`, `linked_permit_entry_nos`, `confirmation_questions`, `photo_points`.
+- `overlay_scope`: `PROCESS_ONLY` means the evidence only includes/excludes one process trigger; `SCENARIO_WIDE` means the evidence supports a scenario-level candidate.
 - `runtime_status`, `final_state`, `runtime_integration`.
 
 ## Evidence Rules
 
 - DIRECT evidence can activate a scenario but still requires site verification.
 - NEGATED evidence can support `NOT_APPLY_WITH_EVIDENCE` only when the source excerpt explicitly excludes the process.
+- NEGATED process evidence must use `overlay_scope=PROCESS_ONLY` unless it explicitly excludes the entire scenario/risk unit.
 - IMPLIED evidence cannot upgrade to `APPLIES` without ETO/ESO review.
 - UNKNOWN remains a question, not a negative conclusion.
