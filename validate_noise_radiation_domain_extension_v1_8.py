@@ -1,4 +1,5 @@
 import csv
+import hashlib
 import json
 from pathlib import Path
 
@@ -50,6 +51,14 @@ RADIATION_PROCESS_IDS = {
     "nuclear_fuel_effluent_decommissioning",
     "building_material_slag_radionuclide",
 }
+
+PROCESS_BACKFILL_SCENARIOS = {
+    "NEW_SCN_LAB_WASTE_CANDIDATE",
+    "NEW_SCN_TAILINGS_CANDIDATE",
+    "NEW_SCN_WASTE_DISPOSAL_CANDIDATE",
+}
+
+FORBIDDEN_SINGLE_TOKEN_KEYWORDS = {"核", "铀", "钍"}
 
 
 def read_csv(path):
@@ -136,6 +145,17 @@ def main():
         if row.get("runtime_status") != RUNTIME_STATUS or row.get("final_state") != FINAL_STATE or row.get("runtime_integration") != RUNTIME_INTEGRATION:
             fail(failures, "scenario_templates.json", "bad_runtime_boundary", sid)
 
+    for sid in sorted(PROCESS_BACKFILL_SCENARIOS):
+        row = scenario_by_id.get(sid)
+        if not row:
+            fail(failures, "scenario_templates.json", "missing_process_backfill_scenario", sid)
+            continue
+        for field in ["triggers", "not_applicable_conditions", "confirmation_questions", "evidence_requirements", "photo_points", "related_regulations"]:
+            if not row.get(field):
+                fail(failures, "scenario_templates.json", f"missing_{field}", sid)
+        if row.get("runtime_status") != RUNTIME_STATUS or row.get("final_state") != FINAL_STATE or row.get("runtime_integration") != RUNTIME_INTEGRATION:
+            fail(failures, "scenario_templates.json", "bad_runtime_boundary", sid)
+
     score_ids = {row.get("scenario_id") for row in score_rows}
     for sid in NOISE_SCENARIOS | RADIATION_SCENARIOS:
         if sid not in score_ids:
@@ -168,6 +188,13 @@ def main():
                 fail(failures, "process_trigger_dictionary_v1_1.csv", f"missing_{field}", pid)
         if pid in RADIATION_PROCESS_IDS and "核;" in row.get("positive_keywords", ""):
             fail(failures, "process_trigger_dictionary_v1_1.csv", "bare_nuclear_keyword_forbidden", pid)
+        if pid in RADIATION_PROCESS_IDS and not row.get("linked_permit_entry_nos", "").strip():
+            fail(failures, "process_trigger_dictionary_v1_1.csv", "missing_radiation_permit_or_license_link", pid)
+        if pid in RADIATION_PROCESS_IDS:
+            tokens = set(split_items(row.get("positive_keywords", "")))
+            forbidden = sorted(tokens & FORBIDDEN_SINGLE_TOKEN_KEYWORDS)
+            if forbidden:
+                fail(failures, "process_trigger_dictionary_v1_1.csv", f"forbidden_single_token_keywords:{';'.join(forbidden)}", pid)
 
     activation_sids = {row.get("scenario_id") for row in activation_rows}
     for sid in NOISE_SCENARIOS | RADIATION_SCENARIOS:
@@ -183,6 +210,13 @@ def main():
             for field in ["activation_condition", "negative_condition", "evidence_chain", "photo_points"]:
                 if not row.get(field, "").strip():
                     fail(failures, "process_scenario_activation_rules_v1_3.csv", f"missing_{field}", row.get("rule_id", ""))
+        if sid and sid not in scenario_by_id:
+            fail(failures, "process_scenario_activation_rules_v1_3.csv", "dangling_scenario_reference", row.get("rule_id", ""))
+        if sid in scenario_by_id:
+            evidence_chain = set(split_items(row.get("evidence_chain", "")))
+            evidence_requirements = set(scenario_by_id[sid].get("evidence_requirements", []))
+            if evidence_chain and evidence_requirements and evidence_chain.isdisjoint(evidence_requirements):
+                fail(failures, "process_scenario_activation_rules_v1_3.csv", "evidence_chain_not_aligned_with_template", row.get("rule_id", ""))
 
     noise_sources = [row for row in source_rows if row.get("domain") == "noise"]
     radiation_sources = [row for row in source_rows if row.get("domain") != "noise"]
@@ -190,12 +224,26 @@ def main():
         fail(failures, "noise_radiation_reference_sources_v1_8.csv", "too_few_noise_sources", str(len(noise_sources)))
     if len(radiation_sources) < 20:
         fail(failures, "noise_radiation_reference_sources_v1_8.csv", "too_few_radiation_sources", str(len(radiation_sources)))
+    seen_paths = set()
+    seen_hashes = {}
     for row in source_rows:
         source_id = row.get("source_id", "")
         if row.get("runtime_status") != RUNTIME_STATUS or row.get("final_state") != FINAL_STATE or row.get("runtime_integration") != RUNTIME_INTEGRATION:
             fail(failures, "noise_radiation_reference_sources_v1_8.csv", "bad_boundary", source_id)
-        if not Path(ROOT / row.get("file_path", "")).exists():
+        source_path = Path(ROOT / row.get("file_path", ""))
+        if not source_path.exists():
             fail(failures, "noise_radiation_reference_sources_v1_8.csv", "missing_source_file", source_id)
+        else:
+            content_md5 = hashlib.md5(source_path.read_bytes()).hexdigest().upper()
+            if row.get("content_md5") and row.get("content_md5") != content_md5:
+                fail(failures, "noise_radiation_reference_sources_v1_8.csv", "content_md5_mismatch", source_id)
+            if content_md5 in seen_hashes:
+                fail(failures, "noise_radiation_reference_sources_v1_8.csv", "duplicate_source_content_md5", f"{seen_hashes[content_md5]}|{source_id}")
+            seen_hashes[content_md5] = source_id
+        file_path = row.get("file_path", "")
+        if file_path in seen_paths:
+            fail(failures, "noise_radiation_reference_sources_v1_8.csv", "duplicate_source_path", source_id)
+        seen_paths.add(file_path)
         if not row.get("applicable_scenario_ids", "").strip():
             fail(failures, "noise_radiation_reference_sources_v1_8.csv", "missing_applicable_scenarios", source_id)
 
@@ -219,6 +267,7 @@ def main():
             "radiation_scenarios": len(RADIATION_SCENARIOS),
             "noise_sources": len(noise_sources),
             "radiation_sources": len(radiation_sources),
+            "process_backfill_scenarios": len(PROCESS_BACKFILL_SCENARIOS),
             "new_process_triggers": len(NOISE_PROCESS_IDS | RADIATION_PROCESS_IDS),
         },
         "failure_samples": failures[:50],

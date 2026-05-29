@@ -1,4 +1,5 @@
 import csv
+import hashlib
 import json
 from pathlib import Path
 
@@ -703,6 +704,148 @@ RADIATION_SCENARIOS = [
     },
 ]
 
+PROCESS_BACKFILL_SCENARIOS = [
+    {
+        "scenario_id": "NEW_SCN_LAB_WASTE_CANDIDATE",
+        "scenario_name": "实验室废液与检测试剂危废候选场景",
+        "aliases": ["实验室废液", "检测试剂", "废试剂瓶", "实验废物", "化验室危废"],
+        "tags_24": ["hazardous_waste", "laboratory", "chemical_storage", "emergency_materials", "ledger_record"],
+        "media_type": "solid_waste",
+        "facility_or_risk_unit": "实验室操作台、试剂柜、废液收集桶、危废暂存间、应急吸附物资",
+        "triggers": [
+            "环评、许可、台账或现场确认存在实验室、化验室、检测试剂或样品前处理工序",
+            "产生废试剂、实验废液、废试剂瓶、样品前处理残液或相关危废台账记录",
+            "检测实验室、研发实验室或企业自检实验室存在废液分类收集和危废暂存要求",
+        ],
+        "not_applicable_conditions": [
+            "检测全部外协且现场无实验室、无试剂柜、无废液收集容器",
+            "仅普通办公质检留样且无化学试剂、无实验废液、无危废代码证据",
+        ],
+        "confirmation_questions": [
+            "现场是否设置实验室或化验室，是否涉及样品前处理和化学试剂使用？",
+            "实验废液、废试剂瓶是否分类收集，标签、危废代码和去向是否完整？",
+            "危废暂存间、应急吸附物资和台账是否与实验室废液产生量匹配？",
+        ],
+        "evidence_requirements": [
+            "实验室平面图或环评实验室章节",
+            "试剂清单和废液产生记录",
+            "废液收集桶标签和危废代码",
+            "危废台账、合同、转移联单或去向证明",
+            "应急吸附物资和泄漏处置记录",
+        ],
+        "photo_points": [
+            "实验室操作台和试剂柜",
+            "废液桶标签和分类收集区域",
+            "危废暂存间实验废液分区",
+            "危废台账或转移联单关键页",
+            "应急吸附物资",
+        ],
+        "related_regulations": [
+            "危险废物贮存污染控制标准",
+            "国家危险废物名录",
+        ],
+        "domain": "process_evidence_backfill",
+        "extension_version": VERSION,
+        "confidence": "MEDIUM",
+        "runtime_status": RUNTIME_STATUS,
+        "final_state": FINAL_STATE,
+        "runtime_integration": RUNTIME_INTEGRATION,
+    },
+    {
+        "scenario_id": "NEW_SCN_TAILINGS_CANDIDATE",
+        "scenario_name": "尾矿库、尾矿输送与回水渗滤液候选场景",
+        "aliases": ["尾矿库", "尾矿坝", "回水池", "渗滤液", "排洪系统"],
+        "tags_24": ["tailings_storage", "wastewater", "soil_groundwater", "emergency", "site_environment"],
+        "media_type": "water_solid_waste_risk",
+        "facility_or_risk_unit": "尾矿库、尾矿坝、排洪系统、回水池、渗滤液收集处理、下游敏感点",
+        "triggers": [
+            "环评、安全评价、许可或现场资料确认存在尾矿库、尾矿坝、尾矿输送或回水系统",
+            "存在尾矿渗滤液、回水池、排洪构筑物、在线监测或库区巡检记录",
+            "矿山、选矿或冶炼配套尾矿贮存设施需要与水、固废、应急风险联合确认",
+        ],
+        "not_applicable_conditions": [
+            "企业无尾矿库且尾矿全部外运处置，并有合同、台账和去向证明",
+            "仅普通原料堆场或一般固废堆场，无法证明存在尾矿坝、库区或回水系统",
+        ],
+        "confirmation_questions": [
+            "是否存在尾矿库、尾矿坝、排洪系统或回水池，是否与环评/安全评价一致？",
+            "尾矿渗滤液、回水和事故水如何收集、处理和监测？",
+            "库区巡检、应急预案、下游敏感点和历史整改是否完整留痕？",
+        ],
+        "evidence_requirements": [
+            "尾矿库环评章节或安全评价文件",
+            "库区平面图和尾矿输送/回水工艺说明",
+            "回水、渗滤液处理和监测记录",
+            "尾矿库巡检、隐患整改和应急预案",
+            "外运处置合同和台账（如无库区）",
+        ],
+        "photo_points": [
+            "尾矿坝和库区边界",
+            "排洪系统和回水池",
+            "渗滤液收集或处理设施",
+            "在线监测或巡检记录关键页",
+            "下游敏感方向和应急物资",
+        ],
+        "related_regulations": [
+            "尾矿库环境监管相关规范",
+            "突发环境事件应急管理要求",
+        ],
+        "domain": "process_evidence_backfill",
+        "extension_version": VERSION,
+        "confidence": "MEDIUM",
+        "runtime_status": RUNTIME_STATUS,
+        "final_state": FINAL_STATE,
+        "runtime_integration": RUNTIME_INTEGRATION,
+    },
+    {
+        "scenario_id": "NEW_SCN_WASTE_DISPOSAL_CANDIDATE",
+        "scenario_name": "垃圾焚烧、填埋与渗滤液飞灰候选场景",
+        "aliases": ["垃圾焚烧", "生活垃圾填埋", "渗滤液", "烟气净化", "飞灰"],
+        "tags_24": ["waste_disposal", "wastewater", "organized_exhaust", "hazardous_waste", "online_monitoring"],
+        "media_type": "wastewater_exhaust_solid_waste",
+        "facility_or_risk_unit": "焚烧炉、填埋作业区、烟气净化设施、渗滤液处理站、飞灰暂存和在线监测站房",
+        "triggers": [
+            "环评、许可、台账或现场确认存在垃圾焚烧、生活垃圾填埋、渗滤液处理或飞灰暂存",
+            "存在烟气净化、渗滤液处理、飞灰危废去向、炉渣管理或在线监测要求",
+            "固废处置设施涉及废气、废水、固废和应急多个风险单元，需要按场景组合确认",
+        ],
+        "not_applicable_conditions": [
+            "仅生活垃圾转运站且无焚烧、填埋、渗滤液处理和飞灰暂存设施",
+            "仅一般工业固废暂存或外运，无法证明存在垃圾处置主体设施",
+        ],
+        "confirmation_questions": [
+            "企业是否实际从事垃圾焚烧、填埋或渗滤液处理，设施边界如何确定？",
+            "烟气净化、渗滤液处理、飞灰暂存和在线监测是否运行并留痕？",
+            "飞灰、炉渣、渗滤液污泥等去向、危废属性和转移记录是否完整？",
+        ],
+        "evidence_requirements": [
+            "环评处置工艺和排污许可副本",
+            "烟气净化设施运行记录",
+            "渗滤液处理站运行和监测记录",
+            "飞灰危废去向、合同和转移联单",
+            "在线监测联网、运维和异常记录",
+        ],
+        "photo_points": [
+            "焚烧炉或填埋作业区",
+            "烟气净化设施和排气筒",
+            "渗滤液处理站",
+            "飞灰暂存间和标签",
+            "在线监测站房和数据记录关键页",
+        ],
+        "related_regulations": [
+            "生活垃圾焚烧污染控制标准",
+            "生活垃圾填埋场污染控制标准",
+            "危险废物管理相关要求",
+        ],
+        "domain": "process_evidence_backfill",
+        "extension_version": VERSION,
+        "confidence": "MEDIUM",
+        "runtime_status": RUNTIME_STATUS,
+        "final_state": FINAL_STATE,
+        "runtime_integration": RUNTIME_INTEGRATION,
+    },
+]
+
 
 PROCESS_TRIGGERS = [
     {
@@ -713,7 +856,7 @@ PROCESS_TRIGGERS = [
         "negative_keywords": "无噪声源;仅办公;无生产设备;设备停用;无夜间生产",
         "source_document_types": "EIA;APPROVAL;PERMIT;LEDGER;SITE;MONITORING",
         "linked_scenario_ids": "SCN_NOISE_SOURCE_BOUNDARY_CONTROL",
-        "linked_permit_entry_nos": "109;110;112",
+        "linked_permit_entry_nos": "HJ1301_INDUSTRIAL_NOISE_PERMIT_SPEC;NEED_CONFIRM",
         "evidence_requirements": "环评噪声章节；工业噪声许可要求；设备清单；厂界噪声监测报告；隔声减振维护记录",
         "photo_points": "高噪声设备及铭牌；隔声减振措施；厂界监测点；周边敏感点方向；监测报告关键页",
         "site_verification_required": "true",
@@ -727,7 +870,7 @@ PROCESS_TRIGGERS = [
         "negative_keywords": "无监测要求;无需厂界监测;仅现场初筛;社会生活噪声",
         "source_document_types": "PERMIT;EIA;MONITORING;LEDGER",
         "linked_scenario_ids": "SCN_NOISE_BOUNDARY_MONITORING_LEDGER",
-        "linked_permit_entry_nos": "",
+        "linked_permit_entry_nos": "HJ1301_INDUSTRIAL_NOISE_PERMIT_SPEC;NEED_CONFIRM",
         "evidence_requirements": "自行监测方案；厂界噪声监测报告；监测点位图；执行标准说明；超标整改记录",
         "photo_points": "厂界监测点位；监测点位示意图；监测报告关键页；厂界四至",
         "site_verification_required": "true",
@@ -741,7 +884,7 @@ PROCESS_TRIGGERS = [
         "negative_keywords": "无夜间生产;远离敏感点;无投诉;昼间单班",
         "source_document_types": "EIA;SITE;LEDGER;MONITORING;COMPLAINT",
         "linked_scenario_ids": "SCN_NOISE_SENSITIVE_RECEPTOR_NIGHT_OPERATION",
-        "linked_permit_entry_nos": "",
+        "linked_permit_entry_nos": "EIA_NOISE_SENSITIVE_RECEPTOR;NEED_SITE_CONFIRM",
         "evidence_requirements": "生产班次记录；敏感点位置图；投诉/整改记录；夜间监测报告；限时运行证明",
         "photo_points": "厂界到敏感点方向；夜间运行设备；隔声屏障；投诉整改记录关键页",
         "site_verification_required": "true",
@@ -755,7 +898,7 @@ PROCESS_TRIGGERS = [
         "negative_keywords": "无扩声;无外机;无夜间经营;设备拆除;非经营场所",
         "source_document_types": "SITE;LEDGER;MONITORING;COMPLAINT",
         "linked_scenario_ids": "SCN_SOCIAL_LIFE_NOISE_SOURCE",
-        "linked_permit_entry_nos": "",
+        "linked_permit_entry_nos": "GB22337_SOCIAL_LIFE_NOISE;NEED_SITE_CONFIRM",
         "evidence_requirements": "经营设备清单；噪声投诉或整改记录；监测记录；降噪措施证明",
         "photo_points": "扩声设备/外机/冷却塔；降噪设施；场界与敏感点方向；投诉整改台账",
         "site_verification_required": "true",
@@ -765,11 +908,11 @@ PROCESS_TRIGGERS = [
         "process_id": "radiation_device_source",
         "process_name": "射线装置/核技术利用",
         "aliases": "射线装置;DR;CT;工业探伤;核技术利用;辐射安全许可",
-        "positive_keywords": "射线装置;DR;CT;牙片机;工业探伤;辐照;核技术利用;辐射安全许可证;放射诊疗",
+        "positive_keywords": "射线装置;DR;CT;牙片机;工业探伤;辐照装置;核技术利用单位;核技术应用项目;辐射安全许可证;放射诊疗许可证",
         "negative_keywords": "无射线装置;无放射源;全部外协;设备已拆除;许可注销",
         "source_document_types": "PERMIT;EIA;APPROVAL;LEDGER;SITE",
         "linked_scenario_ids": "SCN_RADIATION_DEVICE_SOURCE_SAFETY",
-        "linked_permit_entry_nos": "",
+        "linked_permit_entry_nos": "RADIATION_SAFETY_LICENSE;NUCLEAR_TECH_UTILIZATION;NEED_PERMIT_CONFIRM",
         "evidence_requirements": "辐射安全许可证；射线装置台账；防护检测报告；人员培训和个人剂量记录",
         "photo_points": "机房入口警示标识；设备铭牌；防护门/联锁/警示灯；个人剂量计或检测报告关键页",
         "site_verification_required": "true",
@@ -783,7 +926,7 @@ PROCESS_TRIGGERS = [
         "negative_keywords": "无放射源;非含源设备;已送贮;已退役;已转让",
         "source_document_types": "PERMIT;LEDGER;SITE;TRANSFER",
         "linked_scenario_ids": "SCN_RADIOACTIVE_SOURCE_SECURITY;SCN_RADIOACTIVE_WASTE_STORAGE_TRANSFER_DISPOSAL",
-        "linked_permit_entry_nos": "",
+        "linked_permit_entry_nos": "RADIATION_SAFETY_LICENSE;RADIOACTIVE_SOURCE_ACCOUNT;NEED_PERMIT_CONFIRM",
         "evidence_requirements": "辐射安全许可证；放射源台账；盘点记录；安防设施；送贮/退役证明",
         "photo_points": "源库警示标识；门禁监控；放射源台账；送贮或退役证明关键页",
         "site_verification_required": "true",
@@ -797,7 +940,7 @@ PROCESS_TRIGGERS = [
         "negative_keywords": "无放射性废物;仅一般危废;仅医废;无源项",
         "source_document_types": "PERMIT;LEDGER;SITE;MONITORING;TRANSFER",
         "linked_scenario_ids": "SCN_RADIOACTIVE_WASTE_STORAGE_TRANSFER_DISPOSAL",
-        "linked_permit_entry_nos": "",
+        "linked_permit_entry_nos": "RADIATION_SAFETY_LICENSE;RADIOACTIVE_WASTE_STORAGE_LICENSE;NEED_PERMIT_CONFIRM",
         "evidence_requirements": "放射性废物台账；废物包/容器资料；废物库运行记录；转移/处置证明；监测记录",
         "photo_points": "废物库警示标识；废物包标签；监测记录；转移/处置证明关键页",
         "site_verification_required": "true",
@@ -811,7 +954,7 @@ PROCESS_TRIGGERS = [
         "negative_keywords": "普通危废包装;医废周转箱;一般固废打包;无放射性废物包装",
         "source_document_types": "PERMIT;LEDGER;SITE;MONITORING;TRANSFER",
         "linked_scenario_ids": "SCN_RAD_WASTE_PACKAGE_SOLIDIFICATION_CONTAINER",
-        "linked_permit_entry_nos": "",
+        "linked_permit_entry_nos": "RADIATION_SAFETY_LICENSE;RADIOACTIVE_WASTE_PACKAGE_ACCEPTANCE;NEED_PERMIT_CONFIRM",
         "evidence_requirements": "废物包编号；固化体检测；容器合格证明；核素/活度记录；交接单",
         "photo_points": "废物包标签；容器铭牌；检测报告关键页；暂存分区标识",
         "site_verification_required": "true",
@@ -825,7 +968,7 @@ PROCESS_TRIGGERS = [
         "negative_keywords": "普通填埋场;危废填埋;生活垃圾填埋;无放射性处置",
         "source_document_types": "PERMIT;EIA;APPROVAL;LEDGER;SITE;MONITORING",
         "linked_scenario_ids": "SCN_RAD_WASTE_DISPOSAL_FACILITY",
-        "linked_permit_entry_nos": "",
+        "linked_permit_entry_nos": "RADIOACTIVE_WASTE_DISPOSAL_LICENSE;EIA_APPROVAL;NEED_PERMIT_CONFIRM",
         "evidence_requirements": "处置许可证；选址/设计/建造文件；环境影响报告书；接收台账；监测井记录",
         "photo_points": "处置设施边界标识；接收/暂存区；监测井；渗漏控制设施",
         "site_verification_required": "true",
@@ -839,7 +982,7 @@ PROCESS_TRIGGERS = [
         "negative_keywords": "不运输放射性物品;普通货物运输;仅危化品;无运输容器",
         "source_document_types": "PERMIT;LEDGER;SITE;TRANSPORT",
         "linked_scenario_ids": "SCN_RADIOACTIVE_MATERIAL_TRANSPORT",
-        "linked_permit_entry_nos": "",
+        "linked_permit_entry_nos": "RADIOACTIVE_MATERIAL_TRANSPORT_LICENSE;NEED_PERMIT_CONFIRM",
         "evidence_requirements": "运输许可；运输容器合格证明；托运/承运记录；车辆和人员培训；应急方案",
         "photo_points": "运输容器标识；车辆和栓系装置；运输许可；应急物资",
         "site_verification_required": "true",
@@ -849,11 +992,11 @@ PROCESS_TRIGGERS = [
         "process_id": "norm_industrial_residue_radioactivity",
         "process_name": "含天然放射性工业废渣/建材放射性",
         "aliases": "NORM;天然放射性;工业废渣放射性;建材放射性;铀钍矿冶",
-        "positive_keywords": "铀;钍;天然放射性;工业废渣;建材放射性;矿冶废物;退役场址;残留放射性",
-        "negative_keywords": "无含天然放射性物料;普通一般固废;无矿冶活动;无废渣利用",
+        "positive_keywords": "含铀物料;含钍物料;铀钍矿冶;天然放射性物料;工业废渣放射性;建材放射性检测;矿冶放射性废物;退役场址残留放射性",
+        "negative_keywords": "无含天然放射性物料;普通一般固废;无矿冶活动;无工业废渣利用;仅普通建材原料",
         "source_document_types": "EIA;APPROVAL;LEDGER;SITE;MONITORING",
         "linked_scenario_ids": "SCN_NORM_RADIOACTIVITY_IN_INDUSTRIAL_RESIDUE",
-        "linked_permit_entry_nos": "",
+        "linked_permit_entry_nos": "EIA_NORM_RADIOACTIVITY_CONFIRM;RADIATION_MONITORING_CONFIRM;NEED_EIA_CONFIRM",
         "evidence_requirements": "原料/废渣检测报告；废渣利用/外售台账；矿冶废物管理资料；场址监测记录",
         "photo_points": "废渣堆场；检测报告关键页；废渣外售台账；场址监测点位",
         "site_verification_required": "true",
@@ -863,11 +1006,11 @@ PROCESS_TRIGGERS = [
         "process_id": "uranium_thorium_mining_rad_waste",
         "process_name": "铀钍矿冶放射性废物",
         "aliases": "铀矿冶;钍矿冶;放射性金属矿;矿冶废物;尾矿放射性",
-        "positive_keywords": "铀矿;钍矿;放射性金属矿;矿冶废物;尾矿;废石;辐射环境监测",
+        "positive_keywords": "铀矿冶;钍矿冶;铀矿山;钍矿山;含铀尾矿;含钍尾矿;放射性金属矿;矿冶放射性废物;辐射环境监测",
         "negative_keywords": "普通有色矿;普通稀土矿;无铀钍;无放射性金属",
         "source_document_types": "EIA;APPROVAL;PERMIT;LEDGER;SITE;MONITORING",
         "linked_scenario_ids": "SCN_URANIUM_THORIUM_MINING_RAD_WASTE",
-        "linked_permit_entry_nos": "",
+        "linked_permit_entry_nos": "URANIUM_THORIUM_MINING_EIA;RADIATION_SAFETY_CONFIRM;NEED_EIA_CONFIRM",
         "evidence_requirements": "矿冶环评；废物管理方案；尾矿库资料；辐射环境监测报告；废物去向",
         "photo_points": "尾矿设施；废石场；监测点位；渗滤液处理设施；监测报告关键页",
         "site_verification_required": "true",
@@ -881,7 +1024,7 @@ PROCESS_TRIGGERS = [
         "negative_keywords": "普通燃料加工;普通化工退役;无核设施;无放射性流出物",
         "source_document_types": "EIA;APPROVAL;PERMIT;LEDGER;SITE;MONITORING",
         "linked_scenario_ids": "SCN_NUCLEAR_FUEL_EFFLUENT_DECOMMISSIONING",
-        "linked_permit_entry_nos": "",
+        "linked_permit_entry_nos": "NUCLEAR_FACILITY_LICENSE;RADIOACTIVE_EFFLUENT_MONITORING;NEED_PERMIT_CONFIRM",
         "evidence_requirements": "核设施许可或环评；流出物监测报告；退役方案；场址调查；监管批复",
         "photo_points": "排放/监测点标识；退役区域边界；土壤采样布点图；监测报告关键页",
         "site_verification_required": "true",
@@ -895,7 +1038,7 @@ PROCESS_TRIGGERS = [
         "negative_keywords": "无工业废渣;普通原料;无放射性检测要求;不使用废渣",
         "source_document_types": "EIA;APPROVAL;LEDGER;SITE;MONITORING",
         "linked_scenario_ids": "SCN_BUILDING_MATERIAL_SLAG_RADIONUCLIDE",
-        "linked_permit_entry_nos": "",
+        "linked_permit_entry_nos": "EIA_INDUSTRIAL_SLAG_RADIONUCLIDE_CONFIRM;PRODUCT_RADIONUCLIDE_TEST;NEED_EIA_CONFIRM",
         "evidence_requirements": "原料来源；放射性检测报告；配料批次台账；供应商证明；产品去向",
         "photo_points": "工业废渣原料堆场；检测报告关键页；配料记录；成品批次标识",
         "site_verification_required": "true",
@@ -905,6 +1048,9 @@ PROCESS_TRIGGERS = [
 
 
 ACTIVATION_RULES = [
+    ("RULE13_LAB_WASTE", "laboratory_waste_liquid", "NEW_SCN_LAB_WASTE_CANDIDATE", "实验室/化验室/检测试剂与实验废液或废试剂瓶证据命中", "委外检测;无实验室;不产生实验废液", "实验室平面图;试剂清单;废液桶标签;危废台账", "实验室操作台;试剂柜;废液桶标签;危废暂存间", "S07;S13;S09", "MEDIUM"),
+    ("RULE13_TAILINGS", "tailings_storage", "NEW_SCN_TAILINGS_CANDIDATE", "尾矿库、尾矿坝、回水池、渗滤液或排洪系统任一风险单元命中", "无尾矿库;尾矿直接外运且无库区", "尾矿库环评章节;安全评价;回水渗滤液处理;巡检记录", "尾矿坝;排洪系统;回水池;渗滤液收集点", "S13;S10;S04", "MEDIUM"),
+    ("RULE13_WASTE_DISPOSAL", "waste_incineration_landfill", "NEW_SCN_WASTE_DISPOSAL_CANDIDATE", "垃圾焚烧、填埋、烟气净化、渗滤液或飞灰暂存证据命中", "仅转运站且无焚烧填埋处置", "环评处置工艺;烟气净化;渗滤液处理;飞灰危废去向", "焚烧炉/填埋作业区;烟气净化设施;渗滤液站;飞灰暂存", "S10;S06;S07;S13", "MEDIUM"),
     ("RULE18_NOISE_INDUSTRIAL_BOUNDARY", "industrial_noise_source", "SCN_NOISE_SOURCE_BOUNDARY_CONTROL", "生产设备、动力设备或环评/许可噪声要求命中", "仅办公;无固定噪声源;设备停用", "设备清单;噪声章节;厂界监测报告;隔声减振记录", "高噪声设备;隔声减振设施;厂界监测点;敏感点方向", "S10;S04;S02", "HIGH"),
     ("RULE18_NOISE_BOUNDARY_MONITORING", "boundary_noise_monitoring", "SCN_NOISE_BOUNDARY_MONITORING_LEDGER", "排污许可、环评或自行监测方案要求厂界噪声监测", "无厂界监测要求;社会生活噪声另行判断", "自行监测方案;监测报告;点位图;执行标准", "厂界监测点;点位图;监测报告关键页", "S10;S02", "HIGH"),
     ("RULE18_NOISE_NIGHT_SENSITIVE", "night_operation_sensitive_receptor", "SCN_NOISE_SENSITIVE_RECEPTOR_NIGHT_OPERATION", "夜间生产、敏感点、投诉或夜间监测记录命中", "无夜间生产;远离敏感点;无投诉", "班次记录;敏感点位置图;投诉整改;夜间监测", "敏感点方向;夜间设备;隔声屏障;整改记录", "S10;S04;S11", "MEDIUM"),
@@ -921,8 +1067,21 @@ ACTIVATION_RULES = [
     ("RULE18_BUILDING_SLAG_RAD", "building_material_slag_radionuclide", "SCN_BUILDING_MATERIAL_SLAG_RADIONUCLIDE", "建材使用工业废渣且存在放射性检测或限制要求", "普通建材行业无废渣原料证据;无检测要求", "原料来源;放射性检测报告;配料台账;产品批次", "废渣堆场;检测报告;配料记录;成品批次", "S12;S07;S02", "MEDIUM"),
 ]
 
+LEGACY_EVIDENCE_ALIGN_RULE_IDS = {
+    "RULE13_SPRAYING_VOCS",
+    "RULE13_PICKLING_WASTEWATER",
+    "RULE13_PICKLING_CHEMICAL",
+    "RULE13_PRINTING_VOCS",
+    "RULE13_BOILER_EXHAUST",
+    "RULE13_WW_STATION_SLUDGE",
+    "RULE13_MEDICAL_WASTE",
+}
+
 
 INSPECTION_SECTIONS = {
+    "NEW_SCN_LAB_WASTE_CANDIDATE": ("KNOWLEDGE_HAZWASTE", "实验室废液与检测试剂危废候选"),
+    "NEW_SCN_TAILINGS_CANDIDATE": ("KNOWLEDGE_TAILINGS", "尾矿库、尾矿输送与回水渗滤液候选"),
+    "NEW_SCN_WASTE_DISPOSAL_CANDIDATE": ("KNOWLEDGE_WASTE_DISPOSAL", "垃圾焚烧、填埋与渗滤液飞灰候选"),
     "SCN_NOISE_SOURCE_BOUNDARY_CONTROL": ("KNOWLEDGE_NOISE", "工业企业噪声源与厂界噪声控制"),
     "SCN_NOISE_BOUNDARY_MONITORING_LEDGER": ("KNOWLEDGE_NOISE", "厂界噪声监测、执行标准与台账"),
     "SCN_NOISE_SENSITIVE_RECEPTOR_NIGHT_OPERATION": ("KNOWLEDGE_NOISE", "夜间生产、敏感点与噪声投诉风险"),
@@ -984,7 +1143,7 @@ def update_scenario_templates():
             successors = row.setdefault("successor_scenario_ids", [])
             if "SCN_RADIATION_DEVICE_SOURCE_SAFETY" not in successors:
                 successors.append("SCN_RADIATION_DEVICE_SOURCE_SAFETY")
-    upsert_by(rows, "scenario_id", NOISE_SCENARIOS + RADIATION_SCENARIOS)
+    upsert_by(rows, "scenario_id", PROCESS_BACKFILL_SCENARIOS + NOISE_SCENARIOS + RADIATION_SCENARIOS)
     write_json(path, rows)
 
 
@@ -998,13 +1157,16 @@ def score_rows_for(fields):
         "SCN_RADIATION_DEVICE_SOURCE_SAFETY": ("射线装置与核技术利用辐射安全", "S12", "S01;S02;S09;S13", "射线装置、核技术利用和辐射安全许可归S12，许可手续归S01，台账/剂量/检测归S02，警示标识归S09，应急归S13。", "S12需要二级语义 radiation_device/source/security_training/dose_monitoring。"),
         "SCN_RADIOACTIVE_SOURCE_SECURITY": ("放射源安全保卫、台账与退役去向", "S12", "S02;S09;S13", "放射源安全保卫和账物一致归S12，盘点和领用记录归S02，警示标识归S09，丢失/事故应急归S13。", "S12需要区分密封源、废旧源、源库安防和退役送贮。"),
         "SCN_RADIOACTIVE_WASTE_STORAGE_TRANSFER_DISPOSAL": ("放射性废物贮存、转移与处置", "S12", "S07;S02;S13", "放射性废物本体按辐射安全归S12，同时具有固废贮存/转移属性辅S07，台账归S02，应急归S13。", "S07不能替代放射性废物知识层，需保留 radioactive_waste 二级标签。"),
-        "SCN_RAD_WASTE_PACKAGE_SOLIDIFICATION_CONTAINER": ("放射性废物包、固化体与高完整性容器", "S12", "S07;S02", "废物包、固化体和容器安全归S12，包装贮存属性辅S07，检测/交接记录归S02。", "S12需补 waste_package、solidification、container_acceptance。"),
-        "SCN_RAD_WASTE_DISPOSAL_FACILITY": ("放射性废物处置设施与场址管理", "S12", "S13;S02;S04", "处置设施安全归S12，事故/渗漏/封场应急归S13，运行和监测台账归S02，场址边界和周边环境辅S04。", "S12需补 disposal_facility、site_monitoring、closure_management。"),
+        "SCN_RAD_WASTE_PACKAGE_SOLIDIFICATION_CONTAINER": ("放射性废物包、固化体与高完整性容器", "S12", "S07;S02", "废物包、固化体和容器安全归S12，包装贮存属性辅S07，检测/交接记录归S02。", "必须在知识层明确区分 radioactive_waste_package 与 general_solid_waste_package：前者依赖核素/活度、固化体性能、容器合格和辐射监测，不能被普通危废包装或一般固废打包语义替代。"),
+        "SCN_RAD_WASTE_DISPOSAL_FACILITY": ("放射性废物处置设施与场址管理", "S12", "S13;S02;S04", "处置设施安全归S12，事故/渗漏/封场应急归S13，运行和监测台账归S02，场址边界和周边环境辅S04。", "必须在知识层明确区分 radioactive_waste_disposal 与 general_solid_waste_landfill：前者牵涉放射性处置许可、场址长期监测、废物接收准则和封场安全，不能映射成普通填埋场。"),
         "SCN_RADIOACTIVE_MATERIAL_TRANSPORT": ("放射性物品运输与运输容器安全", "S12", "S02;S13;S09", "放射性物品运输和运输容器安全归S12，运输记录归S02，应急方案归S13，运输标识归S09。", "S12需补 transport_package/transport_license/transport_emergency。"),
         "SCN_NORM_RADIOACTIVITY_IN_INDUSTRIAL_RESIDUE": ("含天然放射性工业废渣与建材放射性控制", "S12", "S07;S10;S04;S02", "含天然放射性物料和工业废渣放射性控制归S12，废渣贮存归S07，释放/外排风险辅S10，场址和堆场辅S04，检测台账归S02。", "需把NORM/工业废渣放射性作为辐射与固废交叉二级语义。"),
-        "SCN_URANIUM_THORIUM_MINING_RAD_WASTE": ("铀钍矿冶放射性废物与尾矿风险", "S12", "S10;S04;S13;S02", "铀钍矿冶放射性安全归S12，尾矿/渗滤液/流出物影响辅S10，场址环境辅S04，应急和台账辅S13/S02。", "需区分普通矿山与放射性金属矿冶。"),
+        "SCN_URANIUM_THORIUM_MINING_RAD_WASTE": ("铀钍矿冶放射性废物与尾矿风险", "S12", "S10;S04;S13;S02", "铀钍矿冶放射性安全归S12，尾矿/渗滤液/流出物影响辅S10，场址环境辅S04，应急和台账辅S13/S02。", "需区分普通矿山尾矿与铀钍矿冶放射性废物：后者同时存在辐射环境监测、放射性废物管理、尾矿库环境风险和长期场址管控要求，不能仅按一般矿山固废或废水规则处理。"),
         "SCN_NUCLEAR_FUEL_EFFLUENT_DECOMMISSIONING": ("核燃料循环流出物与核设施退役场址", "S12", "S10;S04;S02", "核燃料循环和退役场址辐射安全归S12，流出物和土壤残留风险辅S10/S04，监测台账归S02。", "S12需补 nuclear_fuel_cycle、effluent、decommissioning_site。"),
         "SCN_BUILDING_MATERIAL_SLAG_RADIONUCLIDE": ("建材工业废渣放射性物质限制", "S12", "S07;S02", "工业废渣放射性控制归S12，废渣原料管理辅S07，检测和批次台账归S02。", "建材行业不得默认触发，应由工业废渣原料和检测证据触发。"),
+        "NEW_SCN_LAB_WASTE_CANDIDATE": ("实验室废液与检测试剂危废候选场景", "S07", "S02;S09;S13", "实验废液和废试剂瓶按危废贮存管理归S07，台账和转移去向归S02，标签标识归S09，泄漏和应急物资归S13。", "知识层需区分 laboratory_waste_liquid 与普通危废暂存，避免仅凭危废间照片遗漏实验室产生环节。"),
+        "NEW_SCN_TAILINGS_CANDIDATE": ("尾矿库、尾矿输送与回水渗滤液候选场景", "S13", "S10;S04;S02", "尾矿库溃坝、渗漏和事故水风险优先归S13，回水/渗滤液排放影响归S10，库区和下游敏感点归S04，巡检台账归S02。", "知识层需把 tailings_storage 作为独立风险单元，不能用一般固废堆场或废水站模板完全替代。"),
+        "NEW_SCN_WASTE_DISPOSAL_CANDIDATE": ("垃圾焚烧、填埋与渗滤液飞灰候选场景", "S10", "S06;S07;S02;S13", "垃圾焚烧烟气、渗滤液和排放监测归S10，治理设施运行归S06，飞灰和炉渣去向归S07，台账归S02，应急风险归S13。", "知识层需区分 waste_disposal_facility 与普通生产固废暂存，因其同时牵涉废气、废水、固废、在线监测和应急。"),
     }
     for sid, (name, primary, secondary, reason, gap) in specs.items():
         row = {field: "" for field in fields}
@@ -1037,7 +1199,7 @@ def update_inspection_candidates():
     path = artifact_path("inspection_candidate_recommendations_v0_3.csv")
     rows = read_csv(path)
     fields = list(rows[0].keys())
-    templates = {row["scenario_id"]: row for row in NOISE_SCENARIOS + RADIATION_SCENARIOS}
+    templates = {row["scenario_id"]: row for row in PROCESS_BACKFILL_SCENARIOS + NOISE_SCENARIOS + RADIATION_SCENARIOS}
     additions = []
     for sid, tpl in templates.items():
         section, subsection = INSPECTION_SECTIONS[sid]
@@ -1079,8 +1241,17 @@ def update_activation_rules():
     path = artifact_path("process_scenario_activation_rules_v1_3.csv")
     rows = read_csv(path)
     fields = list(rows[0].keys())
+    existing_templates = read_json(artifact_path("scenario_templates.json"))
+    scenario_templates = {
+        row["scenario_id"]: row
+        for row in existing_templates + PROCESS_BACKFILL_SCENARIOS + NOISE_SCENARIOS + RADIATION_SCENARIOS
+    }
     additions = []
     for rule_id, process_id, scenario_id, activation, negative, evidence, photo, score13, confidence in ACTIVATION_RULES:
+        template = scenario_templates.get(scenario_id, {})
+        if template:
+            evidence = ";".join(template.get("evidence_requirements", [])[:5])
+            photo = ";".join(template.get("photo_points", [])[:5])
         additions.append(with_boundary({
             "rule_id": rule_id,
             "process_id": process_id,
@@ -1096,6 +1267,12 @@ def update_activation_rules():
             "confidence": confidence,
         }))
     upsert_by(rows, "rule_id", additions)
+    for row in rows:
+        if row.get("rule_id") in LEGACY_EVIDENCE_ALIGN_RULE_IDS:
+            template = scenario_templates.get(row.get("scenario_id"), {})
+            if template:
+                row["evidence_chain"] = ";".join(template.get("evidence_requirements", [])[:5])
+                row["photo_points"] = ";".join(template.get("photo_points", [])[:5])
     write_csv(path, rows, fields)
     write_json(artifact_path("process_scenario_activation_rules_v1_3.json"), rows)
 
@@ -1126,8 +1303,13 @@ def scenario_refs_for(domain):
 
 def build_reference_index():
     rows = []
+    seen_hashes = {}
     for folder in [ROOT / "reference_sources" / "noise", ROOT / "reference_sources" / "radiation"]:
         for path in sorted(folder.glob("*.pdf")):
+            content_md5 = hashlib.md5(path.read_bytes()).hexdigest().upper()
+            if content_md5 in seen_hashes:
+                continue
+            seen_hashes[content_md5] = path
             domain = source_domain_for(path)
             rows.append({
                 "source_id": f"SRC18_{len(rows)+1:03d}",
@@ -1135,6 +1317,7 @@ def build_reference_index():
                 "source_type": "PDF_REGULATION_OR_STANDARD",
                 "file_path": str(path.relative_to(ROOT)).replace("\\", "/"),
                 "file_name": path.name,
+                "content_md5": content_md5,
                 "applicable_scenario_ids": scenario_refs_for(domain),
                 "extraction_status": "INDEXED_NOT_EXTRACTED",
                 "source_basis": "用户新增噪声和辐射/放射法规标准资料目录，v1.8先做可审计索引和场景承接，不做条文级自动确认。",
@@ -1149,6 +1332,7 @@ def build_reference_index():
         "source_type",
         "file_path",
         "file_name",
+        "content_md5",
         "applicable_scenario_ids",
         "extraction_status",
         "source_basis",
@@ -1182,6 +1366,7 @@ def update_artifact_manifest():
 
 def write_manifest_and_reports(source_rows):
     new_scenario_ids = [row["scenario_id"] for row in NOISE_SCENARIOS + RADIATION_SCENARIOS]
+    process_backfill_scenario_ids = [row["scenario_id"] for row in PROCESS_BACKFILL_SCENARIOS]
     manifest = {
         "knowledge_base_version": VERSION,
         "base": "existing governed candidate KB",
@@ -1198,6 +1383,7 @@ def write_manifest_and_reports(source_rows):
             "noise_radiation_reference_sources_v1_8.csv/json",
         ],
         "new_scenario_ids": new_scenario_ids,
+        "process_backfill_scenario_ids": process_backfill_scenario_ids,
         "source_counts": {
             "noise_pdf_count": sum(1 for row in source_rows if row["domain"] == "noise"),
             "radiation_pdf_count": sum(1 for row in source_rows if row["domain"] != "noise"),
@@ -1210,6 +1396,11 @@ def write_manifest_and_reports(source_rows):
             "no_formal_inspection_template",
             "no_auto_deduct",
         ],
+        "v1_8_1_gate_fixes": [
+            "backfilled missing process evidence scenario templates for lab waste, tailings, and waste disposal candidates",
+            "deduplicated PDF reference index by canonical relative file path and content hash",
+            "radiation process links use radiation safety / nuclear-tech permit confirmation tokens, not formal pollutant-discharge permit_type",
+        ],
     }
     write_json(artifact_path("knowledge_base_manifest_v1_8_noise_radiation_extension.json"), manifest)
 
@@ -1219,8 +1410,10 @@ def write_manifest_and_reports(source_rows):
         "final_state": FINAL_STATE,
         "runtime_integration": RUNTIME_INTEGRATION,
         "new_scenario_count": len(new_scenario_ids),
+        "process_backfill_scenario_count": len(process_backfill_scenario_ids),
         "new_process_trigger_count": len(PROCESS_TRIGGERS),
-        "new_activation_rule_count": len(ACTIVATION_RULES),
+        "new_activation_rule_count": len([r for r in ACTIVATION_RULES if r[0].startswith("RULE18_")]),
+        "process_backfill_activation_rule_count": len([r for r in ACTIVATION_RULES if r[0].startswith("RULE13_")]),
         "reference_source_count": len(source_rows),
     }
     write_json(artifact_path("noise_radiation_domain_extension_gate_report_v1_8.json"), gate)
@@ -1233,6 +1426,12 @@ final_state: `{FINAL_STATE}`
 ## 新增场景
 
 {chr(10).join(f"- `{sid}`" for sid in new_scenario_ids)}
+
+## v1.8.1 审计修复
+
+- 补齐 `NEW_SCN_LAB_WASTE_CANDIDATE`、`NEW_SCN_TAILINGS_CANDIDATE`、`NEW_SCN_WASTE_DISPOSAL_CANDIDATE` 三个工序证据回填场景，修复 RULE13 激活链路悬空。
+- 对 PDF 资料索引执行规范化和内容去重，避免同一 PDF 因 HJ 编号空格差异重复入库。
+- 辐射类工序许可证关联保持候选证据口径，写入辐射安全许可证/核技术利用/许可确认标记，不生成正式 `permit_type`。
 
 ## 边界
 
@@ -1259,9 +1458,11 @@ final_state: `{FINAL_STATE}`
 
 - 将新增法规标准资料纳入 `reference_sources/noise` 与 `reference_sources/radiation`。
 - 新增 {len(NOISE_SCENARIOS)} 个噪声场景模板和 {len(RADIATION_SCENARIOS)} 个辐射/放射场景模板。
+- 补齐 {len(PROCESS_BACKFILL_SCENARIOS)} 个既有工序证据回填场景模板，消除激活规则悬空引用。
 - 保留旧模板兼容关系，并标注噪声、辐射应由新细分模板承接。
 - 更新 13维映射候选、现场排查候选、工序触发字典和工序-场景激活规则。
 - 生成 `noise_radiation_reference_sources_v1_8.csv/json` 作为 PDF 资料可审计索引。
+- 去除重复 PDF 索引，资料索引按文件内容和规范化路径保持唯一。
 
 ## 禁止事项
 
