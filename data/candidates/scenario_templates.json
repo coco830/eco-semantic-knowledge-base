@@ -50,7 +50,14 @@
       "固定污染源排污许可分类管理名录(2019年版)",
       "各行业排污许可证申请与核发技术规范"
     ],
-    "confidence": "HIGH"
+    "confidence": "HIGH",
+    "domain_extension_notes": [
+      "v1.8起噪声源独立由SCN_NOISE_SOURCE_BOUNDARY_CONTROL/SCN_SOCIAL_LIFE_NOISE_SOURCE承接；本模板保留为基础生产、一般固废和旧规则兼容召回。"
+    ],
+    "successor_scenario_ids": [
+      "SCN_NOISE_SOURCE_BOUNDARY_CONTROL",
+      "SCN_SOCIAL_LIFE_NOISE_SOURCE"
+    ]
   },
   {
     "scenario_id": "SCN_WW_PROCESS_AND_TREATMENT",
@@ -271,7 +278,13 @@
       "HJ 1105-2020",
       "医疗废物管理相关要求"
     ],
-    "confidence": "HIGH"
+    "confidence": "HIGH",
+    "domain_extension_notes": [
+      "v1.8起辐射/放射独立由SCN_RADIATION_DEVICE_SOURCE_SAFETY等模板承接；医疗场景保留医废、医疗废水与放射诊疗组合召回。"
+    ],
+    "successor_scenario_ids": [
+      "SCN_RADIATION_DEVICE_SOURCE_SAFETY"
+    ]
   },
   {
     "scenario_id": "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
@@ -581,5 +594,810 @@
       "项目现场排查模板"
     ],
     "confidence": "NEED_CONFIRM"
+  },
+  {
+    "scenario_id": "SCN_NOISE_SOURCE_BOUNDARY_CONTROL",
+    "scenario_name": "工业企业噪声源与厂界噪声控制",
+    "aliases": [
+      "工业噪声",
+      "厂界噪声",
+      "高噪声设备",
+      "隔声减振",
+      "噪声监测"
+    ],
+    "tags_24": [
+      "noise_source",
+      "boundary_noise",
+      "facility_operation",
+      "monitoring_record",
+      "site_environment"
+    ],
+    "media_type": "noise",
+    "facility_or_risk_unit": "空压机、风机、泵、破碎/粉磨/冲压/切割设备、冷却塔、厂界敏感点、隔声减振设施",
+    "triggers": [
+      "存在生产加工设备、动力设备、风机泵类、破碎粉磨、切割冲压、冷却塔或其他明显噪声源",
+      "环评、排污许可、工业噪声技术规范或监测报告中出现厂界噪声、噪声源、隔声、减振、消声等要求"
+    ],
+    "not_applicable_conditions": [
+      "仅办公、贸易、仓储且无固定噪声源或夜间生产活动",
+      "现场确认无生产设备、无动力设备、无厂界噪声管理要求"
+    ],
+    "confirmation_questions": [
+      "主要噪声源设备有哪些，是否与环评/许可一致？",
+      "是否有隔声、减振、消声、距离衰减或厂房封闭措施？",
+      "厂界噪声监测点位、昼夜生产时段和监测结果是否完整？",
+      "是否存在夜间生产、投诉、周边敏感点或超标整改记录？"
+    ],
+    "evidence_requirements": [
+      "环评噪声章节或排污许可工业噪声要求",
+      "主要噪声源设备清单和厂区平面布置图",
+      "厂界噪声监测报告或自行监测记录",
+      "隔声减振消声设施运行/维护记录",
+      "投诉、整改或夜间生产证明材料"
+    ],
+    "photo_points": [
+      "主要高噪声设备及铭牌",
+      "隔声罩、减振基础、消声器或厂房封闭措施",
+      "厂界监测点位和周边敏感点方向",
+      "夜间生产或异常噪声源现场",
+      "噪声监测报告关键页"
+    ],
+    "related_regulations": [
+      "中华人民共和国噪声污染防治法",
+      "GB 12348-2008 工业企业厂界环境噪声排放标准",
+      "HJ 1301-2023 排污许可证申请与核发技术规范 工业噪声"
+    ],
+    "domain": "noise",
+    "extension_version": "v1.8-noise-radiation-domain-extension",
+    "confidence": "HIGH",
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
+  },
+  {
+    "scenario_id": "SCN_NOISE_BOUNDARY_MONITORING_LEDGER",
+    "scenario_name": "厂界噪声监测、执行标准与台账",
+    "aliases": [
+      "厂界噪声监测",
+      "自行监测",
+      "昼夜监测",
+      "噪声执行标准",
+      "监测点位"
+    ],
+    "tags_24": [
+      "boundary_noise",
+      "noise_monitoring",
+      "self_monitoring",
+      "ledger_record",
+      "permit_execution"
+    ],
+    "media_type": "noise",
+    "facility_or_risk_unit": "厂界监测点位、声环境功能区、昼夜生产时段、自行监测方案和监测报告",
+    "triggers": [
+      "环评、排污许可、自行监测方案或监测报告要求厂界噪声监测",
+      "存在昼夜生产、连续生产、厂界功能区类别或GB 12348执行标准判定"
+    ],
+    "not_applicable_conditions": [
+      "无厂界噪声管理要求且仅需现场噪声源初筛",
+      "社会生活噪声场景应使用SCN_SOCIAL_LIFE_NOISE_SOURCE，不混用工业厂界标准"
+    ],
+    "confirmation_questions": [
+      "厂界噪声执行标准、功能区类别和昼夜限值如何确定？",
+      "自行监测方案、点位图、频次和监测报告是否完整？",
+      "是否存在超标、异常、投诉或整改闭环？"
+    ],
+    "evidence_requirements": [
+      "自行监测方案",
+      "厂界噪声监测报告",
+      "监测点位图",
+      "执行标准和功能区类别说明",
+      "超标整改或异常说明"
+    ],
+    "photo_points": [
+      "厂界监测点位",
+      "厂界四至和敏感方向",
+      "监测报告关键页",
+      "监测点位示意图",
+      "噪声治理设施运行记录关键页"
+    ],
+    "related_regulations": [
+      "GB 12348-2008 工业企业厂界环境噪声排放标准",
+      "HJ 1301-2023 排污许可证申请与核发技术规范 工业噪声"
+    ],
+    "domain": "noise",
+    "extension_version": "v1.8-noise-radiation-domain-extension",
+    "confidence": "HIGH",
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
+  },
+  {
+    "scenario_id": "SCN_NOISE_SENSITIVE_RECEPTOR_NIGHT_OPERATION",
+    "scenario_name": "夜间生产、敏感点与噪声投诉风险",
+    "aliases": [
+      "夜间噪声",
+      "敏感点",
+      "噪声投诉",
+      "扰民风险",
+      "夜间生产"
+    ],
+    "tags_24": [
+      "night_operation",
+      "sensitive_receptor",
+      "noise_complaint",
+      "boundary_noise",
+      "issue_closure"
+    ],
+    "media_type": "noise",
+    "facility_or_risk_unit": "夜间运行设备、厂界外居民/学校/医院等敏感点、投诉整改记录、隔声屏障",
+    "triggers": [
+      "存在夜间生产、连续生产或靠近居民、学校、医院、养老机构等声环境敏感点",
+      "存在噪声投诉、夜间监测、限产整改、厂界超标或环评敏感点预测"
+    ],
+    "not_applicable_conditions": [
+      "昼间单班生产、远离敏感目标且无投诉或夜间运行证据",
+      "仅道路、铁路、航空或施工噪声且非本企业固定源管理对象"
+    ],
+    "confirmation_questions": [
+      "企业是否夜间生产或连续运行？",
+      "最近敏感点距离、方向和功能是什么？",
+      "是否有投诉、夜间监测、限时运行或整改记录？"
+    ],
+    "evidence_requirements": [
+      "生产班次或夜间运行记录",
+      "敏感点位置图或环评敏感目标章节",
+      "投诉/整改记录",
+      "夜间厂界噪声监测报告",
+      "隔声屏障、封闭厂房或限时运行措施证明"
+    ],
+    "photo_points": [
+      "厂界到敏感点方向",
+      "夜间运行设备或连续运行设施",
+      "隔声屏障、封闭厂房或门窗隔声措施",
+      "投诉整改记录关键页",
+      "平面图中敏感方向标注"
+    ],
+    "related_regulations": [
+      "中华人民共和国噪声污染防治法",
+      "GB 12348-2008 工业企业厂界环境噪声排放标准"
+    ],
+    "domain": "noise",
+    "extension_version": "v1.8-noise-radiation-domain-extension",
+    "confidence": "MEDIUM",
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
+  },
+  {
+    "scenario_id": "SCN_SOCIAL_LIFE_NOISE_SOURCE",
+    "scenario_name": "社会生活噪声与经营活动噪声源",
+    "aliases": [
+      "社会生活噪声",
+      "商业经营噪声",
+      "餐饮娱乐噪声",
+      "空调外机",
+      "扩声设备"
+    ],
+    "tags_24": [
+      "social_life_noise",
+      "noise_source",
+      "boundary_noise",
+      "sensitive_receptor",
+      "complaint_trace"
+    ],
+    "media_type": "noise",
+    "facility_or_risk_unit": "商业经营场所、餐饮娱乐扩声设备、空调/冷却塔外机、装卸区、周边敏感点",
+    "triggers": [
+      "存在商业经营、餐饮娱乐、扩声、装卸、冷却塔/空调外机等社会生活噪声源",
+      "周边存在居民、学校、医院等声环境敏感目标或投诉记录"
+    ],
+    "not_applicable_conditions": [
+      "非经营活动场所且无固定社会生活噪声源",
+      "设备停用或拆除并有现场和台账证据"
+    ],
+    "confirmation_questions": [
+      "是否存在扩声、装卸、空调外机、冷却塔或夜间经营活动？",
+      "周边最近敏感点距离和方向是什么？",
+      "是否有投诉、整改、限时经营或降噪措施？"
+    ],
+    "evidence_requirements": [
+      "经营场所平面布置和设备清单",
+      "噪声投诉或整改记录",
+      "社会生活噪声监测记录",
+      "降噪设施和运行时段证明"
+    ],
+    "photo_points": [
+      "扩声设备、外机、冷却塔或装卸区",
+      "降噪屏障、隔声门窗或消声设施",
+      "场界与周边敏感点方向",
+      "投诉整改台账关键页"
+    ],
+    "related_regulations": [
+      "中华人民共和国噪声污染防治法",
+      "GB 22337-2008 社会生活环境噪声排放标准"
+    ],
+    "domain": "noise",
+    "extension_version": "v1.8-noise-radiation-domain-extension",
+    "confidence": "MEDIUM",
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
+  },
+  {
+    "scenario_id": "SCN_RADIATION_DEVICE_SOURCE_SAFETY",
+    "scenario_name": "射线装置与核技术利用辐射安全",
+    "aliases": [
+      "射线装置",
+      "放射诊疗",
+      "工业探伤",
+      "核技术利用",
+      "辐射安全许可"
+    ],
+    "tags_24": [
+      "radiation",
+      "xray_device",
+      "nuclear_technology_use",
+      "license_management",
+      "warning_signage"
+    ],
+    "media_type": "radiation",
+    "facility_or_risk_unit": "DR/CT/牙片机、工业探伤机、辐照/检测装置、机房屏蔽、防护门、控制区/监督区",
+    "triggers": [
+      "存在射线装置、放射诊疗、工业探伤、辐照、核技术利用项目或辐射安全许可证",
+      "环评、许可、设备清单或现场标识中出现射线装置、放射源、辐射安全、防护检测等信息"
+    ],
+    "not_applicable_conditions": [
+      "无射线装置、无放射源、无核技术利用活动且有设备清单或现场证明",
+      "相关检测/诊疗/探伤全部外协且本场所不贮存设备或源项"
+    ],
+    "confirmation_questions": [
+      "是否持有辐射安全许可证或放射诊疗许可，许可范围与设备清单是否一致？",
+      "射线装置类别、数量、安装位置和使用状态是什么？",
+      "机房屏蔽、防护检测、警示标识、个人剂量和培训记录是否齐全？"
+    ],
+    "evidence_requirements": [
+      "辐射安全许可证或放射诊疗许可证",
+      "射线装置/核技术利用设备台账",
+      "年度评估、防护检测或验收监测报告",
+      "人员培训、个人剂量、职业健康记录",
+      "机房屏蔽、防护门、警示标识和控制区划分资料"
+    ],
+    "photo_points": [
+      "射线装置或机房入口警示标识",
+      "设备铭牌和控制台",
+      "防护门、联锁、警示灯和控制区/监督区标识",
+      "个人剂量计、培训或检测报告关键页"
+    ],
+    "related_regulations": [
+      "中华人民共和国放射性污染防治法",
+      "放射性同位素与射线装置安全和防护条例",
+      "放射性同位素与射线装置安全许可管理办法",
+      "放射性同位素与射线装置安全和防护管理办法"
+    ],
+    "domain": "radiation",
+    "extension_version": "v1.8-noise-radiation-domain-extension",
+    "confidence": "HIGH",
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
+  },
+  {
+    "scenario_id": "SCN_RAD_WASTE_PACKAGE_SOLIDIFICATION_CONTAINER",
+    "scenario_name": "放射性废物包、固化体与高完整性容器",
+    "aliases": [
+      "废物包",
+      "固化体",
+      "高完整性容器",
+      "水泥固化",
+      "包装鉴定"
+    ],
+    "tags_24": [
+      "radioactive_waste_package",
+      "solidification",
+      "container",
+      "radioactive_waste",
+      "quality_record"
+    ],
+    "media_type": "radiation_waste",
+    "facility_or_risk_unit": "低中水平放射性废物固化体、废物包、高完整性容器、包装记录、核素/活度记录",
+    "triggers": [
+      "存在低中水平放射性废物固化、包装、容器使用、废物包鉴定或交接",
+      "资料中出现水泥固化体、废物包、球墨铸铁/混凝土/交联高密度聚乙烯高完整性容器"
+    ],
+    "not_applicable_conditions": [
+      "普通危废包装桶、医废周转箱、一般固废压缩打包不得触发",
+      "无放射性废物包装、固化、鉴定或容器使用活动"
+    ],
+    "confirmation_questions": [
+      "废物包编号、核素、活度、形态、包装日期和去向是否闭环？",
+      "固化体性能检测、容器合格证明和包装记录是否齐全？",
+      "废物包暂存分区和标签是否与台账一致？"
+    ],
+    "evidence_requirements": [
+      "废物包编号和包装记录",
+      "固化体性能检测/鉴定资料",
+      "容器合格证明",
+      "核素/活度记录",
+      "交接单和暂存分区台账"
+    ],
+    "photo_points": [
+      "废物包外观与标签",
+      "容器铭牌或合格证关键页",
+      "包装作业记录关键页",
+      "检测报告关键页",
+      "暂存分区标识"
+    ],
+    "related_regulations": [
+      "GB 12711-2018 低、中水平放射性固体废物包安全标准",
+      "GB 14569.1-2011 低、中水平放射性废物固化体性能要求 水泥固化体",
+      "GB 36900.1-2018 低、中水平放射性废物高完整性容器 球墨铸铁容器",
+      "GB 36900.2-2018 低、中水平放射性废物高完整性容器 混凝土容器",
+      "GB 36900.3-2018 低、中水平放射性废物高完整性容器 交联高密度聚乙烯容器"
+    ],
+    "domain": "radiation",
+    "extension_version": "v1.8-noise-radiation-domain-extension",
+    "confidence": "HIGH",
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
+  },
+  {
+    "scenario_id": "SCN_RAD_WASTE_DISPOSAL_FACILITY",
+    "scenario_name": "放射性废物处置设施与场址管理",
+    "aliases": [
+      "近地表处置",
+      "岩洞处置",
+      "废放射源处置",
+      "处置设施",
+      "处置场址"
+    ],
+    "tags_24": [
+      "radioactive_waste_disposal",
+      "disposal_facility",
+      "site_monitoring",
+      "license_management",
+      "emergency_management"
+    ],
+    "media_type": "radiation_waste",
+    "facility_or_risk_unit": "近地表处置设施、岩洞处置设施、废放射源处置设施、监测井、封场或运行区域",
+    "triggers": [
+      "存在近地表处置、岩洞处置、废放射源近地表处置或处置设施选址/建造/运行证据",
+      "资料中出现处置许可证、环境影响报告书、接收台账、监测井或封场运行记录"
+    ],
+    "not_applicable_conditions": [
+      "普通填埋场、危废填埋、生活垃圾填埋不得因固废处置默认触发",
+      "无放射性废物处置设施、无接收或处置活动"
+    ],
+    "confirmation_questions": [
+      "处置设施许可、选址、设计、建造和运行文件是否齐全？",
+      "接收、暂存、处置、环境监测和封场记录是否闭环？",
+      "监测井、排水/渗漏控制和周边环境监测是否符合要求？"
+    ],
+    "evidence_requirements": [
+      "处置许可证",
+      "选址/设计/建造文件",
+      "环境影响报告书",
+      "接收和处置台账",
+      "监测井/环境监测记录",
+      "封场或运行记录"
+    ],
+    "photo_points": [
+      "处置设施边界标识",
+      "接收或暂存区",
+      "监测井或监测点",
+      "排水/渗漏控制设施",
+      "运行台账关键页"
+    ],
+    "related_regulations": [
+      "GB 9132-2018 低、中水平放射性固体废物近地表处置安全规定",
+      "GB 13600-2024 放射性固体废物岩洞处置安全规定",
+      "HJ 1336-2023 废放射源近地表处置安全要求"
+    ],
+    "domain": "radiation",
+    "extension_version": "v1.8-noise-radiation-domain-extension",
+    "confidence": "HIGH",
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
+  },
+  {
+    "scenario_id": "SCN_RADIOACTIVE_SOURCE_SECURITY",
+    "scenario_name": "放射源安全保卫、台账与退役去向",
+    "aliases": [
+      "密封放射源",
+      "废放射源",
+      "源库",
+      "放射源台账",
+      "退役源"
+    ],
+    "tags_24": [
+      "radioactive_source",
+      "radiation",
+      "security_control",
+      "source_inventory",
+      "emergency_management"
+    ],
+    "media_type": "radiation",
+    "facility_or_risk_unit": "密封放射源、源库、暂存柜、安防设施、领用归还台账、退役或送贮记录",
+    "triggers": [
+      "存在密封放射源、废放射源、源库、含源仪表、料位计、测厚仪等源项",
+      "许可或台账中出现放射源编码、核素、活度、贮存、送贮、退役等信息"
+    ],
+    "not_applicable_conditions": [
+      "无放射源且仅使用非含源射线装置",
+      "历史放射源已依法退役/送贮并有闭环证明"
+    ],
+    "confirmation_questions": [
+      "放射源核素、活度、编码、类别和账物是否一致？",
+      "源库或暂存柜是否具备防盗、防丢失、防误照射措施？",
+      "废旧源、退役源是否有送贮、转让或处置闭环？"
+    ],
+    "evidence_requirements": [
+      "辐射安全许可证及放射源明细",
+      "放射源台账、盘点记录和领用归还记录",
+      "安防设施、应急预案和演练记录",
+      "废放射源送贮/转让/退役证明"
+    ],
+    "photo_points": [
+      "源库或含源设备警示标识",
+      "源库门禁、监控、双人双锁或防盗设施",
+      "放射源台账关键页",
+      "废旧源送贮或退役证明关键页"
+    ],
+    "related_regulations": [
+      "中华人民共和国放射性污染防治法",
+      "放射性同位素与射线装置安全和防护条例",
+      "废放射源近地表处置安全要求 HJ 1336-2023"
+    ],
+    "domain": "radiation",
+    "extension_version": "v1.8-noise-radiation-domain-extension",
+    "confidence": "HIGH",
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
+  },
+  {
+    "scenario_id": "SCN_RADIOACTIVE_WASTE_STORAGE_TRANSFER_DISPOSAL",
+    "scenario_name": "放射性废物贮存、转移与处置",
+    "aliases": [
+      "放射性废物",
+      "低中水平放射性废物",
+      "放射性固体废物",
+      "废物库",
+      "废物包"
+    ],
+    "tags_24": [
+      "radioactive_waste",
+      "radiation",
+      "storage_transfer",
+      "waste_package",
+      "disposal"
+    ],
+    "media_type": "radiation_waste",
+    "facility_or_risk_unit": "放射性废物库、废物包、暂存容器、固化体、近地表/岩洞处置设施、退役场址",
+    "triggers": [
+      "存在放射性废物产生、贮存、固化、包装、运输、处置或废物库运行管理活动",
+      "资料中出现低中水平放射性废物、废物包、固化体、废物库、处置设施等词汇"
+    ],
+    "not_applicable_conditions": [
+      "无放射性废物产生、无源项且无放射性废物贮存/转移/处置活动",
+      "仅一般危废或医废，不涉及放射性核素或放射性污染控制要求"
+    ],
+    "confirmation_questions": [
+      "放射性废物类别、核素、活度、形态、数量和贮存状态是什么？",
+      "废物包、容器、固化体和库房是否满足相应标准和许可要求？",
+      "转移、送贮、处置、退役或场址土壤残留控制是否有闭环证据？"
+    ],
+    "evidence_requirements": [
+      "放射性废物台账和分类记录",
+      "废物包/容器/固化体检测或鉴定资料",
+      "废物库许可、运行管理记录和监测记录",
+      "转移、送贮、处置或退役证明",
+      "场址或库区辐射监测资料"
+    ],
+    "photo_points": [
+      "放射性废物库外部和警示标识",
+      "废物包/容器标签和暂存区域",
+      "监测设备或监测记录关键页",
+      "转移/送贮/处置证明关键页"
+    ],
+    "related_regulations": [
+      "放射性废物安全管理条例",
+      "放射性废物安全监督管理规定",
+      "放射性固体废物贮存和处置许可管理办法",
+      "GB 14500-93 放射性废物管理规定",
+      "HJ 1258-2022 核技术利用放射性废物库选址、设计与建造技术规范",
+      "HJ 1417-2025 核技术利用放射性废物库运行管理技术规范"
+    ],
+    "domain": "radiation",
+    "extension_version": "v1.8-noise-radiation-domain-extension",
+    "confidence": "HIGH",
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
+  },
+  {
+    "scenario_id": "SCN_RADIOACTIVE_MATERIAL_TRANSPORT",
+    "scenario_name": "放射性物品运输与运输容器安全",
+    "aliases": [
+      "放射性物品运输",
+      "运输容器",
+      "运输许可",
+      "栓系装置",
+      "提升装置"
+    ],
+    "tags_24": [
+      "radioactive_material_transport",
+      "radiation",
+      "transport_package",
+      "license_management",
+      "emergency_management"
+    ],
+    "media_type": "radiation_transport",
+    "facility_or_risk_unit": "放射性物品运输包装、运输容器、提升/栓系装置、车辆、运输许可和应急资料",
+    "triggers": [
+      "存在放射性物品运输、托运、承运、运输容器设计/使用或运输许可活动",
+      "资料中出现放射性物品运输、运输容器、包装等级、栓系、提升、运输许可等信息"
+    ],
+    "not_applicable_conditions": [
+      "不从事放射性物品运输、托运、承运或运输容器相关活动",
+      "仅普通危化品或一般货物运输，不涉及放射性物品"
+    ],
+    "confirmation_questions": [
+      "运输物品类别、包装类型、运输容器和许可资质是否匹配？",
+      "运输容器提升装置、栓系装置、防脆性断裂设计或检验证据是否齐全？",
+      "运输应急方案、车辆、人员培训和交接记录是否闭环？"
+    ],
+    "evidence_requirements": [
+      "放射性物品运输许可或备案资料",
+      "运输容器合格证明、设计/检验资料",
+      "运输交接、托运、承运记录",
+      "车辆、人员培训和应急资料"
+    ],
+    "photo_points": [
+      "运输容器外观、标识和编号",
+      "车辆、栓系/提升装置和警示标识",
+      "运输许可或交接记录关键页",
+      "应急物资和运输方案关键页"
+    ],
+    "related_regulations": [
+      "放射性物品运输安全管理条例",
+      "放射性物品运输安全监督管理办法",
+      "放射性物品运输安全许可管理办法",
+      "GB 11806-2019 放射性物品安全运输规程",
+      "HJ 1201-2021 放射性物品运输容器防脆性断裂的安全设计指南",
+      "HJ 1385-2024 放射性物品运输容器提升装置和栓系装置安全要求"
+    ],
+    "domain": "radiation",
+    "extension_version": "v1.8-noise-radiation-domain-extension",
+    "confidence": "MEDIUM",
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
+  },
+  {
+    "scenario_id": "SCN_NORM_RADIOACTIVITY_IN_INDUSTRIAL_RESIDUE",
+    "scenario_name": "含天然放射性工业废渣与建材放射性控制",
+    "aliases": [
+      "天然放射性物质",
+      "工业废渣放射性",
+      "建材放射性",
+      "铀钍矿冶",
+      "NORM"
+    ],
+    "tags_24": [
+      "norm_radioactivity",
+      "industrial_residue",
+      "building_material",
+      "radiation",
+      "solid_waste"
+    ],
+    "media_type": "radiation_solid_waste",
+    "facility_or_risk_unit": "铀钍矿冶废物、工业废渣、建材原料、退役场址土壤、废渣堆场和产品放射性检测",
+    "triggers": [
+      "涉及铀钍矿冶、含天然放射性物料、工业废渣用于建材或退役场址土壤残留控制",
+      "资料中出现铀、钍、天然放射性核素、工业废渣放射性、建材放射性限制等信息"
+    ],
+    "not_applicable_conditions": [
+      "无含天然放射性物料、无相关工业废渣利用或矿冶活动",
+      "仅普通一般固废且无放射性检测或监管要求"
+    ],
+    "confirmation_questions": [
+      "是否使用或产生含天然放射性物料、矿冶废物或工业废渣？",
+      "工业废渣用于建材或外售时是否有放射性检测和去向证明？",
+      "退役场址或堆场土壤残留放射性是否有调查和控制要求？"
+    ],
+    "evidence_requirements": [
+      "原料/废渣成分和放射性检测报告",
+      "工业废渣利用、外售或处置去向证明",
+      "矿冶废物管理资料和场址监测记录",
+      "建材产品放射性控制资料"
+    ],
+    "photo_points": [
+      "工业废渣堆场、贮存点或建材原料区",
+      "放射性检测报告关键页",
+      "废渣外售/利用合同或台账关键页",
+      "场址土壤调查或监测点位"
+    ],
+    "related_regulations": [
+      "中华人民共和国放射性污染防治法",
+      "GB 6763-86 建筑材料用工业废渣放射性物质限制标准",
+      "GB 14585-93 铀、钍矿冶放射性废物安全管理技术规定",
+      "GB 45437-2025 核设施退役场址土壤中残留放射性可接受水平"
+    ],
+    "domain": "radiation",
+    "extension_version": "v1.8-noise-radiation-domain-extension",
+    "confidence": "MEDIUM",
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
+  },
+  {
+    "scenario_id": "SCN_URANIUM_THORIUM_MINING_RAD_WASTE",
+    "scenario_name": "铀钍矿冶放射性废物与尾矿风险",
+    "aliases": [
+      "铀矿冶",
+      "钍矿冶",
+      "放射性金属矿",
+      "矿冶废物",
+      "尾矿放射性"
+    ],
+    "tags_24": [
+      "uranium_thorium_mining",
+      "radioactive_waste",
+      "tailings",
+      "radiation_monitoring",
+      "site_environment"
+    ],
+    "media_type": "radiation_mining",
+    "facility_or_risk_unit": "铀钍矿冶废物、尾矿库、废石场、渗滤液处理、辐射环境监测点",
+    "triggers": [
+      "行业或资料明确为放射性金属矿采选、铀钍矿冶或矿冶放射性废物管理",
+      "出现铀、钍、矿冶废物、尾矿、废石、辐射环境监测等直接证据"
+    ],
+    "not_applicable_conditions": [
+      "普通有色矿采选、稀土矿采选只能作为UNKNOWN候选，不能默认触发",
+      "无铀钍或放射性金属矿冶事实、无相关废物管理要求"
+    ],
+    "confirmation_questions": [
+      "矿种、工艺和废物是否涉及铀、钍或放射性金属？",
+      "尾矿库、废石场、渗滤液和辐射监测是否纳入管理？",
+      "矿冶放射性废物去向、监测和应急措施是否闭环？"
+    ],
+    "evidence_requirements": [
+      "采选/矿冶环评和批复",
+      "放射性废物管理方案",
+      "尾矿库/废石场资料",
+      "辐射环境监测报告",
+      "废物去向和应急资料"
+    ],
+    "photo_points": [
+      "矿冶废物暂存或尾矿设施",
+      "监测点位和警示标识",
+      "渗滤液或废水处理设施",
+      "监测报告关键页"
+    ],
+    "related_regulations": [
+      "GB 14585-93 铀、钍矿冶放射性废物安全管理技术规定",
+      "中华人民共和国放射性污染防治法"
+    ],
+    "domain": "radiation",
+    "extension_version": "v1.8-noise-radiation-domain-extension",
+    "confidence": "HIGH",
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
+  },
+  {
+    "scenario_id": "SCN_NUCLEAR_FUEL_EFFLUENT_DECOMMISSIONING",
+    "scenario_name": "核燃料循环流出物与核设施退役场址",
+    "aliases": [
+      "核燃料加工",
+      "放射性流出物",
+      "核设施退役",
+      "场址土壤残留",
+      "退役场址"
+    ],
+    "tags_24": [
+      "nuclear_fuel_cycle",
+      "radioactive_effluent",
+      "decommissioning",
+      "soil_residual_radioactivity",
+      "site_monitoring"
+    ],
+    "media_type": "radiation_nuclear",
+    "facility_or_risk_unit": "核燃料循环设施、放射性流出物排放/监测点、退役区域、土壤采样点",
+    "triggers": [
+      "行业或资料明确为核燃料加工、核燃料循环放射性流出物或核设施退役",
+      "出现退役方案、场址调查、土壤残留放射性、监管批复或放射性流出物监测资料"
+    ],
+    "not_applicable_conditions": [
+      "普通燃料加工、普通化工退役场地不得触发",
+      "无核燃料循环、无核设施退役、无放射性流出物管理事实"
+    ],
+    "confirmation_questions": [
+      "核燃料循环设施、流出物排放和监测点是否明确？",
+      "退役方案、场址调查和土壤残留放射性控制是否有监管批复？",
+      "流出物监测、归一化排放量和年度报告是否完整？"
+    ],
+    "evidence_requirements": [
+      "核设施/核燃料加工许可或环评",
+      "放射性流出物监测报告",
+      "退役方案和监管批复",
+      "场址调查/土壤检测资料",
+      "排放和监测台账"
+    ],
+    "photo_points": [
+      "排放/监测点标识",
+      "监测报告关键页",
+      "退役区域边界",
+      "土壤采样或监测布点图",
+      "台账关键页"
+    ],
+    "related_regulations": [
+      "GB 13695-92 核燃料循环放射性流出物归一化排放量管理限值",
+      "GB 45437-2025 核设施退役场址土壤中残留放射性可接受水平"
+    ],
+    "domain": "radiation",
+    "extension_version": "v1.8-noise-radiation-domain-extension",
+    "confidence": "HIGH",
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
+  },
+  {
+    "scenario_id": "SCN_BUILDING_MATERIAL_SLAG_RADIONUCLIDE",
+    "scenario_name": "建材工业废渣放射性物质限制",
+    "aliases": [
+      "建材放射性",
+      "工业废渣原料",
+      "磷石膏",
+      "粉煤灰",
+      "冶炼渣"
+    ],
+    "tags_24": [
+      "building_material",
+      "industrial_residue",
+      "radionuclide_limit",
+      "solid_waste",
+      "product_testing"
+    ],
+    "media_type": "radiation_solid_waste",
+    "facility_or_risk_unit": "工业废渣原料堆场、配料系统、建材产品批次、放射性检测报告",
+    "triggers": [
+      "建材生产使用工业废渣、磷石膏、粉煤灰、冶炼渣、稀土/铀钍相关渣等原料",
+      "资料出现建筑材料用工业废渣放射性物质限制、产品放射性检测或批次台账"
+    ],
+    "not_applicable_conditions": [
+      "普通水泥、砖瓦、石材、陶瓷企业不得全行业默认触发",
+      "无工业废渣原料证据、无放射性检测或监管要求"
+    ],
+    "confirmation_questions": [
+      "是否使用工业废渣作为建材原料，来源和批次是什么？",
+      "原料和产品是否有放射性物质检测报告？",
+      "不合格批次、去向和整改是否有记录？"
+    ],
+    "evidence_requirements": [
+      "原料来源和工业废渣成分证明",
+      "原料/产品放射性检测报告",
+      "配料和批次台账",
+      "供应商证明和产品去向"
+    ],
+    "photo_points": [
+      "工业废渣原料堆场",
+      "原料标签或来源单据",
+      "检测报告关键页",
+      "配料记录",
+      "成品批次标识"
+    ],
+    "related_regulations": [
+      "GB 6763-86 建筑材料用工业废渣放射性物质限制标准"
+    ],
+    "domain": "radiation",
+    "extension_version": "v1.8-noise-radiation-domain-extension",
+    "confidence": "MEDIUM",
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   }
 ]

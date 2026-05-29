@@ -10,3 +10,17 @@ SCN_DUST_PARTICULATE_CONTROL,粉尘颗粒物产生与除尘设施,S10,S06;S04;S0
 SCN_ONLINE_MONITORING_KEY_UNIT,重点管理/重点排污单位在线监测,S03,S02;S10,联网、数采仪、视频属S03；运维校准/比对记录属S02；排口数据异常可辅S10。,S03目前基本只由在线监测承载，缺少系统完成度细分。,S03下设 monitoring_device、datalogger、network_status、video_monitoring。
 SCN_RAINWATER_ACCIDENT_EMERGENCY,雨污分流、事故水与环境应急,S13,S10;S06;S04;S02,应急预案/物资/事故水响应归S13，雨污混排归S10，事故水设施归S06，防渗泄漏归S04。,EcoCheck现有应急项散落S01/S06/S02，S13没有充分使用。,保持报告13维不改名，知识层新增 emergency_plan、drill、materials、accident_water、incident_record。
 SCN_TRAINING_SIGNAGE_REVIEW_GAP,环保培训、标识公示与历史问题闭环补强,S08,S09;S11;S13,这是13维缺口补强模板，不作为产污默认画像；用于培训、标识、整改闭环的知识图谱二级层。,24标签缺S08/S09/S11承载。,新增 governance 场景层，不直接改EcoCheck报告口径。
+SCN_NOISE_SOURCE_BOUNDARY_CONTROL,工业企业噪声源与厂界噪声控制,S10,S04;S02;S06,噪声排放和厂界达标归S10，现场噪声源和敏感点影响归S04，监测/整改台账归S02，隔声减振设施可辅S06。,S10需要在知识层拆出 noise_boundary/noise_source/noise_monitoring。,保持S01-S13一级口径不变，在知识图谱层补noise/radiation二级语义。
+SCN_NOISE_BOUNDARY_MONITORING_LEDGER,厂界噪声监测、执行标准与台账,S10,S02;S01,厂界噪声监测与执行标准归S10，监测方案、报告和整改台账归S02，许可或环评要求可辅S01。,S10需细分 noise_monitoring、boundary_point、day_night_limit。,保持S01-S13一级口径不变，在知识图谱层补noise/radiation二级语义。
+SCN_NOISE_SENSITIVE_RECEPTOR_NIGHT_OPERATION,夜间生产、敏感点与噪声投诉风险,S10,S04;S11;S13,夜间噪声和敏感点影响归S10/S04，投诉整改闭环归S11，群体投诉或突发扰民可辅S13。,现有13维缺少敏感点/投诉/夜间噪声二级语义。,保持S01-S13一级口径不变，在知识图谱层补noise/radiation二级语义。
+SCN_SOCIAL_LIFE_NOISE_SOURCE,社会生活噪声与经营活动噪声源,S10,S04;S11,社会生活噪声排放归S10，周边敏感点和现场扰民风险归S04，投诉整改闭环可辅S11。,S10需区分工业噪声与社会生活噪声，避免同一证据链混用。,保持S01-S13一级口径不变，在知识图谱层补noise/radiation二级语义。
+SCN_RADIATION_DEVICE_SOURCE_SAFETY,射线装置与核技术利用辐射安全,S12,S01;S02;S09;S13,射线装置、核技术利用和辐射安全许可归S12，许可手续归S01，台账/剂量/检测归S02，警示标识归S09，应急归S13。,S12需要二级语义 radiation_device/source/security_training/dose_monitoring。,保持S01-S13一级口径不变，在知识图谱层补noise/radiation二级语义。
+SCN_RADIOACTIVE_SOURCE_SECURITY,放射源安全保卫、台账与退役去向,S12,S02;S09;S13,放射源安全保卫和账物一致归S12，盘点和领用记录归S02，警示标识归S09，丢失/事故应急归S13。,S12需要区分密封源、废旧源、源库安防和退役送贮。,保持S01-S13一级口径不变，在知识图谱层补noise/radiation二级语义。
+SCN_RADIOACTIVE_WASTE_STORAGE_TRANSFER_DISPOSAL,放射性废物贮存、转移与处置,S12,S07;S02;S13,放射性废物本体按辐射安全归S12，同时具有固废贮存/转移属性辅S07，台账归S02，应急归S13。,S07不能替代放射性废物知识层，需保留 radioactive_waste 二级标签。,保持S01-S13一级口径不变，在知识图谱层补noise/radiation二级语义。
+SCN_RAD_WASTE_PACKAGE_SOLIDIFICATION_CONTAINER,放射性废物包、固化体与高完整性容器,S12,S07;S02,废物包、固化体和容器安全归S12，包装贮存属性辅S07，检测/交接记录归S02。,S12需补 waste_package、solidification、container_acceptance。,保持S01-S13一级口径不变，在知识图谱层补noise/radiation二级语义。
+SCN_RAD_WASTE_DISPOSAL_FACILITY,放射性废物处置设施与场址管理,S12,S13;S02;S04,处置设施安全归S12，事故/渗漏/封场应急归S13，运行和监测台账归S02，场址边界和周边环境辅S04。,S12需补 disposal_facility、site_monitoring、closure_management。,保持S01-S13一级口径不变，在知识图谱层补noise/radiation二级语义。
+SCN_RADIOACTIVE_MATERIAL_TRANSPORT,放射性物品运输与运输容器安全,S12,S02;S13;S09,放射性物品运输和运输容器安全归S12，运输记录归S02，应急方案归S13，运输标识归S09。,S12需补 transport_package/transport_license/transport_emergency。,保持S01-S13一级口径不变，在知识图谱层补noise/radiation二级语义。
+SCN_NORM_RADIOACTIVITY_IN_INDUSTRIAL_RESIDUE,含天然放射性工业废渣与建材放射性控制,S12,S07;S10;S04;S02,含天然放射性物料和工业废渣放射性控制归S12，废渣贮存归S07，释放/外排风险辅S10，场址和堆场辅S04，检测台账归S02。,需把NORM/工业废渣放射性作为辐射与固废交叉二级语义。,保持S01-S13一级口径不变，在知识图谱层补noise/radiation二级语义。
+SCN_URANIUM_THORIUM_MINING_RAD_WASTE,铀钍矿冶放射性废物与尾矿风险,S12,S10;S04;S13;S02,铀钍矿冶放射性安全归S12，尾矿/渗滤液/流出物影响辅S10，场址环境辅S04，应急和台账辅S13/S02。,需区分普通矿山与放射性金属矿冶。,保持S01-S13一级口径不变，在知识图谱层补noise/radiation二级语义。
+SCN_NUCLEAR_FUEL_EFFLUENT_DECOMMISSIONING,核燃料循环流出物与核设施退役场址,S12,S10;S04;S02,核燃料循环和退役场址辐射安全归S12，流出物和土壤残留风险辅S10/S04，监测台账归S02。,S12需补 nuclear_fuel_cycle、effluent、decommissioning_site。,保持S01-S13一级口径不变，在知识图谱层补noise/radiation二级语义。
+SCN_BUILDING_MATERIAL_SLAG_RADIONUCLIDE,建材工业废渣放射性物质限制,S12,S07;S02,工业废渣放射性控制归S12，废渣原料管理辅S07，检测和批次台账归S02。,建材行业不得默认触发，应由工业废渣原料和检测证据触发。,保持S01-S13一级口径不变，在知识图谱层补noise/radiation二级语义。

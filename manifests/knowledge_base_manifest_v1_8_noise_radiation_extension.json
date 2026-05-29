@@ -1,0 +1,44 @@
+{
+  "knowledge_base_version": "v1.8-noise-radiation-domain-extension",
+  "base": "existing governed candidate KB",
+  "scope": "noise_radiation_domain_extension_only",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_integration": "disabled",
+  "runtime_effect": "NONE",
+  "outputs": [
+    "scenario_templates.json",
+    "scenario_to_score13_mapping_v0_3.csv",
+    "inspection_candidate_recommendations_v0_3.csv",
+    "process_trigger_dictionary_v1_1.csv/json",
+    "process_scenario_activation_rules_v1_3.csv/json",
+    "noise_radiation_reference_sources_v1_8.csv/json"
+  ],
+  "new_scenario_ids": [
+    "SCN_NOISE_SOURCE_BOUNDARY_CONTROL",
+    "SCN_NOISE_BOUNDARY_MONITORING_LEDGER",
+    "SCN_NOISE_SENSITIVE_RECEPTOR_NIGHT_OPERATION",
+    "SCN_SOCIAL_LIFE_NOISE_SOURCE",
+    "SCN_RADIATION_DEVICE_SOURCE_SAFETY",
+    "SCN_RAD_WASTE_PACKAGE_SOLIDIFICATION_CONTAINER",
+    "SCN_RAD_WASTE_DISPOSAL_FACILITY",
+    "SCN_RADIOACTIVE_SOURCE_SECURITY",
+    "SCN_RADIOACTIVE_WASTE_STORAGE_TRANSFER_DISPOSAL",
+    "SCN_RADIOACTIVE_MATERIAL_TRANSPORT",
+    "SCN_NORM_RADIOACTIVITY_IN_INDUSTRIAL_RESIDUE",
+    "SCN_URANIUM_THORIUM_MINING_RAD_WASTE",
+    "SCN_NUCLEAR_FUEL_EFFLUENT_DECOMMISSIONING",
+    "SCN_BUILDING_MATERIAL_SLAG_RADIONUCLIDE"
+  ],
+  "source_counts": {
+    "noise_pdf_count": 4,
+    "radiation_pdf_count": 33
+  },
+  "hard_boundaries": [
+    "noise may be broad candidate recall but remains NEED_CONFIRM/CANDIDATE_ONLY",
+    "radiation must not be all-industry default",
+    "no_ecocheck_runtime_integration",
+    "no_formal_permit_type",
+    "no_formal_inspection_template",
+    "no_auto_deduct"
+  ]
+}
