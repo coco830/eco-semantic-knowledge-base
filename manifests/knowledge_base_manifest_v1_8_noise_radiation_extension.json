@@ -29,9 +29,14 @@
     "SCN_NUCLEAR_FUEL_EFFLUENT_DECOMMISSIONING",
     "SCN_BUILDING_MATERIAL_SLAG_RADIONUCLIDE"
   ],
+  "process_backfill_scenario_ids": [
+    "NEW_SCN_LAB_WASTE_CANDIDATE",
+    "NEW_SCN_TAILINGS_CANDIDATE",
+    "NEW_SCN_WASTE_DISPOSAL_CANDIDATE"
+  ],
   "source_counts": {
     "noise_pdf_count": 4,
-    "radiation_pdf_count": 33
+    "radiation_pdf_count": 32
   },
   "hard_boundaries": [
     "noise may be broad candidate recall but remains NEED_CONFIRM/CANDIDATE_ONLY",
@@ -40,5 +45,10 @@
     "no_formal_permit_type",
     "no_formal_inspection_template",
     "no_auto_deduct"
+  ],
+  "v1_8_1_gate_fixes": [
+    "backfilled missing process evidence scenario templates for lab waste, tailings, and waste disposal candidates",
+    "deduplicated PDF reference index by canonical relative file path and content hash",
+    "radiation process links use radiation safety / nuclear-tech permit confirmation tokens, not formal pollutant-discharge permit_type"
   ]
 }

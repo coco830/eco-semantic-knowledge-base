@@ -7,7 +7,8 @@
     "noise_scenarios": 4,
     "radiation_scenarios": 10,
     "noise_sources": 4,
-    "radiation_sources": 33,
+    "radiation_sources": 32,
+    "process_backfill_scenarios": 3,
     "new_process_triggers": 14
   },
   "failure_samples": []

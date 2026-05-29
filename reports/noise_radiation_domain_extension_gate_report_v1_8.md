@@ -21,6 +21,12 @@ final_state: `NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY`
 - `SCN_NUCLEAR_FUEL_EFFLUENT_DECOMMISSIONING`
 - `SCN_BUILDING_MATERIAL_SLAG_RADIONUCLIDE`
 
+## v1.8.1 审计修复
+
+- 补齐 `NEW_SCN_LAB_WASTE_CANDIDATE`、`NEW_SCN_TAILINGS_CANDIDATE`、`NEW_SCN_WASTE_DISPOSAL_CANDIDATE` 三个工序证据回填场景，修复 RULE13 激活链路悬空。
+- 对 PDF 资料索引执行规范化和内容去重，避免同一 PDF 因 HJ 编号空格差异重复入库。
+- 辐射类工序许可证关联保持候选证据口径，写入辐射安全许可证/核技术利用/许可确认标记，不生成正式 `permit_type`。
+
 ## 边界
 
 - 噪声可作为生产经营通用候选召回，但必须现场确认主要噪声源、厂界监测和适用边界。

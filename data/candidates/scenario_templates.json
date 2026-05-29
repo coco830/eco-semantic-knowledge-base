@@ -1399,5 +1399,180 @@
     "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
     "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
     "runtime_integration": "disabled"
+  },
+  {
+    "scenario_id": "NEW_SCN_LAB_WASTE_CANDIDATE",
+    "scenario_name": "实验室废液与检测试剂危废候选场景",
+    "aliases": [
+      "实验室废液",
+      "检测试剂",
+      "废试剂瓶",
+      "实验废物",
+      "化验室危废"
+    ],
+    "tags_24": [
+      "hazardous_waste",
+      "laboratory",
+      "chemical_storage",
+      "emergency_materials",
+      "ledger_record"
+    ],
+    "media_type": "solid_waste",
+    "facility_or_risk_unit": "实验室操作台、试剂柜、废液收集桶、危废暂存间、应急吸附物资",
+    "triggers": [
+      "环评、许可、台账或现场确认存在实验室、化验室、检测试剂或样品前处理工序",
+      "产生废试剂、实验废液、废试剂瓶、样品前处理残液或相关危废台账记录",
+      "检测实验室、研发实验室或企业自检实验室存在废液分类收集和危废暂存要求"
+    ],
+    "not_applicable_conditions": [
+      "检测全部外协且现场无实验室、无试剂柜、无废液收集容器",
+      "仅普通办公质检留样且无化学试剂、无实验废液、无危废代码证据"
+    ],
+    "confirmation_questions": [
+      "现场是否设置实验室或化验室，是否涉及样品前处理和化学试剂使用？",
+      "实验废液、废试剂瓶是否分类收集，标签、危废代码和去向是否完整？",
+      "危废暂存间、应急吸附物资和台账是否与实验室废液产生量匹配？"
+    ],
+    "evidence_requirements": [
+      "实验室平面图或环评实验室章节",
+      "试剂清单和废液产生记录",
+      "废液收集桶标签和危废代码",
+      "危废台账、合同、转移联单或去向证明",
+      "应急吸附物资和泄漏处置记录"
+    ],
+    "photo_points": [
+      "实验室操作台和试剂柜",
+      "废液桶标签和分类收集区域",
+      "危废暂存间实验废液分区",
+      "危废台账或转移联单关键页",
+      "应急吸附物资"
+    ],
+    "related_regulations": [
+      "危险废物贮存污染控制标准",
+      "国家危险废物名录"
+    ],
+    "domain": "process_evidence_backfill",
+    "extension_version": "v1.8-noise-radiation-domain-extension",
+    "confidence": "MEDIUM",
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
+  },
+  {
+    "scenario_id": "NEW_SCN_TAILINGS_CANDIDATE",
+    "scenario_name": "尾矿库、尾矿输送与回水渗滤液候选场景",
+    "aliases": [
+      "尾矿库",
+      "尾矿坝",
+      "回水池",
+      "渗滤液",
+      "排洪系统"
+    ],
+    "tags_24": [
+      "tailings_storage",
+      "wastewater",
+      "soil_groundwater",
+      "emergency",
+      "site_environment"
+    ],
+    "media_type": "water_solid_waste_risk",
+    "facility_or_risk_unit": "尾矿库、尾矿坝、排洪系统、回水池、渗滤液收集处理、下游敏感点",
+    "triggers": [
+      "环评、安全评价、许可或现场资料确认存在尾矿库、尾矿坝、尾矿输送或回水系统",
+      "存在尾矿渗滤液、回水池、排洪构筑物、在线监测或库区巡检记录",
+      "矿山、选矿或冶炼配套尾矿贮存设施需要与水、固废、应急风险联合确认"
+    ],
+    "not_applicable_conditions": [
+      "企业无尾矿库且尾矿全部外运处置，并有合同、台账和去向证明",
+      "仅普通原料堆场或一般固废堆场，无法证明存在尾矿坝、库区或回水系统"
+    ],
+    "confirmation_questions": [
+      "是否存在尾矿库、尾矿坝、排洪系统或回水池，是否与环评/安全评价一致？",
+      "尾矿渗滤液、回水和事故水如何收集、处理和监测？",
+      "库区巡检、应急预案、下游敏感点和历史整改是否完整留痕？"
+    ],
+    "evidence_requirements": [
+      "尾矿库环评章节或安全评价文件",
+      "库区平面图和尾矿输送/回水工艺说明",
+      "回水、渗滤液处理和监测记录",
+      "尾矿库巡检、隐患整改和应急预案",
+      "外运处置合同和台账（如无库区）"
+    ],
+    "photo_points": [
+      "尾矿坝和库区边界",
+      "排洪系统和回水池",
+      "渗滤液收集或处理设施",
+      "在线监测或巡检记录关键页",
+      "下游敏感方向和应急物资"
+    ],
+    "related_regulations": [
+      "尾矿库环境监管相关规范",
+      "突发环境事件应急管理要求"
+    ],
+    "domain": "process_evidence_backfill",
+    "extension_version": "v1.8-noise-radiation-domain-extension",
+    "confidence": "MEDIUM",
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
+  },
+  {
+    "scenario_id": "NEW_SCN_WASTE_DISPOSAL_CANDIDATE",
+    "scenario_name": "垃圾焚烧、填埋与渗滤液飞灰候选场景",
+    "aliases": [
+      "垃圾焚烧",
+      "生活垃圾填埋",
+      "渗滤液",
+      "烟气净化",
+      "飞灰"
+    ],
+    "tags_24": [
+      "waste_disposal",
+      "wastewater",
+      "organized_exhaust",
+      "hazardous_waste",
+      "online_monitoring"
+    ],
+    "media_type": "wastewater_exhaust_solid_waste",
+    "facility_or_risk_unit": "焚烧炉、填埋作业区、烟气净化设施、渗滤液处理站、飞灰暂存和在线监测站房",
+    "triggers": [
+      "环评、许可、台账或现场确认存在垃圾焚烧、生活垃圾填埋、渗滤液处理或飞灰暂存",
+      "存在烟气净化、渗滤液处理、飞灰危废去向、炉渣管理或在线监测要求",
+      "固废处置设施涉及废气、废水、固废和应急多个风险单元，需要按场景组合确认"
+    ],
+    "not_applicable_conditions": [
+      "仅生活垃圾转运站且无焚烧、填埋、渗滤液处理和飞灰暂存设施",
+      "仅一般工业固废暂存或外运，无法证明存在垃圾处置主体设施"
+    ],
+    "confirmation_questions": [
+      "企业是否实际从事垃圾焚烧、填埋或渗滤液处理，设施边界如何确定？",
+      "烟气净化、渗滤液处理、飞灰暂存和在线监测是否运行并留痕？",
+      "飞灰、炉渣、渗滤液污泥等去向、危废属性和转移记录是否完整？"
+    ],
+    "evidence_requirements": [
+      "环评处置工艺和排污许可副本",
+      "烟气净化设施运行记录",
+      "渗滤液处理站运行和监测记录",
+      "飞灰危废去向、合同和转移联单",
+      "在线监测联网、运维和异常记录"
+    ],
+    "photo_points": [
+      "焚烧炉或填埋作业区",
+      "烟气净化设施和排气筒",
+      "渗滤液处理站",
+      "飞灰暂存间和标签",
+      "在线监测站房和数据记录关键页"
+    ],
+    "related_regulations": [
+      "生活垃圾焚烧污染控制标准",
+      "生活垃圾填埋场污染控制标准",
+      "危险废物管理相关要求"
+    ],
+    "domain": "process_evidence_backfill",
+    "extension_version": "v1.8-noise-radiation-domain-extension",
+    "confidence": "MEDIUM",
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled"
   }
 ]
