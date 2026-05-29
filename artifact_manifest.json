@@ -248,6 +248,14 @@
     "simulated_human_review_input_v0_8.csv": "data/review/simulated_human_review_input_v0_8.csv",
     "simulated_human_review_input_v0_8.json": "data/review/simulated_human_review_input_v0_8.json",
     "still_blocked_queue_v0_8.csv": "data/review/still_blocked_queue_v0_8.csv",
-    "固定污染源排污许可分类管理名录(2019年版).pdf": "reference_sources/固定污染源排污许可分类管理名录(2019年版).pdf"
+    "固定污染源排污许可分类管理名录(2019年版).pdf": "reference_sources/固定污染源排污许可分类管理名录(2019年版).pdf",
+    "build_noise_radiation_domain_extension_v1_8.py": "build_noise_radiation_domain_extension_v1_8.py",
+    "validate_noise_radiation_domain_extension_v1_8.py": "validate_noise_radiation_domain_extension_v1_8.py",
+    "noise_radiation_reference_sources_v1_8.csv": "reference_sources/noise_radiation_reference_sources_v1_8.csv",
+    "noise_radiation_reference_sources_v1_8.json": "reference_sources/noise_radiation_reference_sources_v1_8.json",
+    "knowledge_base_manifest_v1_8_noise_radiation_extension.json": "manifests/knowledge_base_manifest_v1_8_noise_radiation_extension.json",
+    "noise_radiation_domain_extension_gate_report_v1_8.json": "reports/noise_radiation_domain_extension_gate_report_v1_8.json",
+    "noise_radiation_domain_extension_gate_report_v1_8.md": "reports/noise_radiation_domain_extension_gate_report_v1_8.md",
+    "FINAL_COMPLETION_REPORT_v1_8_noise_radiation_extension.md": "reports/FINAL_COMPLETION_REPORT_v1_8_noise_radiation_extension.md"
   }
 }

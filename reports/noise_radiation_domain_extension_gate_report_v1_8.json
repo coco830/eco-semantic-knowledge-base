@@ -3,9 +3,12 @@
   "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
   "runtime_integration": "disabled",
   "failure_count": 0,
-  "process_trigger_rows": 24,
-  "activation_rows": 34,
-  "sample_evidence_rows": 6,
-  "overlay_rows": 16,
+  "counts": {
+    "noise_scenarios": 4,
+    "radiation_scenarios": 10,
+    "noise_sources": 4,
+    "radiation_sources": 33,
+    "new_process_triggers": 14
+  },
   "failure_samples": []
 }

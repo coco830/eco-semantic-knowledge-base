@@ -12,6 +12,7 @@
 - `validate_runtime_preintegration_contracts_v1_0_rc.py`: 运行时接入前拒绝型契约测试，防止候选包误投产。
 - `reports/FINAL_COMPLETION_REPORT_v1_1.md`: v1.1 工序/工艺证据层候选包完成报告。
 - `reports/FINAL_COMPLETION_REPORT_v1_2_to_v1_7.md`: v1.2-v1.7 候选治理链完成报告，覆盖环评/许可抽取、激活规则、open questions、审阅切片、RAG eval 和接入差距。
+- `reports/FINAL_COMPLETION_REPORT_v1_8_noise_radiation_extension.md`: v1.8 噪声与辐射/放射知识域增量完成报告。
 - `reports/FINAL_COMPLETION_REPORT_v1_0_rc.md`: v1.0-rc 完成报告。
 
 目录分层：
