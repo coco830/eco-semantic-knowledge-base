@@ -1,0 +1,16 @@
+{
+  "validation_status": "PASS",
+  "failure_count": 0,
+  "final_state": "APPROVED_BASELINE_KNOWLEDGE",
+  "runtime_status": "APPROVED_BASELINE",
+  "runtime_integration": "approved_baseline_export_ready",
+  "approval_status": "HUMAN_APPROVED_BASELINE",
+  "counts": {
+    "approved_scenarios": 28,
+    "approved_score13_rows": 28,
+    "approved_inspection_items": 56,
+    "approved_show_if_rules": 56,
+    "approved_issue_chains": 56
+  },
+  "failure_samples": []
+}
