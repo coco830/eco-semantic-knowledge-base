@@ -1,0 +1,32 @@
+{
+  "knowledge_base_version": "v1.0-approved-baseline-knowledge",
+  "final_state": "APPROVED_BASELINE_KNOWLEDGE",
+  "runtime_status": "APPROVED_BASELINE",
+  "runtime_integration": "approved_baseline_export_ready",
+  "approval_status": "HUMAN_APPROVED_BASELINE",
+  "approval_source": "USER_ATTESTED_IN_CHAT_2026-05-30",
+  "approval_scope": "scenario_templates;score13_mapping;inspection_candidates;show_if_rules;issue_remediation_report_chain",
+  "approval_attestation": "User stated the knowledge base has completed manual review and confirmation, and requested approved baseline knowledge for EcoCheck show_if and downstream chains.",
+  "approval_date": "2026-05-30",
+  "outputs": {
+    "approved_scenario_templates": 28,
+    "approved_score13_rows": 28,
+    "approved_inspection_items": 56,
+    "approved_show_if_rules": 56,
+    "approved_issue_chains": 56
+  },
+  "runtime_contract": {
+    "can_drive_show_if": true,
+    "can_drive_template_item_visibility": true,
+    "can_drive_issue_remediation_report_chain": true,
+    "can_bind_deduct_policy": true,
+    "numeric_deduct_values_source": "EcoCheck existing score item and deduct-rule mapping",
+    "enterprise_permit_type_policy": "Do not infer enterprise formal permit_type without enterprise permit/EIA/site evidence."
+  },
+  "source_artifacts": [
+    "scenario_templates.json",
+    "scenario_to_score13_mapping_v0_3.csv",
+    "inspection_candidate_recommendations_v0_3.csv",
+    "artifact_manifest.json"
+  ]
+}

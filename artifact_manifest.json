@@ -256,6 +256,19 @@
     "knowledge_base_manifest_v1_8_noise_radiation_extension.json": "manifests/knowledge_base_manifest_v1_8_noise_radiation_extension.json",
     "noise_radiation_domain_extension_gate_report_v1_8.json": "reports/noise_radiation_domain_extension_gate_report_v1_8.json",
     "noise_radiation_domain_extension_gate_report_v1_8.md": "reports/noise_radiation_domain_extension_gate_report_v1_8.md",
-    "FINAL_COMPLETION_REPORT_v1_8_noise_radiation_extension.md": "reports/FINAL_COMPLETION_REPORT_v1_8_noise_radiation_extension.md"
+    "FINAL_COMPLETION_REPORT_v1_8_noise_radiation_extension.md": "reports/FINAL_COMPLETION_REPORT_v1_8_noise_radiation_extension.md",
+    "approved_scenario_templates_v1_0.json": "data/approved_baseline/approved_scenario_templates_v1_0.json",
+    "approved_score13_mapping_v1_0.csv": "data/approved_baseline/approved_score13_mapping_v1_0.csv",
+    "approved_inspection_items_v1_0.csv": "data/approved_baseline/approved_inspection_items_v1_0.csv",
+    "approved_inspection_items_v1_0.json": "data/approved_baseline/approved_inspection_items_v1_0.json",
+    "approved_show_if_rules_v1_0.csv": "data/approved_baseline/approved_show_if_rules_v1_0.csv",
+    "approved_show_if_rules_v1_0.json": "data/approved_baseline/approved_show_if_rules_v1_0.json",
+    "approved_issue_remediation_report_chain_v1_0.csv": "data/approved_baseline/approved_issue_remediation_report_chain_v1_0.csv",
+    "approved_issue_remediation_report_chain_v1_0.json": "data/approved_baseline/approved_issue_remediation_report_chain_v1_0.json",
+    "approved_baseline_knowledge_manifest_v1_0.json": "manifests/approved_baseline_knowledge_manifest_v1_0.json",
+    "approved_baseline_knowledge_gate_report_v1_0.json": "reports/approved_baseline_knowledge_gate_report_v1_0.json",
+    "FINAL_APPROVED_BASELINE_KNOWLEDGE_v1_0.md": "reports/FINAL_APPROVED_BASELINE_KNOWLEDGE_v1_0.md",
+    "build_approved_baseline_knowledge_v1_0.py": "build_approved_baseline_knowledge_v1_0.py",
+    "validate_approved_baseline_knowledge_v1_0.py": "validate_approved_baseline_knowledge_v1_0.py"
   }
 }
