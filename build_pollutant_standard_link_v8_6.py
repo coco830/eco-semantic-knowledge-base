@@ -25,6 +25,8 @@ GRAPH_EDGES_V05_GZ = artifact_path("graph_edges_v0_5.jsonl.gz")
 OUT_LINKS = artifact_path("pollutant_standard_link_map_v8_6.csv")
 OUT_NODES = artifact_path("graph_nodes_v0_6.jsonl")
 OUT_EDGES = ROOT / "data" / "graph_rag" / "graph_edges_v0_6.jsonl.gz"
+REVIEW_OVERLAY = ROOT / "data" / "review" / "pollutant_standard_link_review_overlay_v8_6.csv"
+REVIEW_OVERLAY_JSON = ROOT / "data" / "review" / "pollutant_standard_link_review_overlay_v8_6.json"
 OUT_DESIGN = artifact_path("pollutant_standard_link_map_v8_6.md")
 OUT_MANIFEST = artifact_path("pollutant_standard_link_graph_manifest_v8_6.json")
 OUT_REPORT = artifact_path("FINAL_POLLUTANT_STANDARD_LINK_GRAPH_v8_6.md")
@@ -284,6 +286,19 @@ def build_links(baseline_rows, scenarios_by_id, industry_ix):
     return rows
 
 
+def apply_review_overlay(links, overlay_rows):
+    overlay_by_link = {row["link_id"]: row for row in overlay_rows}
+    reviewed = []
+    for link in links:
+        normalized = dict(link)
+        overlay = overlay_by_link.get(link["link_id"])
+        if overlay:
+            normalized["human_review_label"] = overlay["human_review_label"]
+            normalized["gate_status"] = "HUMAN_REVIEW_ACCEPTED" if overlay["decision"] == "ACCEPT" else "HUMAN_REVIEW_REJECTED"
+        reviewed.append(normalized)
+    return reviewed
+
+
 def common(source_basis, confidence="MEDIUM", gate_status="NEED_CONFIRM"):
     return {
         "kb_version": VERSION,
@@ -345,6 +360,8 @@ def build_graph(v05_nodes, v05_edges, baseline_rows, scenarios, links):
     edges = [normalize_existing_graph_row(row) for row in v05_edges]
     edge_ids = {row["edge_id"] for row in edges}
     for link in sorted(links, key=lambda item: item["link_id"]):
+        if link.get("human_review_label") == "REJECT_CANDIDATE":
+            continue
         if link["target_kind"] == "DOMAIN":
             edge_type, to_id = "STANDARD_IN_DOMAIN", f"domain:{link['target_id']}"
         elif link["target_kind"] == "SCENARIO":
@@ -374,11 +391,14 @@ def update_artifact_manifest():
     artifacts.pop("graph_edges_v0_6.jsonl", None)
     artifacts.update({
         "pollutant_standard_link_map_v8_6.csv": "data/approved_baseline/pollutant_domain_v8_5/pollutant_standard_link_map_v8_6.csv",
+        "pollutant_standard_link_review_overlay_v8_6.csv": "data/review/pollutant_standard_link_review_overlay_v8_6.csv",
+        "pollutant_standard_link_review_overlay_v8_6.json": "data/review/pollutant_standard_link_review_overlay_v8_6.json",
         "graph_nodes_v0_6.jsonl": "data/graph_rag/graph_nodes_v0_6.jsonl",
         "graph_edges_v0_6.jsonl.gz": "data/graph_rag/graph_edges_v0_6.jsonl.gz",
         "pollutant_standard_link_map_v8_6.md": "docs/design/pollutant_standard_link_map_v8_6.md",
         "pollutant_standard_link_graph_manifest_v8_6.json": "manifests/pollutant_standard_link_graph_manifest_v8_6.json",
         "pollutant_standard_link_graph_gate_report_v8_6.json": "reports/pollutant_standard_link_graph_gate_report_v8_6.json",
+        "pollutant_standard_link_review_overlay_v8_6_report.json": "reports/pollutant_standard_link_review_overlay_v8_6.json",
         "FINAL_POLLUTANT_STANDARD_LINK_GRAPH_v8_6.md": "reports/FINAL_POLLUTANT_STANDARD_LINK_GRAPH_v8_6.md",
         "build_pollutant_standard_link_v8_6.py": "build_pollutant_standard_link_v8_6.py",
         "validate_pollutant_standard_link_v8_6.py": "validate_pollutant_standard_link_v8_6.py",
@@ -391,7 +411,8 @@ def main():
     baseline_rows = read_csv(BASELINE)
     scenarios = read_json(SCENARIOS)
     scenarios_by_id = {row["scenario_id"]: row for row in scenarios}
-    links = build_links(baseline_rows, scenarios_by_id, industry_index(read_csv(INDUSTRY_CATALOG)))
+    review_overlay = read_csv(REVIEW_OVERLAY)
+    links = apply_review_overlay(build_links(baseline_rows, scenarios_by_id, industry_index(read_csv(INDUSTRY_CATALOG))), review_overlay)
     nodes, edges = build_graph(read_jsonl(GRAPH_NODES_V05), read_jsonl(GRAPH_EDGES_V05, GRAPH_EDGES_V05_GZ), baseline_rows, scenarios, links)
 
     write_csv_lf(OUT_LINKS, links)
@@ -404,6 +425,8 @@ def main():
     domain_counts = Counter(row["domain"] for row in baseline_rows)
     role_counts = Counter(row["source_role"] for row in baseline_rows)
     usability_counts = Counter(row["content_usability_flag"] for row in baseline_rows)
+    review_counts = Counter(row["decision"] for row in review_overlay)
+    review_status_counts = Counter(row["overlay_status"] for row in review_overlay)
 
     design = f"""# pollutant_standard_link_map_v8_6
 
@@ -424,6 +447,13 @@ The design draft expected `hazardous_waste=31` and `TITLE_LEVEL_AND_SOURCE_LOCK_
 ## Output Counts
 
 `{dict(sorted(link_counts.items()))}`
+
+## Human Review Overlay
+
+- Overlay rows: {len(review_overlay)}
+- Decisions: `{dict(sorted(review_counts.items()))}`
+- Overlay status: `{dict(sorted(review_status_counts.items()))}`
+- Rejected deep links remain auditable in `pollutant_standard_link_map_v8_6.csv` with `human_review_label=REJECT_CANDIDATE`; they are not emitted as graph-v0.6 traversal edges.
 """
     report = f"""# FINAL POLLUTANT STANDARD LINK GRAPH v8.6
 
@@ -433,7 +463,9 @@ Runtime integration: `{RUNTIME_INTEGRATION}`
 ## Delivered
 
 - Built `pollutant_standard_link_map_v8_6.csv` as the candidate bridge over V8.5.
+- Applied the v8.6 human review overlay: `{dict(sorted(review_counts.items()))}`.
 - Built `graph_nodes_v0_6.jsonl` and `graph_edges_v0_6.jsonl.gz`.
+- Omitted human-rejected deep links from graph-v0.6 traversal edges while preserving them in the auditable link CSV.
 - Preserved candidate-only/runtime-disabled boundaries on every new link and graph edge.
 - Kept the original V8.5 baseline CSV unchanged.
 
@@ -445,10 +477,11 @@ Runtime integration: `{RUNTIME_INTEGRATION}`
 - V8.5 domains: `{dict(sorted(domain_counts.items()))}`
 - V8.5 source roles: `{dict(sorted(role_counts.items()))}`
 - V8.5 content usability: `{dict(sorted(usability_counts.items()))}`
+- Review overlay decisions: `{dict(sorted(review_counts.items()))}`
 
 ## Known Gaps
 
-- Title-to-industry links are low-confidence candidates and still require human review.
+- Accepted title-level links remain candidate-only and still require runtime promotion review before any operational use.
 - OCR and small-file rows are intentionally blocked from scenario, industry, and Score13 linking.
 - This package is graph/RAG candidate scaffolding only; no EcoCheck runtime mutation or formal compliance conclusion is authorized.
 """
@@ -469,9 +502,13 @@ Runtime integration: `{RUNTIME_INTEGRATION}`
             "source_role_distribution": dict(sorted(role_counts.items())),
             "content_usability_flag_distribution": dict(sorted(usability_counts.items())),
             "industry_linked_source_count": len({row["source_id"] for row in links if row["target_kind"] == "INDUSTRY"}),
+            "review_decision_distribution": dict(sorted(review_counts.items())),
+            "review_overlay_status_distribution": dict(sorted(review_status_counts.items())),
         },
         "outputs": {
             "link_csv": {"path": "data/approved_baseline/pollutant_domain_v8_5/pollutant_standard_link_map_v8_6.csv", "rows": len(links), "sha256": sha256_file(OUT_LINKS)},
+            "review_overlay_csv": {"path": "data/review/pollutant_standard_link_review_overlay_v8_6.csv", "rows": len(review_overlay), "sha256": sha256_file(REVIEW_OVERLAY)},
+            "review_overlay_json": {"path": "data/review/pollutant_standard_link_review_overlay_v8_6.json", "rows": len(read_json(REVIEW_OVERLAY_JSON)), "sha256": sha256_file(REVIEW_OVERLAY_JSON)},
             "graph_nodes": {"path": "data/graph_rag/graph_nodes_v0_6.jsonl", "rows": len(nodes), "sha256": sha256_file(OUT_NODES)},
             "graph_edges": {"path": "data/graph_rag/graph_edges_v0_6.jsonl.gz", "rows": len(edges), "sha256": sha256_file(OUT_EDGES)},
             "design_md": {"path": "docs/design/pollutant_standard_link_map_v8_6.md", "sha256": sha256_file(OUT_DESIGN)},
@@ -481,6 +518,7 @@ Runtime integration: `{RUNTIME_INTEGRATION}`
             "v8_5_baseline_mutated": False,
             "radiation_all_industry_default": "blocked",
             "ocr_and_small_file_deep_links": "blocked",
+            "human_rejected_deep_links": "audited_in_link_csv_excluded_from_graph_edges",
             "runtime_code_mutation": False,
         },
     }

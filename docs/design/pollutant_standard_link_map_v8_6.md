@@ -17,3 +17,10 @@ The design draft expected `hazardous_waste=31` and `TITLE_LEVEL_AND_SOURCE_LOCK_
 ## Output Counts
 
 `{'DOMAIN': 209, 'INDUSTRY': 27, 'SCENARIO': 479, 'SCORE13': 192, 'SOURCE_REVIEW': 11}`
+
+## Human Review Overlay
+
+- Overlay rows: 698
+- Decisions: `{'ACCEPT': 412, 'REJECT': 286}`
+- Overlay status: `{'BLOCKS_RUNTIME': 286, 'FORMALIZATION_CANDIDATE': 412}`
+- Rejected deep links remain auditable in `pollutant_standard_link_map_v8_6.csv` with `human_review_label=REJECT_CANDIDATE`; they are not emitted as graph-v0.6 traversal edges.

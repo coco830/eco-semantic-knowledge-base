@@ -33,13 +33,31 @@
       "SMALL_FILE_REVIEW_REQUIRED_POSSIBLE_TRUNCATION_OR_EXCERPT": 2,
       "TITLE_LEVEL_AND_SOURCE_LOCK_READY": 198
     },
-    "industry_linked_source_count": 26
+    "industry_linked_source_count": 26,
+    "review_decision_distribution": {
+      "ACCEPT": 412,
+      "REJECT": 286
+    },
+    "review_overlay_status_distribution": {
+      "BLOCKS_RUNTIME": 286,
+      "FORMALIZATION_CANDIDATE": 412
+    }
   },
   "outputs": {
     "link_csv": {
       "path": "data/approved_baseline/pollutant_domain_v8_5/pollutant_standard_link_map_v8_6.csv",
       "rows": 918,
-      "sha256": "sha256:5ceb3bfe2aa6dd51e92a46b9fb763d7cdec26965548c0c5c421629ea66b6a0a0"
+      "sha256": "sha256:2412318632262f29956c221c8e2f2085f7e7c6c93f55f554a317f8beea5c5b49"
+    },
+    "review_overlay_csv": {
+      "path": "data/review/pollutant_standard_link_review_overlay_v8_6.csv",
+      "rows": 698,
+      "sha256": "sha256:cb269d5fb0394321368f9cc4551c3328dcbb23179c6bab07f495b5cd8d9a8492"
+    },
+    "review_overlay_json": {
+      "path": "data/review/pollutant_standard_link_review_overlay_v8_6.json",
+      "rows": 698,
+      "sha256": "sha256:1b170b2ed71a80ea43e8d99736c577446cef2c7e42c0c26cfb6eb072c5897f2a"
     },
     "graph_nodes": {
       "path": "data/graph_rag/graph_nodes_v0_6.jsonl",
@@ -48,22 +66,23 @@
     },
     "graph_edges": {
       "path": "data/graph_rag/graph_edges_v0_6.jsonl.gz",
-      "rows": 166148,
-      "sha256": "sha256:27682c9b43eb83e15fe02bf651ed77c8022ce5d7453825f9c2f08d41fc7d6936"
+      "rows": 165862,
+      "sha256": "sha256:8d32f8f3c9791760cf7a147bcac972b869560f41c5714fb0fca300e9f91f7769"
     },
     "design_md": {
       "path": "docs/design/pollutant_standard_link_map_v8_6.md",
-      "sha256": "sha256:8e308115ad949deed6fda3827266983430129c79bcf15b3a435179a32cec7d3e"
+      "sha256": "sha256:c5d5a770e4ed784e1b4be07aa8d7a6055f587e8662f151c2e34df8f831d1d5f3"
     },
     "report_md": {
       "path": "reports/FINAL_POLLUTANT_STANDARD_LINK_GRAPH_v8_6.md",
-      "sha256": "sha256:460d5957e820873463f0e8b4ebbd4ce9ab8fd798cb91038cbe18a48688605c6f"
+      "sha256": "sha256:e4583f8caa0c80873a0362a7d470569c3083525927187fc891f10186c1b4f10d"
     }
   },
   "guards": {
     "v8_5_baseline_mutated": false,
     "radiation_all_industry_default": "blocked",
     "ocr_and_small_file_deep_links": "blocked",
+    "human_rejected_deep_links": "audited_in_link_csv_excluded_from_graph_edges",
     "runtime_code_mutation": false
   }
 }
