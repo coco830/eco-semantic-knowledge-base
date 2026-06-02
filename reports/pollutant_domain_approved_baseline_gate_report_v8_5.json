@@ -1,0 +1,24 @@
+{
+  "validation_status": "PASS",
+  "failure_count": 0,
+  "knowledge_base_version": "v8.5-pollutant-domain-approved-baseline",
+  "final_state": "APPROVED_POLLUTANT_DOMAIN_BASELINE_KNOWLEDGE",
+  "runtime_status": "APPROVED_BASELINE",
+  "runtime_integration": "approved_baseline_export_ready",
+  "approval_status": "HUMAN_APPROVED_BASELINE",
+  "counts": {
+    "approved_entry_count": 209,
+    "excluded_entry_count": 6,
+    "domain_distribution": {
+      "noise": 6,
+      "air": 36,
+      "water": 87,
+      "solid_waste": 14,
+      "hazardous_waste": 32,
+      "special_industry": 6,
+      "general_environmental_engineering": 2,
+      "radiation": 26
+    }
+  },
+  "failure_samples": []
+}

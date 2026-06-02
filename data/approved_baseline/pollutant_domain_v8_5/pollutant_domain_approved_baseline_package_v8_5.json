@@ -1,0 +1,164 @@
+{
+  "schema_version": "pollutant-domain-approved-baseline-package.v8_5.knowledge-base-backfill",
+  "knowledge_base_version": "v8.5-pollutant-domain-approved-baseline",
+  "final_state": "APPROVED_POLLUTANT_DOMAIN_BASELINE_KNOWLEDGE",
+  "runtime_status": "APPROVED_BASELINE",
+  "runtime_integration": "approved_baseline_export_ready",
+  "approval_status": "HUMAN_APPROVED_BASELINE",
+  "approval_source": "CANDY_OWNER_L5_APPROVAL_2026-06-02_SEMANTIC_PROFILE_LAB_V8_5",
+  "approval_date": "2026-06-02",
+  "source_repository": "coco830/semantic-profile-lab",
+  "source_commit": "5ae1225663dd9d4035918c89383a2342c853ed7d",
+  "source_baseline_manifest": {
+    "schema_version": "pollutant-domain-approved-baseline.v8_5",
+    "generated_on": "2026-06-02",
+    "baseline_package_status": "APPROVED_BASELINE_PACKAGE",
+    "approval_authority": "CANDY_OWNER_L5_APPROVAL",
+    "approved_entry_count": 209,
+    "excluded_entry_count": 6,
+    "baseline_file": "mappings/pollutant-domain-approved-baseline.v8_5.csv",
+    "baseline_sha256": "sha256:6642c7513f4e05627302de4be0f389417ce9b6361aab4003c4e462b3cef1c51a",
+    "package_file": "packages/approved-baseline/v8_5/pollutant-domain-approved-baseline-package.v8_5.json",
+    "package_sha256": "sha256:459e95bf412d4f19253e2f33b254f6be505cd713addb89866804e10d3872a415",
+    "report_file": "reports/pollutant-domain-approved-baseline-package-v8_5.md",
+    "report_sha256": "sha256:559c62806efac4d956ea219b831ee694b908e3092beb8a0230dbc35a9eaf31b2",
+    "domain_distribution": {
+      "air": 36,
+      "general_environmental_engineering": 2,
+      "hazardous_waste": 32,
+      "noise": 6,
+      "radiation": 26,
+      "solid_waste": 14,
+      "special_industry": 6,
+      "water": 87
+    },
+    "content_usability_flag_distribution": {
+      "OCR_REQUIRED_BEFORE_CLAUSE_OR_NUMERIC_ADOPTION": 9,
+      "SMALL_FILE_REVIEW_REQUIRED_POSSIBLE_TRUNCATION_OR_EXCERPT": 2,
+      "TITLE_LEVEL_AND_SOURCE_LOCK_READY": 198
+    },
+    "baseline_package_scope": "DOWNSTREAM_KNOWLEDGE_BASE_STAGING_ONLY",
+    "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "runtime_integration": "disabled",
+    "confirmed_dataset_status": "NOT_CREATED",
+    "formal_calculation_status": "NOT_AUTHORIZED",
+    "blocked_actions": [
+      "write_review_field",
+      "create_confirmed_dataset",
+      "run_formal_calculation",
+      "auto_select_coefficient",
+      "mutate_coefficient_selector",
+      "formal_permit_right_quantity",
+      "formal_compliance_conclusion",
+      "auto_deduct_score",
+      "formal_permit_type",
+      "formal_inspection_template",
+      "radiation_all_industry_default"
+    ],
+    "no_push_policy": {
+      "commit_allowed": false,
+      "push_allowed": false,
+      "pr_allowed": false,
+      "merge_allowed": false
+    }
+  },
+  "source_package_summary": {
+    "schema_version": "pollutant-domain-approved-baseline-package.v8_5",
+    "approved_entry_count": 209,
+    "excluded_entry_count": 6,
+    "source_register_row_count": 215,
+    "excluded_p1_decisions": [
+      {
+        "source_id": "PDS-V8_0-0079",
+        "decision": "REJECT_DUPLICATE_HASH",
+        "superseded_by_source_id": "NOT_APPLICABLE",
+        "duplicate_of_source_id": "PDS-V8_0-0017",
+        "reason": "Byte-identical duplicate of PDS-V8_0-0017; keep one source snapshot only for L4 semantic subset."
+      },
+      {
+        "source_id": "PDS-V8_0-0081",
+        "decision": "REJECT_SUPERSEDED",
+        "superseded_by_source_id": "PDS-V8_0-0053",
+        "duplicate_of_source_id": "NOT_APPLICABLE",
+        "reason": "GB 21523-2008 is superseded by current GB 21523-2024; reject old version for L4 semantic subset."
+      },
+      {
+        "source_id": "PDS-V8_0-0150",
+        "decision": "REJECT_DUPLICATE_HASH",
+        "superseded_by_source_id": "NOT_APPLICABLE",
+        "duplicate_of_source_id": "PDS-V8_0-0149",
+        "reason": "Byte-identical duplicate of PDS-V8_0-0149; filename separator differs only."
+      },
+      {
+        "source_id": "PDS-V8_0-0165",
+        "decision": "REJECT_DUPLICATE_HASH",
+        "superseded_by_source_id": "NOT_APPLICABLE",
+        "duplicate_of_source_id": "PDS-V8_0-0164",
+        "reason": "Byte-identical duplicate of PDS-V8_0-0164; filename separator differs only."
+      },
+      {
+        "source_id": "PDS-V8_0-0169",
+        "decision": "REJECT_DUPLICATE_HASH",
+        "superseded_by_source_id": "NOT_APPLICABLE",
+        "duplicate_of_source_id": "PDS-V8_0-0168",
+        "reason": "Byte-identical duplicate of PDS-V8_0-0168; filename spacing/separator differs only."
+      },
+      {
+        "source_id": "PDS-V8_0-0194",
+        "decision": "REJECT_SUPERSEDED",
+        "superseded_by_source_id": "PDS-V8_0-0198",
+        "duplicate_of_source_id": "NOT_APPLICABLE",
+        "reason": "GB 13600-92 is superseded by current GB 13600-2024; reject old version for L4 semantic subset."
+      }
+    ]
+  },
+  "knowledge_base_outputs": {
+    "baseline_csv": "data/approved_baseline/pollutant_domain_v8_5/pollutant_domain_approved_baseline_v8_5.csv",
+    "manifest": "manifests/pollutant_domain_approved_baseline_manifest_v8_5.json",
+    "report": "reports/FINAL_POLLUTANT_DOMAIN_APPROVED_BASELINE_v8_5.md"
+  },
+  "boundary": {
+    "source_runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+    "source_final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "source_runtime_integration": "disabled",
+    "baseline_package_scope": "DOWNSTREAM_KNOWLEDGE_BASE_STAGING_ONLY",
+    "downstream_target_repository": "coco830/eco-semantic-knowledge-base",
+    "confirmed_dataset_status": "NOT_CREATED",
+    "formal_calculation_status": "NOT_AUTHORIZED",
+    "blocked_actions": [
+      "write_review_field",
+      "create_confirmed_dataset",
+      "run_formal_calculation",
+      "auto_select_coefficient",
+      "mutate_coefficient_selector",
+      "formal_permit_right_quantity",
+      "formal_compliance_conclusion",
+      "auto_deduct_score",
+      "formal_permit_type",
+      "formal_inspection_template",
+      "radiation_all_industry_default"
+    ],
+    "no_runtime_code_mutation": true
+  },
+  "counts": {
+    "approved_entry_count": 209,
+    "excluded_entry_count": 6,
+    "source_register_row_count": 215,
+    "domain_distribution": {
+      "air": 36,
+      "general_environmental_engineering": 2,
+      "hazardous_waste": 32,
+      "noise": 6,
+      "radiation": 26,
+      "solid_waste": 14,
+      "special_industry": 6,
+      "water": 87
+    },
+    "content_usability_flag_distribution": {
+      "OCR_REQUIRED_BEFORE_CLAUSE_OR_NUMERIC_ADOPTION": 9,
+      "SMALL_FILE_REVIEW_REQUIRED_POSSIBLE_TRUNCATION_OR_EXCERPT": 2,
+      "TITLE_LEVEL_AND_SOURCE_LOCK_READY": 198
+    }
+  }
+}

@@ -269,6 +269,13 @@
     "approved_baseline_knowledge_gate_report_v1_0.json": "reports/approved_baseline_knowledge_gate_report_v1_0.json",
     "FINAL_APPROVED_BASELINE_KNOWLEDGE_v1_0.md": "reports/FINAL_APPROVED_BASELINE_KNOWLEDGE_v1_0.md",
     "build_approved_baseline_knowledge_v1_0.py": "build_approved_baseline_knowledge_v1_0.py",
-    "validate_approved_baseline_knowledge_v1_0.py": "validate_approved_baseline_knowledge_v1_0.py"
+    "validate_approved_baseline_knowledge_v1_0.py": "validate_approved_baseline_knowledge_v1_0.py",
+    "pollutant_domain_approved_baseline_v8_5.csv": "data/approved_baseline/pollutant_domain_v8_5/pollutant_domain_approved_baseline_v8_5.csv",
+    "pollutant_domain_approved_baseline_package_v8_5.json": "data/approved_baseline/pollutant_domain_v8_5/pollutant_domain_approved_baseline_package_v8_5.json",
+    "pollutant_domain_approved_baseline_manifest_v8_5.json": "manifests/pollutant_domain_approved_baseline_manifest_v8_5.json",
+    "pollutant_domain_approved_baseline_gate_report_v8_5.json": "reports/pollutant_domain_approved_baseline_gate_report_v8_5.json",
+    "FINAL_POLLUTANT_DOMAIN_APPROVED_BASELINE_v8_5.md": "reports/FINAL_POLLUTANT_DOMAIN_APPROVED_BASELINE_v8_5.md",
+    "build_pollutant_domain_approved_baseline_v8_5.py": "build_pollutant_domain_approved_baseline_v8_5.py",
+    "validate_pollutant_domain_approved_baseline_v8_5.py": "validate_pollutant_domain_approved_baseline_v8_5.py"
   }
 }

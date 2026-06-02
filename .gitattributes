@@ -1,3 +1,10 @@
 *.gz binary
 *.xlsx binary
 *.pdf binary
+
+# V8.5 approved-baseline hashes are computed over LF bytes.
+data/approved_baseline/pollutant_domain_v8_5/*.csv text eol=lf
+data/approved_baseline/pollutant_domain_v8_5/*.json text eol=lf
+manifests/pollutant_domain_approved_baseline_manifest_v8_5.json text eol=lf
+reports/FINAL_POLLUTANT_DOMAIN_APPROVED_BASELINE_v8_5.md text eol=lf
+reports/pollutant_domain_approved_baseline_gate_report_v8_5.json text eol=lf
