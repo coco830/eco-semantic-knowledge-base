@@ -2,6 +2,8 @@
 
 本仓库用于沉淀环保管家行业的环保语义知识库。当前主线已经在候选治理底座之上生成 `v1.0-approved-baseline-knowledge`，用于 EcoCheck 后续读取 `show_if`、检查项、问题/整改/报告链路。另有 `v8.5-pollutant-domain-approved-baseline`，用于承接 `semantic-profile-lab` 人工 L5 审批通过的水、气、声、渣、辐射/放射污染物域标准源基线。
 
+本仓库是独立项目，推荐本地路径为 `E:\eco-semantic-knowledge-base`，远端仓库为 `coco830/eco-semantic-knowledge-base`。它不属于排污系数实验区，也不作为排污系数事实源、`CoefficientSelector` 输入或正式核算输入。
+
 主入口：
 
 - `docs/index/PROJECT_INDEX_v1_0_rc.md`: 封版索引、关键文件、验证命令和禁止事项。
@@ -52,3 +54,4 @@ V8.5 pollutant-domain approved baseline 边界：
 - 每行保留来源候选边界：`source_final_state=NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY`、`source_runtime_integration=disabled`
 - `ConfirmedDataset` 仍为 `NOT_CREATED`，正式排污权/系数计算仍为 `NOT_AUTHORIZED`
 - 辐射/放射不得启用全行业默认：`radiation_all_industry_default` 仍在 blocked actions 中
+- 不反向混入 `semantic-profile-lab` 的排污系数/方法实验链路，不自动生成或修正任何系数
