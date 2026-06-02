@@ -1,0 +1,53 @@
+{
+  "schema_version": "pollutant-domain-approved-baseline-manifest.v8_5.knowledge-base-backfill",
+  "knowledge_base_version": "v8.5-pollutant-domain-approved-baseline",
+  "generated_on": "2026-06-02",
+  "final_state": "APPROVED_POLLUTANT_DOMAIN_BASELINE_KNOWLEDGE",
+  "runtime_status": "APPROVED_BASELINE",
+  "runtime_integration": "approved_baseline_export_ready",
+  "approval_status": "HUMAN_APPROVED_BASELINE",
+  "approval_source": "CANDY_OWNER_L5_APPROVAL_2026-06-02_SEMANTIC_PROFILE_LAB_V8_5",
+  "source_repository": "coco830/semantic-profile-lab",
+  "source_commit": "5ae1225663dd9d4035918c89383a2342c853ed7d",
+  "approved_entry_count": 209,
+  "excluded_entry_count": 6,
+  "p1_excluded_source_ids": [
+    "PDS-V8_0-0079",
+    "PDS-V8_0-0081",
+    "PDS-V8_0-0150",
+    "PDS-V8_0-0165",
+    "PDS-V8_0-0169",
+    "PDS-V8_0-0194"
+  ],
+  "baseline_package_scope": "DOWNSTREAM_KNOWLEDGE_BASE_STAGING_ONLY",
+  "downstream_target_repository": "coco830/eco-semantic-knowledge-base",
+  "confirmed_dataset_status": "NOT_CREATED",
+  "formal_calculation_status": "NOT_AUTHORIZED",
+  "blocked_actions": [
+    "write_review_field",
+    "create_confirmed_dataset",
+    "run_formal_calculation",
+    "auto_select_coefficient",
+    "mutate_coefficient_selector",
+    "formal_permit_right_quantity",
+    "formal_compliance_conclusion",
+    "auto_deduct_score",
+    "formal_permit_type",
+    "formal_inspection_template",
+    "radiation_all_industry_default"
+  ],
+  "outputs": {
+    "baseline_csv": {
+      "path": "data/approved_baseline/pollutant_domain_v8_5/pollutant_domain_approved_baseline_v8_5.csv",
+      "sha256": "sha256:a905b986b6729b940d6f6fb1357b9b103180d0482007fc254501fca88d4b03fe"
+    },
+    "package_json": {
+      "path": "data/approved_baseline/pollutant_domain_v8_5/pollutant_domain_approved_baseline_package_v8_5.json",
+      "sha256": "sha256:42ed182663728dc9f7b2bf1336dcbd79afb394fc1a0468ec27c04a180d2976b7"
+    },
+    "report_md": {
+      "path": "reports/FINAL_POLLUTANT_DOMAIN_APPROVED_BASELINE_v8_5.md",
+      "sha256": "sha256:752b7294cc1170dc54e2c6c9ceb2ab3e81bfcbe372f910c56d877956a7c0a9e8"
+    }
+  }
+}
