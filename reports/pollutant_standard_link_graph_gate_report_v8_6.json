@@ -1,0 +1,48 @@
+{
+  "validation_status": "PASS",
+  "failure_count": 0,
+  "knowledge_base_version": "v8.6-pollutant-standard-link-map-and-graph-v0.6",
+  "final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+  "runtime_status": "DRAFT_NOT_FOR_RUNTIME",
+  "runtime_integration": "disabled",
+  "counts": {
+    "source_count": 209,
+    "link_count": 918,
+    "node_type_counts": {
+      "ApplicabilityRelation": 22815,
+      "Industry": 1382,
+      "InspectionCandidate": 22,
+      "KnowledgeBaseManifest": 1,
+      "OpenQuestion": 19,
+      "PermitCatalogEntry": 112,
+      "PermitCondition": 336,
+      "PollutantDomain": 8,
+      "PollutantStandardSource": 209,
+      "RiskAcceptance": 9,
+      "ScenarioTemplate": 28,
+      "Score13Dimension": 13
+    },
+    "edge_type_counts": {
+      "CANDIDATE_APPLICABILITY": 22815,
+      "HAS_APPLICABILITY_RELATION": 22815,
+      "HAS_CONDITION": 336,
+      "HAS_INSPECTION_CANDIDATE": 22,
+      "MAPS_TO_SCORE13": 48,
+      "RELATED_TO_SCENARIO": 119193,
+      "RISK_LINKED_TO_OPEN_QUESTION": 12,
+      "STANDARD_APPLIES_TO_INDUSTRY": 27,
+      "STANDARD_GOVERNS_SCENARIO": 479,
+      "STANDARD_IN_DOMAIN": 209,
+      "STANDARD_SUPPORTS_SCORE13": 192
+    },
+    "link_target_kind_counts": {
+      "DOMAIN": 209,
+      "INDUSTRY": 27,
+      "SCENARIO": 479,
+      "SCORE13": 192,
+      "SOURCE_REVIEW": 11
+    },
+    "blocked_source_count": 11
+  },
+  "failure_samples": []
+}

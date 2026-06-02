@@ -1,3 +1,6 @@
+.gitattributes text eol=lf
+artifact_manifest.json text eol=lf
+
 *.gz binary
 *.xlsx binary
 *.pdf binary
@@ -8,3 +11,11 @@ data/approved_baseline/pollutant_domain_v8_5/*.json text eol=lf
 manifests/pollutant_domain_approved_baseline_manifest_v8_5.json text eol=lf
 reports/FINAL_POLLUTANT_DOMAIN_APPROVED_BASELINE_v8_5.md text eol=lf
 reports/pollutant_domain_approved_baseline_gate_report_v8_5.json text eol=lf
+
+# V8.6 candidate bridge and graph hashes are computed over LF bytes.
+data/approved_baseline/pollutant_domain_v8_5/pollutant_standard_link_map_v8_6.csv text eol=lf
+data/graph_rag/graph_nodes_v0_6.jsonl text eol=lf
+docs/design/pollutant_standard_link_map_v8_6.md text eol=lf
+manifests/pollutant_standard_link_graph_manifest_v8_6.json text eol=lf
+reports/FINAL_POLLUTANT_STANDARD_LINK_GRAPH_v8_6.md text eol=lf
+reports/pollutant_standard_link_graph_gate_report_v8_6.json text eol=lf
