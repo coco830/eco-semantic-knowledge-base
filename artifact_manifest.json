@@ -276,6 +276,15 @@
     "pollutant_domain_approved_baseline_gate_report_v8_5.json": "reports/pollutant_domain_approved_baseline_gate_report_v8_5.json",
     "FINAL_POLLUTANT_DOMAIN_APPROVED_BASELINE_v8_5.md": "reports/FINAL_POLLUTANT_DOMAIN_APPROVED_BASELINE_v8_5.md",
     "build_pollutant_domain_approved_baseline_v8_5.py": "build_pollutant_domain_approved_baseline_v8_5.py",
-    "validate_pollutant_domain_approved_baseline_v8_5.py": "validate_pollutant_domain_approved_baseline_v8_5.py"
+    "validate_pollutant_domain_approved_baseline_v8_5.py": "validate_pollutant_domain_approved_baseline_v8_5.py",
+    "pollutant_standard_link_map_v8_6.csv": "data/approved_baseline/pollutant_domain_v8_5/pollutant_standard_link_map_v8_6.csv",
+    "graph_nodes_v0_6.jsonl": "data/graph_rag/graph_nodes_v0_6.jsonl",
+    "pollutant_standard_link_map_v8_6.md": "docs/design/pollutant_standard_link_map_v8_6.md",
+    "pollutant_standard_link_graph_manifest_v8_6.json": "manifests/pollutant_standard_link_graph_manifest_v8_6.json",
+    "pollutant_standard_link_graph_gate_report_v8_6.json": "reports/pollutant_standard_link_graph_gate_report_v8_6.json",
+    "FINAL_POLLUTANT_STANDARD_LINK_GRAPH_v8_6.md": "reports/FINAL_POLLUTANT_STANDARD_LINK_GRAPH_v8_6.md",
+    "build_pollutant_standard_link_v8_6.py": "build_pollutant_standard_link_v8_6.py",
+    "validate_pollutant_standard_link_v8_6.py": "validate_pollutant_standard_link_v8_6.py",
+    "graph_edges_v0_6.jsonl.gz": "data/graph_rag/graph_edges_v0_6.jsonl.gz"
   }
 }
