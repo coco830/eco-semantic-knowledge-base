@@ -30,10 +30,10 @@
       "MAPS_TO_SCORE13": 48,
       "RELATED_TO_SCENARIO": 119193,
       "RISK_LINKED_TO_OPEN_QUESTION": 12,
-      "STANDARD_APPLIES_TO_INDUSTRY": 27,
-      "STANDARD_GOVERNS_SCENARIO": 479,
+      "STANDARD_APPLIES_TO_INDUSTRY": 17,
+      "STANDARD_GOVERNS_SCENARIO": 206,
       "STANDARD_IN_DOMAIN": 209,
-      "STANDARD_SUPPORTS_SCORE13": 192
+      "STANDARD_SUPPORTS_SCORE13": 189
     },
     "link_target_kind_counts": {
       "DOMAIN": 209,
@@ -42,7 +42,13 @@
       "SCORE13": 192,
       "SOURCE_REVIEW": 11
     },
-    "blocked_source_count": 11
+    "blocked_source_count": 11,
+    "review_decision_counts": {
+      "ACCEPT": 412,
+      "REJECT": 286
+    },
+    "accepted_deep_link_count": 412,
+    "rejected_deep_link_count": 286
   },
   "failure_samples": []
 }

@@ -19,6 +19,8 @@ BLOCKING_CONTENT_FLAGS = {
     "SMALL_FILE_REVIEW_REQUIRED_POSSIBLE_TRUNCATION_OR_EXCERPT",
 }
 DEEP_TARGET_KINDS = {"SCENARIO", "INDUSTRY", "SCORE13"}
+REVIEW_ACCEPT_GATE_STATUS = "HUMAN_REVIEW_ACCEPTED"
+REVIEW_REJECT_GATE_STATUS = "HUMAN_REVIEW_REJECTED"
 RADIATION_ALLOWED_SCENARIOS = {
     "SCN_RADIATION_DEVICE_SOURCE_SAFETY",
     "SCN_RAD_WASTE_PACKAGE_SOLIDIFICATION_CONTAINER",
@@ -82,10 +84,13 @@ def main():
     failures = []
     paths = {
         "pollutant_standard_link_map_v8_6.csv": artifact_path("pollutant_standard_link_map_v8_6.csv"),
+        "pollutant_standard_link_review_overlay_v8_6.csv": artifact_path("pollutant_standard_link_review_overlay_v8_6.csv"),
+        "pollutant_standard_link_review_overlay_v8_6.json": artifact_path("pollutant_standard_link_review_overlay_v8_6.json"),
         "graph_nodes_v0_6.jsonl": artifact_path("graph_nodes_v0_6.jsonl"),
         "graph_edges_v0_6.jsonl.gz": artifact_path("graph_edges_v0_6.jsonl.gz"),
         "pollutant_standard_link_map_v8_6.md": artifact_path("pollutant_standard_link_map_v8_6.md"),
         "pollutant_standard_link_graph_manifest_v8_6.json": artifact_path("pollutant_standard_link_graph_manifest_v8_6.json"),
+        "pollutant_standard_link_review_overlay_v8_6_report.json": artifact_path("pollutant_standard_link_review_overlay_v8_6_report.json"),
         "FINAL_POLLUTANT_STANDARD_LINK_GRAPH_v8_6.md": artifact_path("FINAL_POLLUTANT_STANDARD_LINK_GRAPH_v8_6.md"),
         "build_pollutant_standard_link_v8_6.py": artifact_path("build_pollutant_standard_link_v8_6.py"),
         "validate_pollutant_standard_link_v8_6.py": artifact_path("validate_pollutant_standard_link_v8_6.py"),
@@ -98,6 +103,8 @@ def main():
     scenarios = read_json(artifact_path("approved_scenario_templates_v1_0.json"))
     industries = [row for row in read_csv(artifact_path("industry_catalog_base.csv")) if row.get("level") == "class"]
     links = read_csv(paths["pollutant_standard_link_map_v8_6.csv"])
+    review_overlay = read_csv(paths["pollutant_standard_link_review_overlay_v8_6.csv"])
+    review_overlay_json = read_json(paths["pollutant_standard_link_review_overlay_v8_6.json"])
     nodes = read_jsonl(paths["graph_nodes_v0_6.jsonl"])
     edges = read_jsonl(paths["graph_edges_v0_6.jsonl.gz"])
     manifest = read_json(paths["pollutant_standard_link_graph_manifest_v8_6.json"])
@@ -121,6 +128,29 @@ def main():
     if {row["source_id"] for row in links} != source_ids:
         fail(failures, "pollutant_standard_link_map_v8_6.csv", "source_coverage_mismatch")
 
+    deep_links = [row for row in links if row["target_kind"] in DEEP_TARGET_KINDS]
+    overlay_link_ids = [row["link_id"] for row in review_overlay]
+    overlay_review_ids = [row["review_item_id"] for row in review_overlay]
+    if len(overlay_link_ids) != len(set(overlay_link_ids)):
+        fail(failures, "pollutant_standard_link_review_overlay_v8_6.csv", "duplicate_link_id")
+    if len(overlay_review_ids) != len(set(overlay_review_ids)):
+        fail(failures, "pollutant_standard_link_review_overlay_v8_6.csv", "duplicate_review_item_id")
+    if {row["link_id"] for row in review_overlay} != {row["link_id"] for row in deep_links}:
+        fail(failures, "pollutant_standard_link_review_overlay_v8_6.csv", "review_overlay_deep_link_coverage_mismatch")
+    if len(review_overlay_json) != len(review_overlay):
+        fail(failures, "pollutant_standard_link_review_overlay_v8_6.json", "row_count_mismatch")
+
+    overlay_by_link = {row["link_id"]: row for row in review_overlay}
+    for row in review_overlay:
+        row_id = row.get("overlay_id", "")
+        check_boundary(failures, row, "pollutant_standard_link_review_overlay_v8_6.csv", row_id)
+        if row.get("decision") not in {"ACCEPT", "REJECT"}:
+            fail(failures, "pollutant_standard_link_review_overlay_v8_6.csv", "bad_decision", row_id)
+        if row.get("review_item_id") != f"RVQ86::{row.get('link_id')}":
+            fail(failures, "pollutant_standard_link_review_overlay_v8_6.csv", "bad_review_item_id", row_id)
+        if row.get("runtime_effect") != "NO_RUNTIME_EFFECT":
+            fail(failures, "pollutant_standard_link_review_overlay_v8_6.csv", "bad_runtime_effect", row_id)
+
     domain_links = Counter(row["source_id"] for row in links if row["target_kind"] == "DOMAIN")
     for source_id in source_ids:
         if domain_links[source_id] != 1:
@@ -129,6 +159,16 @@ def main():
     for row in links:
         row_id = row.get("link_id", "")
         check_boundary(failures, row, "pollutant_standard_link_map_v8_6.csv", row_id)
+        if row["target_kind"] in DEEP_TARGET_KINDS:
+            review_row = overlay_by_link[row["link_id"]]
+            expected_label = "CONFIRM_LINK" if review_row["decision"] == "ACCEPT" else "REJECT_CANDIDATE"
+            expected_gate = REVIEW_ACCEPT_GATE_STATUS if review_row["decision"] == "ACCEPT" else REVIEW_REJECT_GATE_STATUS
+            if row.get("human_review_label") != expected_label:
+                fail(failures, "pollutant_standard_link_map_v8_6.csv", "human_review_label_mismatch", row_id)
+            if row.get("gate_status") != expected_gate:
+                fail(failures, "pollutant_standard_link_map_v8_6.csv", "human_review_gate_status_mismatch", row_id)
+        elif row.get("human_review_label"):
+            fail(failures, "pollutant_standard_link_map_v8_6.csv", "unexpected_human_review_label", row_id)
         if row["target_kind"] == "SCENARIO" and row["target_id"] not in scenario_ids:
             fail(failures, "pollutant_standard_link_map_v8_6.csv", "unknown_scenario_id", row_id)
         if row["target_kind"] == "INDUSTRY" and row["target_id"] not in industry_codes:
@@ -173,6 +213,17 @@ def main():
         if edge_type_counts[edge_type] == 0:
             fail(failures, "graph_edges_v0_6.jsonl.gz", "missing_edge_type", edge_type)
 
+    edge_id_set = set(edge_ids)
+    for row in links:
+        if row["target_kind"] == "SOURCE_REVIEW":
+            continue
+        expected_edge_id = f"edge:v8_6:{row['link_id']}"
+        if row["target_kind"] in DEEP_TARGET_KINDS and row.get("human_review_label") == "REJECT_CANDIDATE":
+            if expected_edge_id in edge_id_set:
+                fail(failures, "graph_edges_v0_6.jsonl.gz", "rejected_review_link_has_graph_edge", row["link_id"])
+        elif expected_edge_id not in edge_id_set:
+            fail(failures, "graph_edges_v0_6.jsonl.gz", "accepted_or_domain_link_missing_graph_edge", row["link_id"])
+
     if manifest.get("knowledge_base_version") != VERSION:
         fail(failures, "pollutant_standard_link_graph_manifest_v8_6.json", "bad_version")
     if manifest.get("final_state") != FINAL_STATE or manifest.get("runtime_integration") != RUNTIME_INTEGRATION:
@@ -183,6 +234,8 @@ def main():
         "graph_edges": "graph_edges_v0_6.jsonl.gz",
         "design_md": "pollutant_standard_link_map_v8_6.md",
         "report_md": "FINAL_POLLUTANT_STANDARD_LINK_GRAPH_v8_6.md",
+        "review_overlay_csv": "pollutant_standard_link_review_overlay_v8_6.csv",
+        "review_overlay_json": "pollutant_standard_link_review_overlay_v8_6.json",
     }.items():
         if manifest.get("outputs", {}).get(key, {}).get("sha256") != sha256_file(paths[path_name]):
             fail(failures, "pollutant_standard_link_graph_manifest_v8_6.json", f"{key}_sha256_mismatch")
@@ -201,6 +254,9 @@ def main():
             "edge_type_counts": dict(sorted(edge_type_counts.items())),
             "link_target_kind_counts": dict(sorted(Counter(row["target_kind"] for row in links).items())),
             "blocked_source_count": len(blocked_sources),
+            "review_decision_counts": dict(sorted(Counter(row["decision"] for row in review_overlay).items())),
+            "accepted_deep_link_count": sum(1 for row in deep_links if row.get("human_review_label") == "CONFIRM_LINK"),
+            "rejected_deep_link_count": sum(1 for row in deep_links if row.get("human_review_label") == "REJECT_CANDIDATE"),
         },
         "failure_samples": failures[:50],
     }
