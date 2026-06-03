@@ -22,3 +22,12 @@ manifests/pollutant_standard_link_graph_manifest_v8_6.json text eol=lf
 reports/FINAL_POLLUTANT_STANDARD_LINK_GRAPH_v8_6.md text eol=lf
 reports/pollutant_standard_link_graph_gate_report_v8_6.json text eol=lf
 reports/pollutant_standard_link_review_overlay_v8_6.json text eol=lf
+
+# V8.7 standard-limit profile/import hashes are computed over LF bytes.
+data/review/pollutant_standard_*_v8_7.csv text eol=lf
+data/review/pollutant_standard_*_v8_7.json text eol=lf
+data/runtime/pollutant_standard_limit_runtime_*_v8_7.csv text eol=lf
+data/runtime/pollutant_standard_limit_runtime_*_v8_7.json text eol=lf
+docs/runtime/pollutant_standard_limit_runtime_*_v8_7.md text eol=lf
+manifests/pollutant_standard_limit_runtime_*_v8_7.json text eol=lf
+reports/pollutant_standard_*_v8_7.json text eol=lf

@@ -33,6 +33,22 @@
       "SMALL_FILE_REVIEW_REQUIRED_POSSIBLE_TRUNCATION_OR_EXCERPT": 2,
       "TITLE_LEVEL_AND_SOURCE_LOCK_READY": 198
     },
+    "source_recovery_action_distribution": {
+      "CONFIRMED_UNBLOCK_CURRENT_STANDARD": 5,
+      "OBSOLETE_EXCLUDE_NO_ACTIVE_REPLACEMENT": 3,
+      "OBSOLETE_EXCLUDE_REPLACEMENT_GOVERNANCE": 3
+    },
+    "standard_lifecycle_status_distribution": {
+      "CURRENT": 5,
+      "OBSOLETE_NO_ACTIVE_REPLACEMENT": 1,
+      "OBSOLETE_NO_EXACT_REPLACEMENT": 1,
+      "OBSOLETE_REPLACED": 3,
+      "OBSOLETE_REPLACED_THEN_REPLACEMENT_OBSOLETED": 1
+    },
+    "active_standard_source_count": 203,
+    "obsolete_excluded_source_count": 6,
+    "source_recovery_confirmed_deep_link_count": 16,
+    "replacement_standard_governance_candidate_count": 3,
     "industry_linked_source_count": 26,
     "review_decision_distribution": {
       "ACCEPT": 412,
@@ -46,8 +62,8 @@
   "outputs": {
     "link_csv": {
       "path": "data/approved_baseline/pollutant_domain_v8_5/pollutant_standard_link_map_v8_6.csv",
-      "rows": 918,
-      "sha256": "sha256:2412318632262f29956c221c8e2f2085f7e7c6c93f55f554a317f8beea5c5b49"
+      "rows": 923,
+      "sha256": "sha256:4595324bd90f6af9ceaba30fa0620447dab8d9cc5ed6ad190f54b14e5eec0740"
     },
     "review_overlay_csv": {
       "path": "data/review/pollutant_standard_link_review_overlay_v8_6.csv",
@@ -59,29 +75,40 @@
       "rows": 698,
       "sha256": "sha256:1b170b2ed71a80ea43e8d99736c577446cef2c7e42c0c26cfb6eb072c5897f2a"
     },
+    "source_recovery_csv": {
+      "path": "data/review/pollutant_standard_source_recovery_v8_7.csv",
+      "rows": 11,
+      "sha256": "sha256:954207b14d63e2d598a23d60084995bbb3864bde88aac679a52f1df61e1f8be2"
+    },
+    "source_recovery_report": {
+      "path": "reports/pollutant_standard_source_recovery_v8_7.json",
+      "sha256": "sha256:5380b3a984174cacaa0d2b9c652c3a0e1c22c5c71156498de4cfc2d1b93e749b"
+    },
     "graph_nodes": {
       "path": "data/graph_rag/graph_nodes_v0_6.jsonl",
-      "rows": 24954,
-      "sha256": "sha256:dfa340c789e4bdf28d7fdba13f7f310852211f6bc1ed93434f88c650b2a40e7e"
+      "rows": 24951,
+      "sha256": "sha256:7635a95b372684cd29d2144c3401f30f5eefe14edc9f0255ea17851f77e95c17"
     },
     "graph_edges": {
       "path": "data/graph_rag/graph_edges_v0_6.jsonl.gz",
-      "rows": 165862,
-      "sha256": "sha256:8d32f8f3c9791760cf7a147bcac972b869560f41c5714fb0fca300e9f91f7769"
+      "rows": 165875,
+      "sha256": "sha256:7edcdfa4160a1939ad93c6fbc226cbf2618c5c899ed4be7cb4b63e103b8b9677"
     },
     "design_md": {
       "path": "docs/design/pollutant_standard_link_map_v8_6.md",
-      "sha256": "sha256:c5d5a770e4ed784e1b4be07aa8d7a6055f587e8662f151c2e34df8f831d1d5f3"
+      "sha256": "sha256:438558ff0c86a82dbd16d36a90f35ede3d554350e7ea6113506b11c9d282d843"
     },
     "report_md": {
       "path": "reports/FINAL_POLLUTANT_STANDARD_LINK_GRAPH_v8_6.md",
-      "sha256": "sha256:e4583f8caa0c80873a0362a7d470569c3083525927187fc891f10186c1b4f10d"
+      "sha256": "sha256:4d746efd23e8397a69f0114e6e999c62c6493e9d6dd265069a39170220737a6c"
     }
   },
   "guards": {
     "v8_5_baseline_mutated": false,
     "radiation_all_industry_default": "blocked",
-    "ocr_and_small_file_deep_links": "blocked",
+    "ocr_and_small_file_deep_links": "source-recovery-confirmed current standards only",
+    "obsolete_old_standard_sources": "excluded_from_pollutant_standard_source_nodes_and_old_standard_edges",
+    "replacement_standard_candidates": "source_snapshot_evidence_human_adapter_approval_standard_limit_profile_adapter_outputs_and_runtime_import_contract_ready_but_downstream_ecocheck_execution_not_in_this_package",
     "human_rejected_deep_links": "audited_in_link_csv_excluded_from_graph_edges",
     "runtime_code_mutation": false
   }

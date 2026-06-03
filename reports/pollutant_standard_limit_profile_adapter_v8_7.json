@@ -1,0 +1,33 @@
+{
+  "schema_version": "pollutant-standard-limit-profile-adapter.v8_7",
+  "final_state": "APPROVED_STANDARD_LIMIT_PROFILE_ADAPTER",
+  "runtime_status": "APPROVED_FOR_IMPORT_PENDING_TESTS",
+  "runtime_integration": "approved_standard_limit_profile_import_contract",
+  "human_review_status": "APPROVED_BY_CANDY_FOR_STANDARD_LIMIT_PROFILE_ADAPTER",
+  "row_count": 74,
+  "standard_counts": {
+    "GB 13457-2025": 39,
+    "GB 15848-2009": 24,
+    "HJ 5.2-2026": 11
+  },
+  "profile_family_counts": {
+    "EMISSION_STANDARD_LIMIT_TABLE": 26,
+    "RADIATION_NUMERIC_CONSTRAINT": 24,
+    "STANDARD_LIMIT_FIELD_REQUIREMENT": 11,
+    "WATER_USE_BENCHMARK_TABLE": 13
+  },
+  "extraction_confidence_counts": {
+    "HIGH": 39,
+    "MEDIUM": 35
+  },
+  "outputs": {
+    "adapter_csv": {
+      "path": "data/review/pollutant_standard_limit_profile_adapter_v8_7.csv",
+      "sha256": "sha256:028e23fdfae821b81815b9a01538ddb4437facafaf063e4051940a8fdac0297f"
+    },
+    "adapter_json": {
+      "path": "data/review/pollutant_standard_limit_profile_adapter_v8_7.json",
+      "sha256": "sha256:a0c78e2391c5f0ecf397aabb795f8398494edc10b8f6fa5d41ff60a95a1a567b"
+    }
+  }
+}

@@ -7,7 +7,7 @@
   "runtime_integration": "disabled",
   "counts": {
     "source_count": 209,
-    "link_count": 918,
+    "link_count": 923,
     "node_type_counts": {
       "ApplicabilityRelation": 22815,
       "Industry": 1382,
@@ -17,7 +17,8 @@
       "PermitCatalogEntry": 112,
       "PermitCondition": 336,
       "PollutantDomain": 8,
-      "PollutantStandardSource": 209,
+      "PollutantStandardSource": 203,
+      "ReplacementStandardCandidate": 3,
       "RiskAcceptance": 9,
       "ScenarioTemplate": 28,
       "Score13Dimension": 13
@@ -29,20 +30,25 @@
       "HAS_INSPECTION_CANDIDATE": 22,
       "MAPS_TO_SCORE13": 48,
       "RELATED_TO_SCENARIO": 119193,
+      "REPLACEMENT_STANDARD_IN_DOMAIN": 3,
       "RISK_LINKED_TO_OPEN_QUESTION": 12,
       "STANDARD_APPLIES_TO_INDUSTRY": 17,
-      "STANDARD_GOVERNS_SCENARIO": 206,
-      "STANDARD_IN_DOMAIN": 209,
-      "STANDARD_SUPPORTS_SCORE13": 189
+      "STANDARD_GOVERNS_SCENARIO": 217,
+      "STANDARD_IN_DOMAIN": 203,
+      "STANDARD_SUPPORTS_SCORE13": 194
     },
     "link_target_kind_counts": {
-      "DOMAIN": 209,
+      "DOMAIN": 203,
       "INDUSTRY": 27,
-      "SCENARIO": 479,
-      "SCORE13": 192,
-      "SOURCE_REVIEW": 11
+      "SCENARIO": 490,
+      "SCORE13": 197,
+      "STANDARD_LIFECYCLE": 6
     },
-    "blocked_source_count": 11,
+    "blocked_source_count": 0,
+    "source_recovery_count": 11,
+    "source_recovery_deep_link_count": 16,
+    "obsolete_excluded_source_count": 6,
+    "active_replacement_standard_count": 3,
     "review_decision_counts": {
       "ACCEPT": 412,
       "REJECT": 286

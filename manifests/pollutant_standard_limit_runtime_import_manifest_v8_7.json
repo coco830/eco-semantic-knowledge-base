@@ -1,0 +1,40 @@
+{
+  "manifest_id": "pollutant_standard_limit_runtime_import_manifest_v8_7",
+  "contract_version": "v8.7-standard-limit-runtime-import-contract",
+  "approval_id": "CANDY-APPROVAL-STANDARD-LIMIT-RUNTIME-IMPORT-2026-06-03",
+  "final_state": "APPROVED_STANDARD_LIMIT_PROFILE_RUNTIME_IMPORT_CONTRACT",
+  "runtime_status": "APPROVED_FOR_IMPORT_PENDING_TESTS",
+  "runtime_integration": "approved_standard_limit_profile_import_contract",
+  "import_action": "APPROVED_FOR_RUNTIME_IMPORT_CONTRACT",
+  "runtime_effect": "STANDARD_LIMIT_LOOKUP_ONLY",
+  "import_row_count": 74,
+  "standard_counts": {
+    "GB 13457-2025": 39,
+    "GB 15848-2009": 24,
+    "HJ 5.2-2026": 11
+  },
+  "profile_family_counts": {
+    "EMISSION_STANDARD_LIMIT_TABLE": 26,
+    "RADIATION_NUMERIC_CONSTRAINT": 24,
+    "STANDARD_LIMIT_FIELD_REQUIREMENT": 11,
+    "WATER_USE_BENCHMARK_TABLE": 13
+  },
+  "source_files": [
+    "pollutant_standard_replacement_source_evidence_v8_7.csv",
+    "pollutant_standard_limit_profile_adapter_v8_7.csv",
+    "pollutant_standard_limit_runtime_import_v8_7.csv"
+  ],
+  "forbidden_runtime_actions": [
+    "create_confirmed_dataset",
+    "run_formal_calculation",
+    "formal_permit_right_quantity",
+    "auto_select_coefficient",
+    "mutate_coefficient_selector",
+    "radiation_all_industry_default",
+    "formal_permit_type",
+    "formal_inspection_template",
+    "auto_deduct",
+    "auto_deduct_score",
+    "formal_compliance_conclusion"
+  ]
+}

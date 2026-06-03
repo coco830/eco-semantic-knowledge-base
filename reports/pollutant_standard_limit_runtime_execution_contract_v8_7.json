@@ -1,0 +1,183 @@
+{
+  "manifest_id": "pollutant_standard_limit_runtime_execution_manifest_v8_7",
+  "contract_version": "v8.7-standard-limit-runtime-execution-contract",
+  "source_contract_version": "v8.7-standard-limit-runtime-import-contract",
+  "approval_id": "CANDY-APPROVAL-STANDARD-LIMIT-RUNTIME-IMPORT-2026-06-03",
+  "final_state": "APPROVED_STANDARD_LIMIT_RUNTIME_EXECUTION_CONTRACT_TESTED",
+  "runtime_status": "DOWNSTREAM_IMPORT_CONTRACT_TEST_EXECUTION_PASS",
+  "runtime_integration": "approved_standard_limit_profile_import_contract",
+  "import_action": "APPROVED_FOR_RUNTIME_IMPORT_CONTRACT",
+  "execution_action": "DOWNSTREAM_RUNTIME_IMPORT_CONTRACT_TEST_EXECUTED",
+  "execution_mode": "DRY_RUN_MATERIALIZATION_ONLY",
+  "runtime_effect": "STANDARD_LIMIT_LOOKUP_ONLY",
+  "lookup_entry_count": 74,
+  "test_status": "PASS",
+  "standard_counts": {
+    "GB 13457-2025": 39,
+    "GB 15848-2009": 24,
+    "HJ 5.2-2026": 11
+  },
+  "runtime_scope_counts": {
+    "standard_limit_lookup.eia_report_field_requirement": 11,
+    "standard_limit_lookup.radiation_numeric_constraint": 24,
+    "standard_limit_lookup.water_pollutant_concentration": 26,
+    "standard_limit_lookup.water_use_benchmark": 13
+  },
+  "forbidden_runtime_actions": [
+    "create_confirmed_dataset",
+    "run_formal_calculation",
+    "formal_permit_right_quantity",
+    "auto_select_coefficient",
+    "mutate_coefficient_selector",
+    "radiation_all_industry_default",
+    "formal_permit_type",
+    "formal_inspection_template",
+    "auto_deduct",
+    "auto_deduct_score",
+    "formal_compliance_conclusion"
+  ],
+  "source_hashes": {
+    "runtime_import_csv": "sha256:2490ae945fe952077dbc66e5089a984be15d4eccec9824d3716871180078efdb",
+    "runtime_import_json": "sha256:e59544a1da615a4f12f232f39a03040dfb48abd5806620a4e658252ecc3dadd6",
+    "runtime_import_contract_json": "sha256:e47e976c7f3dd97366b2f64b82527a06daee172ac889fb55d6da9bb9b5bb3b3e",
+    "runtime_import_manifest_json": "sha256:8aebe93470e06c6b0d4c73da4826417eac9894bb9e6a35f6c065f83c824dfdea"
+  },
+  "outputs": {
+    "lookup_snapshot_json": {
+      "path": "data/runtime/pollutant_standard_limit_runtime_lookup_snapshot_v8_7.json",
+      "sha256": "sha256:fd3921bde638602aca8eb0f34596fa85e9286da7c6a511345968a1c7aea78935"
+    },
+    "execution_contract_json": {
+      "path": "data/runtime/pollutant_standard_limit_runtime_execution_contract_v8_7.json",
+      "sha256": "sha256:c866b62fd999518492d4cd2cbfe6b5570310957d785b3ef1c17d65dbf4b2ccef"
+    },
+    "execution_test_cases_json": {
+      "path": "data/runtime/pollutant_standard_limit_runtime_execution_test_cases_v8_7.json",
+      "sha256": "sha256:f4e6d595b87eb32f53a3cc763fd2bb2537cfc1c931faa4990138f0f7e12854cc"
+    },
+    "execution_manifest_json": {
+      "path": "manifests/pollutant_standard_limit_runtime_execution_manifest_v8_7.json",
+      "sha256": "sha256:2eb010c8bbc3ad6b33b87bb6ad54832df7b3aaff8c2a6fc4ab5b01c9f5b8f28f"
+    }
+  },
+  "test_cases": [
+    {
+      "test_case_id": "PSLRT-EXEC-TC-001",
+      "name": "runtime_import_row_count",
+      "status": "PASS",
+      "expected": "74 rows",
+      "observed": "74 rows",
+      "evidence": "pollutant_standard_limit_runtime_import_v8_7.csv"
+    },
+    {
+      "test_case_id": "PSLRT-EXEC-TC-002",
+      "name": "runtime_import_required_fields",
+      "status": "PASS",
+      "expected": [
+        "runtime_import_id",
+        "source_profile_id",
+        "approval_id",
+        "replacement_standard_no",
+        "replacement_standard_title",
+        "profile_family",
+        "runtime_scope",
+        "runtime_status",
+        "runtime_integration",
+        "runtime_effect",
+        "import_action",
+        "rollback_manifest_id",
+        "contract_version",
+        "final_state"
+      ],
+      "observed": "all present",
+      "evidence": "pollutant_standard_limit_runtime_import_v8_7.csv"
+    },
+    {
+      "test_case_id": "PSLRT-EXEC-TC-003",
+      "name": "unique_runtime_and_lookup_ids",
+      "status": "PASS",
+      "expected": "unique ids",
+      "observed": "runtime=True;lookup=True",
+      "evidence": "pollutant_standard_limit_runtime_lookup_snapshot_v8_7.json"
+    },
+    {
+      "test_case_id": "PSLRT-EXEC-TC-004",
+      "name": "source_import_contract_state",
+      "status": "PASS",
+      "expected": "APPROVED_STANDARD_LIMIT_PROFILE_RUNTIME_IMPORT_CONTRACT",
+      "observed": "rows=True;contract=True;manifest=True",
+      "evidence": "pollutant_standard_limit_runtime_data_contract_v8_7.json"
+    },
+    {
+      "test_case_id": "PSLRT-EXEC-TC-005",
+      "name": "lookup_snapshot_materialization",
+      "status": "PASS",
+      "expected": "snapshot row count equals import row count",
+      "observed": "74 entries",
+      "evidence": "pollutant_standard_limit_runtime_lookup_snapshot_v8_7.json"
+    },
+    {
+      "test_case_id": "PSLRT-EXEC-TC-006",
+      "name": "runtime_effect_lookup_only",
+      "status": "PASS",
+      "expected": "STANDARD_LIMIT_LOOKUP_ONLY",
+      "observed": [
+        "STANDARD_LIMIT_LOOKUP_ONLY"
+      ],
+      "evidence": "pollutant_standard_limit_runtime_lookup_snapshot_v8_7.json"
+    },
+    {
+      "test_case_id": "PSLRT-EXEC-TC-007",
+      "name": "forbidden_runtime_actions_remain_blocked",
+      "status": "PASS",
+      "expected": [
+        "create_confirmed_dataset",
+        "run_formal_calculation",
+        "formal_permit_right_quantity",
+        "auto_select_coefficient",
+        "mutate_coefficient_selector",
+        "radiation_all_industry_default",
+        "formal_permit_type",
+        "formal_inspection_template",
+        "auto_deduct",
+        "auto_deduct_score",
+        "formal_compliance_conclusion"
+      ],
+      "observed": "blocked",
+      "evidence": "pollutant_standard_limit_runtime_lookup_snapshot_v8_7.json"
+    },
+    {
+      "test_case_id": "PSLRT-EXEC-TC-008",
+      "name": "source_traceability_preserved",
+      "status": "PASS",
+      "expected": "source_profile_id/raw_fragment/source_page present",
+      "observed": "present",
+      "evidence": "pollutant_standard_limit_runtime_lookup_snapshot_v8_7.json"
+    },
+    {
+      "test_case_id": "PSLRT-EXEC-TC-009",
+      "name": "runtime_scope_coverage",
+      "status": "PASS",
+      "expected": "4 runtime scopes",
+      "observed": {
+        "standard_limit_lookup.eia_report_field_requirement": 11,
+        "standard_limit_lookup.radiation_numeric_constraint": 24,
+        "standard_limit_lookup.water_pollutant_concentration": 26,
+        "standard_limit_lookup.water_use_benchmark": 13
+      },
+      "evidence": "pollutant_standard_limit_runtime_lookup_snapshot_v8_7.json"
+    },
+    {
+      "test_case_id": "PSLRT-EXEC-TC-010",
+      "name": "standard_coverage",
+      "status": "PASS",
+      "expected": "3 approved standards",
+      "observed": {
+        "GB 13457-2025": 39,
+        "GB 15848-2009": 24,
+        "HJ 5.2-2026": 11
+      },
+      "evidence": "pollutant_standard_limit_runtime_lookup_snapshot_v8_7.json"
+    }
+  ]
+}

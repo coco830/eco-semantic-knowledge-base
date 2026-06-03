@@ -1,0 +1,58 @@
+{
+  "manifest_id": "pollutant_standard_limit_runtime_import_manifest_v8_7",
+  "contract_version": "v8.7-standard-limit-runtime-import-contract",
+  "approval_id": "CANDY-APPROVAL-STANDARD-LIMIT-RUNTIME-IMPORT-2026-06-03",
+  "final_state": "APPROVED_STANDARD_LIMIT_PROFILE_RUNTIME_IMPORT_CONTRACT",
+  "runtime_status": "APPROVED_FOR_IMPORT_PENDING_TESTS",
+  "runtime_integration": "approved_standard_limit_profile_import_contract",
+  "import_action": "APPROVED_FOR_RUNTIME_IMPORT_CONTRACT",
+  "runtime_effect": "STANDARD_LIMIT_LOOKUP_ONLY",
+  "import_row_count": 74,
+  "standard_counts": {
+    "GB 13457-2025": 39,
+    "GB 15848-2009": 24,
+    "HJ 5.2-2026": 11
+  },
+  "profile_family_counts": {
+    "EMISSION_STANDARD_LIMIT_TABLE": 26,
+    "RADIATION_NUMERIC_CONSTRAINT": 24,
+    "STANDARD_LIMIT_FIELD_REQUIREMENT": 11,
+    "WATER_USE_BENCHMARK_TABLE": 13
+  },
+  "source_files": [
+    "pollutant_standard_replacement_source_evidence_v8_7.csv",
+    "pollutant_standard_limit_profile_adapter_v8_7.csv",
+    "pollutant_standard_limit_runtime_import_v8_7.csv"
+  ],
+  "forbidden_runtime_actions": [
+    "create_confirmed_dataset",
+    "run_formal_calculation",
+    "formal_permit_right_quantity",
+    "auto_select_coefficient",
+    "mutate_coefficient_selector",
+    "radiation_all_industry_default",
+    "formal_permit_type",
+    "formal_inspection_template",
+    "auto_deduct",
+    "auto_deduct_score",
+    "formal_compliance_conclusion"
+  ],
+  "outputs": {
+    "runtime_import_csv": {
+      "path": "data/runtime/pollutant_standard_limit_runtime_import_v8_7.csv",
+      "sha256": "sha256:2490ae945fe952077dbc66e5089a984be15d4eccec9824d3716871180078efdb"
+    },
+    "runtime_import_json": {
+      "path": "data/runtime/pollutant_standard_limit_runtime_import_v8_7.json",
+      "sha256": "sha256:e59544a1da615a4f12f232f39a03040dfb48abd5806620a4e658252ecc3dadd6"
+    },
+    "runtime_contract_json": {
+      "path": "data/runtime/pollutant_standard_limit_runtime_data_contract_v8_7.json",
+      "sha256": "sha256:e47e976c7f3dd97366b2f64b82527a06daee172ac889fb55d6da9bb9b5bb3b3e"
+    },
+    "runtime_manifest_json": {
+      "path": "manifests/pollutant_standard_limit_runtime_import_manifest_v8_7.json",
+      "sha256": "sha256:8aebe93470e06c6b0d4c73da4826417eac9894bb9e6a35f6c065f83c824dfdea"
+    }
+  }
+}

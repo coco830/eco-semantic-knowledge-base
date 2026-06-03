@@ -27,14 +27,23 @@ OUT_NODES = artifact_path("graph_nodes_v0_6.jsonl")
 OUT_EDGES = ROOT / "data" / "graph_rag" / "graph_edges_v0_6.jsonl.gz"
 REVIEW_OVERLAY = ROOT / "data" / "review" / "pollutant_standard_link_review_overlay_v8_6.csv"
 REVIEW_OVERLAY_JSON = ROOT / "data" / "review" / "pollutant_standard_link_review_overlay_v8_6.json"
+SOURCE_RECOVERY = ROOT / "data" / "review" / "pollutant_standard_source_recovery_v8_7.csv"
 OUT_DESIGN = artifact_path("pollutant_standard_link_map_v8_6.md")
 OUT_MANIFEST = artifact_path("pollutant_standard_link_graph_manifest_v8_6.json")
 OUT_REPORT = artifact_path("FINAL_POLLUTANT_STANDARD_LINK_GRAPH_v8_6.md")
+OUT_SOURCE_RECOVERY_REPORT = ROOT / "reports" / "pollutant_standard_source_recovery_v8_7.json"
 
 BLOCKING_CONTENT_FLAGS = {
     "OCR_REQUIRED_BEFORE_CLAUSE_OR_NUMERIC_ADOPTION",
     "SMALL_FILE_REVIEW_REQUIRED_POSSIBLE_TRUNCATION_OR_EXCERPT",
 }
+RECOVERY_UNBLOCK_ACTIONS = {"CONFIRMED_UNBLOCK_CURRENT_STANDARD"}
+RECOVERY_EXCLUDED_ACTIONS = {
+    "OBSOLETE_EXCLUDE_REPLACEMENT_GOVERNANCE",
+    "OBSOLETE_EXCLUDE_NO_ACTIVE_REPLACEMENT",
+}
+RECOVERY_REPLACEMENT_GOVERNANCE_ACTIONS = {"OBSOLETE_EXCLUDE_REPLACEMENT_GOVERNANCE"}
+ACTIVE_REPLACEMENT_STATUSES = {"CURRENT", "FUTURE_EFFECTIVE"}
 
 SCORE13_NAMES = {
     "S01": "环保手续完善情况",
@@ -95,6 +104,10 @@ LINK_FIELDS = [
     "evidence_text",
     "content_usability_flag",
     "content_gate_status",
+    "source_recovery_action",
+    "standard_lifecycle_status",
+    "replacement_standard_no",
+    "replacement_lifecycle_status",
     "human_review_label",
     "gate_status",
     "runtime_status",
@@ -180,7 +193,83 @@ def safe_id(value):
 
 
 def content_gate(row):
+    if row.get("source_recovery_action") in RECOVERY_EXCLUDED_ACTIONS:
+        return "OBSOLETE_EXCLUDED_FROM_CANDIDATE_GRAPH"
+    if row.get("source_recovery_action") in RECOVERY_UNBLOCK_ACTIONS:
+        return "SOURCE_RECOVERY_CONFIRMED"
     return "BLOCKED_PENDING_OCR" if row.get("content_usability_flag") in BLOCKING_CONTENT_FLAGS else "TITLE_LEVEL_LINK_ONLY"
+
+
+def is_obsolete_excluded(row):
+    return row.get("source_recovery_action") in RECOVERY_EXCLUDED_ACTIONS
+
+
+def is_source_recovery_unblocked(row):
+    return row.get("source_recovery_action") in RECOVERY_UNBLOCK_ACTIONS
+
+
+def has_active_replacement_candidate(row):
+    return (
+        row.get("source_recovery_action") in RECOVERY_REPLACEMENT_GOVERNANCE_ACTIONS
+        and row.get("replacement_standard_no")
+        and row.get("replacement_lifecycle_status") in ACTIVE_REPLACEMENT_STATUSES
+    )
+
+
+def apply_source_recovery(baseline_rows, recovery_rows):
+    recovery_by_source = {row["source_id"]: row for row in recovery_rows}
+    normalized = []
+    for row in baseline_rows:
+        item = dict(row)
+        recovery = recovery_by_source.get(row["source_id"], {})
+        for key in [
+            "source_recovery_action",
+            "standard_lifecycle_status",
+            "replacement_standard_no",
+            "replacement_standard_title",
+            "replacement_lifecycle_status",
+            "replacement_effective_date",
+            "evidence_official_url",
+            "evidence_registry_url",
+            "evidence_note",
+            "graph_policy",
+        ]:
+            source_key = "recovery_action" if key == "source_recovery_action" else key
+            item[key] = recovery.get(source_key, "")
+        canonical_standard_no = recovery.get("canonical_standard_no", "")
+        if canonical_standard_no and is_source_recovery_unblocked(item):
+            item["source_standard_no_canonical"] = canonical_standard_no
+        normalized.append(item)
+    return normalized
+
+
+def link_fingerprint(row):
+    return (row.get("source_id", ""), row.get("link_type", ""), row.get("target_kind", ""), row.get("target_id", ""))
+
+
+def link_number(link_id):
+    match = re.search(r"(\d+)$", link_id or "")
+    return int(match.group(1)) if match else 0
+
+
+def stabilize_link_ids(links, previous_links):
+    previous_by_key = {}
+    for row in previous_links:
+        previous_by_key.setdefault(link_fingerprint(row), row.get("link_id", ""))
+
+    used = set()
+    next_number = max([link_number(row.get("link_id", "")) for row in previous_links] + [0]) + 1
+    for link in links:
+        previous_id = previous_by_key.get(link_fingerprint(link), "")
+        if previous_id and previous_id not in used:
+            link["link_id"] = previous_id
+        else:
+            while f"PSL-V8_6-{next_number:05d}" in used:
+                next_number += 1
+            link["link_id"] = f"PSL-V8_6-{next_number:05d}"
+            next_number += 1
+        used.add(link["link_id"])
+    return sorted(links, key=lambda item: link_number(item["link_id"]))
 
 
 def normalize_zh(value):
@@ -237,7 +326,7 @@ def radiation_scenarios_for(title):
 
 def append_link(rows, source, link_type, target_kind, target_id, target_label, method, confidence, evidence, gate_status):
     row = {
-        "link_id": f"PSL-V8_6-{len(rows) + 1:05d}",
+        "link_id": "",
         "baseline_entry_id": source.get("baseline_entry_id", ""),
         "source_id": source.get("source_id", ""),
         "source_doc_title": source.get("source_doc_title", ""),
@@ -253,6 +342,10 @@ def append_link(rows, source, link_type, target_kind, target_id, target_label, m
         "evidence_text": evidence,
         "content_usability_flag": source.get("content_usability_flag", ""),
         "content_gate_status": content_gate(source),
+        "source_recovery_action": source.get("source_recovery_action", ""),
+        "standard_lifecycle_status": source.get("standard_lifecycle_status", ""),
+        "replacement_standard_no": source.get("replacement_standard_no", ""),
+        "replacement_lifecycle_status": source.get("replacement_lifecycle_status", ""),
         "human_review_label": "",
         "gate_status": gate_status,
         "runtime_status": RUNTIME_STATUS,
@@ -268,6 +361,20 @@ def append_link(rows, source, link_type, target_kind, target_id, target_label, m
 def build_links(baseline_rows, scenarios_by_id, industry_ix):
     rows = []
     for source in sorted(baseline_rows, key=lambda item: item["source_id"]):
+        if is_obsolete_excluded(source):
+            append_link(
+                rows,
+                source,
+                "STANDARD_EXCLUDED_FROM_CANDIDATE_GRAPH",
+                "STANDARD_LIFECYCLE",
+                source.get("source_recovery_action", "OBSOLETE_EXCLUDED_FROM_CANDIDATE_GRAPH"),
+                source.get("graph_policy", "obsolete standard excluded from candidate graph"),
+                "SOURCE_RECOVERY_LIFECYCLE_GATE",
+                "HIGH",
+                source.get("evidence_note", "obsolete source excluded from candidate graph"),
+                "OBSOLETE_EXCLUDED_FROM_CANDIDATE_GRAPH",
+            )
+            continue
         append_link(rows, source, "STANDARD_IN_DOMAIN", "DOMAIN", source["domain"], source["domain"], "DOMAIN_CLASSIFICATION", "HIGH", f"V8.5 domain={source['domain']}", "N/A")
         if content_gate(source) == "BLOCKED_PENDING_OCR":
             append_link(rows, source, "STANDARD_BLOCKED_PENDING_SOURCE_REVIEW", "SOURCE_REVIEW", "BLOCKED_PENDING_OCR", "OCR or small-file source review required before deep linking", "CONTENT_USABILITY_GATE", "HIGH", f"content_usability_flag={source.get('content_usability_flag', '')}", "BLOCKED_PENDING_OCR")
@@ -295,6 +402,9 @@ def apply_review_overlay(links, overlay_rows):
         if overlay:
             normalized["human_review_label"] = overlay["human_review_label"]
             normalized["gate_status"] = "HUMAN_REVIEW_ACCEPTED" if overlay["decision"] == "ACCEPT" else "HUMAN_REVIEW_REJECTED"
+        elif normalized["target_kind"] in {"SCENARIO", "INDUSTRY", "SCORE13"} and normalized.get("source_recovery_action") in RECOVERY_UNBLOCK_ACTIONS:
+            normalized["human_review_label"] = "SOURCE_RECOVERY_CONFIRMED"
+            normalized["gate_status"] = "SOURCE_RECOVERY_CONFIRMED"
         reviewed.append(normalized)
     return reviewed
 
@@ -352,13 +462,44 @@ def build_graph(v05_nodes, v05_edges, baseline_rows, scenarios, links):
             nodes.append(node("Score13Dimension", f"score13:{score_id}", score_id, {"score_item_id": score_id, "score_item_name": name}, "EcoCheck S01-S13 report dimension baseline", "HIGH", "N/A"))
             node_ids.add(f"score13:{score_id}")
     for row in sorted(baseline_rows, key=lambda item: item["source_id"]):
+        if is_obsolete_excluded(row):
+            continue
         props = dict(row)
-        props.update({"v8_6_link_status": "BLOCKED_PENDING_OCR" if content_gate(row) == "BLOCKED_PENDING_OCR" else "TITLE_LEVEL_LINKED_NEED_CONFIRM", "radiation_all_industry_default_blocked": row["domain"] == "radiation"})
+        props.update({"v8_6_link_status": "BLOCKED_PENDING_OCR" if content_gate(row) == "BLOCKED_PENDING_OCR" else content_gate(row), "radiation_all_industry_default_blocked": row["domain"] == "radiation"})
         nodes.append(node("PollutantStandardSource", f"standard:{row['source_id']}", row["source_id"], props, "pollutant_domain_approved_baseline_v8_5.csv", "HIGH", "NEED_CONFIRM"))
         node_ids.add(f"standard:{row['source_id']}")
 
     edges = [normalize_existing_graph_row(row) for row in v05_edges]
     edge_ids = {row["edge_id"] for row in edges}
+    for row in sorted((item for item in baseline_rows if has_active_replacement_candidate(item)), key=lambda item: item["source_id"]):
+        replacement_node_id = f"replacement_standard:{safe_id(row['replacement_standard_no'])}"
+        if replacement_node_id not in node_ids:
+            replacement_props = {
+                "replacement_standard_no": row["replacement_standard_no"],
+                "replacement_standard_title": row.get("replacement_standard_title", ""),
+                "replacement_lifecycle_status": row.get("replacement_lifecycle_status", ""),
+                "replacement_effective_date": row.get("replacement_effective_date", ""),
+                "source_recovery_action": row.get("source_recovery_action", ""),
+                "runtime_integration": RUNTIME_INTEGRATION,
+                "candidate_boundary": "replacement standard governance candidate; source snapshot not yet promoted",
+            }
+            nodes.append(node("ReplacementStandardCandidate", replacement_node_id, row["replacement_standard_no"], replacement_props, "pollutant_standard_source_recovery_v8_7.csv", "HIGH", "NEED_REPLACEMENT_SOURCE_REVIEW"))
+            node_ids.add(replacement_node_id)
+        edge_id = f"edge:v8_7:replacement:{safe_id(row['source_id'])}:{safe_id(row['replacement_standard_no'])}:domain"
+        if edge_id not in edge_ids:
+            props = {
+                "obsolete_source_id": row["source_id"],
+                "obsolete_standard_no": row.get("source_standard_no_canonical", ""),
+                "replacement_standard_no": row.get("replacement_standard_no", ""),
+                "replacement_lifecycle_status": row.get("replacement_lifecycle_status", ""),
+                "replacement_effective_date": row.get("replacement_effective_date", ""),
+                "domain": row.get("domain", ""),
+                "evidence_official_url": row.get("evidence_official_url", ""),
+                "evidence_registry_url": row.get("evidence_registry_url", ""),
+                "source_candidate_boundary_preserved": True,
+            }
+            edges.append(edge("REPLACEMENT_STANDARD_IN_DOMAIN", edge_id, replacement_node_id, f"domain:{row['domain']}", props, "pollutant_standard_source_recovery_v8_7.csv", "HIGH", "NEED_REPLACEMENT_SOURCE_REVIEW"))
+            edge_ids.add(edge_id)
     for link in sorted(links, key=lambda item: item["link_id"]):
         if link.get("human_review_label") == "REJECT_CANDIDATE":
             continue
@@ -393,12 +534,14 @@ def update_artifact_manifest():
         "pollutant_standard_link_map_v8_6.csv": "data/approved_baseline/pollutant_domain_v8_5/pollutant_standard_link_map_v8_6.csv",
         "pollutant_standard_link_review_overlay_v8_6.csv": "data/review/pollutant_standard_link_review_overlay_v8_6.csv",
         "pollutant_standard_link_review_overlay_v8_6.json": "data/review/pollutant_standard_link_review_overlay_v8_6.json",
+        "pollutant_standard_source_recovery_v8_7.csv": "data/review/pollutant_standard_source_recovery_v8_7.csv",
         "graph_nodes_v0_6.jsonl": "data/graph_rag/graph_nodes_v0_6.jsonl",
         "graph_edges_v0_6.jsonl.gz": "data/graph_rag/graph_edges_v0_6.jsonl.gz",
         "pollutant_standard_link_map_v8_6.md": "docs/design/pollutant_standard_link_map_v8_6.md",
         "pollutant_standard_link_graph_manifest_v8_6.json": "manifests/pollutant_standard_link_graph_manifest_v8_6.json",
         "pollutant_standard_link_graph_gate_report_v8_6.json": "reports/pollutant_standard_link_graph_gate_report_v8_6.json",
         "pollutant_standard_link_review_overlay_v8_6_report.json": "reports/pollutant_standard_link_review_overlay_v8_6.json",
+        "pollutant_standard_source_recovery_v8_7_report.json": "reports/pollutant_standard_source_recovery_v8_7.json",
         "FINAL_POLLUTANT_STANDARD_LINK_GRAPH_v8_6.md": "reports/FINAL_POLLUTANT_STANDARD_LINK_GRAPH_v8_6.md",
         "build_pollutant_standard_link_v8_6.py": "build_pollutant_standard_link_v8_6.py",
         "validate_pollutant_standard_link_v8_6.py": "validate_pollutant_standard_link_v8_6.py",
@@ -408,11 +551,14 @@ def update_artifact_manifest():
 
 def main():
     update_artifact_manifest()
-    baseline_rows = read_csv(BASELINE)
+    source_recovery = read_csv(SOURCE_RECOVERY)
+    baseline_rows = apply_source_recovery(read_csv(BASELINE), source_recovery)
     scenarios = read_json(SCENARIOS)
     scenarios_by_id = {row["scenario_id"]: row for row in scenarios}
     review_overlay = read_csv(REVIEW_OVERLAY)
-    links = apply_review_overlay(build_links(baseline_rows, scenarios_by_id, industry_index(read_csv(INDUSTRY_CATALOG))), review_overlay)
+    previous_links = read_csv(OUT_LINKS) if OUT_LINKS.exists() else []
+    links = stabilize_link_ids(build_links(baseline_rows, scenarios_by_id, industry_index(read_csv(INDUSTRY_CATALOG))), previous_links)
+    links = apply_review_overlay(links, review_overlay)
     nodes, edges = build_graph(read_jsonl(GRAPH_NODES_V05), read_jsonl(GRAPH_EDGES_V05, GRAPH_EDGES_V05_GZ), baseline_rows, scenarios, links)
 
     write_csv_lf(OUT_LINKS, links)
@@ -427,6 +573,12 @@ def main():
     usability_counts = Counter(row["content_usability_flag"] for row in baseline_rows)
     review_counts = Counter(row["decision"] for row in review_overlay)
     review_status_counts = Counter(row["overlay_status"] for row in review_overlay)
+    recovery_action_counts = Counter(row["source_recovery_action"] for row in baseline_rows if row.get("source_recovery_action"))
+    lifecycle_counts = Counter(row["standard_lifecycle_status"] for row in baseline_rows if row.get("standard_lifecycle_status"))
+    active_source_count = sum(1 for row in baseline_rows if not is_obsolete_excluded(row))
+    obsolete_excluded_count = sum(1 for row in baseline_rows if is_obsolete_excluded(row))
+    source_recovery_confirmed_deep_links = sum(1 for row in links if row.get("human_review_label") == "SOURCE_RECOVERY_CONFIRMED")
+    replacement_candidate_count = len({row["replacement_standard_no"] for row in baseline_rows if has_active_replacement_candidate(row)})
 
     design = f"""# pollutant_standard_link_map_v8_6
 
@@ -438,9 +590,13 @@ v8.6 adds a candidate bridge from V8.5 pollutant-domain approved sources to scen
 ## Truth Snapshot
 
 - V8.5 source rows: {len(baseline_rows)}
+- Active source rows emitted as `PollutantStandardSource`: {active_source_count}
+- Obsolete source rows excluded from candidate graph: {obsolete_excluded_count}
 - Domain distribution: `{dict(sorted(domain_counts.items()))}`
 - Source-role distribution: `{dict(sorted(role_counts.items()))}`
 - Content usability distribution: `{dict(sorted(usability_counts.items()))}`
+- Source recovery actions: `{dict(sorted(recovery_action_counts.items()))}`
+- Standard lifecycle statuses: `{dict(sorted(lifecycle_counts.items()))}`
 
 The design draft expected `hazardous_waste=31` and `TITLE_LEVEL_AND_SOURCE_LOCK_READY=200`; the real repository data is `hazardous_waste={domain_counts.get('hazardous_waste', 0)}` and `TITLE_LEVEL_AND_SOURCE_LOCK_READY={usability_counts.get('TITLE_LEVEL_AND_SOURCE_LOCK_READY', 0)}`.
 
@@ -454,6 +610,13 @@ The design draft expected `hazardous_waste=31` and `TITLE_LEVEL_AND_SOURCE_LOCK_
 - Decisions: `{dict(sorted(review_counts.items()))}`
 - Overlay status: `{dict(sorted(review_status_counts.items()))}`
 - Rejected deep links remain auditable in `pollutant_standard_link_map_v8_6.csv` with `human_review_label=REJECT_CANDIDATE`; they are not emitted as graph-v0.6 traversal edges.
+
+## Source Recovery Overlay
+
+- Source recovery rows: {len(source_recovery)}
+- Source-recovery-confirmed deep links: {source_recovery_confirmed_deep_links}
+- Replacement standard governance candidates: {replacement_candidate_count}
+- Obsolete source rows use `STANDARD_LIFECYCLE` audit links only and are not emitted as `PollutantStandardSource` graph nodes or old-standard traversal edges.
 """
     report = f"""# FINAL POLLUTANT STANDARD LINK GRAPH v8.6
 
@@ -466,6 +629,8 @@ Runtime integration: `{RUNTIME_INTEGRATION}`
 - Applied the v8.6 human review overlay: `{dict(sorted(review_counts.items()))}`.
 - Built `graph_nodes_v0_6.jsonl` and `graph_edges_v0_6.jsonl.gz`.
 - Omitted human-rejected deep links from graph-v0.6 traversal edges while preserving them in the auditable link CSV.
+- Reclassified the 11 OCR/small-file rows using official source recovery: current standards are unblocked, obsolete old standards are excluded, and active/future replacements are tracked as replacement-governance candidates.
+- Added local source snapshot evidence for the 3 replacement-standard candidates: official PDFs are saved locally, native text extraction passed, table candidate pages are identified, human review approved adapter use, the existing threshold-field governance fieldset is mapped through `pollutant_standard_limit_profile_adapter_v8_7`, and the 74 mapped rows are attached to `pollutant_standard_limit_runtime_import_v8_7`.
 - Preserved candidate-only/runtime-disabled boundaries on every new link and graph edge.
 - Kept the original V8.5 baseline CSV unchanged.
 
@@ -478,15 +643,37 @@ Runtime integration: `{RUNTIME_INTEGRATION}`
 - V8.5 source roles: `{dict(sorted(role_counts.items()))}`
 - V8.5 content usability: `{dict(sorted(usability_counts.items()))}`
 - Review overlay decisions: `{dict(sorted(review_counts.items()))}`
+- Source recovery actions: `{dict(sorted(recovery_action_counts.items()))}`
+- Standard lifecycle statuses: `{dict(sorted(lifecycle_counts.items()))}`
+- Active source rows emitted as standard nodes: {active_source_count}
+- Obsolete old-standard rows excluded from standard nodes: {obsolete_excluded_count}
+- Source-recovery-confirmed deep links: {source_recovery_confirmed_deep_links}
+- Replacement standard governance candidates: {replacement_candidate_count}
 
 ## Known Gaps
 
 - Accepted title-level links remain candidate-only and still require runtime promotion review before any operational use.
-- OCR and small-file rows are intentionally blocked from scenario, industry, and Score13 linking.
+- Source-recovery-confirmed links are candidate-only title/official-page links; they are not clause/numeric adoption.
+- Replacement standard candidates now have local source snapshot, table-page evidence, `standard_limit_profile_adapter` outputs, and an approved standard-limit runtime import contract. Downstream EcoCheck import execution and runtime tests are not performed by this package.
 - This package is graph/RAG candidate scaffolding only; no EcoCheck runtime mutation or formal compliance conclusion is authorized.
 """
     write_text_lf(OUT_DESIGN, design)
     write_text_lf(OUT_REPORT, report)
+    write_json_lf(OUT_SOURCE_RECOVERY_REPORT, {
+        "schema_version": "pollutant-standard-source-recovery.v8_7",
+        "final_state": FINAL_STATE,
+        "runtime_status": RUNTIME_STATUS,
+        "runtime_integration": RUNTIME_INTEGRATION,
+        "source_recovery_rows": len(source_recovery),
+        "source_recovery_action_counts": dict(sorted(recovery_action_counts.items())),
+        "standard_lifecycle_status_counts": dict(sorted(lifecycle_counts.items())),
+        "active_source_count": active_source_count,
+        "obsolete_excluded_count": obsolete_excluded_count,
+        "source_recovery_confirmed_deep_links": source_recovery_confirmed_deep_links,
+        "replacement_candidate_count": replacement_candidate_count,
+        "obsolete_source_ids": sorted(row["source_id"] for row in baseline_rows if is_obsolete_excluded(row)),
+        "unblocked_source_ids": sorted(row["source_id"] for row in baseline_rows if is_source_recovery_unblocked(row)),
+    })
 
     manifest = {
         "schema_version": "pollutant-standard-link-graph.v8_6",
@@ -501,6 +688,12 @@ Runtime integration: `{RUNTIME_INTEGRATION}`
             "domain_distribution": dict(sorted(domain_counts.items())),
             "source_role_distribution": dict(sorted(role_counts.items())),
             "content_usability_flag_distribution": dict(sorted(usability_counts.items())),
+            "source_recovery_action_distribution": dict(sorted(recovery_action_counts.items())),
+            "standard_lifecycle_status_distribution": dict(sorted(lifecycle_counts.items())),
+            "active_standard_source_count": active_source_count,
+            "obsolete_excluded_source_count": obsolete_excluded_count,
+            "source_recovery_confirmed_deep_link_count": source_recovery_confirmed_deep_links,
+            "replacement_standard_governance_candidate_count": replacement_candidate_count,
             "industry_linked_source_count": len({row["source_id"] for row in links if row["target_kind"] == "INDUSTRY"}),
             "review_decision_distribution": dict(sorted(review_counts.items())),
             "review_overlay_status_distribution": dict(sorted(review_status_counts.items())),
@@ -509,6 +702,8 @@ Runtime integration: `{RUNTIME_INTEGRATION}`
             "link_csv": {"path": "data/approved_baseline/pollutant_domain_v8_5/pollutant_standard_link_map_v8_6.csv", "rows": len(links), "sha256": sha256_file(OUT_LINKS)},
             "review_overlay_csv": {"path": "data/review/pollutant_standard_link_review_overlay_v8_6.csv", "rows": len(review_overlay), "sha256": sha256_file(REVIEW_OVERLAY)},
             "review_overlay_json": {"path": "data/review/pollutant_standard_link_review_overlay_v8_6.json", "rows": len(read_json(REVIEW_OVERLAY_JSON)), "sha256": sha256_file(REVIEW_OVERLAY_JSON)},
+            "source_recovery_csv": {"path": "data/review/pollutant_standard_source_recovery_v8_7.csv", "rows": len(source_recovery), "sha256": sha256_file(SOURCE_RECOVERY)},
+            "source_recovery_report": {"path": "reports/pollutant_standard_source_recovery_v8_7.json", "sha256": sha256_file(OUT_SOURCE_RECOVERY_REPORT)},
             "graph_nodes": {"path": "data/graph_rag/graph_nodes_v0_6.jsonl", "rows": len(nodes), "sha256": sha256_file(OUT_NODES)},
             "graph_edges": {"path": "data/graph_rag/graph_edges_v0_6.jsonl.gz", "rows": len(edges), "sha256": sha256_file(OUT_EDGES)},
             "design_md": {"path": "docs/design/pollutant_standard_link_map_v8_6.md", "sha256": sha256_file(OUT_DESIGN)},
@@ -517,7 +712,9 @@ Runtime integration: `{RUNTIME_INTEGRATION}`
         "guards": {
             "v8_5_baseline_mutated": False,
             "radiation_all_industry_default": "blocked",
-            "ocr_and_small_file_deep_links": "blocked",
+            "ocr_and_small_file_deep_links": "source-recovery-confirmed current standards only",
+            "obsolete_old_standard_sources": "excluded_from_pollutant_standard_source_nodes_and_old_standard_edges",
+            "replacement_standard_candidates": "source_snapshot_evidence_human_adapter_approval_standard_limit_profile_adapter_outputs_and_runtime_import_contract_ready_but_downstream_ecocheck_execution_not_in_this_package",
             "human_rejected_deep_links": "audited_in_link_csv_excluded_from_graph_edges",
             "runtime_code_mutation": False,
         },
