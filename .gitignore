@@ -9,3 +9,4 @@ Thumbs.db
 *.tmp
 *.bak
 graph_edges_v0_5.jsonl
+reference_sources/

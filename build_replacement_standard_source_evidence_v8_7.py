@@ -2,6 +2,7 @@ import csv
 import hashlib
 import json
 import re
+import urllib.request
 from collections import Counter
 from pathlib import Path
 
@@ -97,6 +98,17 @@ def sha256_file(path):
     return "sha256:" + hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def ensure_snapshot(path, url):
+    if path.exists():
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_name(f".{path.name}.tmp")
+    request = urllib.request.Request(url, headers={"User-Agent": "eco-semantic-knowledge-base/standard-limit-evidence"})
+    with urllib.request.urlopen(request, timeout=60) as response:
+        tmp.write_bytes(response.read())
+    tmp.replace(path)
+
+
 def normalized_text(value):
     return re.sub(r"\s+", "", value or "")
 
@@ -140,8 +152,7 @@ def build_rows():
         standard_no = source["replacement_standard_no"]
         pdf_meta = PDF_BY_STANDARD[standard_no]
         snapshot = SNAPSHOT_DIR / pdf_meta["file"]
-        if not snapshot.exists():
-            raise FileNotFoundError(snapshot)
+        ensure_snapshot(snapshot, pdf_meta["official_pdf_url"])
         page_count, page_texts, text = extract_pdf(snapshot)
         expected_hits = [term for term in pdf_meta["expected_terms"] if normalized_text(term) in normalized_text(text)]
         replacement_evidence = first_match(text, [r"代替[^。；;]{0,35}", r"同时废止[^。；;]{0,45}"])
