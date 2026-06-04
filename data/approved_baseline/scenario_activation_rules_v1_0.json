@@ -1,0 +1,611 @@
+{
+  "rule_set_id": "scenario_activation_rules_v1_0",
+  "approval_status": "HUMAN_APPROVED_BASELINE",
+  "approval_source": "CANDY_ETO_CONFIRMED_2026-06-04_SCENARIO_ACTIVATION_GOVERNANCE",
+  "approval_date": "2026-06-04",
+  "confidence": "HIGH",
+  "runtime_status": "APPROVED_BASELINE",
+  "runtime_contract": {
+    "can_drive_industry_default_profile_generation": true,
+    "can_drive_l3_industry_context_reasons": true,
+    "can_drive_formal_permit_type": false,
+    "can_auto_deduct_score": false,
+    "can_skip_field_confirmation_when_unknown": false,
+    "enterprise_permit_type_policy": "Do not infer enterprise formal permit_type without enterprise permit/EIA/site evidence.",
+    "unknown_policy": "UNKNOWN remains a field-confirmation state and must not be treated as YES or NO.",
+    "high_risk_policy": "Radiation, online monitoring, wastewater discharge route, rain-sewage separation, and accident-water dimensions stay conservative unless explicitly activated or overridden."
+  },
+  "composition_logic": {
+    "id": "COMPOSE_STRICTER_OF_INDUSTRY_SCENE_AND_PERMIT_MATRIX_WITH_MEDICAL_OVERRIDES",
+    "regulatory_identity_items": [
+      "online_monitoring",
+      "permit_execution_reporting",
+      "self_monitoring_plan",
+      "ledger_records"
+    ]
+  },
+  "applicability_dimension_whitelist": [
+    "production_process_activity",
+    "wastewater_generation",
+    "wastewater_station",
+    "medical_waste",
+    "hazardous_waste",
+    "general_solid_waste",
+    "vocs_emission",
+    "unorganized_exhaust",
+    "exhaust_treatment_facility",
+    "dust_particulate",
+    "boiler_combustion",
+    "noise_source",
+    "online_monitoring",
+    "ldar",
+    "gas_station_vapor_recovery",
+    "radiation",
+    "soil_groundwater_risk",
+    "liquid_chemical_tank_area",
+    "underground_storage_tank",
+    "rainwater_accident_risk",
+    "permit_execution_reporting",
+    "environmental_facility_operation",
+    "waste_transfer_ledger",
+    "emergency_response_materials",
+    "is_key_pollutant_unit",
+    "involves_heavy_metal",
+    "involves_hazchem_major_hazard",
+    "env_risk_level",
+    "hazwaste_wujiyima",
+    "hazwaste_system_platform",
+    "hazwaste_storage_room",
+    "hazwaste_disposal_qualification",
+    "hazwaste_e_manifest",
+    "medwaste_disposal_agreement",
+    "medwaste_storage_transfer",
+    "wastewater_discharge_route",
+    "rain_sewage_separation",
+    "organized_exhaust_stack",
+    "exhaust_pollutant_types"
+  ],
+  "permit_control_matrix": [
+    {
+      "item_id": "hazardous_waste",
+      "label": "危废",
+      "permit_values": {
+        "KEY": "YES",
+        "SIMPLIFIED": "YES",
+        "REGISTRATION": "UNKNOWN"
+      },
+      "target_dimensions": [
+        "hazardous_waste",
+        "hazwaste_storage_room",
+        "hazwaste_e_manifest",
+        "hazwaste_wujiyima",
+        "hazwaste_system_platform",
+        "hazwaste_disposal_qualification",
+        "waste_transfer_ledger"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item_id": "wastewater",
+      "label": "废水/污水",
+      "permit_values": {
+        "KEY": "YES",
+        "SIMPLIFIED": "YES",
+        "REGISTRATION": "UNKNOWN"
+      },
+      "target_dimensions": [
+        "wastewater_generation",
+        "wastewater_station",
+        "wastewater_discharge_route",
+        "rain_sewage_separation"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item_id": "vocs",
+      "label": "VOCs/有机废气",
+      "permit_values": {
+        "KEY": "YES",
+        "SIMPLIFIED": "YES",
+        "REGISTRATION": "UNKNOWN"
+      },
+      "target_dimensions": [
+        "vocs_emission",
+        "unorganized_exhaust",
+        "exhaust_treatment_facility",
+        "organized_exhaust_stack",
+        "ldar",
+        "exhaust_pollutant_types"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item_id": "dust",
+      "label": "粉尘",
+      "permit_values": {
+        "KEY": "YES",
+        "SIMPLIFIED": "YES",
+        "REGISTRATION": "UNKNOWN"
+      },
+      "target_dimensions": [
+        "dust_particulate",
+        "organized_exhaust_stack",
+        "exhaust_pollutant_types"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item_id": "online_monitoring",
+      "label": "在线监测",
+      "permit_values": {
+        "KEY": "YES",
+        "SIMPLIFIED": "NO",
+        "REGISTRATION": "NO"
+      },
+      "target_dimensions": [
+        "online_monitoring"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item_id": "permit_execution_reporting",
+      "label": "执行报告",
+      "permit_values": {
+        "KEY": "YES",
+        "SIMPLIFIED": "YES",
+        "REGISTRATION": "NO"
+      },
+      "target_dimensions": [
+        "permit_execution_reporting"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item_id": "self_monitoring_plan",
+      "label": "自行监测方案",
+      "permit_values": {
+        "KEY": "YES",
+        "SIMPLIFIED": "YES",
+        "REGISTRATION": "UNKNOWN"
+      },
+      "target_dimensions": [
+        "environmental_facility_operation"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item_id": "ledger_records",
+      "label": "台账记录",
+      "permit_values": {
+        "KEY": "YES",
+        "SIMPLIFIED": "YES",
+        "REGISTRATION": "UNKNOWN"
+      },
+      "target_dimensions": [
+        "environmental_facility_operation",
+        "waste_transfer_ledger"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item_id": "rainwater_accident",
+      "label": "雨水/事故水",
+      "permit_values": {
+        "KEY": "YES",
+        "SIMPLIFIED": "UNKNOWN",
+        "REGISTRATION": "NO"
+      },
+      "target_dimensions": [
+        "rainwater_accident_risk",
+        "emergency_response_materials"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item_id": "radiation",
+      "label": "辐射",
+      "permit_values": {
+        "KEY": "UNKNOWN",
+        "SIMPLIFIED": "UNKNOWN",
+        "REGISTRATION": "NO"
+      },
+      "target_dimensions": [
+        "radiation"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "item_id": "soil_groundwater",
+      "label": "土壤/地下水",
+      "permit_values": {
+        "KEY": "UNKNOWN",
+        "SIMPLIFIED": "NO",
+        "REGISTRATION": "NO"
+      },
+      "target_dimensions": [
+        "soil_groundwater_risk",
+        "liquid_chemical_tank_area",
+        "underground_storage_tank"
+      ],
+      "confidence": "HIGH"
+    }
+  ],
+  "medical_overrides": [
+    {
+      "override_id": "MEDICAL_84XX_SIM_REG_SELF_MONITORING_YES",
+      "condition": {
+        "gb_code_prefixes": [
+          "84"
+        ],
+        "permit_types": [
+          "SIMPLIFIED",
+          "REGISTRATION"
+        ],
+        "industry_keywords_any": []
+      },
+      "target_dimensions": [
+        "environmental_facility_operation"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "override_id": "MEDICAL_84XX_SIM_REG_LEDGER_RECORDS_YES",
+      "condition": {
+        "gb_code_prefixes": [
+          "84"
+        ],
+        "permit_types": [
+          "SIMPLIFIED",
+          "REGISTRATION"
+        ],
+        "industry_keywords_any": []
+      },
+      "target_dimensions": [
+        "environmental_facility_operation",
+        "waste_transfer_ledger"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "override_id": "HOSPITAL_84XX_SIM_ONLINE_MONITORING_YES",
+      "condition": {
+        "gb_code_prefixes": [
+          "84"
+        ],
+        "permit_types": [
+          "SIMPLIFIED"
+        ],
+        "industry_keywords_any": [
+          "医院",
+          "卫生院",
+          "专科医院",
+          "综合医院"
+        ]
+      },
+      "target_dimensions": [
+        "online_monitoring"
+      ],
+      "confidence": "HIGH"
+    }
+  ],
+  "scenario_activation_rules": [
+    {
+      "rule_id": "SAR-V1_0-001",
+      "scenario_id": "SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+      "scenario_name": "通用生产经营、一般固废、噪声与基础台账",
+      "rule_role": "base_activity_and_l1_context",
+      "permit_matrix_item": "",
+      "maps_to_dimensions": [
+        "production_process_activity",
+        "general_solid_waste",
+        "noise_source",
+        "environmental_facility_operation"
+      ],
+      "reason_template": "本行业存在实际经营/生产/服务活动时，应核对经营范围、主要活动、一般固废、噪声源和基础台账；纯办公/纯贸易无加工时可降级。",
+      "source_basis": [
+        "approved_show_if_rules_v1_0::SCN_BASE_PRODUCTION_SOLID_NOISE_LEDGER",
+        "EcoCheck scenario activation governance §3.2/§10"
+      ],
+      "confidence": "HIGH",
+      "industry_scene_layer": {}
+    },
+    {
+      "rule_id": "SAR-V1_0-002",
+      "scenario_id": "SCN_HAZWASTE_STORAGE_TRANSFER",
+      "scenario_name": "危险废物识别、暂存与转移",
+      "rule_role": "l2_scene",
+      "permit_matrix_item": "hazardous_waste",
+      "maps_to_dimensions": [
+        "hazardous_waste",
+        "hazwaste_storage_room",
+        "hazwaste_e_manifest",
+        "hazwaste_wujiyima",
+        "hazwaste_system_platform",
+        "hazwaste_disposal_qualification",
+        "waste_transfer_ledger"
+      ],
+      "reason_template": "本行业可能产生废机油、实验废液、废活性炭、废包装桶或工艺危废；需核对危废识别、暂存间、五即一码/系统平台、处置资质与电子联单。",
+      "source_basis": [
+        "approved_show_if_rules_v1_0::SCN_HAZWASTE_STORAGE_TRANSFER",
+        "EcoCheck scenario activation governance §10.1/§10.2"
+      ],
+      "confidence": "HIGH",
+      "industry_scene_layer": {}
+    },
+    {
+      "rule_id": "SAR-V1_0-003",
+      "scenario_id": "SCN_WW_PROCESS_AND_TREATMENT",
+      "scenario_name": "生产/医疗/清洗废水与污水处理设施",
+      "rule_role": "l2_scene",
+      "permit_matrix_item": "wastewater",
+      "maps_to_dimensions": [
+        "wastewater_generation",
+        "wastewater_station",
+        "wastewater_discharge_route",
+        "rain_sewage_separation"
+      ],
+      "reason_template": "本行业可能产生生产废水、清洗废水或医疗废水；需确认排放去向、处理设施、雨污分流和排口管理。",
+      "source_basis": [
+        "approved_show_if_rules_v1_0::SCN_WW_PROCESS_AND_TREATMENT",
+        "EcoCheck scenario activation governance §10.1/§10.2",
+        "EcoCheck scenario activation governance §10.1 wastewater ETO decision"
+      ],
+      "confidence": "HIGH",
+      "industry_scene_layer": {
+        "yes": {
+          "match": {
+            "gb_division_codes_any": [
+              "13",
+              "14",
+              "15",
+              "84"
+            ],
+            "industry_keywords_any": [
+              "屠宰",
+              "饮料",
+              "罐头",
+              "医院",
+              "卫生院"
+            ]
+          },
+          "value": "YES",
+          "confidence": "HIGH"
+        },
+        "unknown": {
+          "match": {
+            "gb_division_codes_any": [
+              "17",
+              "26"
+            ],
+            "industry_keywords_any": [
+              "印染",
+              "水洗",
+              "整理",
+              "化工",
+              "复配",
+              "混合"
+            ]
+          },
+          "value": "UNKNOWN",
+          "confidence": "HIGH"
+        },
+        "no": {
+          "match": {
+            "gb_division_codes_any": [
+              "18"
+            ],
+            "industry_keywords_any": [
+              "纯服装裁剪",
+              "纯缝制"
+            ]
+          },
+          "value": "NO",
+          "confidence": "HIGH"
+        }
+      }
+    },
+    {
+      "rule_id": "SAR-V1_0-004",
+      "scenario_id": "SCN_VOCS_SOLVENT_AND_TREATMENT",
+      "scenario_name": "VOCs溶剂使用、无组织排放与废气治理",
+      "rule_role": "l2_scene",
+      "permit_matrix_item": "vocs",
+      "maps_to_dimensions": [
+        "vocs_emission",
+        "unorganized_exhaust",
+        "exhaust_treatment_facility",
+        "organized_exhaust_stack",
+        "ldar",
+        "exhaust_pollutant_types"
+      ],
+      "reason_template": "本行业可能涉及溶剂、油墨、涂料、胶黏剂或橡塑加热废气；需核对原辅料、收集治理、排气筒、无组织控制、LDAR 和废活性炭等证据。",
+      "source_basis": [
+        "approved_show_if_rules_v1_0::SCN_VOCS_SOLVENT_AND_TREATMENT",
+        "EcoCheck scenario activation governance §10.1/§10.2",
+        "EcoCheck scenario activation governance §10.1 VOCs ETO decision"
+      ],
+      "confidence": "HIGH",
+      "industry_scene_layer": {
+        "yes": {
+          "match": {
+            "gb_division_codes_any": [
+              "23"
+            ],
+            "industry_keywords_any": [
+              "印刷",
+              "包装装潢",
+              "油墨",
+              "涂料",
+              "农药",
+              "喷涂"
+            ]
+          },
+          "value": "YES",
+          "confidence": "HIGH"
+        },
+        "unknown": {
+          "match": {
+            "gb_division_codes_any": [
+              "26",
+              "29"
+            ],
+            "industry_keywords_any": [
+              "无机化工",
+              "塑料",
+              "橡胶",
+              "注塑",
+              "挤出",
+              "硫化"
+            ]
+          },
+          "value": "UNKNOWN",
+          "confidence": "HIGH"
+        }
+      }
+    },
+    {
+      "rule_id": "SAR-V1_0-005",
+      "scenario_id": "SCN_DUST_PARTICULATE_CONTROL",
+      "scenario_name": "粉尘颗粒物产生与除尘设施",
+      "rule_role": "l2_scene",
+      "permit_matrix_item": "dust",
+      "maps_to_dimensions": [
+        "dust_particulate",
+        "organized_exhaust_stack",
+        "exhaust_pollutant_types"
+      ],
+      "reason_template": "本行业可能存在木粉尘、金属打磨粉尘、矿建材粉尘或粉体投料；需核对产尘点、收集除尘、排气筒、清扫和防爆管理。",
+      "source_basis": [
+        "approved_show_if_rules_v1_0::SCN_DUST_PARTICULATE_CONTROL",
+        "EcoCheck scenario activation governance §10.1/§10.2"
+      ],
+      "confidence": "HIGH",
+      "industry_scene_layer": {}
+    },
+    {
+      "rule_id": "SAR-V1_0-006",
+      "scenario_id": "SCN_MEDICAL_WASTE_RADIATION",
+      "scenario_name": "医疗废物、医疗废水与放射诊疗确认",
+      "rule_role": "l2_scene",
+      "permit_matrix_item": "radiation",
+      "maps_to_dimensions": [
+        "medical_waste",
+        "medwaste_disposal_agreement",
+        "medwaste_storage_transfer",
+        "radiation",
+        "wastewater_generation",
+        "wastewater_station"
+      ],
+      "reason_template": "医疗机构需重点核对 HW01 医废协议、48h/低温暂存、交接登记和医疗废水；涉及口腔、骨科、影像、核医学或工业探伤/辐照时另核辐射许可与台账。",
+      "source_basis": [
+        "approved_show_if_rules_v1_0::SCN_MEDICAL_WASTE_RADIATION",
+        "EcoCheck scenario activation governance §10.1/§10.4"
+      ],
+      "confidence": "HIGH",
+      "industry_scene_layer": {}
+    },
+    {
+      "rule_id": "SAR-V1_0-007",
+      "scenario_id": "SCN_RAINWATER_ACCIDENT_EMERGENCY",
+      "scenario_name": "雨污分流、事故水与环境应急",
+      "rule_role": "l2_scene",
+      "permit_matrix_item": "rainwater_accident",
+      "maps_to_dimensions": [
+        "rainwater_accident_risk",
+        "emergency_response_materials",
+        "rain_sewage_separation"
+      ],
+      "reason_template": "本行业若涉及危化品、液态罐区、电镀或事故水风险，应核对雨污分流、事故收集、围堰、应急物资和预案演练。",
+      "source_basis": [
+        "approved_show_if_rules_v1_0::SCN_RAINWATER_ACCIDENT_EMERGENCY",
+        "EcoCheck scenario activation governance §10.1/§10.2"
+      ],
+      "confidence": "HIGH",
+      "industry_scene_layer": {}
+    },
+    {
+      "rule_id": "SAR-V1_0-008",
+      "scenario_id": "SCN_ONLINE_MONITORING_KEY_UNIT",
+      "scenario_name": "重点管理/重点排污单位在线监测",
+      "rule_role": "regulatory_identity",
+      "permit_matrix_item": "online_monitoring",
+      "maps_to_dimensions": [
+        "online_monitoring",
+        "is_key_pollutant_unit"
+      ],
+      "reason_template": "在线监测不按行业泛化默认，应依据重点排污单位、许可管理类别、地方名录和医疗机构例外核对站房、数采仪、联网、视频和运维记录。",
+      "source_basis": [
+        "approved_show_if_rules_v1_0::SCN_ONLINE_MONITORING_KEY_UNIT",
+        "EcoCheck scenario activation governance §10.1/§10.2/§10.4"
+      ],
+      "confidence": "HIGH",
+      "industry_scene_layer": {}
+    },
+    {
+      "rule_id": "SAR-V1_0-009",
+      "scenario_id": "SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+      "scenario_name": "液态化学品储罐、LDAR与防渗风险",
+      "rule_role": "l2_scene",
+      "permit_matrix_item": "soil_groundwater",
+      "maps_to_dimensions": [
+        "liquid_chemical_tank_area",
+        "underground_storage_tank",
+        "ldar",
+        "soil_groundwater_risk",
+        "rainwater_accident_risk"
+      ],
+      "reason_template": "本行业如有液态化学品罐区、地下储罐或 LDAR 管控单元，应核对围堰、防渗、泄漏检测、台账和事故收集。",
+      "source_basis": [
+        "approved_show_if_rules_v1_0::SCN_CHEMICAL_TANK_LDAR_SEEPAGE",
+        "EcoCheck scenario activation governance §3.2/§10"
+      ],
+      "confidence": "HIGH",
+      "industry_scene_layer": {}
+    },
+    {
+      "rule_id": "SAR-V1_0-010",
+      "scenario_id": "SCN_GAS_STATION_VAPOR_UST",
+      "scenario_name": "加油站油气回收、地下储罐与土壤地下水风险",
+      "rule_role": "l2_scene",
+      "permit_matrix_item": "soil_groundwater",
+      "maps_to_dimensions": [
+        "gas_station_vapor_recovery",
+        "underground_storage_tank",
+        "soil_groundwater_risk",
+        "vocs_emission"
+      ],
+      "reason_template": "加油站/油库需核对油气回收、地下储罐、防渗、泄漏检测、维保台账和土壤地下水风险。",
+      "source_basis": [
+        "approved_show_if_rules_v1_0::SCN_GAS_STATION_VAPOR_UST",
+        "EcoCheck scenario activation governance §3.2/§10"
+      ],
+      "confidence": "HIGH",
+      "industry_scene_layer": {}
+    },
+    {
+      "rule_id": "SAR-V1_0-011",
+      "scenario_id": "SCN_TRAINING_SIGNAGE_REVIEW_GAP",
+      "scenario_name": "环保培训、标识公示与历史问题闭环补强",
+      "rule_role": "l1_governance_context",
+      "permit_matrix_item": "",
+      "maps_to_dimensions": [
+        "environmental_facility_operation",
+        "emergency_response_materials",
+        "waste_transfer_ledger"
+      ],
+      "reason_template": "培训、标识、公示、历史问题闭环属于治理补强层，不直接决定产污项是否出现；应结合历史问题、现场标识、公示和台账证据核对。",
+      "source_basis": [
+        "approved_show_if_rules_v1_0::SCN_TRAINING_SIGNAGE_REVIEW_GAP",
+        "EcoCheck scenario activation governance §3.2/§10.4"
+      ],
+      "confidence": "HIGH",
+      "industry_scene_layer": {}
+    }
+  ],
+  "approved_layer_artifact": {
+    "artifact_id": "scenario_activation_rules_v1_0",
+    "source_layer": "approved_baseline",
+    "source_repo": "coco830/eco-semantic-knowledge-base",
+    "generated_for": "EcoCheck scenario activation governance and L3 industry context"
+  }
+}

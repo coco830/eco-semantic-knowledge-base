@@ -5,7 +5,7 @@
   "runtime_integration": "approved_baseline_export_ready",
   "approval_status": "HUMAN_APPROVED_BASELINE",
   "approval_source": "USER_ATTESTED_IN_CHAT_2026-05-30",
-  "approval_scope": "scenario_templates;score13_mapping;inspection_candidates;show_if_rules;issue_remediation_report_chain",
+  "approval_scope": "scenario_templates;score13_mapping;inspection_candidates;show_if_rules;issue_remediation_report_chain;scenario_activation_rules",
   "approval_attestation": "User stated the knowledge base has completed manual review and confirmation, and requested approved baseline knowledge for EcoCheck show_if and downstream chains.",
   "approval_date": "2026-05-30",
   "outputs": {
@@ -13,6 +13,7 @@
     "approved_score13_rows": 28,
     "approved_inspection_items": 56,
     "approved_show_if_rules": 56,
+    "scenario_activation_rules": 11,
     "approved_issue_chains": 56
   },
   "runtime_contract": {
@@ -27,6 +28,7 @@
     "scenario_templates.json",
     "scenario_to_score13_mapping_v0_3.csv",
     "inspection_candidate_recommendations_v0_3.csv",
+    "scenario_activation_rules_v1_0.json",
     "artifact_manifest.json"
   ]
 }

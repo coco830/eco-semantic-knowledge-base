@@ -263,6 +263,7 @@
     "approved_inspection_items_v1_0.json": "data/approved_baseline/approved_inspection_items_v1_0.json",
     "approved_show_if_rules_v1_0.csv": "data/approved_baseline/approved_show_if_rules_v1_0.csv",
     "approved_show_if_rules_v1_0.json": "data/approved_baseline/approved_show_if_rules_v1_0.json",
+    "scenario_activation_rules_v1_0.json": "data/approved_baseline/scenario_activation_rules_v1_0.json",
     "approved_issue_remediation_report_chain_v1_0.csv": "data/approved_baseline/approved_issue_remediation_report_chain_v1_0.csv",
     "approved_issue_remediation_report_chain_v1_0.json": "data/approved_baseline/approved_issue_remediation_report_chain_v1_0.json",
     "approved_baseline_knowledge_manifest_v1_0.json": "manifests/approved_baseline_knowledge_manifest_v1_0.json",
