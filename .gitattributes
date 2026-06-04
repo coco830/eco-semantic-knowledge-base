@@ -31,3 +31,10 @@ data/runtime/pollutant_standard_limit_runtime_*_v8_7.json text eol=lf
 docs/runtime/pollutant_standard_limit_runtime_*_v8_7.md text eol=lf
 manifests/pollutant_standard_limit_runtime_*_v8_7.json text eol=lf
 reports/pollutant_standard_*_v8_7.json text eol=lf
+
+# Specialized inspection item hashes are computed over LF bytes.
+data/approved_baseline/approved_specialized_inspection_items_v1_0.csv text eol=lf
+docs/design/specialized_inspection_items_governance_v1_0.md text eol=lf
+manifests/approved_specialized_inspection_items_manifest_v1_0.json text eol=lf
+reports/ETO_SPECIALIZED_INSPECTION_ITEMS_REVIEW_PLAIN_v1_0.md text eol=lf
+reports/approved_specialized_inspection_items_gate_report_v1_0.json text eol=lf
