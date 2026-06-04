@@ -1,0 +1,18 @@
+{
+  "validation_status": "PASS",
+  "failure_count": 0,
+  "knowledge_base_version": "v1.0-approved-specialized-inspection-items",
+  "final_state": "APPROVED_SPECIALIZED_INSPECTION_ITEMS_BASELINE",
+  "runtime_status": "APPROVED_BASELINE",
+  "runtime_integration": "approved_baseline_export_ready",
+  "approval_status": "HUMAN_APPROVED_BASELINE",
+  "counts": {
+    "approved_entry_count": 49,
+    "hazwaste_five_code_items": 5,
+    "process_items": 34,
+    "process_package_items": 24,
+    "process_detail_items": 10,
+    "hospital_residual_chlorine_items": 1
+  },
+  "failure_samples": []
+}

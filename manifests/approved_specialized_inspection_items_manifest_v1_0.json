@@ -1,0 +1,46 @@
+{
+  "schema_version": "approved-specialized-inspection-items.v1_0",
+  "knowledge_base_version": "v1.0-approved-specialized-inspection-items",
+  "generated_on": "2026-06-04",
+  "final_state": "APPROVED_SPECIALIZED_INSPECTION_ITEMS_BASELINE",
+  "runtime_status": "APPROVED_BASELINE",
+  "runtime_integration": "approved_baseline_export_ready",
+  "approval_status": "HUMAN_APPROVED_BASELINE",
+  "approval_source": "ETO_APPROVED_SPECIALIZED_INSPECTION_ITEMS_P1_2026-06-04",
+  "approved_entry_count": 49,
+  "priority": "P1",
+  "baseline_package_scope": "ECOCHECK_IMPORT_READY_KB_STAGING_ONLY",
+  "downstream_target_repository": "coco830/eco-semantic-knowledge-base",
+  "source_candidate_boundary": {
+    "source_final_state": "NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY",
+    "source_runtime_integration": "disabled",
+    "not_for_runtime_boundary_preserved": true
+  },
+  "runtime_contract": {
+    "can_drive_specialized_inspection_item_import": true,
+    "does_not_modify_runtime_integration": true,
+    "does_not_auto_deduct_score": true,
+    "formal_compliance_conclusion": "NOT_AUTHORIZED"
+  },
+  "required_coverage": {
+    "hazwaste_five_code_items": 5,
+    "hospital_residual_chlorine_threshold_text": "3–10 mg/L",
+    "process_package_items": 24,
+    "process_detail_items": 10
+  },
+  "outputs": {
+    "baseline_csv": {
+      "path": "data/approved_baseline/approved_specialized_inspection_items_v1_0.csv",
+      "sha256": "sha256:b3948cafa35b9f9a7f302d85feda9045a6238c7eada4685202558a16c185add5"
+    }
+  },
+  "source_artifacts": [
+    "README.md",
+    "artifact_manifest.json",
+    "docs/design/specialized_inspection_items_governance_v1_0.md",
+    "data/process_evidence/process_trigger_dictionary_v1_1.csv",
+    "reports/ETO_SPECIALIZED_INSPECTION_ITEMS_REVIEW_PLAIN_v1_0.md",
+    "manifests/approved_baseline_knowledge_manifest_v1_0.json",
+    "manifests/pollutant_domain_approved_baseline_manifest_v8_5.json"
+  ]
+}

@@ -18,6 +18,9 @@
 - `reports/FINAL_APPROVED_BASELINE_KNOWLEDGE_v1_0.md`: 已人工确认知识库导出的 approved baseline 包说明。
 - `manifests/approved_baseline_knowledge_manifest_v1_0.json`: approved baseline manifest，可作为 EcoCheck 导入前的知识层入口。
 - `data/approved_baseline/approved_show_if_rules_v1_0.csv`: EcoCheck 模板项可见性 `show_if` 规则导出。
+- `docs/design/specialized_inspection_items_governance_v1_0.md`: 行业专项检查包治理沉淀，定义专项包本体边界、ETO 审批准入、维度映射和运行时验收口径。
+- `manifests/approved_specialized_inspection_items_manifest_v1_0.json`: 已审批行业专项检查项 manifest，锁定 49 条 `HUMAN_APPROVED_BASELINE` 专项项及 CSV hash。
+- `reports/ETO_SPECIALIZED_INSPECTION_ITEMS_REVIEW_PLAIN_v1_0.md`: 行业专项检查项 ETO 审核稿和批复记录。
 - `reports/FINAL_POLLUTANT_DOMAIN_APPROVED_BASELINE_v8_5.md`: V8.5 污染物域 approved baseline 回灌说明，保留 209 条已审条目与 6 条 P1 排除决断。
 - `manifests/pollutant_domain_approved_baseline_manifest_v8_5.json`: V8.5 污染物域 approved baseline manifest，锁定 CSV/package/report 哈希。
 - `data/approved_baseline/pollutant_domain_v8_5/pollutant_domain_approved_baseline_v8_5.csv`: V8.5 污染物域 209 条 approved baseline 条目。
@@ -55,3 +58,13 @@ V8.5 pollutant-domain approved baseline 边界：
 - `ConfirmedDataset` 仍为 `NOT_CREATED`，正式排污权/系数计算仍为 `NOT_AUTHORIZED`
 - 辐射/放射不得启用全行业默认：`radiation_all_industry_default` 仍在 blocked actions 中
 - 不反向混入 `semantic-profile-lab` 的排污系数/方法实验链路，不自动生成或修正任何系数
+
+specialized inspection items approved baseline 边界：
+
+- `final_state=APPROVED_SPECIALIZED_INSPECTION_ITEMS_BASELINE`
+- `runtime_status=APPROVED_BASELINE`
+- `runtime_integration=approved_baseline_export_ready`
+- 只允许已 ETO 审过的 `HUMAN_APPROVED_BASELINE` 行驱动 EcoCheck 专项项 import。
+- 专项本体按场景/工序/风险单元组织，行业代码和许可类型只作为召回入口。
+- 专项触发不等于强扣分；`NA`、`NEED_CONFIRM` 和从严依据由 ESO/ETO 结合材料与现场事实确认。
+- 不新增 EcoCheck 评分、扣分、权限、schema 或治理内核。

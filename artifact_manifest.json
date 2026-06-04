@@ -320,6 +320,13 @@
     "validate_standard_limit_runtime_execution_contract_v8_7.py": "validate_standard_limit_runtime_execution_contract_v8_7.py",
     "scenario_activation_rules_manifest_v1_0.json": "manifests/scenario_activation_rules_manifest_v1_0.json",
     "scenario_activation_rules_v1_0_gate_report.json": "reports/scenario_activation_rules_v1_0_gate_report.json",
-    "validate_scenario_activation_rules_v1_0.py": "validate_scenario_activation_rules_v1_0.py"
+    "validate_scenario_activation_rules_v1_0.py": "validate_scenario_activation_rules_v1_0.py",
+    "specialized_inspection_items_governance_v1_0.md": "docs/design/specialized_inspection_items_governance_v1_0.md",
+    "approved_specialized_inspection_items_v1_0.csv": "data/approved_baseline/approved_specialized_inspection_items_v1_0.csv",
+    "approved_specialized_inspection_items_manifest_v1_0.json": "manifests/approved_specialized_inspection_items_manifest_v1_0.json",
+    "approved_specialized_inspection_items_gate_report_v1_0.json": "reports/approved_specialized_inspection_items_gate_report_v1_0.json",
+    "ETO_SPECIALIZED_INSPECTION_ITEMS_REVIEW_PLAIN_v1_0.md": "reports/ETO_SPECIALIZED_INSPECTION_ITEMS_REVIEW_PLAIN_v1_0.md",
+    "build_specialized_inspection_items_v1_0.py": "build_specialized_inspection_items_v1_0.py",
+    "validate_specialized_inspection_items_v1_0.py": "validate_specialized_inspection_items_v1_0.py"
   }
 }
