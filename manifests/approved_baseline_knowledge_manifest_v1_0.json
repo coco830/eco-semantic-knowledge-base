@@ -29,6 +29,9 @@
     "scenario_to_score13_mapping_v0_3.csv",
     "inspection_candidate_recommendations_v0_3.csv",
     "scenario_activation_rules_v1_0.json",
-    "artifact_manifest.json"
+    "artifact_manifest.json",
+    "scenario_activation_rules_manifest_v1_0.json",
+    "scenario_activation_rules_v1_0_gate_report.json",
+    "validate_scenario_activation_rules_v1_0.py"
   ]
 }

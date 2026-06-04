@@ -317,6 +317,9 @@
     "pollutant_standard_limit_runtime_execution_manifest_v8_7.json": "manifests/pollutant_standard_limit_runtime_execution_manifest_v8_7.json",
     "pollutant_standard_limit_runtime_execution_contract_v8_7_report.json": "reports/pollutant_standard_limit_runtime_execution_contract_v8_7.json",
     "build_standard_limit_runtime_execution_contract_v8_7.py": "build_standard_limit_runtime_execution_contract_v8_7.py",
-    "validate_standard_limit_runtime_execution_contract_v8_7.py": "validate_standard_limit_runtime_execution_contract_v8_7.py"
+    "validate_standard_limit_runtime_execution_contract_v8_7.py": "validate_standard_limit_runtime_execution_contract_v8_7.py",
+    "scenario_activation_rules_manifest_v1_0.json": "manifests/scenario_activation_rules_manifest_v1_0.json",
+    "scenario_activation_rules_v1_0_gate_report.json": "reports/scenario_activation_rules_v1_0_gate_report.json",
+    "validate_scenario_activation_rules_v1_0.py": "validate_scenario_activation_rules_v1_0.py"
   }
 }

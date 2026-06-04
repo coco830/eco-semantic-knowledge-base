@@ -22,7 +22,44 @@
       "permit_execution_reporting",
       "self_monitoring_plan",
       "ledger_records"
-    ]
+    ],
+    "confidence": "HIGH",
+    "l2_scene_dimensions": [
+      "hazardous_waste",
+      "medical_waste",
+      "wastewater_generation",
+      "wastewater_station",
+      "vocs_emission",
+      "unorganized_exhaust",
+      "exhaust_treatment_facility",
+      "dust_particulate",
+      "rainwater_accident_risk",
+      "radiation",
+      "soil_groundwater_risk",
+      "liquid_chemical_tank_area",
+      "underground_storage_tank",
+      "ldar",
+      "gas_station_vapor_recovery"
+    ],
+    "l2_selection": {
+      "input_layers": [
+        "industry_scene_layer",
+        "permit_control_matrix"
+      ],
+      "checking_strength_order": [
+        "YES",
+        "UNKNOWN",
+        "NO"
+      ],
+      "rule": "Select the stricter field-checking value by checking_strength_order; then apply explicit overrides."
+    },
+    "regulatory_identity_selection": {
+      "rule": "Use permit_control_matrix directly, then apply L1 downgrade and medical overrides from this file."
+    },
+    "l1_conflict_resolution": {
+      "ordinary_micro_enterprise": "REGISTRATION enterprises no longer force permit execution report, self-monitoring plan, or ledger records as always-on L1 checks; they follow the permit matrix.",
+      "medical_exception": "GB 84xx medical institutions keep self-monitoring plan and ledger records as mandatory checks for SIMPLIFIED and REGISTRATION; SIMPLIFIED hospitals also keep online monitoring as YES."
+    }
   },
   "applicability_dimension_whitelist": [
     "production_process_activity",
@@ -145,7 +182,8 @@
       "target_dimensions": [
         "online_monitoring"
       ],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "notes": "医院 SIM online monitoring override is encoded in medical_overrides."
     },
     {
       "item_id": "permit_execution_reporting",
@@ -158,7 +196,8 @@
       "target_dimensions": [
         "permit_execution_reporting"
       ],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "notes": "KEY = quarterly + annual; SIMPLIFIED = annual."
     },
     {
       "item_id": "self_monitoring_plan",
@@ -171,7 +210,8 @@
       "target_dimensions": [
         "environmental_facility_operation"
       ],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "compiler_item_group": "SELF_MONITORING_PLAN"
     },
     {
       "item_id": "ledger_records",
@@ -185,7 +225,8 @@
         "environmental_facility_operation",
         "waste_transfer_ledger"
       ],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "compiler_item_group": "LEDGER_RECORDS"
     },
     {
       "item_id": "rainwater_accident",
@@ -246,7 +287,10 @@
       "target_dimensions": [
         "environmental_facility_operation"
       ],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "set_values": {
+        "self_monitoring_plan": "YES"
+      }
     },
     {
       "override_id": "MEDICAL_84XX_SIM_REG_LEDGER_RECORDS_YES",
@@ -264,7 +308,10 @@
         "environmental_facility_operation",
         "waste_transfer_ledger"
       ],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "set_values": {
+        "ledger_records": "YES"
+      }
     },
     {
       "override_id": "HOSPITAL_84XX_SIM_ONLINE_MONITORING_YES",
@@ -285,7 +332,10 @@
       "target_dimensions": [
         "online_monitoring"
       ],
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "set_values": {
+        "online_monitoring": "YES"
+      }
     }
   ],
   "scenario_activation_rules": [
@@ -307,7 +357,44 @@
         "EcoCheck scenario activation governance §3.2/§10"
       ],
       "confidence": "HIGH",
-      "industry_scene_layer": {}
+      "industry_scene_layer": {
+        "yes": {
+          "description": "存在实际生产、加工、分装、清洗、粉磨、印刷、诊疗或经营活动。",
+          "match": {
+            "activity_triggers_any": [
+              "PRODUCTION",
+              "PROCESSING",
+              "PACKAGING",
+              "CLEANING",
+              "GRINDING",
+              "PRINTING",
+              "MEDICAL_SERVICE",
+              "WAREHOUSE_WITH_OPERATION"
+            ]
+          }
+        },
+        "unknown": {
+          "description": "贸易+仓储/配送、贸易+分装等边界场景保留现场确认。"
+        },
+        "no": {
+          "description": "纯办公、纯贸易、纯零售且无仓储无加工无分装。",
+          "match": {
+            "business_modes_all": [
+              "PURE_OFFICE_OR_TRADE_OR_RETAIL"
+            ],
+            "activity_triggers_none": [
+              "PRODUCTION",
+              "PROCESSING",
+              "PACKAGING",
+              "CLEANING",
+              "GRINDING",
+              "PRINTING",
+              "MEDICAL_SERVICE",
+              "WAREHOUSE_WITH_OPERATION"
+            ]
+          }
+        }
+      }
     },
     {
       "rule_id": "SAR-V1_0-002",
@@ -330,7 +417,66 @@
         "EcoCheck scenario activation governance §10.1/§10.2"
       ],
       "confidence": "HIGH",
-      "industry_scene_layer": {}
+      "industry_scene_layer": {
+        "yes": {
+          "description": "全部制造业默认查危废；食品、农副、服装等也可能有废机油 HW08、化验室废液 HW49。",
+          "match": {
+            "gb_division_codes_any": [
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "41",
+              "42",
+              "43"
+            ],
+            "process_triggers_any": [
+              "LABORATORY",
+              "MACHINE_MAINTENANCE",
+              "SPRAY_COATING",
+              "PRINTING",
+              "ELECTROPLATING",
+              "CHEMICAL_REACTION"
+            ]
+          }
+        },
+        "unknown": {
+          "description": "贸易+仓储/配送查叉车铅酸废电池、包装固废；贸易+分装从严现场确认。"
+        },
+        "no": {
+          "description": "纯办公、纯零售且无仓储无加工无分装。",
+          "match": {
+            "business_modes_all": [
+              "PURE_OFFICE",
+              "PURE_RETAIL"
+            ]
+          }
+        }
+      }
     },
     {
       "rule_id": "SAR-V1_0-003",
@@ -369,7 +515,8 @@
             ]
           },
           "value": "YES",
-          "confidence": "HIGH"
+          "confidence": "HIGH",
+          "description": "有合成反应化工、饮料/肉类/罐头/屠宰、带印染/水洗/整理的纺织，以及医院无论大小默认查废水。"
         },
         "unknown": {
           "match": {
@@ -387,7 +534,8 @@
             ]
           },
           "value": "UNKNOWN",
-          "confidence": "HIGH"
+          "confidence": "HIGH",
+          "description": "干粉复配/物理混合化工、茶叶烘焙、坚果炒货、粮食干磨等干法食品现场确认。"
         },
         "no": {
           "match": {
@@ -400,7 +548,8 @@
             ]
           },
           "value": "NO",
-          "confidence": "HIGH"
+          "confidence": "HIGH",
+          "description": "纯服装裁剪缝制且无水洗印染。"
         }
       }
     },
@@ -441,7 +590,8 @@
             ]
           },
           "value": "YES",
-          "confidence": "HIGH"
+          "confidence": "HIGH",
+          "description": "有机化工/涂料/农药、橡塑高温熔融/加热工艺默认查 VOCs。"
         },
         "unknown": {
           "match": {
@@ -459,7 +609,11 @@
             ]
           },
           "value": "UNKNOWN",
-          "confidence": "HIGH"
+          "confidence": "HIGH",
+          "description": "无机化工制酸碱/无机盐/无机肥，塑料常温切割/冷组装现场确认。"
+        },
+        "no": {
+          "description": "未设置行业一刀切默认不查；无溶剂/无加热/无喷涂需由现场或 EIA 确认。"
         }
       }
     },
@@ -480,7 +634,42 @@
         "EcoCheck scenario activation governance §10.1/§10.2"
       ],
       "confidence": "HIGH",
-      "industry_scene_layer": {}
+      "industry_scene_layer": {
+        "yes": {
+          "description": "木材加工/家具制造木粉尘，五金抛光/打磨/抛丸，采矿和建材粉体工序默认查粉尘。",
+          "match": {
+            "gb_division_codes_any": [
+              "06",
+              "07",
+              "08",
+              "09",
+              "10",
+              "11",
+              "12",
+              "20",
+              "21",
+              "30",
+              "33"
+            ],
+            "process_triggers_any": [
+              "CUTTING",
+              "GRINDING",
+              "POLISHING",
+              "SHOT_BLASTING",
+              "CRUSHING",
+              "SCREENING",
+              "POWDER_HANDLING",
+              "WOOD_DUST"
+            ]
+          }
+        },
+        "unknown": {
+          "description": "未明确粉尘工序的普通制造业现场确认。"
+        },
+        "no": {
+          "description": "未设置行业一刀切默认不查。"
+        }
+      }
     },
     {
       "rule_id": "SAR-V1_0-006",
@@ -502,7 +691,41 @@
         "EcoCheck scenario activation governance §10.1/§10.4"
       ],
       "confidence": "HIGH",
-      "industry_scene_layer": {}
+      "industry_scene_layer": {
+        "yes": {
+          "description": "GB 84xx 医疗机构默认查医废；口腔/牙科/骨科/宠物医院、二级及以上综合医院，以及工业无损检测/探伤/辐照加工默认查辐射。",
+          "match": {
+            "gb_division_codes_any": [
+              "84"
+            ],
+            "industry_keywords_any": [
+              "医院",
+              "口腔",
+              "牙科",
+              "骨科",
+              "宠物医院",
+              "无损检测",
+              "探伤",
+              "辐照加工"
+            ],
+            "process_triggers_any": [
+              "MEDICAL_WASTE",
+              "RADIATION_DEVICE",
+              "DENTAL_XRAY",
+              "CT",
+              "DSA",
+              "INDUSTRIAL_NDT",
+              "IRRADIATION"
+            ]
+          }
+        },
+        "unknown": {
+          "description": "中医诊所、社区卫生站、医美门诊等保留辐射现场确认。"
+        },
+        "no": {
+          "description": "其余普通工业无放射诊疗/核技术利用证据时默认不查辐射。"
+        }
+      }
     },
     {
       "rule_id": "SAR-V1_0-007",
@@ -521,7 +744,29 @@
         "EcoCheck scenario activation governance §10.1/§10.2"
       ],
       "confidence": "HIGH",
-      "industry_scene_layer": {}
+      "industry_scene_layer": {
+        "yes": {
+          "description": "危化品、重大危险源、液态罐区、电镀园区默认查雨水/事故水。",
+          "match": {
+            "process_triggers_any": [
+              "HAZCHEM",
+              "MAJOR_HAZARD",
+              "LIQUID_TANK_AREA",
+              "ELECTROPLATING",
+              "ACCIDENT_WATER_RISK"
+            ],
+            "profile_flags_any": [
+              "involves_hazchem_major_hazard"
+            ]
+          }
+        },
+        "unknown": {
+          "description": "拿不准的普通涉水工厂现场确认。"
+        },
+        "no": {
+          "description": "小微机加工/干法装配，仅少量机油切削液且托盘围堰即可的场景默认不查。"
+        }
+      }
     },
     {
       "rule_id": "SAR-V1_0-008",
@@ -539,7 +784,17 @@
         "EcoCheck scenario activation governance §10.1/§10.2/§10.4"
       ],
       "confidence": "HIGH",
-      "industry_scene_layer": {}
+      "industry_scene_layer": {
+        "yes": {
+          "description": "在线监测仅由许可身份层、重点排污单位身份或医疗 SIM override 决定。"
+        },
+        "unknown": {
+          "description": "地方名录、规模、床位等身份不明时现场确认。"
+        },
+        "no": {
+          "description": "非重点单位且许可矩阵为 NO 时默认不查。"
+        }
+      }
     },
     {
       "rule_id": "SAR-V1_0-009",
@@ -560,7 +815,28 @@
         "EcoCheck scenario activation governance §3.2/§10"
       ],
       "confidence": "HIGH",
-      "industry_scene_layer": {}
+      "industry_scene_layer": {
+        "yes": {
+          "description": "化工、液态化学品储罐、地下储罐、LDAR 单元默认查。",
+          "match": {
+            "gb_division_codes_any": [
+              "26"
+            ],
+            "process_triggers_any": [
+              "LIQUID_CHEMICAL_TANK",
+              "UNDERGROUND_STORAGE_TANK",
+              "LDAR",
+              "SEEPAGE_CONTROL"
+            ]
+          }
+        },
+        "unknown": {
+          "description": "普通仓储、少量化学品暂存、是否有地下储罐不明时现场确认。"
+        },
+        "no": {
+          "description": "无储罐、无液态化学品、无防渗风险单元。"
+        }
+      }
     },
     {
       "rule_id": "SAR-V1_0-010",
@@ -580,7 +856,32 @@
         "EcoCheck scenario activation governance §3.2/§10"
       ],
       "confidence": "HIGH",
-      "industry_scene_layer": {}
+      "industry_scene_layer": {
+        "yes": {
+          "description": "加油站、油库和油品零售默认查油气回收、地下储罐和土壤地下水风险。",
+          "match": {
+            "gb_industry_codes_any": [
+              "5265"
+            ],
+            "industry_keywords_any": [
+              "加油站",
+              "油库",
+              "油品零售"
+            ],
+            "process_triggers_any": [
+              "GAS_STATION",
+              "VAPOR_RECOVERY",
+              "UNDERGROUND_STORAGE_TANK"
+            ]
+          }
+        },
+        "unknown": {
+          "description": "油品仓储/配送但地下储罐或油气回收边界不明时现场确认。"
+        },
+        "no": {
+          "description": "非油品经营且无地下储罐。"
+        }
+      }
     },
     {
       "rule_id": "SAR-V1_0-011",
@@ -599,7 +900,17 @@
         "EcoCheck scenario activation governance §3.2/§10.4"
       ],
       "confidence": "HIGH",
-      "industry_scene_layer": {}
+      "industry_scene_layer": {
+        "yes": {
+          "description": "通用治理类项不作为产污场景门控；由模板 L1/治理项和历史问题闭环触发。"
+        },
+        "unknown": {
+          "description": "无独立行业默认画像；如历史问题、标识、公示、培训缺口不明则现场确认。"
+        },
+        "no": {
+          "description": "不按行业场景一刀切排除。"
+        }
+      }
     }
   ],
   "approved_layer_artifact": {
@@ -607,5 +918,27 @@
     "source_layer": "approved_baseline",
     "source_repo": "coco830/eco-semantic-knowledge-base",
     "generated_for": "EcoCheck scenario activation governance and L3 industry context"
+  },
+  "knowledge_base_version": "v1.0-scenario-activation-rules",
+  "decision_status": "CLOSED_HIGH_CONFIDENCE",
+  "final_state": "APPROVED_BASELINE_KNOWLEDGE",
+  "runtime_integration": "approved_baseline_export_ready",
+  "source_spec": {
+    "repository": "coco830/ecocheck",
+    "path": "docs/superpowers/specs/2026-06-03-scenario-activation-governance-and-L3-context.md",
+    "sections": [
+      "3.2",
+      "3.3",
+      "8",
+      "10.1",
+      "10.2",
+      "10.3",
+      "10.4"
+    ]
+  },
+  "value_mapping": {
+    "默认查": "YES",
+    "现场确认": "UNKNOWN",
+    "默认不查": "NO"
   }
 }

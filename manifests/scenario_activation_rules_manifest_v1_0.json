@@ -1,0 +1,35 @@
+{
+  "manifest_id": "scenario_activation_rules_manifest_v1_0",
+  "knowledge_base_version": "v1.0-scenario-activation-rules",
+  "final_state": "APPROVED_BASELINE_KNOWLEDGE",
+  "runtime_status": "APPROVED_BASELINE",
+  "runtime_integration": "approved_baseline_export_ready",
+  "approval_status": "HUMAN_APPROVED_BASELINE",
+  "approval_source": "CANDY_ETO_CONFIRMED_2026-06-04_SCENARIO_ACTIVATION_GOVERNANCE",
+  "approval_date": "2026-06-04",
+  "approval_scope": "scenario_activation_rules;permit_control_matrix;medical_overrides;composition_logic;l3_industry_context_reason_templates",
+  "approval_attestation": "Candy confirmed the 11-scenario governance framework, ETO industry-scene decisions, permit control matrix, L1 downgrade, medical overrides, and stricter-layer composition logic as closed HIGH-confidence rules.",
+  "source_spec": {
+    "repository": "coco830/ecocheck",
+    "path": "docs/superpowers/specs/2026-06-03-scenario-activation-governance-and-L3-context.md"
+  },
+  "outputs": {
+    "scenario_activation_rules": 11,
+    "permit_control_matrix_items": 11,
+    "medical_overrides": 3
+  },
+  "artifacts": {
+    "scenario_activation_rules_v1_0.json": "data/approved_baseline/scenario_activation_rules_v1_0.json",
+    "scenario_activation_rules_manifest_v1_0.json": "manifests/scenario_activation_rules_manifest_v1_0.json",
+    "scenario_activation_rules_v1_0_gate_report.json": "reports/scenario_activation_rules_v1_0_gate_report.json",
+    "validate_scenario_activation_rules_v1_0.py": "validate_scenario_activation_rules_v1_0.py"
+  },
+  "runtime_contract": {
+    "can_drive_industry_default_profile_generation": true,
+    "can_drive_l3_industry_context_reasons": true,
+    "can_drive_formal_permit_type": false,
+    "can_auto_deduct_score": false,
+    "unknown_requires_field_confirmation": true,
+    "enterprise_permit_type_policy": "Do not infer enterprise formal permit_type without enterprise permit/EIA/site evidence."
+  }
+}
