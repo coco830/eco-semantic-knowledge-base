@@ -38,3 +38,10 @@ docs/design/specialized_inspection_items_governance_v1_0.md text eol=lf
 manifests/approved_specialized_inspection_items_manifest_v1_0.json text eol=lf
 reports/ETO_SPECIALIZED_INSPECTION_ITEMS_REVIEW_PLAIN_v1_0.md text eol=lf
 reports/approved_specialized_inspection_items_gate_report_v1_0.json text eol=lf
+
+# EcoCheck approved industry influence factor sample hashes are computed over LF bytes.
+data/candidates/ecocheck_candidate_coverage_industry_influence_factor_samples_v1_0.csv text eol=lf
+docs/design/ecocheck_candidate_coverage_industry_influence_factor_samples_v1_0.md text eol=lf
+manifests/ecocheck_candidate_coverage_industry_influence_factor_samples_manifest_v1_0.json text eol=lf
+reports/ecocheck_candidate_coverage_industry_influence_factor_samples_gate_report_v1_0.json text eol=lf
+validate_ecocheck_candidate_coverage_industry_influence_factor_samples_v1_0.py text eol=lf
