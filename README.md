@@ -21,6 +21,9 @@
 - `docs/design/specialized_inspection_items_governance_v1_0.md`: 行业专项检查包治理沉淀，定义专项包本体边界、ETO 审批准入、维度映射和运行时验收口径。
 - `manifests/approved_specialized_inspection_items_manifest_v1_0.json`: 已审批行业专项检查项 manifest，锁定 49 条 `HUMAN_APPROVED_BASELINE` 专项项及 CSV hash。
 - `reports/ETO_SPECIALIZED_INSPECTION_ITEMS_REVIEW_PLAIN_v1_0.md`: 行业专项检查项 ETO 审核稿和批复记录。
+- `docs/design/ecocheck_candidate_coverage_industry_influence_factor_samples_v1_0.md`: EcoCheck 已审核行业影响因子样本治理说明，保持 `APPROVED_INDUSTRY_RULE_INPUT`。
+- `data/candidates/ecocheck_candidate_coverage_industry_influence_factor_samples_v1_0.csv`: EcoCheck 40 条正向行业影响因素样本和 8 条负样本。
+- `manifests/ecocheck_candidate_coverage_industry_influence_factor_samples_manifest_v1_0.json`: 已审核行业影响因子样本包 manifest，锁定 CSV/doc hash、运行时禁区和非系数边界。
 - `reports/FINAL_POLLUTANT_DOMAIN_APPROVED_BASELINE_v8_5.md`: V8.5 污染物域 approved baseline 回灌说明，保留 209 条已审条目与 6 条 P1 排除决断。
 - `manifests/pollutant_domain_approved_baseline_manifest_v8_5.json`: V8.5 污染物域 approved baseline manifest，锁定 CSV/package/report 哈希。
 - `data/approved_baseline/pollutant_domain_v8_5/pollutant_domain_approved_baseline_v8_5.csv`: V8.5 污染物域 209 条 approved baseline 条目。
@@ -35,10 +38,10 @@
 - `reference_sources/`: 原始法规/国标参考文件。
 - `artifact_manifest.json`: 文件名到分类路径的映射，脚本通过 `kb_paths.py` 解析产物位置。
 
-候选层历史边界：
+EcoCheck 已审核行业影响因子样本边界：
 
-- `final_state=NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY`
-- `runtime_integration=disabled`
+- `final_state=APPROVED_INDUSTRY_RULE_INPUT`
+- `runtime_integration=industry_feature_generator`
 
 approved baseline 边界：
 
@@ -47,14 +50,14 @@ approved baseline 边界：
 - `runtime_integration=approved_baseline_export_ready`
 - 可驱动 EcoCheck `show_if`、模板项显示、问题/整改/报告链路。
 - 数值扣分仍由 EcoCheck 现有 score item / deduct-rule 映射决定。
-- 企业正式 `permit_type` 仍必须结合企业许可证、环评、批复、台账和现场事实确认，不能仅凭行业候选推断。
+- 企业正式 `permit_type` 仍必须结合企业许可证、环评、批复、台账和现场事实确认，不能仅凭行业影响因子样本推断。
 
 V8.5 pollutant-domain approved baseline 边界：
 
 - `final_state=APPROVED_POLLUTANT_DOMAIN_BASELINE_KNOWLEDGE`
 - `runtime_status=APPROVED_BASELINE`
 - `runtime_integration=approved_baseline_export_ready`
-- 每行保留来源候选边界：`source_final_state=NOT_FOR_RUNTIME_CANDIDATE_KB_ONLY`、`source_runtime_integration=disabled`
+- 每行保留来源候选边界：`source_final_state=APPROVED_INDUSTRY_RULE_INPUT`、`source_runtime_integration=industry_feature_generator`
 - `ConfirmedDataset` 仍为 `NOT_CREATED`，正式排污权/系数计算仍为 `NOT_AUTHORIZED`
 - 辐射/放射不得启用全行业默认：`radiation_all_industry_default` 仍在 blocked actions 中
 - 不反向混入 `semantic-profile-lab` 的排污系数/方法实验链路，不自动生成或修正任何系数

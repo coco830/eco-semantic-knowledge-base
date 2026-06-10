@@ -1,0 +1,24 @@
+{
+  "validation_status": "PASS",
+  "failure_count": 0,
+  "knowledge_base_version": "v1.0-ecocheck-candidate-coverage-industry-influence-factor-samples",
+  "manifest_id": "ecocheck_candidate_coverage_industry_influence_factor_samples_manifest_v1_0",
+  "final_state": "APPROVED_INDUSTRY_RULE_INPUT",
+  "runtime_status": "APPROVED_RULE_INPUT",
+  "runtime_integration": "industry_feature_generator",
+  "runtime_effect": "PROFILE_GAP_AND_TEMPLATE_MATCHER_HINTS",
+  "counts": {
+    "sample_count": 48,
+    "positive_sample_count": 40,
+    "negative_sample_count": 8,
+    "sample_sets": {
+      "BATCH4_NEW_FACTOR_INDUSTRY": 10,
+      "BATCH5_A": 5,
+      "BATCH5_B": 5,
+      "BATCH5_C": 5,
+      "HIGH_FREQUENCY_INDUSTRY": 15,
+      "NEGATIVE_SAMPLE": 8
+    }
+  },
+  "failures": []
+}
